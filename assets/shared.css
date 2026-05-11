@@ -124,3 +124,27 @@ figcaption { padding: 10px 12px; font-size: 13px; color: var(--muted); line-heig
 @media (max-width: 640px) {
   .masonry, .index-masonry { column-count: 1; }
 }
+
+
+/* ---- gallery + dianping cards ---- */
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-top: 18px; }
+.dp-cards { display: grid; gap: 16px; margin-top: 14px; }
+.dp-card { border: 1px solid var(--line); border-radius: 20px; padding: 16px; background: #fbfcff; }
+.dp-shell { display: block; }
+.dp-title { margin: 0 0 8px; font-size: 18px; line-height: 1.35; }
+.dp-ratingline { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; color: var(--muted); font-size: 14px; margin: 4px 0; }
+.dp-stars, .dp-star { color: var(--star); letter-spacing: -1px; }
+.dp-score-num { color: var(--ink); font-weight: 700; }
+.dp-category, .dp-subscores { color: var(--muted); font-size: 14px; line-height: 1.7; }
+.dp-rankline, .dp-openline { margin-top: 8px; padding: 9px 10px; border-radius: 12px; background: #fff7ed; color: #92400e; display: flex; justify-content: space-between; gap: 10px; align-items: center; }
+.dp-rankbadge { display:inline-block; margin-right:8px; padding:2px 7px; border-radius:999px; background:#fed7aa; color:#9a3412; font-size:12px; font-weight:700; }
+.dp-service { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 10px; }
+.dp-service span { padding: 4px 8px; border-radius: 999px; background: var(--green-soft); color: var(--green); font-size: 12px; font-weight: 600; }
+.dp-bottom { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: 10px; color: var(--muted); font-size: 13px; }
+.dp-address { display: flex; gap: 6px; align-items: flex-start; flex: 1 1 280px; }
+.dp-actions { white-space: nowrap; color: var(--accent); font-weight: 600; }
+.dp-divider { display:inline-block; width:1px; height:12px; background:var(--line); margin:0 6px; vertical-align:middle; }
+.dp-detailgrid { display: grid; grid-template-columns: 130px 1fr; gap: 8px 12px; margin: 14px 0 0; padding-top: 14px; border-top: 1px dashed var(--line); }
+.dp-detailgrid dt { color: var(--muted); font-weight: 700; font-size: 13px; }
+.dp-detailgrid dd { margin: 0; font-size: 14px; line-height: 1.7; }
+@media (max-width: 640px) { .dp-detailgrid { grid-template-columns: 1fr; } }
