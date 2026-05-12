@@ -1,0 +1,838 @@
+[
+  {
+    "name_cn": "Camp Asia 亚洲营地（新加坡）",
+    "name_en": "Camp Asia Singapore",
+    "name_local": "Camp Asia",
+    "country": "新加坡",
+    "city": "Singapore",
+    "venue": "Multi-campus: Dulwich College / Tanglin Trust / Australian International School / OFS 等合作校园",
+    "sessions": [
+      {
+        "start": "2026-06-01",
+        "end": "2026-06-26",
+        "days": "Mon-Fri 周营，可任选周次"
+      },
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-18",
+        "days": "Mon-Fri"
+      }
+    ],
+    "price_local": "SGD 550-850 / 周（按主题与时长不同）",
+    "price_cny_est": "约 ¥3000-4700 / 周",
+    "price_includes": "课程、教练、器材、午餐零食（视营地）、保险",
+    "age_range": "3-16 岁（按主题分龄）",
+    "need_guardian": false,
+    "themes": [
+      "Multi-Sports",
+      "Football (含 Chelsea FC Foundation 合作)",
+      "Tennis",
+      "Swimming",
+      "Performing Arts",
+      "Coding & Robotics",
+      "Cooking",
+      "Art & Design",
+      "Adventure"
+    ],
+    "highlights": "新加坡最大的国际营地运营商之一（Cognita 旗下），与多所顶级国际学校共用设施；按周灵活报名；分龄分主题课表，运动+艺术+STEM 三大支柱齐全；可仅日营，部分项目支持非校生。",
+    "daily_schedule": "9:00 报到；上午主题活动；12:00 午餐；下午第二主题/水上活动；15:30 接送或延长托管至 18:00",
+    "contact": {
+      "website": "https://www.campasia.asia/",
+      "email": "bookings@campasia.asia",
+      "phone": "+65 6464 1077",
+      "wechat": "",
+      "xiaohongshu": "",
+      "other": "Cognita Asia 旗下"
+    },
+    "images": [
+      {
+        "url": "https://www.campasia.asia/",
+        "caption": "Camp Asia 官网首页"
+      }
+    ],
+    "source_urls": [
+      "https://www.campasia.asia/"
+    ],
+    "status": "confirmed_2026",
+    "id": 33,
+    "website_live": true,
+    "live_urls": [
+      "https://www.campasia.asia/"
+    ],
+    "cover_local": "images/33.jpg",
+    "verification_notes": "2026: Jun 15 – Jul 31, bookings open",
+    "days_min": 5,
+    "days_max": 5,
+    "days_typical": 5,
+    "price_cny_min": 3000,
+    "price_cny_max": 4700,
+    "price_cny_per_day": 770,
+    "price_cny_total_typical": 3850,
+    "includes_lodging": false,
+    "includes_meals": "partial",
+    "lodging_note": null,
+    "meals_note": "仅工作日午餐",
+    "meals_breakfast": false,
+    "meals_lunch": true,
+    "meals_dinner": false,
+    "highlight_tags": [
+      "新加坡最大的国际营地运营商之一（Cognita 旗下",
+      "与多所顶级国际学校共用设施",
+      "按周灵活报名",
+      "分龄分主题课表",
+      "运动+艺术+STEM 三大支柱齐全",
+      "可仅日营",
+      "部分项目支持非校生"
+    ],
+    "maodou_pick": true,
+    "maodou_reason": "💎 周自由组合：足球/网球/编程/烹饪 一周一技能，新加坡最大日营"
+  },
+  {
+    "name_cn": "HeadStart 普吉国际学校暑期营 2026",
+    "name_en": "HeadStart Summer Camp 2026",
+    "name_local": "HeadStart Summer Camp",
+    "country": "泰国",
+    "city": "Phuket",
+    "venue": "HeadStart International School Phuket, 119/138 Moo 1, Chalong",
+    "sessions": [
+      {
+        "start": "2026-06-29",
+        "end": "2026-07-03",
+        "days": 5
+      },
+      {
+        "start": "2026-07-06",
+        "end": "2026-07-10",
+        "days": 5
+      },
+      {
+        "start": "2026-07-13",
+        "end": "2026-07-17",
+        "days": 5
+      },
+      {
+        "start": "2026-07-20",
+        "end": "2026-07-24",
+        "days": 5
+      },
+      {
+        "start": "2026-07-27",
+        "end": "2026-07-31",
+        "days": 5
+      }
+    ],
+    "price_local": "约 THB 8,000-10,000/周 (按营种)",
+    "price_cny_est": 1800,
+    "price_includes": [
+      "全天课程",
+      "材料费",
+      "校内活动"
+    ],
+    "age_range": "4-14",
+    "need_guardian": true,
+    "themes": [
+      "Activity Camp(4-7)",
+      "Discovery Camp(8-9)",
+      "Adventure Camp(10-14)",
+      "户外探险",
+      "STEM"
+    ],
+    "highlights": "普吉Chalong校区按周自由组合，分龄三种营种：Activity(低龄玩中学)、Discovery(主题探究科学)、Adventure Junior/Senior(挑战+海岛探险，培养韧性与领导力)。每班约24人小班。",
+    "daily_schedule": "周一至周五全日制，含晨课、主题工作坊、午餐、户外/创意活动；Adventure Camp含校外岛屿探险日。",
+    "contact": {
+      "website": "https://www.headstartphuket.com/summer-camp/",
+      "email": "info@headstart.ac.th",
+      "phone": "+66 76 612 561",
+      "wechat": "",
+      "xiaohongshu": "",
+      "other": "Registration opens 6th March 2026"
+    },
+    "images": [
+      {
+        "url": "https://headstartphuket.com/uploads/image/3/6/5/36541/default_724f073a-a7dc-4dbe-a5b8-60a96548523c.jpg",
+        "caption": "HeadStart Summer Camp 2026"
+      }
+    ],
+    "source_urls": [
+      "https://www.headstartphuket.com/summer-camp/"
+    ],
+    "status": "confirmed_2026",
+    "id": 41,
+    "website_live": true,
+    "live_urls": [
+      "https://www.headstartphuket.com/summer-camp/"
+    ],
+    "cover_local": "images/41.jpg",
+    "verification_notes": "2026: 29 Jun – 7 Aug (6 weeks); registration opens 6 Mar 2026",
+    "days_min": 5,
+    "days_max": 5,
+    "days_typical": 5,
+    "price_cny_min": 1800,
+    "price_cny_max": 1800,
+    "price_cny_per_day": 360,
+    "price_cny_total_typical": 1800,
+    "includes_lodging": false,
+    "includes_meals": false,
+    "lodging_note": null,
+    "meals_note": null,
+    "meals_breakfast": false,
+    "meals_lunch": false,
+    "meals_dinner": false,
+    "highlight_tags": [
+      "普吉Chalong校区按周自由组合",
+      "培养韧性与领导力",
+      "每班约24人小班"
+    ],
+    "maodou_pick": true,
+    "maodou_reason": "✅2026 Adventure Junior 海岛探险+韧性，10-14专属，性价比之王 ¥1800/周"
+  },
+  {
+    "name_cn": "UNIS河内联合国国际学校暑期营 2026",
+    "name_en": "UNIS Hanoi Summer Programme 2026",
+    "name_local": "UNIS Hanoi Summer Programme",
+    "country": "越南",
+    "city": "Hanoi",
+    "venue": "UNIS Hanoi, G9 Ciputra, Tay Ho District, Hanoi",
+    "sessions": [
+      {
+        "start": "2026-06-15",
+        "end": "2026-07-24",
+        "days": 30
+      }
+    ],
+    "price_local": "VND 6,000,000-9,000,000/周 (估)",
+    "price_cny_est": 2200,
+    "price_includes": [
+      "学费",
+      "教材",
+      "午餐",
+      "校内活动",
+      "结业证书"
+    ],
+    "age_range": "3-18",
+    "need_guardian": true,
+    "themes": [
+      "英语强化",
+      "STEM",
+      "艺术",
+      "体育学院(Academies)",
+      "IB思维"
+    ],
+    "highlights": "越南唯一联合国背景IB国际学校，2026暑期营覆盖3-18岁全年龄段，支持按周报名；提供专业Academies(足球/网球/舞蹈/音乐/科学等)由外部机构合作授课，全英文环境。",
+    "daily_schedule": "08:30-15:30 早间核心课程+午餐+下午Academy专项；周间外出活动可选。",
+    "contact": {
+      "website": "https://www.unishanoi.org/community/summer-programme-2026",
+      "email": "summer@unishanoi.org",
+      "phone": "+84 24 3758 1551",
+      "wechat": "",
+      "xiaohongshu": "",
+      "other": ""
+    },
+    "images": [
+      {
+        "url": "https://resources.finalsite.net/images/f_auto,q_auto/v1589625302/hanoi/n7wuvti3iqylk9qsdx7r/ib-world-school-logo-white-solid-rev.png",
+        "caption": "UNIS Hanoi"
+      }
+    ],
+    "source_urls": [
+      "https://www.unishanoi.org/community/summer-programme-2026"
+    ],
+    "status": "confirmed_2026",
+    "id": 42,
+    "website_live": true,
+    "live_urls": [
+      "https://www.unishanoi.org/community/summer-programme-2026"
+    ],
+    "cover_local": "images/42.png",
+    "verification_notes": "2026 Summer Programme, ages 3-18, hybrid model",
+    "days_min": 30,
+    "days_max": 30,
+    "days_typical": 30,
+    "price_cny_min": 13200,
+    "price_cny_max": 13200,
+    "price_cny_per_day": 440,
+    "price_cny_total_typical": 13200,
+    "includes_lodging": false,
+    "includes_meals": "partial",
+    "lodging_note": null,
+    "meals_note": "仅工作日午餐",
+    "meals_breakfast": false,
+    "meals_lunch": true,
+    "meals_dinner": false,
+    "highlight_tags": [
+      "越南唯一联合国背景IB国际学校",
+      "2026暑期营覆盖3-18岁全年龄段",
+      "支持按周报名",
+      "提供专业Academies(足球/网球/舞蹈/音乐/科学等)由外部机构合作授课",
+      "全英文环境"
+    ],
+    "maodou_pick": true,
+    "maodou_reason": "✅2026 UN背景IB 全英Academies（足球/网球/科学），河内文化沉浸"
+  },
+  {
+    "name_cn": "QQ English 宿务青少年游学营",
+    "name_en": "QQ English Junior Camp (Cebu)",
+    "name_local": "QQ English ジュニアキャンプ",
+    "country": "菲律宾",
+    "city": "Cebu",
+    "venue": "QQ English IT Park Campus / Seafront Campus, Mactan",
+    "sessions": [
+      {
+        "start": "2026-07-05",
+        "end": "2026-07-25",
+        "days": 21
+      },
+      {
+        "start": "2026-07-26",
+        "end": "2026-08-15",
+        "days": 21
+      }
+    ],
+    "price_local": "PHP 95,000 / 3周",
+    "price_cny_est": 12350,
+    "price_includes": [
+      "学费(1对1+小组课)",
+      "校内住宿",
+      "三餐",
+      "机场接送",
+      "签证延期",
+      "教材",
+      "周末活动"
+    ],
+    "age_range": "7-18",
+    "need_guardian": false,
+    "themes": [
+      "英语强化",
+      "雅思",
+      "亲子游学",
+      "海岛活动"
+    ],
+    "highlights": "宿务知名日资ESL学校，海景校区Seafront带泳池/海滩，每天最多8节1对1英语课；亲子可同行，有Mommy课程并设托管。",
+    "daily_schedule": "08:00-17:00 1对1+小组英语课，17:00后自习/活动，周末薄荷岛/资生堂岛跳岛。",
+    "contact": {
+      "website": "https://qqenglish.jp/junior/",
+      "email": "junior@qqeng.com",
+      "phone": "+63-32-410-5743",
+      "wechat": "",
+      "xiaohongshu": "",
+      "other": "",
+      "registration": "https://qqenglish.jp/contact/"
+    },
+    "images": [
+      {
+        "url": "https://qqenglish.com/wp-content/uploads/seafront-campus.jpg",
+        "caption": "Seafront海景校区（占位URL，需替换）"
+      }
+    ],
+    "source_urls": [
+      "https://qqenglish.com/",
+      "https://qqenglish.com/study-abroad/junior/"
+    ],
+    "status": "tentative_2026",
+    "id": 52,
+    "website_live": true,
+    "live_urls": [
+      "https://qqenglish.jp/junior/"
+    ],
+    "cover_local": "images/camp_052.svg",
+    "refind_status": "found",
+    "refind_notes": "Sandbox blocked. QQ English Junior Camp marketed primarily on JP site; English page at qqenglish.com/junior-camp/.",
+    "days_min": 21,
+    "days_max": 21,
+    "days_typical": 21,
+    "price_cny_min": 12350,
+    "price_cny_max": 12350,
+    "price_cny_per_day": 588,
+    "price_cny_total_typical": 12348,
+    "includes_lodging": true,
+    "includes_meals": true,
+    "lodging_note": "含住宿",
+    "meals_note": "三餐全包",
+    "meals_breakfast": true,
+    "meals_lunch": true,
+    "meals_dinner": true,
+    "highlight_tags": [
+      "宿务知名日资ESL学校",
+      "海景校区Seafront带泳池/海滩",
+      "每天最多8节1对1英语课",
+      "亲子可同行",
+      "有Mommy课程并设托管"
+    ],
+    "maodou_pick": false,
+    "verification_notes": "2026-05-13 curl 200, redirects to https://qqenglish.jp/junior-high-school-ph/; junior/high-school Philippines page live. Dates still need official 2026 confirmation."
+  },
+  {
+    "name_cn": "UWCSEA 联合世界书院 假期课程",
+    "name_en": "UWCSEA Vacation Programmes",
+    "name_local": "UWCSEA Vacation Programmes",
+    "country": "新加坡",
+    "city": "Singapore",
+    "venue": "UWCSEA Dover Campus & East Campus",
+    "sessions": [
+      {
+        "start": "2026-06-08",
+        "end": "2026-07-24",
+        "days": "Mon-Fri 周营，最少报 1 周"
+      }
+    ],
+    "price_local": "SGD 480-780 / 周",
+    "price_cny_est": "约 ¥2700-4300 / 周",
+    "price_includes": "课程、器材、点心；午餐另购或自带",
+    "age_range": "4-14 岁",
+    "need_guardian": false,
+    "themes": [
+      "Outdoor Education",
+      "Sports",
+      "Arts",
+      "STEM/Coding",
+      "English & Maths Boosters",
+      "Service Learning"
+    ],
+    "highlights": "UWC 全球网络的新加坡两个旗舰校区开放给所有孩子（不限校内）；强调 IB/UWC 价值观下的全人教育；Outdoor Ed 与服务学习是特色；Dover 与 East 双校区可选。",
+    "daily_schedule": "9:00-15:30；提供 Extended Care",
+    "contact": {
+      "website": "https://www.uwcsea.edu.sg/community/community-and-holiday-programmes",
+      "email": "community@uwcsea.edu.sg",
+      "phone": "+65 6775 5344",
+      "wechat": "",
+      "xiaohongshu": "",
+      "other": "",
+      "registration": "https://www.uwcsea.edu.sg/community/community-and-holiday-programmes"
+    },
+    "images": [],
+    "source_urls": [
+      "https://www.uwcsea.edu.sg/discover-uwcsea/vacation-programmes"
+    ],
+    "status": "tentative_2026",
+    "id": 35,
+    "website_live": true,
+    "live_urls": [
+      "https://www.uwcsea.edu.sg/community/community-and-holiday-programmes"
+    ],
+    "cover_local": "images/camp_035.svg",
+    "refind_status": "found",
+    "refind_notes": "Verified 200 OK. UWCSEA renamed Vacation Programmes -> Community and Holiday Programmes (Dover/East/Phoenix).",
+    "days_min": 5,
+    "days_max": 5,
+    "days_typical": 5,
+    "price_cny_min": 2700,
+    "price_cny_max": 4300,
+    "price_cny_per_day": 700,
+    "price_cny_total_typical": 3500,
+    "includes_lodging": false,
+    "includes_meals": "partial",
+    "lodging_note": null,
+    "meals_note": "仅工作日午餐",
+    "meals_breakfast": false,
+    "meals_lunch": true,
+    "meals_dinner": false,
+    "highlight_tags": [
+      "UWC 全球网络的新加坡两个旗舰校区开放给所有孩子（不限校内",
+      "强调 IB/UWC 价值观下的全人教育",
+      "Outdoor Ed 与服务学习是特色",
+      "Dover 与 East 双校区可选"
+    ],
+    "maodou_pick": false,
+    "verification_notes": "2026-05-13 curl 200; UWCSEA community/holiday programmes page live. 2026 summer details may update seasonally."
+  },
+  {
+    "name_cn": "Stamford American 暑期营（新加坡斯坦福美国国际学校）",
+    "name_en": "Stamford American International School Summer Camps",
+    "name_local": "SAIS Camps",
+    "country": "新加坡",
+    "city": "Singapore",
+    "venue": "Stamford American IS, Woodleigh Campus / Early Learning Village",
+    "sessions": [
+      {
+        "start": "2026-06-15",
+        "end": "2026-07-31",
+        "days": "Mon-Fri 周营"
+      }
+    ],
+    "price_local": "SGD 500-800 / 周",
+    "price_cny_est": "约 ¥2800-4500 / 周",
+    "price_includes": "课程、午餐、零食、器材、活动 T 恤",
+    "age_range": "2-14 岁",
+    "need_guardian": false,
+    "themes": [
+      "IB-Inspired Inquiry",
+      "STEAM",
+      "Sports",
+      "Performing Arts",
+      "Mandarin",
+      "Cooking"
+    ],
+    "highlights": "美式 + IB 课程框架的新加坡老牌国际学校（Cognita 旗下）；Early Learning Village 是亚洲最大的早教园区之一；中文/西班牙语沉浸班可选；面向校外学生开放。",
+    "daily_schedule": "9:00-15:00；含游泳/户外；提供延长托管",
+    "contact": {
+      "website": "https://www.sais.edu.sg/school-life/camp-asia/",
+      "email": "admissions@sais.edu.sg",
+      "phone": "+65 6602 7247",
+      "wechat": "",
+      "xiaohongshu": "",
+      "other": "",
+      "registration": "https://www.sais.edu.sg/school-life/camp-asia/"
+    },
+    "images": [],
+    "source_urls": [
+      "https://www.sais.edu.sg/student-life/camps"
+    ],
+    "status": "tentative_2026",
+    "id": 36,
+    "website_live": true,
+    "live_urls": [
+      "https://www.sais.edu.sg/school-life/camp-asia/"
+    ],
+    "cover_local": "images/camp_036.svg",
+    "refind_status": "found",
+    "refind_notes": "Verified 200 OK. SAIS partners with Camp Asia for vacation camps.",
+    "days_min": 5,
+    "days_max": 5,
+    "days_typical": 5,
+    "price_cny_min": 2800,
+    "price_cny_max": 4500,
+    "price_cny_per_day": 730,
+    "price_cny_total_typical": 3650,
+    "includes_lodging": true,
+    "includes_meals": "partial",
+    "lodging_note": "villa 住宿",
+    "meals_note": "仅工作日午餐",
+    "meals_breakfast": false,
+    "meals_lunch": true,
+    "meals_dinner": false,
+    "highlight_tags": [
+      "美式 + IB 课程框架的新加坡老牌国际学校（Cognita 旗下",
+      "Early Learning Village 是亚洲最大的早教园区之一",
+      "中文/西班牙语沉浸班可选",
+      "面向校外学生开放"
+    ],
+    "maodou_pick": false,
+    "verification_notes": "2026-05-13 curl 200; SAIS Camp Asia page live."
+  },
+  {
+    "name_cn": "UWC ISAK 国际暑期学校",
+    "name_en": "UWC ISAK Japan Summer School",
+    "name_local": "UWC ISAKジャパン サマースクール",
+    "country": "日本",
+    "city": "Karuizawa, Nagano (轻井泽)",
+    "venue": "UWC ISAK Japan Campus, Karuizawa",
+    "sessions": [
+      {
+        "start": "2026-07-26",
+        "end": "2026-08-08",
+        "days": 14
+      }
+    ],
+    "price_local": "JPY 580,000",
+    "price_cny_est": 27000,
+    "price_includes": "学费、住宿、餐食、活动、教材；不含国际机票及签证",
+    "age_range": "14-15岁 (Middle School Program); 部分项目14-16岁",
+    "need_guardian": false,
+    "themes": [
+      "领导力",
+      "设计思维",
+      "跨文化交流",
+      "社会创新",
+      "户外探险"
+    ],
+    "highlights": "由UWC ISAK Japan(寄宿制IB国际学校)主办，全英文沉浸式课程，学员来自30+国家；以变革型领导力(Changemaker)、设计思维与户外活动为核心；提供奖学金支持。",
+    "daily_schedule": "上午: 领导力与设计思维课程；下午: 户外活动/工作坊/社区项目；晚上: 反思圈、文化之夜、小组活动；周末远足。",
+    "contact": {
+      "website": "https://uwcisak.jp/short-courses/summer-school/",
+      "email": "summerschool@uwcisak.jp",
+      "phone": "+81-267-46-8623",
+      "wechat": "",
+      "xiaohongshu": "",
+      "other": "Instagram: @uwcisakjapan"
+    },
+    "images": [
+      {
+        "url": "https://uwcisak.jp/wp-content/uploads/2023/03/summer-school-hero.jpg",
+        "caption": "ISAK Summer School 校园活动"
+      }
+    ],
+    "source_urls": [
+      "https://uwcisak.jp/short-courses/summer-school/"
+    ],
+    "status": "tentative_2026",
+    "id": 0,
+    "website_live": true,
+    "live_urls": [
+      "https://uwcisak.jp/short-courses/summer-school/"
+    ],
+    "cover_local": "images/camp_000.jpeg",
+    "days_min": 14,
+    "days_max": 14,
+    "days_typical": 14,
+    "price_cny_min": 27000,
+    "price_cny_max": 27000,
+    "price_cny_per_day": 1929,
+    "price_cny_total_typical": 27006,
+    "includes_lodging": true,
+    "includes_meals": true,
+    "lodging_note": "含住宿",
+    "meals_note": "三餐全包",
+    "meals_breakfast": true,
+    "meals_lunch": true,
+    "meals_dinner": true,
+    "highlight_tags": [
+      "由UWC ISAK Japan(寄宿制IB国际学校)主办",
+      "全英文沉浸式课程",
+      "学员来自30+国家",
+      "以变革型领导力(Changemaker)、设计思维与户外活动为核心",
+      "提供奖学金支持"
+    ],
+    "maodou_pick": false,
+    "verification_notes": "2026-05-13 curl 200; old /summer-school/ redirects to /short-courses/summer-school/."
+  },
+  {
+    "name_cn": "富士山下 Whole Earth 自然体验营",
+    "name_en": "Whole Earth Nature School Mt. Fuji Camp",
+    "name_local": "NPO法人 ホールアース自然学校 富士山キャンプ",
+    "country": "日本",
+    "city": "Fujinomiya, Shizuoka (静冈县富士宫市)",
+    "venue": "ホールアース自然学校 富士山本校",
+    "sessions": [
+      {
+        "start": "2026-07-27",
+        "end": "2026-08-01",
+        "days": 6
+      },
+      {
+        "start": "2026-08-03",
+        "end": "2026-08-08",
+        "days": 6
+      }
+    ],
+    "price_local": "JPY 72,000",
+    "price_cny_est": 3500,
+    "price_includes": "住宿、全餐、活动费、保险、东京/三岛站接送",
+    "age_range": "7-15岁 (分小学/初中两组)",
+    "need_guardian": false,
+    "themes": [
+      "富士山登山",
+      "熔岩洞探险",
+      "森林观察",
+      "牧场体验",
+      "可持续发展"
+    ],
+    "highlights": "Whole Earth(ホールアース)是日本最早的自然学校之一(1982年创办)，营地紧邻富士山西麓白丝瀑布；含富士山五合目徒步、青木原熔岩洞夜探、朝雾高原牧场挤奶等特色活动。",
+    "daily_schedule": "7:00 起床+广播体操；8:00 早餐；9:00 主题活动(登山/洞穴/牧场)；12:30 午餐(野炊或营地);14:00 自然观察+工作坊；17:30 晚餐自助；19:30 夜间观察(萤火虫/星空)；21:30 熄灯。",
+    "contact": {
+      "website": "https://wens.gr.jp/",
+      "email": "info@wens.gr.jp",
+      "phone": "+81-544-66-0152",
+      "wechat": "",
+      "xiaohongshu": "",
+      "other": ""
+    },
+    "images": [
+      {
+        "url": "https://wens.gr.jp/wp-content/uploads/fuji-camp-hero.jpg",
+        "caption": "富士山下自然营"
+      }
+    ],
+    "source_urls": [
+      "https://wens.gr.jp/",
+      "https://wens.gr.jp/program/kids/"
+    ],
+    "status": "tentative_2026",
+    "id": 6,
+    "website_live": true,
+    "live_urls": [
+      "https://wens.gr.jp/",
+      "https://wens.gr.jp/program/kids/"
+    ],
+    "cover_local": "images/camp_006.jpg",
+    "days_min": 6,
+    "days_max": 6,
+    "days_typical": 6,
+    "price_cny_min": 3500,
+    "price_cny_max": 3500,
+    "price_cny_per_day": 583,
+    "price_cny_total_typical": 3498,
+    "includes_lodging": true,
+    "includes_meals": true,
+    "lodging_note": "含住宿",
+    "meals_note": "三餐全包",
+    "cn_contacts": {
+      "forum": "https://www.zhihu.com/topic/19566912/intro",
+      "sources": [
+        "https://www.zhihu.com/topic/19566912/intro",
+        "https://www.zhihu.com/question/602588067"
+      ],
+      "notes": "知乎『巴厘岛』话题 19566912 下含 Green Camp 讨论；公开搜索未拿到小红书博主固定页。"
+    },
+    "meals_breakfast": true,
+    "meals_lunch": true,
+    "meals_dinner": true,
+    "highlight_tags": [
+      "Whole Earth(ホールアース)是日本最早的自然学校之一(1982年创办",
+      "营地紧邻富士山西麓白丝瀑布",
+      "含富士山五合目徒步、青木原熔岩洞夜探、朝雾高原牧场挤奶等特色活动"
+    ],
+    "maodou_pick": false
+  },
+  {
+    "name_cn": "马尔堡公学马来西亚分校暑期营",
+    "name_en": "Marlborough College Malaysia Summer Camp",
+    "name_local": "Marlborough Summer",
+    "country": "马来西亚",
+    "city": "Iskandar Puteri, Johor",
+    "venue": "Marlborough College Malaysia",
+    "sessions": [
+      {
+        "start": "2026-07-06",
+        "end": "2026-07-17",
+        "days": 12
+      }
+    ],
+    "price_local": "MYR 11000",
+    "price_cny_est": 17000,
+    "price_includes": [
+      "学费",
+      "寄宿",
+      "三餐",
+      "活动门票",
+      "新山机场接送"
+    ],
+    "age_range": "8-15",
+    "need_guardian": false,
+    "themes": [
+      "英语",
+      "STEAM",
+      "户外探索",
+      "艺术"
+    ],
+    "highlights": "英国马尔堡公学海外分校，90英亩校园，提供IB风格课堂与丰富课外活动；可对接乐高乐园。",
+    "daily_schedule": "上午英语+学科，下午水上/球类/艺术，晚间House活动。",
+    "contact": {
+      "website": "https://www.marlboroughcollege.my/summer-camp",
+      "email": "admissions@marlboroughcollege.my",
+      "phone": "+60 7 560 2200",
+      "wechat": "",
+      "xiaohongshu": "",
+      "other": ""
+    },
+    "images": [
+      {
+        "url": "https://www.marlboroughcollege.my/images/summer-camp.jpg",
+        "caption": "Marlborough College Malaysia（占位URL）"
+      }
+    ],
+    "source_urls": [
+      "https://www.marlboroughcollege.my/"
+    ],
+    "status": "tentative_2026",
+    "id": 23,
+    "website_live": true,
+    "live_urls": [
+      "https://www.marlboroughcollegemalaysia.org/"
+    ],
+    "cover_local": "images/camp_023.png",
+    "days_min": 12,
+    "days_max": 12,
+    "days_typical": 12,
+    "price_cny_min": 17000,
+    "price_cny_max": 17000,
+    "price_cny_per_day": 1417,
+    "price_cny_total_typical": 17004,
+    "includes_lodging": true,
+    "includes_meals": true,
+    "lodging_note": "寄宿",
+    "meals_note": "三餐全包",
+    "meals_breakfast": true,
+    "meals_lunch": true,
+    "meals_dinner": true,
+    "highlight_tags": [
+      "英国马尔堡公学海外分校",
+      "90英亩校园",
+      "提供IB风格课堂与丰富课外活动",
+      "可对接乐高乐园"
+    ],
+    "maodou_pick": false,
+    "verification_notes": "2026-05-13 curl 200; old summer-camp URL redirects to school root; no dedicated 2026 summer-camp page verified, keep tentative/contact school."
+  },
+  {
+    "name_cn": "Prem Tinsulanonda IB暑期营(清迈)",
+    "name_en": "Prem Tinsulanonda International School (PTIS) Summer Programme",
+    "name_local": "Prem Summer",
+    "country": "泰国",
+    "city": "Chiang Mai",
+    "venue": "Prem Tinsulanonda International School, 234 Mu 3, Huay Sai, Mae Rim, Chiang Mai",
+    "sessions": [
+      {
+        "start": "2026-07-06",
+        "end": "2026-07-24",
+        "days": 15
+      }
+    ],
+    "price_local": "THB 45,000/3周 (含寄宿+三餐, 估)",
+    "price_cny_est": 9500,
+    "price_includes": [
+      "学费",
+      "校内寄宿",
+      "三餐",
+      "校外活动",
+      "保险",
+      "校巴"
+    ],
+    "age_range": "8-17",
+    "need_guardian": false,
+    "themes": [
+      "IB探究",
+      "户外探险",
+      "大象生态",
+      "泰文化",
+      "运动(高尔夫/游泳)"
+    ],
+    "highlights": "清迈Mae Rim山区90英亩生态校园，泰国唯一同时提供IB四阶段+全寄宿的国际学校；夏校结合IB项目教学+清迈户外探险+大象保育/农场体验，国际学生比例高。",
+    "daily_schedule": "08:00-21:00 寄宿制；晨课+下午户外探险+晚间集体活动；周末远足/文化考察。",
+    "contact": {
+      "website": "https://www.ptis.ac.th/",
+      "email": "summer@ptis.ac.th",
+      "phone": "+66 53 301 500",
+      "wechat": "",
+      "xiaohongshu": "",
+      "other": ""
+    },
+    "images": [
+      {
+        "url": "https://ptis.ac.th/wp-content/uploads/2022/12/prem-logo-white-text.png",
+        "caption": "Prem Tinsulanonda Chiang Mai"
+      }
+    ],
+    "source_urls": [
+      "https://www.ptis.ac.th/"
+    ],
+    "status": "tentative_2026",
+    "id": 48,
+    "website_live": true,
+    "live_urls": [
+      "https://ptis.ac.th/"
+    ],
+    "cover_local": "images/camp_048.jpg",
+    "days_min": 15,
+    "days_max": 15,
+    "days_typical": 15,
+    "price_cny_min": 9500,
+    "price_cny_max": 9500,
+    "price_cny_per_day": 633,
+    "price_cny_total_typical": 9495,
+    "includes_lodging": true,
+    "includes_meals": true,
+    "lodging_note": "校内寄宿",
+    "meals_note": "三餐全包",
+    "meals_breakfast": true,
+    "meals_lunch": true,
+    "meals_dinner": true,
+    "highlight_tags": [
+      "清迈Mae Rim山区90英亩生态校园",
+      "泰国唯一同时提供IB四阶段+全寄宿的国际学校",
+      "夏校结合IB项目教学+清迈户外探险+大象保育/农场体验",
+      "国际学生比例高"
+    ],
+    "maodou_pick": false,
+    "verification_notes": "2026-05-13 curl 200; school root live; no dedicated 2026 summer-camp page verified, keep tentative/contact school."
+  }
+]

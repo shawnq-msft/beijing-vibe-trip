@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026 亚洲暑期营地导航 · 毛豆专用</title>
+<style>
+:root{--bg:#0f1419;--card:#1a2028;--text:#e5e7eb;--mute:#94a3b8;--accent:#22d3ee;--ok:#10b981;--warn:#f59e0b;--bad:#ef4444;--gold:#fbbf24}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+header{padding:14px 14px 10px;border-bottom:1px solid #2d3748;background:var(--bg);position:sticky;top:0;z-index:10}
+.title-row{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+h1{margin:0;font-size:17px;font-weight:700}
+h1 .sub{color:var(--mute);font-size:12px;font-weight:400;margin-left:6px}
+.hdr-toggle{padding:6px 12px;border-radius:6px;background:#1e40af;color:#fff;border:none;cursor:pointer;font-size:13px;display:none}
+.hdr-toggle.show{display:block}
+.panels.collapsed{display:none}
+.panels{margin-top:10px}
+.controls{display:flex;flex-wrap:wrap;gap:8px}
+.controls select,.controls input{background:#0b0f14;color:var(--text);border:1px solid #2d3748;padding:6px 10px;border-radius:6px;font-size:13px}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.chip{padding:4px 10px;border-radius:13px;background:#252d38;border:1px solid #374151;cursor:pointer;font-size:12px;user-select:none;white-space:nowrap}
+.chip.active{background:var(--accent);color:#000;border-color:var(--accent);font-weight:600}
+.chip.toggle{background:#1f2937}
+.chip.toggle.active{background:var(--ok);border-color:var(--ok);color:#000}
+.chip.gold.active{background:var(--gold);border-color:var(--gold);color:#000}
+main{max-width:1280px;margin:0 auto;padding:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.card{background:var(--card);border-radius:10px;overflow:hidden;cursor:pointer;border:1px solid #2d3748;transition:transform .15s;position:relative}
+.card:hover{transform:translateY(-2px);border-color:var(--accent)}
+.card.unverified{opacity:.6;order:99}
+.card.maodou{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}
+.card .pick-badge{position:absolute;top:8px;left:8px;background:var(--gold);color:#000;font-size:11px;font-weight:700;padding:3px 8px;border-radius:4px;z-index:2}
+.card img,.card object{width:100%;height:140px;object-fit:cover;display:block;background:#0b0f14;pointer-events:none}
+.card .body{padding:10px}
+.card h3{margin:0 0 4px;font-size:14px;line-height:1.3}
+.card .meta{font-size:11px;color:var(--mute);margin-bottom:6px}
+.price-row{display:flex;align-items:baseline;gap:6px;margin:5px 0}
+.price{color:var(--accent);font-size:17px;font-weight:700}
+.tags{display:flex;flex-wrap:wrap;gap:3px;margin-top:5px}
+.tag{font-size:10px;padding:2px 6px;border-radius:3px;background:#0b1220;border:1px solid #1e293b;color:#9ca3af}
+.tag.ok{background:#064e3b;border-color:#065f46;color:#6ee7b7}
+.tag.no{background:#7f1d1d40;border-color:#991b1b40;color:#fca5a5}
+.tag.par{background:#78350f40;border-color:#92400e40;color:#fcd34d}
+.tag.confirmed{background:var(--ok);color:#000;border:none}
+.tag.unverified{background:var(--bad);color:#fff;border:none}
+.tag.gold{background:var(--gold);color:#000;border:none}
+.tag.hl{background:#1e293b;border-color:#334155;color:#e0f2fe}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:100;overflow-y:auto;padding:14px}
+.modal.show{display:block}
+.modal-body{max-width:760px;margin:10px auto;background:var(--card);border-radius:10px;padding:20px}
+.close{float:right;font-size:26px;cursor:pointer;color:var(--mute);line-height:1}
+.modal h2{margin-top:0;font-size:18px}
+.modal a{color:var(--accent);word-break:break-all}
+.field{margin:10px 0;padding-bottom:10px;border-bottom:1px solid #2d3748}
+.field strong{color:var(--accent);display:block;font-size:12px;text-transform:uppercase;margin-bottom:4px;letter-spacing:.5px}
+.btn{display:inline-block;padding:7px 13px;background:#1e40af;color:#fff!important;border-radius:5px;text-decoration:none;font-size:13px;margin:3px 6px 3px 0}
+.btn.signup{background:#2563eb}
+.btn.cn{background:#dc2626}
+.notice{background:#1e293b;border-left:3px solid var(--warn);padding:10px 14px;margin:10px 0;font-size:12px;color:var(--mute)}
+.maodou-banner{background:linear-gradient(90deg,#fbbf2440,#f59e0b40);border:1px solid var(--gold);border-left:4px solid var(--gold);padding:10px 14px;margin:10px 0;font-size:13px;border-radius:6px;color:#fde68a}
+.climate{display:none;background:#0b1220;padding:12px;border-radius:8px;margin-top:8px;font-size:12px;overflow-x:auto}
+.climate.show{display:block}
+.climate table{width:100%;border-collapse:collapse;min-width:520px}
+.climate th,.climate td{padding:5px 7px;border:1px solid #1e293b;text-align:left}
+.climate th{background:#1e293b;color:var(--accent)}
+.stats{font-size:11px;color:var(--mute);margin-top:6px}
+
+/* Mobile */
+@media (max-width:720px){
+  header{padding:10px}
+  h1{font-size:15px}
+  h1 .sub{display:block;margin:2px 0 0}
+  .hdr-toggle{display:block}
+  .panels.collapsed{display:none}
+  .panels{margin-top:8px}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px}
+  .card img,.card object{height:110px}
+  .card h3{font-size:13px}
+  .price{font-size:15px}
+  main{padding:8px}
+  .modal-body{padding:14px;margin:0 auto}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="title-row">
+    <h1>🏕️ 2026 亚洲暑期营地导航 <span class="sub">毛豆专用 · <span id="count">0</span> 项</span></h1>
+    <button class="hdr-toggle" id="toggleBtn">🔧 筛选/排序</button>
+  </div>
+
+  <div class="panels" id="panels">
+    <div class="controls">
+      <input id="q" placeholder="🔎 搜索名称/城市/主题/亮点" style="flex:1;min-width:160px">
+      <select id="sort">
+        <option value="default">默认（毛豆推荐+已确认优先）</option>
+        <option value="maodou">⭐ 毛豆推荐优先</option>
+        <option value="total-asc">💰 总价 ↑</option>
+        <option value="total-desc">💰 总价 ↓</option>
+        <option value="perday-asc">📅 日均价 ↑</option>
+        <option value="perday-desc">📅 日均价 ↓</option>
+        <option value="days-desc">⏱️ 时长 ↓（长到短）</option>
+        <option value="days-asc">⏱️ 时长 ↑（短到长）</option>
+      </select>
+      <button class="chip toggle" id="climateBtn">🌤️ 气候</button>
+    </div>
+
+    <div class="chips" id="countries"></div>
+    <div class="chips" id="filters" style="margin-top:6px">
+      <span class="chip toggle gold" data-f="maodou">⭐ 毛豆推荐</span>
+      <span class="chip toggle" data-f="confirmed">✅ 已确认2026</span>
+      <span class="chip toggle" data-f="lodging">🏠 含住宿</span>
+      <span class="chip toggle" data-f="breakfast">🌅 含早餐</span>
+      <span class="chip toggle" data-f="lunch">🌞 含午餐</span>
+      <span class="chip toggle" data-f="dinner">🌙 含晚餐</span>
+      <span class="chip toggle" data-f="cn">🇨🇳 中文资源</span>
+      <span class="chip toggle" data-f="real-img">🖼️ 真实图</span>
+      <span class="chip toggle" data-f="under5k">≤¥5000</span>
+      <span class="chip toggle" data-f="under15k">≤¥15000</span>
+    </div>
+
+    <div class="climate" id="climatePanel"></div>
+    <div class="stats" id="stats"></div>
+  </div>
+</header>
+
+<main>
+  <div class="maodou-banner" id="maodouBanner" style="display:none">
+    ⭐ <b>毛豆 Top 10 推荐</b>：户外+技能积累+10岁合龄，金边卡片为推荐项。点👆筛选「毛豆推荐」单独看。
+  </div>
+  <div class="grid" id="grid"></div>
+</main>
+
+<div class="modal" id="modal"><div class="modal-body" id="modalBody"></div></div>
+
+<script>
+let DATA=[],CLIMATE={},state={country:'all',q:'',sort:'default',flags:new Set()};
+
+const fmt = n => n==null?'?':('¥'+n.toLocaleString());
+
+function priceLabel(d){
+  if(d.price_cny_total_typical && d.days_typical) return `${fmt(d.price_cny_total_typical)} / ${d.days_typical}天`;
+  if(d.price_cny_per_day) return `${fmt(d.price_cny_per_day)} /天`;
+  return d.price_cny_est || '价格待询';
+}
+
+function lodgingTag(d){
+  if(d.includes_lodging===true) return '<span class="tag ok">🏠 含住</span>';
+  if(d.includes_lodging===false) return '<span class="tag no">走读</span>';
+  return '';
+}
+function mealTags(d){
+  let out = '';
+  out += d.meals_breakfast ? '<span class="tag ok">🌅早</span>' : '<span class="tag no">无早</span>';
+  out += d.meals_lunch ? '<span class="tag ok">🌞午</span>' : '<span class="tag no">无午</span>';
+  out += d.meals_dinner ? '<span class="tag ok">🌙晚</span>' : '<span class="tag no">无晚</span>';
+  return out;
+}
+
+function renderCard(d){
+  const img = d.cover_local||`images/${d.id}.svg`;
+  const ext = img.split('.').pop().toLowerCase();
+  const imgEl = ext==='svg' ? `<object type="image/svg+xml" data="${img}"></object>` : `<img src="${img}" loading="lazy" onerror="this.style.background='#1e293b'">`;
+  const conf = d.confirmed_2026 ? '<span class="tag confirmed">✅2026</span>' : '';
+  const unv = d.refind_status==='not_found' ? '<span class="tag unverified">⚠️未核验</span>' : '';
+  const pick = d.maodou_pick ? '<div class="pick-badge">⭐ 毛豆推荐</div>' : '';
+  const hltags = (d.highlight_tags||[]).slice(0,3).map(t=>`<span class="tag hl">${t}</span>`).join('');
+  return `<div class="card ${d.refind_status==='not_found'?'unverified':''} ${d.maodou_pick?'maodou':''}" data-id="${d.id}">
+    ${pick}
+    ${imgEl}
+    <div class="body">
+      <h3>${d.name_cn||d.name_en}</h3>
+      <div class="meta">📍 ${d.country} · ${d.city||''}</div>
+      <div class="price-row"><span class="price">${priceLabel(d)}</span></div>
+      <div class="tags">${conf}${unv}${lodgingTag(d)}${mealTags(d)}</div>
+      <div class="tags" style="margin-top:4px">${hltags}</div>
+    </div></div>`;
+}
+
+function applyFilters(){
+  let arr = DATA.filter(d=>{
+    if(state.country!=='all' && d.country!==state.country) return false;
+    if(state.q){
+      const q = state.q.toLowerCase();
+      const blob = `${d.name_cn} ${d.name_en} ${d.city} ${(d.themes||[]).join(' ')} ${(d.highlight_tags||[]).join(' ')}`.toLowerCase();
+      if(!blob.includes(q)) return false;
+    }
+    for(const f of state.flags){
+      if(f==='lodging' && d.includes_lodging!==true) return false;
+      if(f==='breakfast' && !d.meals_breakfast) return false;
+      if(f==='lunch' && !d.meals_lunch) return false;
+      if(f==='dinner' && !d.meals_dinner) return false;
+      if(f==='confirmed' && !d.confirmed_2026) return false;
+      if(f==='cn' && !d.cn_contacts) return false;
+      if(f==='real-img' && !d.cover_local) return false;
+      if(f==='maodou' && !d.maodou_pick) return false;
+      if(f==='under5k' && (!d.price_cny_total_typical || d.price_cny_total_typical>5000)) return false;
+      if(f==='under15k' && (!d.price_cny_total_typical || d.price_cny_total_typical>15000)) return false;
+    }
+    return true;
+  });
+  arr.sort((a,b)=>{
+    const au = a.refind_status==='not_found'?1:0, bu = b.refind_status==='not_found'?1:0;
+    if(au!==bu) return au-bu;
+    if(state.sort==='total-asc') return (a.price_cny_total_typical||1e9)-(b.price_cny_total_typical||1e9);
+    if(state.sort==='total-desc') return (b.price_cny_total_typical||0)-(a.price_cny_total_typical||0);
+    if(state.sort==='perday-asc') return (a.price_cny_per_day||1e9)-(b.price_cny_per_day||1e9);
+    if(state.sort==='perday-desc') return (b.price_cny_per_day||0)-(a.price_cny_per_day||0);
+    if(state.sort==='days-desc') return (b.days_typical||0)-(a.days_typical||0);
+    if(state.sort==='days-asc') return (a.days_typical||999)-(b.days_typical||999);
+    if(state.sort==='maodou'){
+      const ap=a.maodou_pick?0:1, bp=b.maodou_pick?0:1;
+      if(ap!==bp) return ap-bp;
+    }
+    // default
+    const ap=a.maodou_pick?0:1, bp=b.maodou_pick?0:1;
+    if(ap!==bp) return ap-bp;
+    const ac=a.confirmed_2026?0:1, bc=b.confirmed_2026?0:1;
+    if(ac!==bc) return ac-bc;
+    return (a.id||0)-(b.id||0);
+  });
+  document.getElementById('grid').innerHTML = arr.map(renderCard).join('');
+  document.getElementById('count').textContent = arr.length;
+  const prices = arr.map(d=>d.price_cny_total_typical).filter(Boolean);
+  if(prices.length){
+    const min=Math.min(...prices), max=Math.max(...prices);
+    const avg=Math.round(prices.reduce((a,b)=>a+b,0)/prices.length);
+    document.getElementById('stats').textContent = `当前 ${arr.length} 项 · 价格 ${fmt(min)} ~ ${fmt(max)} · 均价 ${fmt(avg)}`;
+  } else document.getElementById('stats').textContent = `当前 ${arr.length} 项`;
+  document.getElementById('maodouBanner').style.display = state.flags.has('maodou')||state.sort==='maodou' ? 'block':'none';
+}
+
+function renderModal(d){
+  const sess = (d.sessions||[]).map(s=>`<div>📅 ${s.start} → ${s.end} <span style="color:var(--mute)">${s.days||''}</span></div>`).join('');
+  const cn = d.cn_contacts ? `<div class="field"><strong>🇨🇳 中文资源</strong>
+    ${d.cn_contacts.xiaohongshu_url?`<a class="btn cn" href="${d.cn_contacts.xiaohongshu_url}" target="_blank">小红书</a>`:''}
+    ${(d.cn_contacts.sources||[]).map(s=>`<div><a href="${s}" target="_blank">${s}</a></div>`).join('')}
+    ${d.cn_contacts.notes?`<div style="color:var(--mute);font-size:12px;margin-top:6px">💡 ${d.cn_contacts.notes}</div>`:''}
+  </div>`:'';
+  const links = (d.source_urls||[]).map(u=>`<div><a href="${u}" target="_blank">${u}</a></div>`).join('');
+  const signup = d.refind_status==='found' && d.refind_notes ? `<a class="btn signup" href="${d.refind_notes}" target="_blank">📝 报名页</a>`:'';
+  const unv = d.refind_status==='not_found' ? `<div class="notice">⚠️ 未找到 2026 年官方报名页面，请通过其学校官网/前台核实</div>`:'';
+  const pickReason = d.maodou_pick ? `<div class="maodou-banner">⭐ <b>毛豆推荐</b>：${d.maodou_reason||''}</div>`:'';
+  const hl = (d.highlight_tags||[]).map(t=>`<span class="tag hl">${t}</span>`).join('');
+  const themes = (d.themes||[]).map(t=>`<span class="tag">${t}</span>`).join('');
+
+  return `<span class="close" onclick="closeModal()">×</span>
+    <h2>${d.name_cn||d.name_en} ${d.confirmed_2026?'✅':''}</h2>
+    <div style="color:var(--mute);margin-bottom:10px;font-size:13px">${d.name_en||''} · ${d.name_local||''}</div>
+    ${pickReason}${unv}
+    <div class="price-row"><span class="price" style="font-size:24px">${priceLabel(d)}</span></div>
+    <div class="tags">${lodgingTag(d)}${mealTags(d)}</div>
+
+    <div class="field"><strong>📍 地点</strong>${d.country} · ${d.city||''}<br><span style="color:var(--mute);font-size:13px">${d.venue||''}</span></div>
+    <div class="field"><strong>📅 营期</strong>${sess||'待定'}</div>
+    <div class="field"><strong>💰 价格</strong>
+      <div>原价：${d.price_local||'—'}</div>
+      <div>估算：${d.price_cny_est||'—'}</div>
+      <div>日均 ${fmt(d.price_cny_per_day)} · 区间 ${fmt(d.price_cny_min)} ~ ${fmt(d.price_cny_max)}</div>
+      ${d.price_includes?`<div style="margin-top:4px;color:var(--mute);font-size:12px">含：${Array.isArray(d.price_includes)?d.price_includes.join('、'):d.price_includes}</div>`:''}
+    </div>
+    <div class="field"><strong>🏠 住宿</strong>${d.includes_lodging===true?'✅ 含住宿':d.includes_lodging===false?'❌ 走读不含住':'?'} ${d.lodging_note?'· '+d.lodging_note:''}</div>
+    <div class="field"><strong>🍽️ 餐饮</strong><div class="tags">${mealTags(d)}</div>${d.meals_note?`<div style="color:var(--mute);font-size:12px;margin-top:4px">${d.meals_note}</div>`:''}</div>
+    ${hl?`<div class="field"><strong>✨ 亮点</strong><div class="tags">${hl}</div></div>`:''}
+    <div class="field"><strong>🎯 主题</strong><div class="tags">${themes}</div></div>
+    <div class="field"><strong>👥 年龄</strong>${d.age_range||'?'}${d.need_guardian?' · 需家长陪同':''}</div>
+    <div class="field"><strong>🔗 链接</strong>${signup}${(d.contact?.website?`<a class="btn" href="${d.contact.website}" target="_blank">官网</a>`:'')}<br>${links}</div>
+    ${cn}`;
+}
+
+function openModal(d){document.getElementById('modalBody').innerHTML=renderModal(d);document.getElementById('modal').classList.add('show')}
+function closeModal(){document.getElementById('modal').classList.remove('show')}
+document.getElementById('modal').onclick=e=>{if(e.target.id==='modal')closeModal()};
+
+document.getElementById('grid').addEventListener('click',e=>{
+  const c=e.target.closest('.card'); if(c){const d=DATA.find(x=>x.id==c.dataset.id);if(d)openModal(d)}
+});
+document.getElementById('q').oninput=e=>{state.q=e.target.value;applyFilters()};
+document.getElementById('sort').onchange=e=>{state.sort=e.target.value;applyFilters()};
+document.getElementById('filters').addEventListener('click',e=>{
+  if(!e.target.classList.contains('chip'))return;
+  const f=e.target.dataset.f;
+  if(state.flags.has(f)){state.flags.delete(f);e.target.classList.remove('active')}
+  else{state.flags.add(f);e.target.classList.add('active')}
+  applyFilters();
+});
+document.getElementById('toggleBtn').onclick=()=>{
+  document.getElementById('panels').classList.toggle('collapsed');
+};
+// auto-collapse on mobile after first scroll
+let collapsed=false;
+window.addEventListener('scroll',()=>{
+  if(window.innerWidth<=720 && !collapsed && window.scrollY>120){
+    document.getElementById('panels').classList.add('collapsed');
+    collapsed=true;
+  }
+},{passive:true});
+
+document.getElementById('climateBtn').onclick=()=>{
+  const p=document.getElementById('climatePanel');
+  p.classList.toggle('show');
+  document.getElementById('climateBtn').classList.toggle('active');
+  if(p.classList.contains('show') && !p.dataset.rendered){
+    let html='<table><tr><th>国家</th><th>6月</th><th>7月</th><th>8月</th><th>建议</th></tr>';
+    for(const [c,m] of Object.entries(CLIMATE)){
+      html+=`<tr><td><b>${c}</b></td><td>${m.jun?.weather||'—'} ${m.jun?.temp||''}</td><td>${m.jul?.weather||'—'} ${m.jul?.temp||''}</td><td>${m.aug?.weather||'—'} ${m.aug?.temp||''}</td><td>${m.note||''}</td></tr>`;
+    }
+    p.innerHTML=html+'</table>'; p.dataset.rendered='1';
+  }
+};
+
+Promise.all([
+  fetch('all.json').then(r=>r.json()),
+  fetch('climate.json').then(r=>r.json()).catch(()=>({}))
+]).then(([data,climate])=>{
+  DATA=data; CLIMATE=climate;
+  const countries=[...new Set(data.map(d=>d.country))].sort();
+  const cn=document.getElementById('countries');
+  cn.innerHTML='<span class="chip active" data-c="all">全部 '+data.length+'</span>'+
+    countries.map(c=>`<span class="chip" data-c="${c}">${c} ${data.filter(d=>d.country===c).length}</span>`).join('');
+  cn.addEventListener('click',e=>{
+    if(!e.target.classList.contains('chip'))return;
+    cn.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));
+    e.target.classList.add('active');
+    state.country=e.target.dataset.c;
+    applyFilters();
+  });
+  applyFilters();
+});
+</script>
+</body>
+</html>

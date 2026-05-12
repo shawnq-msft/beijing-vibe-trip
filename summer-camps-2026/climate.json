@@ -1,0 +1,263 @@
+{
+  "_meta": {
+    "audience": "北京家庭，怕极端高温和暴雨，孩子10岁",
+    "season_legend": {
+      "peak": "旺季：价格高、人多、或天气极端",
+      "shoulder": "推荐窗口：天气可接受、性价比相对好",
+      "low": "淡季或不建议：季风/台风/酷暑"
+    },
+    "updated": "2026 summer planning"
+  },
+  "日本": {
+    "jun": {
+      "weather": "本州梅雨季，多雨闷热；北海道无梅雨，凉爽舒适",
+      "temp": "22-28°C（北海道15-22°C）",
+      "season": "shoulder"
+    },
+    "jul": {
+      "weather": "上旬梅雨末，下旬出梅后酷暑；湿度极高",
+      "temp": "25-33°C",
+      "season": "peak"
+    },
+    "aug": {
+      "weather": "最热月，35°C+热浪常见；月底起台风季开始",
+      "temp": "27-35°C",
+      "season": "peak"
+    },
+    "recommendation": "怕热怕雨家庭首选北海道/东北全月可去；本州（东京/京都）建议6月上旬或8月下旬避开梅雨高峰与酷暑峰值；冲绳7-9月初台风风险高，不推荐",
+    "suggested_months": [
+      "6月上",
+      "7月下-8月（限北海道/东北）"
+    ],
+    "region_notes": {
+      "hokkaido": "夏天最舒服20-25°C，无梅雨，最佳目的地",
+      "tohoku": "东北6-8月凉爽25°C左右，仙台/青森推荐",
+      "kanto": "东京7-8月闷热35°C+，需空调环境营地",
+      "kansai": "京都/大阪盆地7-8月极闷热，体感差",
+      "okinawa": "5-6月初最佳；7-9月初台风频繁，不推荐10岁孩子"
+    }
+  },
+  "韩国": {
+    "jun": {
+      "weather": "干爽舒适，月底进入梅雨",
+      "temp": "20-28°C",
+      "season": "shoulder"
+    },
+    "jul": {
+      "weather": "梅雨季（장마），暴雨频繁，闷热",
+      "temp": "23-30°C",
+      "season": "low"
+    },
+    "aug": {
+      "weather": "上旬仍梅雨尾+酷暑，下旬转晴；台风可能影响济州",
+      "temp": "25-33°C",
+      "season": "peak"
+    },
+    "recommendation": "首选6月，是韩国一年中最舒服的月份之一；7月梅雨不建议；8月下旬可考虑首尔/江原道",
+    "suggested_months": [
+      "6月全月",
+      "8月下"
+    ],
+    "region_notes": {
+      "seoul": "6月最佳；7-8上旬梅雨+酷暑双杀",
+      "gangwon": "江原道（平昌/束草）海拔高，8月也凉快，户外营推荐",
+      "jeju": "济州岛8月台风风险，6月最佳"
+    }
+  },
+  "新加坡": {
+    "jun": {
+      "weather": "全年高温高湿，午后短阵雨，相对干季尾",
+      "temp": "26-32°C",
+      "season": "peak"
+    },
+    "jul": {
+      "weather": "干季中段，降雨较少但紫外线强",
+      "temp": "26-32°C",
+      "season": "peak"
+    },
+    "aug": {
+      "weather": "干季，烟霾偶发（印尼烧芭）",
+      "temp": "26-32°C",
+      "season": "peak"
+    },
+    "recommendation": "全年气候稳定，6-8月是相对干季，是全年最佳窗口之一；但日均32°C+湿度80%对北方孩子是挑战，建议选室内STEM/英语营或游泳类，避免全天户外",
+    "suggested_months": [
+      "6月",
+      "7月",
+      "8月"
+    ],
+    "region_notes": {
+      "全岛": "城市基础设施好，空调全覆盖；雷阵雨通常下午1-2小时即过",
+      "haze_risk": "8-10月可能有印尼烟霾，需关注PSI指数"
+    }
+  },
+  "马来西亚": {
+    "jun": {
+      "weather": "西海岸（吉隆坡/槟城）干季，东海岸也是好天气",
+      "temp": "24-32°C",
+      "season": "shoulder"
+    },
+    "jul": {
+      "weather": "西海岸相对干燥，东海岸（停泊岛/热浪岛）旺季最佳",
+      "temp": "24-32°C",
+      "season": "peak"
+    },
+    "aug": {
+      "weather": "类似7月，月底西海岸降雨增多",
+      "temp": "24-32°C",
+      "season": "peak"
+    },
+    "recommendation": "6-8月正是马来全境最佳季节，东海岸潜水营黄金期；高原营地（金马伦/云顶）20-25°C极舒适，怕热家庭强烈推荐",
+    "suggested_months": [
+      "6月",
+      "7月",
+      "8月"
+    ],
+    "region_notes": {
+      "west_coast": "吉隆坡/槟城/兰卡威 6-8月干季",
+      "east_coast": "停泊岛/热浪岛/刁曼岛 6-8月是开放期最佳；11-2月关岛季风",
+      "highlands": "金马伦/云顶高原 18-25°C，怕热首选",
+      "borneo": "沙巴/砂拉越 6-8月相对干，亚庇潜水/雨林营适宜"
+    }
+  },
+  "泰国": {
+    "jun": {
+      "weather": "全境西南季风季，安达曼海（普吉/甲米）大浪暴雨；曼谷/清迈午后阵雨",
+      "temp": "26-33°C",
+      "season": "low"
+    },
+    "jul": {
+      "weather": "雨季持续，安达曼海岸不宜；湾岸（苏梅/涛岛）相对干",
+      "temp": "26-33°C",
+      "season": "shoulder"
+    },
+    "aug": {
+      "weather": "雨季高峰，曼谷洪涝风险；苏梅岛仍可",
+      "temp": "26-32°C",
+      "season": "low"
+    },
+    "recommendation": "6-8月是泰国雨季淡季，普吉/甲米不推荐；首选清迈山区文化营或苏梅岛/涛岛（湾岸季风颠倒，6-8反而干）；曼谷以室内营为主",
+    "suggested_months": [
+      "7月（限苏梅/涛岛/清迈）"
+    ],
+    "region_notes": {
+      "bangkok": "全月雨季，闷热35°C+，仅室内营",
+      "chiangmai": "清迈山区凉爽，午后阵雨为主，文化/大象营适合",
+      "andaman_phuket_krabi": "6-10月西南季风，大浪+暴雨，水上项目危险，不推荐",
+      "gulf_samui_koh_tao": "暹罗湾季风颠倒，6-8月反而是干季，潜水OK"
+    }
+  },
+  "越南": {
+    "jun": {
+      "weather": "南北雨季开始；中部（岘港/会安）反而干季最佳",
+      "temp": "26-34°C",
+      "season": "shoulder"
+    },
+    "jul": {
+      "weather": "北部河内暴雨高温；中部仍干热；南部胡志明午后雷雨",
+      "temp": "26-34°C",
+      "season": "shoulder"
+    },
+    "aug": {
+      "weather": "北部台风季开始（下龙湾风险）；中部月底起转雨",
+      "temp": "26-33°C",
+      "season": "shoulder"
+    },
+    "recommendation": "中部岘港/会安/芽庄 6-8月是干季黄金期，海滩营首选；北部河内/下龙湾雨多+8月台风需谨慎；南部胡志明/美奈短阵雨可接受",
+    "suggested_months": [
+      "6月",
+      "7月（限中部/南部）"
+    ],
+    "region_notes": {
+      "north_hanoi_halong": "5-9月雨季+酷暑，8月台风，不推荐10岁孩子",
+      "central_danang_hoian": "2-8月干季，6-7月最佳，海滩营推荐",
+      "south_hcmc_mui_ne": "5-10月雨季但多为午后短阵雨，可接受",
+      "dalat": "大叻高原18-24°C全年凉爽，6-8月雨季但短，怕热家庭备选"
+    }
+  },
+  "菲律宾": {
+    "jun": {
+      "weather": "雨季开始，吕宋（马尼拉/巴拉望）多雨；台风季启动",
+      "temp": "25-32°C",
+      "season": "low"
+    },
+    "jul": {
+      "weather": "雨季+台风高发月",
+      "temp": "25-31°C",
+      "season": "low"
+    },
+    "aug": {
+      "weather": "台风峰值月，吕宋洪涝；中部维萨亚斯（宿务/薄荷）相对短阵雨",
+      "temp": "25-31°C",
+      "season": "low"
+    },
+    "recommendation": "6-8月是菲律宾雨季+台风季，整体不推荐10岁孩子；若必须前往，选宿务/薄荷岛（中部维萨亚斯）受台风影响小，多为午后阵雨；马尼拉/巴拉望避开",
+    "suggested_months": [
+      "6月（限宿务/薄荷，且有备选行程）"
+    ],
+    "region_notes": {
+      "luzon_manila": "6-10月雨季+台风密集区，洪涝常见",
+      "palawan": "6-9月雨季，水上项目受限",
+      "visayas_cebu_bohol": "台风影响最小，6-8月以短阵雨为主，英语+潜水营仍运营",
+      "mindanao": "南部气候稳定但安全考虑不推荐"
+    }
+  },
+  "印度尼西亚": {
+    "jun": {
+      "weather": "巴厘/爪哇旱季开始，干爽凉风",
+      "temp": "23-30°C",
+      "season": "peak"
+    },
+    "jul": {
+      "weather": "旱季最佳月，全岛阳光充足，湿度低",
+      "temp": "22-29°C",
+      "season": "peak"
+    },
+    "aug": {
+      "weather": "旱季高峰，巴厘晚上凉爽20°C，是全年最舒服时段",
+      "temp": "22-29°C",
+      "season": "peak"
+    },
+    "recommendation": "印尼巴厘岛/龙目岛/日惹 6-9月是全年旱季黄金期，是怕雨家庭整个东南亚的首选；湿度低于新马泰，体感舒适，强烈推荐",
+    "suggested_months": [
+      "6月",
+      "7月",
+      "8月"
+    ],
+    "region_notes": {
+      "bali": "6-9旱季最佳，乌布20-28°C山区凉爽，水明漾/沙努尔海滩营推荐",
+      "lombok_gili": "同巴厘旱季，潜水浮潜黄金期",
+      "java_yogyakarta": "旱季干爽，文化营适宜",
+      "sumatra_borneo": "热带雨林岛屿降雨较多但6-8相对干"
+    }
+  },
+  "斯里兰卡": {
+    "jun": {
+      "weather": "西南季风（Yala）盛行，西南海岸暴雨大浪；东海岸/北部反而干季最佳",
+      "temp": "26-31°C",
+      "season": "low"
+    },
+    "jul": {
+      "weather": "西南季风峰值，科伦坡/加勒/Weligama连续暴雨；东海岸Arugam Bay冲浪黄金期",
+      "temp": "26-30°C",
+      "season": "shoulder"
+    },
+    "aug": {
+      "weather": "类似7月；中部高地（Kandy/Nuwara Eliya）多雨但凉爽",
+      "temp": "25-30°C",
+      "season": "shoulder"
+    },
+    "recommendation": "斯里兰卡6-8月季风颠倒：西南海岸（科伦坡/加勒/Weligama/Hiriketiya/美蕊沙）暴雨大浪不能去；东海岸（Arugam Bay/Trincomalee/Pasikuda）和北部（Jaffna）是全年最佳干季，冲浪/潜水/野生动物营首选；中部Kandy多雨但温度宜人",
+    "suggested_months": [
+      "7月",
+      "8月（限东海岸+北部）"
+    ],
+    "region_notes": {
+      "southwest_coast": "Weligama/Hiriketiya/Mirissa/Galle 5-9月西南季风，大浪暴雨，禁止水上项目",
+      "east_coast": "Arugam Bay 5-9月黄金期，世界级冲浪点，10岁初学者OK；Trincomalee/Pasikuda 海面平静",
+      "north_jaffna": "5-9月干季，文化探索营适宜",
+      "central_highlands": "Kandy/Nuwara Eliya 海拔高15-22°C，6-8月多雨但凉爽，茶园+火车营推荐",
+      "yala_np": "亚拉国家公园西区6-9月可能闭园（旱季补水），改去Wilpattu或东部Kumana"
+    }
+  }
+}
