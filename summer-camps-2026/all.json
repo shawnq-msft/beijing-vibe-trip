@@ -990,61 +990,148 @@
     "maodou_reason": "国际学校英语环境 + Niseko 在地学习，适合想要更课堂化但不纯讲解的短营。"
   },
   {
-    "name_cn": "NAC Niseko Kids Day Camp / 夏季户外活动",
-    "name_en": "NAC Niseko Adventure Centre Kids Day Camp / Summer Activities",
-    "name_local": "NACニセコアドベンチャーセンター キッズデイキャンプ",
-    "country": "日本",
-    "city": "Niseko / Kutchan, Hokkaido",
-    "venue": "NAC Niseko Adventure Centre, Hirafu",
+    "name_cn": "Rugby School Thailand 假期营 / Wisdom Camps",
+    "name_en": "Rugby School Thailand Holiday Camps / Wisdom Camps",
+    "name_local": "Rugby School Thailand Holiday Camps",
+    "country": "泰国",
+    "city": "Chonburi / Pattaya area",
+    "venue": "Rugby School Thailand, 80-acre campus, Khao Mai Kaew, Bang Lamung",
     "sessions": [
       {
-        "start": "2026-06",
-        "end": "2026-09",
-        "days": "夏季活动季；Kids Day Camp / rafting / adventure park 等按项目预约"
+        "start": "2026-06-28",
+        "end": "2026-07-04",
+        "days": "Summer Week 1"
+      },
+      {
+        "start": "2026-07-05",
+        "end": "2026-07-11",
+        "days": "Summer Week 2"
+      },
+      {
+        "start": "2026-08-05",
+        "end": "2026-08-15",
+        "days": "English Adventure"
       }
     ],
-    "price_local": "各活动单独定价；Kids Day Camp 需看预约页/联系确认",
+    "price_local": "官网/专用 Wisdom Camps 报名页确认",
     "price_cny_est": "待确认",
-    "price_includes": "户外教练、装备/活动体验；餐食/接送依项目不同",
-    "age_range": "按项目年龄/身高限制；10岁通常可参加多项 rafting / adventure activities，Kids Day Camp 需确认",
+    "price_includes": "日营/住宿选项、活动、运动、学习与营地设施；具体以报名页为准",
+    "age_range": "7-12岁",
     "need_guardian": false,
     "themes": [
-      "Rafting",
-      "Adventure park",
-      "Kids day camp",
-      "MTB",
-      "Outdoor"
+      "British boarding school",
+      "Holiday camp",
+      "Adventure",
+      "Sports",
+      "English Adventure",
+      "Residential option"
     ],
-    "highlights": "NAC 官网夏季页可达，首页明确列出“キッズデイキャンプ：NACとの5日間のアクションと冒険”。更像户外活动供应商/日营，可作为 Niseko 夏令营或家庭行程补充。",
-    "daily_schedule": "Kids Day Camp 为5日 action/adventure；其他夏季项目包括 rafting、adventure park、SUP、kayak、MTB、trekking。",
+    "highlights": "英式国际学校 80-acre campus，官网明确写 Holiday Camps 每年 Christmas/Spring/Summer 举办，7-12岁，可日营或住宿；有 Summer 与 English Adventure 营期。",
+    "daily_schedule": "多活动营：运动、冒险、学习、团队、营地生活；具体活动由 Wisdom Camps 报名页列出。",
     "contact": {
-      "website": "https://nacadventures.jp/summer/",
-      "email": "info@nacadventures.jp",
-      "phone": "0136-23-2093",
+      "website": "https://www.rugbyschool.ac.th/camps-commercial/camps",
+      "email": "",
+      "phone": "",
       "wechat": "",
       "xiaohongshu": "",
-      "other": "夏予約页面可预约单项活动"
+      "other": "Dedicated Wisdom Camps website linked from official page"
     },
     "images": [
       {
-        "url": "https://nacadventures.jp/summer/",
-        "caption": "NAC summer activities"
+        "url": "https://www.rugbyschool.ac.th/camps-commercial/camps",
+        "caption": "Rugby School Thailand Holiday Camps"
       }
     ],
     "source_urls": [
-      "https://nacadventures.jp/",
-      "https://nacadventures.jp/summer/"
+      "https://www.rugbyschool.ac.th/camps-commercial/camps"
     ],
-    "status": "tentative_2026",
-    "id": 202,
+    "status": "confirmed_2026",
+    "id": 300,
     "website_live": true,
     "live_urls": [
-      "https://nacadventures.jp/summer/"
+      "https://www.rugbyschool.ac.th/camps-commercial/camps"
     ],
-    "cover_local": "images/camp_202.svg",
-    "verification_notes": "2026-05-13 curl 200；官网夏季页/首页列出キッズデイキャンプ和多项夏季户外活动；具体2026 Kids Day Camp营期价格需预约页确认。",
-    "days_min": 1,
-    "days_max": 5,
+    "cover_local": "images/camp_300.svg",
+    "verification_notes": "2026-05-13 curl 200；官方页列出 Summer 28 Jun–4 Jul / 5–11 Jul、English Adventure 5–15 Aug，campers aged 7 to 12，day and residential options。",
+    "days_min": 7,
+    "days_max": 11,
+    "days_typical": 7,
+    "price_cny_min": null,
+    "price_cny_max": null,
+    "price_cny_per_day": null,
+    "price_cny_total_typical": null,
+    "includes_lodging": true,
+    "includes_meals": null,
+    "lodging_note": "可选 residential",
+    "meals_note": "住宿营通常含餐，需报名页确认",
+    "meals_breakfast": null,
+    "meals_lunch": null,
+    "meals_dinner": null,
+    "highlight_tags": [
+      "2026日期",
+      "7-12岁",
+      "可住宿",
+      "Pattaya周边",
+      "英式校园"
+    ],
+    "maodou_pick": true,
+    "maodou_reason": "💎 泰国非普吉/清迈里最强：7-12岁正中毛豆，校园大、可住宿、英语环境。"
+  },
+  {
+    "name_cn": "Garden International School Rayong Summer Camp",
+    "name_en": "Garden International School Rayong Summer Camp",
+    "name_local": "Garden International School Rayong Summer Camp",
+    "country": "泰国",
+    "city": "Rayong / Ban Chang",
+    "venue": "Garden International School Rayong",
+    "sessions": [
+      {
+        "start": "2026-06",
+        "end": "2026-07",
+        "days": "暑期周营；具体日期以报名表为准"
+      }
+    ],
+    "price_local": "报名表/邮件确认",
+    "price_cny_est": "待确认",
+    "price_includes": "活动、教师/活动领队、校园设施；具体以报名表为准",
+    "age_range": "FS2-Year 6",
+    "need_guardian": false,
+    "themes": [
+      "International school",
+      "Sports",
+      "Creative activities",
+      "Friendship",
+      "English"
+    ],
+    "highlights": "官网 Summer Camp 页面可达，明确写 experienced teachers/activity leaders，open to children from FS2 to Year 6；Rayong/Ban Chang，英文国际学校环境。",
+    "daily_schedule": "探索、发现、交友、运动、创意与校园活动，具体 daily plan 以学校表格为准。",
+    "contact": {
+      "website": "https://gardenrayong.com/life-at-garden/summer-camp/",
+      "email": "info@gardenrayong.com",
+      "phone": "",
+      "wechat": "",
+      "xiaohongshu": "",
+      "other": "Page includes sign-up form"
+    },
+    "images": [
+      {
+        "url": "https://gardenrayong.com/life-at-garden/summer-camp/",
+        "caption": "GIS Rayong Summer Camp"
+      }
+    ],
+    "source_urls": [
+      "https://gardenrayong.com/life-at-garden/summer-camp/"
+    ],
+    "status": "tentative_2026",
+    "id": 301,
+    "website_live": true,
+    "live_urls": [
+      "https://gardenrayong.com/life-at-garden/summer-camp/"
+    ],
+    "cover_local": "images/camp_301.svg",
+    "verification_notes": "2026-05-13 curl 200；官方 Summer Camp 页明确 FS2-Year 6，但页面未稳定显示 2026 日期/价格，需表单确认。",
+    "days_min": 5,
+    "days_max": 10,
     "days_typical": 5,
     "price_cny_min": null,
     "price_cny_max": null,
@@ -1052,172 +1139,251 @@
     "price_cny_total_typical": null,
     "includes_lodging": false,
     "includes_meals": null,
-    "lodging_note": "主要为日营/单项活动",
-    "meals_note": "按项目确认",
+    "lodging_note": "日营为主",
+    "meals_note": "需报名表确认",
     "meals_breakfast": false,
     "meals_lunch": null,
     "meals_dinner": false,
     "highlight_tags": [
-      "Niseko户外",
-      "漂流/MTB",
-      "5日Kids Day Camp线索",
-      "适合体力好孩子"
+      "Rayong",
+      "FS2-Year6",
+      "国际学校",
+      "英文环境"
     ],
     "maodou_pick": true,
-    "maodou_reason": "偏运动和户外，比课堂营更适合毛豆；可和 EdVenture/HIS 搭配。"
+    "maodou_reason": "Rayong 地区靠谱英文学校营；适合作为 Pattaya/东海岸备选。"
   },
   {
-    "name_cn": "北海道 YMCA 黑松内/日高儿童夏季营",
-    "name_en": "Hokkaido YMCA Summer Camp",
-    "name_local": "北海道YMCA サマーキャンプ",
-    "country": "日本",
-    "city": "Sapporo / Kuromatsunai / Hidaka, Hokkaido",
-    "venue": "黑松内ブナの森 / 国立日高青少年自然の家 等",
+    "name_cn": "Hua Hin International School Holiday/Summer Camp",
+    "name_en": "Hua Hin International School Holiday Camp with TEEMS Global",
+    "name_local": "HHIS Holiday Camp",
+    "country": "泰国",
+    "city": "Hua Hin",
+    "venue": "Hua Hin International School",
     "sessions": [
       {
-        "start": "2026-07",
+        "start": "2026-06",
         "end": "2026-08",
-        "days": "夏休みシーズンプログラム；当年募集页确认"
+        "days": "Holiday/Summer/Winter camps throughout the year；具体周次以官网/TEEMS Global为准"
       }
     ],
-    "price_local": "当年募集页确认",
+    "price_local": "官网/TEEMS 报名确认",
     "price_cny_est": "待确认",
-    "price_includes": "宿泊型自然体验、YMCA 指导、食宿/保险等按募集要项",
-    "age_range": "小・中学生项目；具体年级按当年募集页",
+    "price_includes": "Sports、STEAM、Outdoor Education、Creative Arts 等；具体以报名页为准",
+    "age_range": "4-13岁",
     "need_guardian": false,
     "themes": [
-      "Nature camp",
-      "Kuromatsunai beech forest",
-      "Craft",
-      "Outdoor",
-      "Japanese immersion"
+      "Sports",
+      "STEAM",
+      "Outdoor Education",
+      "Creative Arts",
+      "English"
     ],
-    "highlights": "北海道 YMCA 官网当前列出サマーキャンプ，包括黑松内ブナの森キャンプ、日高青少年自然の家キャンプ，以及会员限定貝化石クラフトキャンプ。日语环境，户外/自然体验强。",
-    "daily_schedule": "森林自然体验、户外游戏、团队生活、手作/化石 craft（具体以募集要项为准）。",
+    "highlights": "HHIS 官方 Holiday Camp 页面写与 TEEMS Global 合作，全年 Holiday/Summer/Winter Camps，children aged 4–13，结合 Sports、STEAM、Outdoor Education、Creative Arts。",
+    "daily_schedule": "专业运动、STEAM、户外教育、创意艺术，利用华欣山海环境。",
     "contact": {
-      "website": "https://www.hokkaido-ymca.or.jp/",
+      "website": "https://www.hhis.ac.th/community/holiday-camp",
       "email": "",
       "phone": "",
       "wechat": "",
       "xiaohongshu": "",
-      "other": "札幌YMCA season program"
+      "other": "TEEMS Global partnership"
     },
     "images": [
       {
-        "url": "https://www.hokkaido-ymca.or.jp/",
-        "caption": "Hokkaido YMCA season programs"
+        "url": "https://www.hhis.ac.th/community/holiday-camp",
+        "caption": "HHIS Holiday Camp"
       }
     ],
     "source_urls": [
-      "https://www.hokkaido-ymca.or.jp/"
+      "https://www.hhis.ac.th/community/holiday-camp"
     ],
-    "status": "tentative_2026",
-    "id": 203,
+    "status": "confirmed_2026",
+    "id": 302,
     "website_live": true,
     "live_urls": [
-      "https://www.hokkaido-ymca.or.jp/"
+      "https://www.hhis.ac.th/community/holiday-camp"
     ],
-    "cover_local": "images/camp_203.svg",
-    "verification_notes": "2026-05-13 curl 200；首页列出サマーキャンプ：黒松内ブナの森キャンプ、日高青少年自然の家キャンプ等；具体年度报名页/日期价格需确认。",
-    "days_min": 2,
-    "days_max": 5,
-    "days_typical": 3,
+    "cover_local": "images/camp_302.svg",
+    "verification_notes": "2026-05-13 curl 200；官方页明确 Holiday/Summer/Winter Camps，children aged 4–13；首页新闻提 HHIS Summer Camp 2026。",
+    "days_min": 5,
+    "days_max": 10,
+    "days_typical": 5,
     "price_cny_min": null,
     "price_cny_max": null,
     "price_cny_per_day": null,
     "price_cny_total_typical": null,
-    "includes_lodging": true,
-    "includes_meals": true,
-    "lodging_note": "宿泊型 camp 可能含住，按募集要项确认",
-    "meals_note": "宿泊型通常含餐，按募集要项确认",
-    "meals_breakfast": true,
-    "meals_lunch": true,
-    "meals_dinner": true,
+    "includes_lodging": false,
+    "includes_meals": null,
+    "lodging_note": "日营为主",
+    "meals_note": "需报名页确认",
+    "meals_breakfast": false,
+    "meals_lunch": null,
+    "meals_dinner": false,
     "highlight_tags": [
-      "黑松内",
-      "日高",
-      "自然营",
-      "日语环境",
-      "YMCA"
+      "Hua Hin",
+      "4-13岁",
+      "STEAM+户外",
+      "英文国际学校"
     ],
     "maodou_pick": true,
-    "maodou_reason": "自然/动手/户外强，黑松内方向对毛豆比纯课堂更有吸引力；但需要能接受日语环境。"
+    "maodou_reason": "华欣山海环境 + STEAM/户外/运动组合，适合不想只上海岛/普吉的选择。"
   },
   {
-    "name_cn": "ネイパル森 小学4-6年キャンプ：ドラム缶風呂 + MTB",
-    "name_en": "Napal Mori Camping with Drum-can Bath and MTB",
-    "name_local": "ネイパル森 キャンプでドラム缶風呂やMTBの事業",
-    "country": "日本",
-    "city": "Mori, Hokkaido",
-    "venue": "北海道立青少年体験活動支援施設 ネイパル森",
+    "name_cn": "Krabi International School Summer School 2026",
+    "name_en": "Krabi International School Summer School 2026",
+    "name_local": "Krabi International School Summer School",
+    "country": "泰国",
+    "city": "Krabi",
+    "venue": "Krabi International School",
     "sessions": [
       {
-        "start": "2026-06-13",
-        "end": "2026-06-14",
-        "days": "1泊2日"
+        "start": "2026-07-20",
+        "end": "2026-07-24",
+        "days": "Week 1"
+      },
+      {
+        "start": "2026-07-27",
+        "end": "2026-07-31",
+        "days": "Week 2"
       }
     ],
-    "price_local": "JPY 4,500 / 1泊2日",
-    "price_cny_est": "约 ¥216 / 1泊2日",
-    "price_includes": "利用料、昼・夕・朝食、保险、体验料、北海道宿泊税",
-    "age_range": "小学4-6年生",
+    "price_local": "THB 14,500 / 周；Ao Nang/Krabi town 往返接送 THB 2,500 / 周",
+    "price_cny_est": "约 ¥3,045 / 周；接送约 ¥525 / 周",
+    "price_includes": "安全有趣的英语环境、创意活动、运动、hands-on learning、新 gym/艺术音乐设施、部分 off-site trips；具体以官网为准",
+    "age_range": "5-12岁",
     "need_guardian": false,
     "themes": [
-      "Camping",
-      "MTB",
-      "Outdoor survival",
-      "Drum-can bath",
-      "Japanese local camp"
+      "English",
+      "Sports",
+      "Creative activities",
+      "Hands-on learning",
+      "Krabi outdoor"
     ],
-    "highlights": "官方 2026 招募页明确：小学4-6年、1泊2日、帐篷、ドラム缶風呂、MTB、费用 4,500 日元。非常硬核、接地气、便宜，但纯日语环境。",
-    "daily_schedule": "搭帐篷、薪火/ドラム缶風呂准备、野外料理、MTB越野、夜食交流等。",
+    "highlights": "官网标题即 Summer School 2026 Thailand Summer Holiday Camp for Kids；明确 5-12岁、两周日期、价格 14,500 THB/周、英文和国际环境。",
+    "daily_schedule": "英语使用、创意活动、运动、动手学习；每日 14:45-15:00 fruit break；有新 gym、艺术音乐设施和 off-site trips。",
     "contact": {
-      "website": "https://napal-mori.org/?info=%e3%80%90%e5%8f%82%e5%8a%a0%e8%80%85%e5%8b%9f%e9%9b%86%e3%80%91%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%97%e3%81%a7%e3%83%89%e3%83%a9%e3%83%a0%e7%bc%b6%e9%a2%a8%e5%91%82%e3%82%84mtb%e3%81%ae%e4%ba%8b",
-      "email": "",
-      "phone": "01374-5-2110",
+      "website": "https://www.krabiinternationalschool.com/summer-school/",
+      "email": "info@krabiinternationalschool.com",
+      "phone": "+66 (0)612 424 272",
       "wechat": "",
       "xiaohongshu": "",
-      "other": "北海道立青少年体験活動支援施設"
+      "other": "LINE: @KrabiSchool"
     },
     "images": [
       {
-        "url": "https://napal-mori.org/",
-        "caption": "Napal Mori official site"
+        "url": "https://www.krabiinternationalschool.com/summer-school/",
+        "caption": "KIS Summer School 2026"
       }
     ],
     "source_urls": [
-      "https://napal-mori.org/?info=%e3%80%90%e5%8f%82%e5%8a%a0%e8%80%85%e5%8b%9f%e9%9b%86%e3%80%91%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%97%e3%81%a7%e3%83%89%e3%83%a9%e3%83%a0%e7%bc%b6%e9%a2%a8%e5%91%82%e3%82%84mtb%e3%81%ae%e4%ba%8b"
+      "https://www.krabiinternationalschool.com/summer-school/"
     ],
     "status": "confirmed_2026",
-    "id": 204,
+    "id": 303,
     "website_live": true,
     "live_urls": [
-      "https://napal-mori.org/?info=%e3%80%90%e5%8f%82%e5%8a%a0%e8%80%85%e5%8b%9f%e9%9b%86%e3%80%91%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%97%e3%81%a7%e3%83%89%e3%83%a9%e3%83%a0%e7%bc%b6%e9%a2%a8%e5%91%82%e3%82%84mtb%e3%81%ae%e4%ba%8b"
+      "https://www.krabiinternationalschool.com/summer-school/"
     ],
-    "cover_local": "images/camp_204.svg",
-    "verification_notes": "2026-05-13 curl 200；官方页发布时间 2026-05-06，期日令和8年6月13-14日，对象小学4-6年，费用4,500円。",
-    "days_min": 2,
-    "days_max": 2,
-    "days_typical": 2,
-    "price_cny_min": 216,
-    "price_cny_max": 216,
-    "price_cny_per_day": 108,
-    "price_cny_total_typical": 216,
-    "includes_lodging": true,
-    "includes_meals": true,
-    "lodging_note": "1泊2日",
-    "meals_note": "含昼・夕・朝",
-    "meals_breakfast": true,
-    "meals_lunch": true,
-    "meals_dinner": true,
+    "cover_local": "images/camp_303.svg",
+    "verification_notes": "2026-05-13 curl 200；官网明确 Summer School 2026，children aged 5–12，Week1 20–24 Jul，Week2 27–31 Jul，Price 14,500 per week，transfer 2,500 Baht/week。",
+    "days_min": 5,
+    "days_max": 10,
+    "days_typical": 5,
+    "price_cny_min": 3045,
+    "price_cny_max": 6090,
+    "price_cny_per_day": 609,
+    "price_cny_total_typical": 3045,
+    "includes_lodging": false,
+    "includes_meals": "partial",
+    "lodging_note": "日营",
+    "meals_note": "页面提 fruit break；完整餐食需确认",
+    "meals_breakfast": false,
+    "meals_lunch": null,
+    "meals_dinner": false,
     "highlight_tags": [
       "2026确认",
-      "小学4-6",
-      "MTB",
-      "露营",
-      "超高性价比"
+      "5-12岁",
+      "价格明确",
+      "Krabi",
+      "英文环境"
     ],
     "maodou_pick": true,
-    "maodou_reason": "💎 最野：帐篷+MTB+烧火+ドラム缶風呂，10岁正适龄；缺点是纯日语和日期短。"
+    "maodou_reason": "💎 信息最完整：日期、年龄、价格都明确；Krabi 环境比曼谷更适合户外海边。"
+  },
+  {
+    "name_cn": "Real Rocks Railay 儿童/家庭攀岩课程",
+    "name_en": "Real Rocks Climbing School Kids / Family Climbing",
+    "name_local": "Real Rocks Climbing School",
+    "country": "泰国",
+    "city": "Railay / Krabi",
+    "venue": "Railay Beach climbing areas",
+    "sessions": [
+      {
+        "start": "2026-01",
+        "end": "2026-12",
+        "days": "全年半日/一日可预约；非传统夏令营"
+      }
+    ],
+    "price_local": "按半日/一日课程报价，官网/预订页确认",
+    "price_cny_est": "待确认",
+    "price_includes": "攀岩教练、装备、户外线路指导；具体以课程为准",
+    "age_range": "儿童/家庭可参加；具体年龄和监护要求需预约确认",
+    "need_guardian": true,
+    "themes": [
+      "Rock climbing",
+      "Outdoor",
+      "Family activity",
+      "Krabi/Railay"
+    ],
+    "highlights": "官方英文攀岩学校，Railay 经典攀岩地；页面评价中有 5岁/9岁儿童参与案例。不是住宿营，更适合作为 Krabi summer school 之外的一日户外专项。",
+    "daily_schedule": "半日/一日攀岩入门、绳索安全、天然岩壁练习。",
+    "contact": {
+      "website": "https://www.realrocksclimbing.com/",
+      "email": "",
+      "phone": "",
+      "wechat": "",
+      "xiaohongshu": "",
+      "other": "Railay Beach climbing school"
+    },
+    "images": [
+      {
+        "url": "https://www.realrocksclimbing.com/",
+        "caption": "Real Rocks Climbing"
+      }
+    ],
+    "source_urls": [
+      "https://www.realrocksclimbing.com/"
+    ],
+    "status": "tentative_2026",
+    "id": 304,
+    "website_live": true,
+    "live_urls": [
+      "https://www.realrocksclimbing.com/"
+    ],
+    "cover_local": "images/camp_304.svg",
+    "verification_notes": "2026-05-13 curl 200；官方英文户外机构，页面有 children/kids climbing evidence；非传统营地，需按课程预约确认年龄/价格。",
+    "days_min": 1,
+    "days_max": 1,
+    "days_typical": 1,
+    "price_cny_min": null,
+    "price_cny_max": null,
+    "price_cny_per_day": null,
+    "price_cny_total_typical": null,
+    "includes_lodging": false,
+    "includes_meals": false,
+    "lodging_note": "不含住宿",
+    "meals_note": "不含餐",
+    "meals_breakfast": false,
+    "meals_lunch": false,
+    "meals_dinner": false,
+    "highlight_tags": [
+      "Krabi/Railay",
+      "攀岩",
+      "户外专项",
+      "需家长配合"
+    ],
+    "maodou_pick": true,
+    "maodou_reason": "毛豆喜欢攀岩/户外，适合作为甲米营地旁边加一天硬核项目。"
   }
 ]
