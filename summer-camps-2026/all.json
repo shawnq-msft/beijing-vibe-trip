@@ -834,5 +834,390 @@
     ],
     "maodou_pick": false,
     "verification_notes": "2026-05-13 curl 200; school root live; no dedicated 2026 summer-camp page verified, keep tentative/contact school."
+  },
+  {
+    "name_cn": "EdVenture Niseko 英语户外夏令营",
+    "name_en": "EdVenture Niseko Summer Camp",
+    "name_local": "EdVenture Niseko",
+    "country": "日本",
+    "city": "Niseko / Kutchan, Hokkaido",
+    "venue": "EdVenture Niseko Activity Center and Lodges, Niseko area",
+    "sessions": [
+      {
+        "start": "2026-06",
+        "end": "2026-08",
+        "days": "5日周营；也有住宿/家庭项目，具体周次按官网报名页"
+      }
+    ],
+    "price_local": "JPY 161,900 起 / 5日（不同项目价格不同）",
+    "price_cny_est": "约 ¥7,800 起 / 5日",
+    "price_includes": "英语带领的户外活动、自然探索、项目指导；住宿/餐食依项目不同",
+    "age_range": "3-17岁；10岁可选 Moiwa/Yotei/Rishiri 等儿童/青少年项目",
+    "need_guardian": false,
+    "themes": [
+      "English immersion",
+      "Outdoor adventure",
+      "Nature",
+      "Camping",
+      "International camp"
+    ],
+    "highlights": "Niseko 英语户外营，官网明确写 Summer Camp 2026 已开放报名；面向国际家庭，强调自然探索、屏幕隔离、团队协作和个人成长。",
+    "daily_schedule": "周一至周五户外探索、自然游戏、团队挑战；部分项目含 overnight camping / residential experience。",
+    "contact": {
+      "website": "https://www.edventureniseko.com/summer-camp/overview",
+      "email": "info@edventureniseko.com",
+      "phone": "",
+      "wechat": "",
+      "xiaohongshu": "",
+      "other": "Register Now on official site"
+    },
+    "images": [
+      {
+        "url": "https://www.edventureniseko.com/summer-camp/overview",
+        "caption": "EdVenture Niseko Summer Camp official page"
+      }
+    ],
+    "source_urls": [
+      "https://www.edventureniseko.com/summer-camp/overview",
+      "https://www.edventureniseko.com/news/tac-edventure-international-summer-camps-in-niseko"
+    ],
+    "status": "confirmed_2026",
+    "id": 200,
+    "website_live": true,
+    "live_urls": [
+      "https://www.edventureniseko.com/summer-camp/overview"
+    ],
+    "cover_local": "images/camp_200.svg",
+    "verification_notes": "2026-05-13 curl 200；官网标题 Kids Summer Camp；页面写 Registration for Summer Camp 2026 is open，ages 3–17，price from ¥161,900。",
+    "days_min": 5,
+    "days_max": 5,
+    "days_typical": 5,
+    "price_cny_min": 7800,
+    "price_cny_max": 18000,
+    "price_cny_per_day": 1560,
+    "price_cny_total_typical": 7800,
+    "includes_lodging": null,
+    "includes_meals": null,
+    "lodging_note": "日营/住宿项目都有，按具体 program 确认",
+    "meals_note": "按项目确认",
+    "meals_breakfast": false,
+    "meals_lunch": null,
+    "meals_dinner": null,
+    "highlight_tags": [
+      "2026已开放",
+      "英语环境",
+      "Niseko户外",
+      "适合10岁",
+      "可住宿项目"
+    ],
+    "maodou_pick": true,
+    "maodou_reason": "💎 最像毛豆需求：英语 + Niseko 山野户外 + 5日项目，10岁适龄。"
+  },
+  {
+    "name_cn": "Hokkaido International School Niseko Summer Program",
+    "name_en": "Hokkaido International School Niseko Summer Program",
+    "name_local": "北海道インターナショナルスクール Niseko Summer Program",
+    "country": "日本",
+    "city": "Niseko / Sapporo, Hokkaido",
+    "venue": "Hokkaido International School Niseko program（Sapporo 校区 2026 暑期因施工取消）",
+    "sessions": [
+      {
+        "start": "2026-06-22",
+        "end": "2026-06-26",
+        "days": "5日 Niseko Summer Program"
+      }
+    ],
+    "price_local": "官网申请资料确认",
+    "price_cny_est": "待确认",
+    "price_includes": "国际学校暑期项目，place-based education / Hokkaido learning activities；具体包含项按申请资料",
+    "age_range": "官网未在公开摘要稳定列出；通常面向 elementary/middle school 年级，报名需确认",
+    "need_guardian": false,
+    "themes": [
+      "International school",
+      "English",
+      "Place-based education",
+      "Hokkaido nature"
+    ],
+    "highlights": "HIS 官方 Summer Program 页面说明：2026 Sapporo summer program 因校区施工取消，但提供 Niseko Summer Program（2026-06-22 至 06-26）申请信息。",
+    "daily_schedule": "以北海道在地主题学习、户外/自然/文化活动和英语环境为主；详见申请资料。",
+    "contact": {
+      "website": "https://www.his.ac.jp/academics/summer-program",
+      "email": "",
+      "phone": "",
+      "wechat": "",
+      "xiaohongshu": "",
+      "other": "页面含 Niseko Summer Program Application & Information 链接"
+    },
+    "images": [
+      {
+        "url": "https://www.his.ac.jp/academics/summer-program",
+        "caption": "HIS Summer Program official page"
+      }
+    ],
+    "source_urls": [
+      "https://www.his.ac.jp/academics/summer-program",
+      "https://www.his.ac.jp/huskies-life/detail/~board/huskies-events/post/summer-schoo-2026-cancelled"
+    ],
+    "status": "confirmed_2026",
+    "id": 201,
+    "website_live": true,
+    "live_urls": [
+      "https://www.his.ac.jp/academics/summer-program"
+    ],
+    "cover_local": "images/camp_201.svg",
+    "verification_notes": "2026-05-13 curl 200；官网写 2026 Sapporo cancelled，并明确给出 Niseko Summer Program, June 22-June 26, 2026, Application & Information。",
+    "days_min": 5,
+    "days_max": 5,
+    "days_typical": 5,
+    "price_cny_min": null,
+    "price_cny_max": null,
+    "price_cny_per_day": null,
+    "price_cny_total_typical": null,
+    "includes_lodging": null,
+    "includes_meals": null,
+    "lodging_note": "需看申请资料",
+    "meals_note": "需看申请资料",
+    "meals_breakfast": null,
+    "meals_lunch": null,
+    "meals_dinner": null,
+    "highlight_tags": [
+      "2026明确日期",
+      "国际学校",
+      "Niseko",
+      "英语环境"
+    ],
+    "maodou_pick": true,
+    "maodou_reason": "国际学校英语环境 + Niseko 在地学习，适合想要更课堂化但不纯讲解的短营。"
+  },
+  {
+    "name_cn": "NAC Niseko Kids Day Camp / 夏季户外活动",
+    "name_en": "NAC Niseko Adventure Centre Kids Day Camp / Summer Activities",
+    "name_local": "NACニセコアドベンチャーセンター キッズデイキャンプ",
+    "country": "日本",
+    "city": "Niseko / Kutchan, Hokkaido",
+    "venue": "NAC Niseko Adventure Centre, Hirafu",
+    "sessions": [
+      {
+        "start": "2026-06",
+        "end": "2026-09",
+        "days": "夏季活动季；Kids Day Camp / rafting / adventure park 等按项目预约"
+      }
+    ],
+    "price_local": "各活动单独定价；Kids Day Camp 需看预约页/联系确认",
+    "price_cny_est": "待确认",
+    "price_includes": "户外教练、装备/活动体验；餐食/接送依项目不同",
+    "age_range": "按项目年龄/身高限制；10岁通常可参加多项 rafting / adventure activities，Kids Day Camp 需确认",
+    "need_guardian": false,
+    "themes": [
+      "Rafting",
+      "Adventure park",
+      "Kids day camp",
+      "MTB",
+      "Outdoor"
+    ],
+    "highlights": "NAC 官网夏季页可达，首页明确列出“キッズデイキャンプ：NACとの5日間のアクションと冒険”。更像户外活动供应商/日营，可作为 Niseko 夏令营或家庭行程补充。",
+    "daily_schedule": "Kids Day Camp 为5日 action/adventure；其他夏季项目包括 rafting、adventure park、SUP、kayak、MTB、trekking。",
+    "contact": {
+      "website": "https://nacadventures.jp/summer/",
+      "email": "info@nacadventures.jp",
+      "phone": "0136-23-2093",
+      "wechat": "",
+      "xiaohongshu": "",
+      "other": "夏予約页面可预约单项活动"
+    },
+    "images": [
+      {
+        "url": "https://nacadventures.jp/summer/",
+        "caption": "NAC summer activities"
+      }
+    ],
+    "source_urls": [
+      "https://nacadventures.jp/",
+      "https://nacadventures.jp/summer/"
+    ],
+    "status": "tentative_2026",
+    "id": 202,
+    "website_live": true,
+    "live_urls": [
+      "https://nacadventures.jp/summer/"
+    ],
+    "cover_local": "images/camp_202.svg",
+    "verification_notes": "2026-05-13 curl 200；官网夏季页/首页列出キッズデイキャンプ和多项夏季户外活动；具体2026 Kids Day Camp营期价格需预约页确认。",
+    "days_min": 1,
+    "days_max": 5,
+    "days_typical": 5,
+    "price_cny_min": null,
+    "price_cny_max": null,
+    "price_cny_per_day": null,
+    "price_cny_total_typical": null,
+    "includes_lodging": false,
+    "includes_meals": null,
+    "lodging_note": "主要为日营/单项活动",
+    "meals_note": "按项目确认",
+    "meals_breakfast": false,
+    "meals_lunch": null,
+    "meals_dinner": false,
+    "highlight_tags": [
+      "Niseko户外",
+      "漂流/MTB",
+      "5日Kids Day Camp线索",
+      "适合体力好孩子"
+    ],
+    "maodou_pick": true,
+    "maodou_reason": "偏运动和户外，比课堂营更适合毛豆；可和 EdVenture/HIS 搭配。"
+  },
+  {
+    "name_cn": "北海道 YMCA 黑松内/日高儿童夏季营",
+    "name_en": "Hokkaido YMCA Summer Camp",
+    "name_local": "北海道YMCA サマーキャンプ",
+    "country": "日本",
+    "city": "Sapporo / Kuromatsunai / Hidaka, Hokkaido",
+    "venue": "黑松内ブナの森 / 国立日高青少年自然の家 等",
+    "sessions": [
+      {
+        "start": "2026-07",
+        "end": "2026-08",
+        "days": "夏休みシーズンプログラム；当年募集页确认"
+      }
+    ],
+    "price_local": "当年募集页确认",
+    "price_cny_est": "待确认",
+    "price_includes": "宿泊型自然体验、YMCA 指导、食宿/保险等按募集要项",
+    "age_range": "小・中学生项目；具体年级按当年募集页",
+    "need_guardian": false,
+    "themes": [
+      "Nature camp",
+      "Kuromatsunai beech forest",
+      "Craft",
+      "Outdoor",
+      "Japanese immersion"
+    ],
+    "highlights": "北海道 YMCA 官网当前列出サマーキャンプ，包括黑松内ブナの森キャンプ、日高青少年自然の家キャンプ，以及会员限定貝化石クラフトキャンプ。日语环境，户外/自然体验强。",
+    "daily_schedule": "森林自然体验、户外游戏、团队生活、手作/化石 craft（具体以募集要项为准）。",
+    "contact": {
+      "website": "https://www.hokkaido-ymca.or.jp/",
+      "email": "",
+      "phone": "",
+      "wechat": "",
+      "xiaohongshu": "",
+      "other": "札幌YMCA season program"
+    },
+    "images": [
+      {
+        "url": "https://www.hokkaido-ymca.or.jp/",
+        "caption": "Hokkaido YMCA season programs"
+      }
+    ],
+    "source_urls": [
+      "https://www.hokkaido-ymca.or.jp/"
+    ],
+    "status": "tentative_2026",
+    "id": 203,
+    "website_live": true,
+    "live_urls": [
+      "https://www.hokkaido-ymca.or.jp/"
+    ],
+    "cover_local": "images/camp_203.svg",
+    "verification_notes": "2026-05-13 curl 200；首页列出サマーキャンプ：黒松内ブナの森キャンプ、日高青少年自然の家キャンプ等；具体年度报名页/日期价格需确认。",
+    "days_min": 2,
+    "days_max": 5,
+    "days_typical": 3,
+    "price_cny_min": null,
+    "price_cny_max": null,
+    "price_cny_per_day": null,
+    "price_cny_total_typical": null,
+    "includes_lodging": true,
+    "includes_meals": true,
+    "lodging_note": "宿泊型 camp 可能含住，按募集要项确认",
+    "meals_note": "宿泊型通常含餐，按募集要项确认",
+    "meals_breakfast": true,
+    "meals_lunch": true,
+    "meals_dinner": true,
+    "highlight_tags": [
+      "黑松内",
+      "日高",
+      "自然营",
+      "日语环境",
+      "YMCA"
+    ],
+    "maodou_pick": true,
+    "maodou_reason": "自然/动手/户外强，黑松内方向对毛豆比纯课堂更有吸引力；但需要能接受日语环境。"
+  },
+  {
+    "name_cn": "ネイパル森 小学4-6年キャンプ：ドラム缶風呂 + MTB",
+    "name_en": "Napal Mori Camping with Drum-can Bath and MTB",
+    "name_local": "ネイパル森 キャンプでドラム缶風呂やMTBの事業",
+    "country": "日本",
+    "city": "Mori, Hokkaido",
+    "venue": "北海道立青少年体験活動支援施設 ネイパル森",
+    "sessions": [
+      {
+        "start": "2026-06-13",
+        "end": "2026-06-14",
+        "days": "1泊2日"
+      }
+    ],
+    "price_local": "JPY 4,500 / 1泊2日",
+    "price_cny_est": "约 ¥216 / 1泊2日",
+    "price_includes": "利用料、昼・夕・朝食、保险、体验料、北海道宿泊税",
+    "age_range": "小学4-6年生",
+    "need_guardian": false,
+    "themes": [
+      "Camping",
+      "MTB",
+      "Outdoor survival",
+      "Drum-can bath",
+      "Japanese local camp"
+    ],
+    "highlights": "官方 2026 招募页明确：小学4-6年、1泊2日、帐篷、ドラム缶風呂、MTB、费用 4,500 日元。非常硬核、接地气、便宜，但纯日语环境。",
+    "daily_schedule": "搭帐篷、薪火/ドラム缶風呂准备、野外料理、MTB越野、夜食交流等。",
+    "contact": {
+      "website": "https://napal-mori.org/?info=%e3%80%90%e5%8f%82%e5%8a%a0%e8%80%85%e5%8b%9f%e9%9b%86%e3%80%91%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%97%e3%81%a7%e3%83%89%e3%83%a9%e3%83%a0%e7%bc%b6%e9%a2%a8%e5%91%82%e3%82%84mtb%e3%81%ae%e4%ba%8b",
+      "email": "",
+      "phone": "01374-5-2110",
+      "wechat": "",
+      "xiaohongshu": "",
+      "other": "北海道立青少年体験活動支援施設"
+    },
+    "images": [
+      {
+        "url": "https://napal-mori.org/",
+        "caption": "Napal Mori official site"
+      }
+    ],
+    "source_urls": [
+      "https://napal-mori.org/?info=%e3%80%90%e5%8f%82%e5%8a%a0%e8%80%85%e5%8b%9f%e9%9b%86%e3%80%91%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%97%e3%81%a7%e3%83%89%e3%83%a9%e3%83%a0%e7%bc%b6%e9%a2%a8%e5%91%82%e3%82%84mtb%e3%81%ae%e4%ba%8b"
+    ],
+    "status": "confirmed_2026",
+    "id": 204,
+    "website_live": true,
+    "live_urls": [
+      "https://napal-mori.org/?info=%e3%80%90%e5%8f%82%e5%8a%a0%e8%80%85%e5%8b%9f%e9%9b%86%e3%80%91%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%97%e3%81%a7%e3%83%89%e3%83%a9%e3%83%a0%e7%bc%b6%e9%a2%a8%e5%91%82%e3%82%84mtb%e3%81%ae%e4%ba%8b"
+    ],
+    "cover_local": "images/camp_204.svg",
+    "verification_notes": "2026-05-13 curl 200；官方页发布时间 2026-05-06，期日令和8年6月13-14日，对象小学4-6年，费用4,500円。",
+    "days_min": 2,
+    "days_max": 2,
+    "days_typical": 2,
+    "price_cny_min": 216,
+    "price_cny_max": 216,
+    "price_cny_per_day": 108,
+    "price_cny_total_typical": 216,
+    "includes_lodging": true,
+    "includes_meals": true,
+    "lodging_note": "1泊2日",
+    "meals_note": "含昼・夕・朝",
+    "meals_breakfast": true,
+    "meals_lunch": true,
+    "meals_dinner": true,
+    "highlight_tags": [
+      "2026确认",
+      "小学4-6",
+      "MTB",
+      "露营",
+      "超高性价比"
+    ],
+    "maodou_pick": true,
+    "maodou_reason": "💎 最野：帐篷+MTB+烧火+ドラム缶風呂，10岁正适龄；缺点是纯日语和日期短。"
   }
 ]

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#166534"/><stop offset="1" stop-color="#0f172a"/></linearGradient></defs>
+  <rect width="1200" height="760" fill="url(#g)"/>
+  <circle cx="970" cy="120" r="160" fill="rgba(255,255,255,.12)"/>
+  <text x="80" y="150" font-size="92" font-family="Arial, sans-serif">🏕️</text>
+  <text x="80" y="300" font-size="54" fill="white" font-weight="700" font-family="Arial, sans-serif">Hokkaido YMCA Summer Camp</text>
+  <text x="80" y="380" font-size="34" fill="rgba(255,255,255,.88)" font-family="Arial, sans-serif">Hokkaido · Kids Summer Camp</text>
+  <text x="80" y="610" font-size="40" fill="white" font-family="Arial, sans-serif">Sapporo / Kuromatsunai / Hidaka, Hokkaido</text>
+</svg>
