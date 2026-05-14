@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dff3ff"/><stop offset="1" stop-color="#f7fbf1"/></linearGradient>
+    <linearGradient id="field" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d9f99d"/><stop offset="1" stop-color="#84cc16"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.18"/></filter>
+    <style>
+      .label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei',sans-serif;font-weight:700;fill:#1e293b}
+      .small{font-size:24px}.mid{font-size:32px}.big{font-size:54px}.note{font-size:22px;fill:#475569;font-weight:500}
+    </style>
+  </defs>
+  <rect width="1200" height="820" fill="url(#sky)"/>
+  <path d="M0 520 C130 470 240 480 370 430 C510 375 650 390 780 330 C930 260 1040 275 1200 220 L1200 820 L0 820 Z" fill="#dbeafe"/>
+  <path d="M0 590 C150 545 260 560 390 510 C540 455 695 485 850 405 C990 333 1085 345 1200 300 L1200 820 L0 820 Z" fill="#bfdbfe" opacity=".72"/>
+  <path d="M0 640 C135 610 250 625 390 575 C530 525 700 560 850 505 C1010 447 1100 455 1200 410 L1200 820 L0 820 Z" fill="url(#field)"/>
+  <path d="M80 690 C260 620 380 705 560 635 S870 620 1110 560" stroke="#38bdf8" stroke-width="26" fill="none" opacity=".72"/>
+  <path d="M130 610 C250 570 365 585 480 555 C620 518 765 525 910 470" stroke="#ef4444" stroke-width="13" fill="none" stroke-linecap="round" stroke-dasharray="30 18" filter="url(#shadow)"/>
+  <g filter="url(#shadow)">
+    <circle cx="210" cy="585" r="18" fill="#ef4444"/><circle cx="445" cy="560" r="18" fill="#ef4444"/><circle cx="690" cy="520" r="18" fill="#ef4444"/><circle cx="910" cy="470" r="18" fill="#ef4444"/>
+  </g>
+  <g transform="translate(95 70)" filter="url(#shadow)">
+    <rect width="720" height="230" rx="34" fill="white" opacity=".93"/>
+    <text x="34" y="76" class="label big">两山公园亲子骑行</text>
+    <text x="36" y="128" class="label mid" fill="#0f766e">玉东郊野公园 · 北坞 · 中坞 · 三山五园绿道</text>
+    <text x="36" y="178" class="note">五道口 24km往返 · 骑行 8-16km · 稻田 / 湖边 / 皇家园林借景</text>
+  </g>
+  <g class="label small">
+    <rect x="148" y="615" width="155" height="48" rx="24" fill="white" opacity=".9"/><text x="173" y="648">中坞</text>
+    <rect x="382" y="586" width="155" height="48" rx="24" fill="white" opacity=".9"/><text x="407" y="619">北坞</text>
+    <rect x="625" y="545" width="210" height="48" rx="24" fill="white" opacity=".9"/><text x="650" y="578">玉东/两山</text>
+    <rect x="850" y="495" width="230" height="48" rx="24" fill="white" opacity=".9"/><text x="875" y="528">颐和园西门</text>
+  </g>
+</svg>
