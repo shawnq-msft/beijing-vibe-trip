@@ -77,16 +77,18 @@ figcaption { padding: 10px 12px; font-size: 13px; color: var(--muted); line-heig
 .source-card { border:1px solid var(--line); border-radius:18px; padding:14px 15px; background:#fbfcff; }
 .source-card strong { display:block; margin-bottom:6px; }
 
-/* ---- index: compact responsive card grid, no-crop hero image ---- */
+/* ---- index: Pinterest-style masonry cards, image full-width and natural ratio ---- */
 .index-masonry {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 12px;
+  column-count: 4;
+  column-gap: 12px;
   margin-top: 18px;
 }
 .index-card {
-  display: block;
-  min-width: 0;
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 12px;
+  break-inside: avoid;
+  page-break-inside: avoid;
   overflow: hidden;
   border-radius: 18px;
   border: 1px solid var(--line);
@@ -96,11 +98,11 @@ figcaption { padding: 10px 12px; font-size: 13px; color: var(--muted); line-heig
   transition: transform .2s ease, box-shadow .2s ease;
 }
 .index-card:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(20,32,51,.075); }
-/* image: preserve full natural image; contain avoids crop for very-wide xhs screenshots */
+/* image: card-width aligned, natural height; no max-height, no crop */
 .index-card img {
   width: 100%;
-  max-height: 180px;
   height: auto;
+  max-height: none;
   object-fit: contain;
   display: block;
   background: #edf2f8;
@@ -131,6 +133,7 @@ figcaption { padding: 10px 12px; font-size: 13px; color: var(--muted); line-heig
 /* ---- responsive columns ---- */
 @media (max-width: 1100px) {
   .masonry { column-count: 2; }
+  .index-masonry { column-count: 3; }
 }
 @media (max-width: 900px) {
   .grid { grid-template-columns: 1fr; }
@@ -139,8 +142,7 @@ figcaption { padding: 10px 12px; font-size: 13px; color: var(--muted); line-heig
 }
 @media (max-width: 640px) {
   .masonry { column-count: 1; }
-  .index-masonry { grid-template-columns: 1fr; }
-  .index-card img { max-height: none; }
+  .index-masonry { column-count: 1; }
 }
 
 
@@ -156,8 +158,9 @@ figcaption { padding: 10px 12px; font-size: 13px; color: var(--muted); line-heig
 .gallery img {
   width: 100%;
   height: auto;
-  max-height: 240px;
+  max-height: none;
   object-fit: contain;
+  display: block;
   background: #edf2f8;
 }
 .dp-cards {
