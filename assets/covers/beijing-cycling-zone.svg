@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e6fffb"/><stop offset="0.55" stop-color="#eef3ff"/><stop offset="1" stop-color="#fff7ed"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#152033" flood-opacity=".16"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <path d="M-40 705 C160 610 260 735 430 640 S715 470 960 565 1235 555 1280 420" fill="none" stroke="#0f766e" stroke-width="34" stroke-linecap="round" opacity=".18"/>
+  <path d="M-20 735 C170 645 275 760 445 668 S715 498 950 590 1235 580 1280 450" fill="none" stroke="#0f766e" stroke-width="6" stroke-linecap="round" stroke-dasharray="18 18" opacity=".72"/>
+  <path d="M80 230 C220 120 370 235 510 165 S780 95 930 185 1060 250 1140 170" fill="none" stroke="#3658d4" stroke-width="12" stroke-linecap="round" opacity=".25"/>
+  <g filter="url(#shadow)">
+    <rect x="84" y="80" width="1032" height="286" rx="36" fill="white" opacity=".92"/>
+    <text x="128" y="156" font-size="52" font-weight="800" fill="#152033" font-family="Arial, PingFang SC, Microsoft YaHei">北京骑行专区</text>
+    <text x="128" y="210" font-size="27" fill="#5a6475" font-family="Arial, PingFang SC, Microsoft YaHei">亲子绿道 · 河岸骑行 · 森林公园 · 半日拉练</text>
+    <text x="128" y="270" font-size="25" fill="#0f766e" font-family="Arial, PingFang SC, Microsoft YaHei">永定河 / 大运河 / 坝河 / 温榆河 / 北小河 / 东坝 / 凉水河 / 清河 / 东小口</text>
+    <text x="128" y="320" font-size="22" fill="#92400e" font-family="Arial, PingFang SC, Microsoft YaHei">默认从五道口出发：先选近、封闭、安全、能按作业节奏收车的线</text>
+  </g>
+  <g transform="translate(150 540)">
+    <circle cx="0" cy="0" r="64" fill="none" stroke="#152033" stroke-width="16"/>
+    <circle cx="250" cy="0" r="64" fill="none" stroke="#152033" stroke-width="16"/>
+    <path d="M0 0 L85 -115 L138 0 L250 0 L180 -115 L85 -115" fill="none" stroke="#152033" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M138 0 L104 68" stroke="#152033" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="190" cy="-135" r="24" fill="#3658d4"/>
+    <path d="M176 -112 L146 -48 L203 -18" stroke="#3658d4" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  <g fill="#3658d4" opacity=".78">
+    <circle cx="820" cy="590" r="10"/><circle cx="900" cy="545" r="10"/><circle cx="980" cy="615" r="10"/><circle cx="1045" cy="535" r="10"/>
+  </g>
+</svg>
