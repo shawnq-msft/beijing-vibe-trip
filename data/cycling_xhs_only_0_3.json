@@ -1,0 +1,354 @@
+{
+  "generated_at": "2026-05-22 19:29:57",
+  "policy": "XHS only; concrete park/route queries; clicked into notes for text/images; no Dianping access.",
+  "routes": [
+    {
+      "id": "sanshanwuyuan-beiwu",
+      "name": "三山五园绿道北坞/玉东段",
+      "xhs_queries": [
+        {
+          "query": "北坞公园 骑行",
+          "search": {
+            "url": "https://www.xiaohongshu.com/search_result/?keyword=%E5%8C%97%E5%9D%9E%E5%85%AC%E5%9B%AD+%E9%AA%91%E8%A1%8C&source=web_search_result_notes&type=51",
+            "title": "北坞公园 骑行 - 小红书搜索",
+            "cards": [
+              {
+                "href": "https://www.xiaohongshu.com/explore/69b3d5e1000000002301d4e6",
+                "text": "三山五园绿道休闲骑行 | 锋芒～ | 03-13 | 582",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/999244457f7b117a692a5d71cc5a6e0b/1040g00831tl9uaio780g5nkqci5g9916tpn5b2o!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/69e6045c000000002103b9da",
+                "text": "🚲适合低幼骑行｜三山五园春日骑行攻略 | 桐桐麻麻 | 04-20 | 54",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/78874c9652837863a068242e288b0a13/notes_pre_post/1040g3k831v69vhr92i8049bvirvhnm77li3qerg!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/69d8bc83000000002202718d",
+                "text": "不是新西兰🌳是北京的四环 | 户外香菜 | 04-10 | 491",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/64559ca59aa8154e1cf327008040ea4f/notes_pre_post/1040g3k031upb82r52i005pgkku7hoptqve3bkjg!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/686a8d7f00000000110027d1",
+                "text": "骑共享单车逛公园原来如此轻松🚴 | MissRainieY | 2025-07-06 | 91",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/1c0b896bfbd960f31a1523767b626afd/1040g00831jjn1o0kia0048is3llfkp3i6v5vi7g!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/69ec5ad7000000001a02d715",
+                "text": "🚴‍♀️4+2亲子骑行｜北坞绿道树荫咖啡 | 壮壮妈 | 04-25 | 34",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/00fa01394b9ad335cb1431b31491703a/notes_pre_post/1040g3k831vcg07iuigd04b8q4ckcv0pfn8upc9g!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/6841a0360000000022004f4a",
+                "text": "北京16条神仙亲子骑行道 | 榴莲钉钉 | 2025-06-06 | 458",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/5034313319185961bb1fd7a21956f726/1040g00831ibp18a1g260416a23dbcsph0g0rfco!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/69db9a62000000002202772e",
+                "text": "关于北坞公园停车和实际情况的几点订正 | Chihuahua | 04-12 | 9",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/133a89eb8320f59919f0c3a5f91095f5/notes_pre_post/1040g3k031us3kv6djq005o3nioogbs1sb7v7v3g!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/68c81a70000000001d005878",
+                "text": "亲子骑行一定不要错过三山五园 | 灰灰 | 2025-09-15 | 25",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/0be38a8f90f305ce51b346a91351d8f7/1040g2sg31mf39avql2kg5ph18jshom1dq24lkt0!nc_n_webp_mw_1"
+              }
+            ]
+          },
+          "details": [
+            {
+              "card": {
+                "href": "https://www.xiaohongshu.com/explore/69b3d5e1000000002301d4e6",
+                "text": "三山五园绿道休闲骑行 | 锋芒～ | 03-13 | 582",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/999244457f7b117a692a5d71cc5a6e0b/1040g00831tl9uaio780g5nkqci5g9916tpn5b2o!nc_n_webp_mw_1"
+              },
+              "click": {
+                "ok": true,
+                "href": "https://www.xiaohongshu.com/explore/69b3d5e1000000002301d4e6"
+              },
+              "detail": {
+                "url": "https://www.xiaohongshu.com/explore",
+                "title": "小红书 - 你的生活兴趣社区",
+                "text": "创作中心\n业务合作\n发现\n直播\n发布\n通知\n沪ICP备13030189号 | 营业执照 | 2024沪公网安备31010102002533号 | 增值电信业务经营许可证：沪B2-20150021 | 医疗器械网络交易服务第三方平台备案：(沪)网械平台备字[2019]第00006号 | 互联网药品信息服务资格证书：(沪)-经营性-2023-0144 | 违法不良信息举报电话：4006676810 | 上海市互联网举报中心 | 网上有害信息举报专区 | 自营经营者信息 | 网络文化经营许可证：沪网文(2024)1344-086号 | 个性化推荐算法 网信算备310101216601302230019号\n© 2014-2026\n行吟信息科技（上海）有限公司\n地址：上海市黄浦区马当路388号C座\n电话：9501-3888\n更多\n关于我们\n沪ICP备13030189号 | 营业执照 | 2024沪公网安备31010102002533号 | 增值电信业务经营许可证：沪B2-20150021 | 医疗器械网络交易服务第三方平台备案：(沪)网械平台备字[2019]第00006号 | 互联网药品信息服务资格证书：(沪)-经营性-2023-0144 | 违法不良信息举报电话：4006676810 | 上海市互联网举报中心 | 网上有害信息举报专区 | 自营经营者信息 | 网络文化经营许可证：沪网文(2024)1344-086号 | 个性化推荐算法 网信算备310101216601302230019号\n© 2014-2026\n行吟信息科技（上海）有限公司\n地址：上海市黄浦区马当路388号C座\n电话：9501-3888\n推荐\n穿搭\n美食\n彩妆\n影视\n职场\n情感\n家居\n游戏\n旅行\n健身",
+                "imgs": []
+              }
+            },
+            {
+              "card": {
+                "href": "https://www.xiaohongshu.com/explore/69e6045c000000002103b9da",
+                "text": "🚲适合低幼骑行｜三山五园春日骑行攻略 | 桐桐麻麻 | 04-20 | 54",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/78874c9652837863a068242e288b0a13/notes_pre_post/1040g3k831v69vhr92i8049bvirvhnm77li3qerg!nc_n_webp_mw_1"
+              },
+              "click": {
+                "ok": true,
+                "href": "https://www.xiaohongshu.com/explore/69e6045c000000002103b9da"
+              },
+              "detail": {
+                "url": "https://www.xiaohongshu.com/explore",
+                "title": "小红书 - 你的生活兴趣社区",
+                "text": "创作中心\n业务合作\n发现\n直播\n发布\n通知\n沪ICP备13030189号 | 营业执照 | 2024沪公网安备31010102002533号 | 增值电信业务经营许可证：沪B2-20150021 | 医疗器械网络交易服务第三方平台备案：(沪)网械平台备字[2019]第00006号 | 互联网药品信息服务资格证书：(沪)-经营性-2023-0144 | 违法不良信息举报电话：4006676810 | 上海市互联网举报中心 | 网上有害信息举报专区 | 自营经营者信息 | 网络文化经营许可证：沪网文(2024)1344-086号 | 个性化推荐算法 网信算备310101216601302230019号\n© 2014-2026\n行吟信息科技（上海）有限公司\n地址：上海市黄浦区马当路388号C座\n电话：9501-3888\n更多\n关于我们\n沪ICP备13030189号 | 营业执照 | 2024沪公网安备31010102002533号 | 增值电信业务经营许可证：沪B2-20150021 | 医疗器械网络交易服务第三方平台备案：(沪)网械平台备字[2019]第00006号 | 互联网药品信息服务资格证书：(沪)-经营性-2023-0144 | 违法不良信息举报电话：4006676810 | 上海市互联网举报中心 | 网上有害信息举报专区 | 自营经营者信息 | 网络文化经营许可证：沪网文(2024)1344-086号 | 个性化推荐算法 网信算备310101216601302230019号\n© 2014-2026\n行吟信息科技（上海）有限公司\n地址：上海市黄浦区马当路388号C座\n电话：9501-3888\n推荐\n穿搭\n美食\n彩妆\n影视\n职场\n情感\n家居\n游戏\n旅行\n健身",
+                "imgs": []
+              }
+            }
+          ]
+        },
+        {
+          "query": "玉东郊野公园 亲子骑行",
+          "search": {
+            "url": "https://www.xiaohongshu.com/search_result/?keyword=%E7%8E%89%E4%B8%9C%E9%83%8A%E9%87%8E%E5%85%AC%E5%9B%AD+%E4%BA%B2%E5%AD%90%E9%AA%91%E8%A1%8C&source=web_search_result_notes&type=51",
+            "title": "玉东郊野公园 亲子骑行 - 小红书搜索",
+            "cards": [
+              {
+                "href": "https://www.xiaohongshu.com/explore/69d8bc83000000002202718d",
+                "text": "不是新西兰🌳是北京的四环 | 户外香菜 | 04-10 | 491",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/64559ca59aa8154e1cf327008040ea4f/notes_pre_post/1040g3k031upb82r52i005pgkku7hoptqve3bkjg!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/68bd05d3000000001b03cd1b",
+                "text": "骑行50KM | 海淀最美骑行路线 | 狂人不走 | 2025-09-07 | 25",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/32703666e815a8fb1c60f8256c76aeca/1040g00831m496in258005oilf018cgsj69obf80!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/666fadf6000000000d00fc6e",
+                "text": "#一路骑行到童话世界｜三山五园绿道推荐# | Dressing蜜 | 2024-06-17 | 7",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/d399941b326b38bde1799d2ed0645fec/1040g0083144o7c1p1c0040qsp2i5p70oahbo650!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/67126c3c000000001b02fbb5",
+                "text": "这儿绝对是市里蕞美的亲子骑行路| 北京骑行 | 户外香菜 | 2024-10-19 | 31",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/0924783cee69c4cb13084fd4fcac624c/1040g2sg3193lui4cl4cg5pgkku7hoptqgl08u80!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/664b0d520000000005006296",
+                "text": "不是新西兰，是北京的四环🌳附骑行路线 | 喔喔野趣 | 2024-06-20 | 293",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/0ccb684de430fb711f382617d1db3a58/1040g2sg3130vja45jsag4a37mrj5jicbj4n15jg!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/667a81cb000000001c0347fd",
+                "text": "夏日遛娃宝藏公园💦人少免费🆓可玩水可骑行 | 慢慢长大的小麦子 | 2024-06-25 | 164",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/198f04730b0b0a707058f280a0a42d66/1040g008314faiod96e105p4hlbr4864icqq0fo0!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/6618e940000000001a00fde4",
+                "text": "北京｜景好人少花繁的野餐好去处—玉东公园 | 若非龙 | 2024-04-12 | 10",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/4ba48a616536121aef041fd9e6b4c8df/1040g2sg311g0mt53mo0g4a4v5bcacce1bhi3f30!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/67b3f1ad0000000029027b82",
+                "text": "🚴‍♂️ 北京带娃骑行的宝藏公园 | 双宝探险家 | 2025-02-18 | 62",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/ea7eb8ffd06d250523ac5df049f20d3a/1040g00831e1dfr3f08005n3i4ap4maai565ejvo!nc_n_webp_mw_1"
+              }
+            ]
+          },
+          "details": [
+            {
+              "card": {
+                "href": "https://www.xiaohongshu.com/explore/69d8bc83000000002202718d",
+                "text": "不是新西兰🌳是北京的四环 | 户外香菜 | 04-10 | 491",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/64559ca59aa8154e1cf327008040ea4f/notes_pre_post/1040g3k031upb82r52i005pgkku7hoptqve3bkjg!nc_n_webp_mw_1"
+              },
+              "click": {
+                "ok": true,
+                "href": "https://www.xiaohongshu.com/explore/69d8bc83000000002202718d"
+              },
+              "detail": {
+                "url": "https://www.xiaohongshu.com/explore",
+                "title": "小红书 - 你的生活兴趣社区",
+                "text": "创作中心\n业务合作\n发现\n直播\n发布\n通知\n沪ICP备13030189号 | 营业执照 | 2024沪公网安备31010102002533号 | 增值电信业务经营许可证：沪B2-20150021 | 医疗器械网络交易服务第三方平台备案：(沪)网械平台备字[2019]第00006号 | 互联网药品信息服务资格证书：(沪)-经营性-2023-0144 | 违法不良信息举报电话：4006676810 | 上海市互联网举报中心 | 网上有害信息举报专区 | 自营经营者信息 | 网络文化经营许可证：沪网文(2024)1344-086号 | 个性化推荐算法 网信算备310101216601302230019号\n© 2014-2026\n行吟信息科技（上海）有限公司\n地址：上海市黄浦区马当路388号C座\n电话：9501-3888\n更多\n关于我们\n沪ICP备13030189号 | 营业执照 | 2024沪公网安备31010102002533号 | 增值电信业务经营许可证：沪B2-20150021 | 医疗器械网络交易服务第三方平台备案：(沪)网械平台备字[2019]第00006号 | 互联网药品信息服务资格证书：(沪)-经营性-2023-0144 | 违法不良信息举报电话：4006676810 | 上海市互联网举报中心 | 网上有害信息举报专区 | 自营经营者信息 | 网络文化经营许可证：沪网文(2024)1344-086号 | 个性化推荐算法 网信算备310101216601302230019号\n© 2014-2026\n行吟信息科技（上海）有限公司\n地址：上海市黄浦区马当路388号C座\n电话：9501-3888\n推荐\n穿搭\n美食\n彩妆\n影视\n职场\n情感\n家居\n游戏\n旅行\n健身",
+                "imgs": []
+              }
+            },
+            {
+              "card": {
+                "href": "https://www.xiaohongshu.com/explore/68bd05d3000000001b03cd1b",
+                "text": "骑行50KM | 海淀最美骑行路线 | 狂人不走 | 2025-09-07 | 25",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/32703666e815a8fb1c60f8256c76aeca/1040g00831m496in258005oilf018cgsj69obf80!nc_n_webp_mw_1"
+              },
+              "click": {
+                "ok": false
+              },
+              "detail": {
+                "url": "https://www.xiaohongshu.com/search_result/?keyword=%E7%8E%89%E4%B8%9C%E9%83%8A%E9%87%8E%E5%85%AC%E5%9B%AD+%E4%BA%B2%E5%AD%90%E9%AA%91%E8%A1%8C&source=web_search_result_notes&type=51",
+                "title": "玉东郊野公园 亲子骑行 - 小红书搜索",
+                "text": "创作中心\n业务合作\n发现\n直播\n发布\n16\n通知\n我\n沪ICP备13030189号 | 营业执照 | 2024沪公网安备31010102002533号 | 增值电信业务经营许可证：沪B2-20150021 | 医疗器械网络交易服务第三方平台备案：(沪)网械平台备字[2019]第00006号 | 互联网药品信息服务资格证书：(沪)-经营性-2023-0144 | 违法不良信息举报电话：4006676810 | 上海市互联网举报中心 | 网上有害信息举报专区 | 自营经营者信息 | 网络文化经营许可证：沪网文(2024)1344-086号 | 个性化推荐算法 网信算备310101216601302230019号\n© 2014-2026\n行吟信息科技（上海）有限公司\n地址：上海市黄浦区马当路388号C座\n电话：9501-3888\n更多\n关于我们\n沪ICP备13030189号 | 营业执照 | 2024沪公网安备31010102002533号 | 增值电信业务经营许可证：沪B2-20150021 | 医疗器械网络交易服务第三方平台备案：(沪)网械平台备字[2019]第00006号 | 互联网药品信息服务资格证书：(沪)-经营性-2023-0144 | 违法不良信息举报电话：4006676810 | 上海市互联网举报中心 | 网上有害信息举报专区 | 自营经营者信息 | 网络文化经营许可证：沪网文(2024)1344-086号 | 个性化推荐算法 网信算备310101216601302230019号\n© 2014-2026\n行吟信息科技（上海）有限公司\n地址：上海市黄浦区马当路388号C座\n电话：9501-3888\n全部\n图文\n图文\n视频\n视频\n用户\n用户\n筛选\n综合\n路线图\n门票\n今日实况\n不是新西兰🌳是北京的四环\n户外香菜\n04-10\n491\n夏日遛娃宝藏公园💦人少免费🆓可玩水可骑行\n慢慢长大的小麦子\n2024-06-25\n164\n这儿绝对是市里蕞美的亲子骑行路| 北京骑行\n户外香菜\n2024-10-19\n31\n#一路骑行到童话世界｜三山五园绿道推荐#\nDressing蜜\n2024-06-17\n7\n北京｜景好人少花繁的野餐好去处—玉东公园\n若非龙\n2024-04-12\n10\n🚴‍♂️ 北京带娃骑行的宝藏公园\n双宝探险家\n2025-02-18\n62\n大家都在搜\n玉东郊野公园亲子骑行攻略\n西城儿童骑行路线\n北京东边骑行路线\n带孩子骑行的好处和危害\n不是新西兰，是北京的四环🌳附骑行路线\n喔喔野趣\n2024-06-20\n293\n🤫悄悄说！北京8条亲子骑行路线，不去特亏！\n桔猪🍊\n03-14\n661\n📍谁说北京没有“翡翠河”还有绿野仙踪❗️❗️\n花漫雪\n04-27\n185\n北坞公园/玉东郊野公园\n卡皮巴拉小孟\n2025-09-29\n7\n绝美林荫道❗️迄今为止最爱的亲子骑行路线🚴\n疯娃夏子\n2025-05-26\n260\n北京遛娃｜亲测‼️超亲子的稻田骑行路线🌳\n开心步步酱\n2024-12-01\n276\n我发现北京蕞适合亲子骑行的绿道‼️低幼友好\n会玩儿的米乐麻麻\n2025-07-08\n319\n三山五园绿道休闲骑行\n锋芒～\n03-13\n582\n我们在帝都遛娃徒步捡化石，这条鱼好特别\n大李和小李\n2025-09-15\n258\n大家都在搜\n三山五园骑行路书\n带娃骑行座椅最大能坐几岁\n玉东郊野公园骑车\n红领巾公园骑行\n北京16条神仙亲子骑行道\n榴莲钉钉\n2025-06-06\n458\n北京7⃣个免费亲子骑行公园，共享单车可进\n张大富\n2025-03-22\n407\n北京市区❸条宛如宫崎骏世界的夏日骑行路线\nAimee萌小妞\n2024-05-28\n259\n又到亲子骑行季，与孩子一起成长！\n北京周末去哪\n2025-09-23\n14\n🚲适合低幼骑行｜三山五园春日骑行攻略\n桐桐麻麻\n04-20\n54\n活动",
+                "imgs": [
+                  {
+                    "src": "https://sns-avatar-qc.xhscdn.com/avatar/411309441983cdc4ce073ff8da73b5b6.jpg?imageView2/2/w/360/format/webp",
+                    "w": 360,
+                    "h": 360,
+                    "alt": ""
+                  },
+                  {
+                    "src": "https://sns-webpic-qc.xhscdn.com/202605221930/64559ca59aa8154e1cf327008040ea4f/notes_pre_post/1040g3k031upb82r52i005pgkku7hoptqve3bkjg!nc_n_webp_mw_1",
+                    "w": 640,
+                    "h": 853,
+                    "alt": ""
+                  },
+                  {
+                    "src": "https://sns-webpic-qc.xhscdn.com/202605221930/198f04730b0b0a707058f280a0a42d66/1040g008314faiod96e105p4hlbr4864icqq0fo0!nc_n_webp_mw_1",
+                    "w": 640,
+                    "h": 853,
+                    "alt": ""
+                  },
+                  {
+                    "src": "https://sns-webpic-qc.xhscdn.com/202605221930/0924783cee69c4cb13084fd4fcac624c/1040g2sg3193lui4cl4cg5pgkku7hoptqgl08u80!nc_n_webp_mw_1",
+                    "w": 640,
+                    "h": 853,
+                    "alt": ""
+                  },
+                  {
+                    "src": "https://sns-webpic-qc.xhscdn.com/202605221930/d399941b326b38bde1799d2ed0645fec/1040g0083144o7c1p1c0040qsp2i5p70oahbo650!nc_n_webp_mw_1",
+                    "w": 640,
+                    "h": 853,
+                    "alt": ""
+                  },
+                  {
+                    "src": "https://sns-webpic-qc.xhscdn.com/202605221930/4ba48a616536121aef041fd9e6b4c8df/1040g2sg311g0mt53mo0g4a4v5bcacce1bhi3f30!nc_n_webp_mw_1",
+                    "w": 640,
+                    "h": 853,
+                    "alt": ""
+                  },
+                  {
+                    "src": "https://sns-webpic-qc.xhscdn.com/202605221930/ea7eb8ffd06d250523ac5df049f20d3a/1040g00831e1dfr3f08005n3i4ap4maai565ejvo!nc_n_webp_mw_1",
+                    "w": 640,
+                    "h": 777,
+                    "alt": ""
+                  },
+                  {
+                    "src": "https://sns-webpic-qc.xhscdn.com/202605221930/0ccb684de430fb711f382617d1db3a58/1040g2sg3130vja45jsag4a37mrj5jicbj4n15jg!nc_n_webp_mw_1",
+                    "w": 640,
+                    "h": 853,
+                    "alt": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yongding-lvdao",
+      "name": "永定绿道 / 绿堤公园串联",
+      "xhs_queries": [
+        {
+          "query": "绿堤公园 骑行",
+          "search": {
+            "url": "https://www.xiaohongshu.com/search_result/?keyword=%E7%BB%BF%E5%A0%A4%E5%85%AC%E5%9B%AD+%E9%AA%91%E8%A1%8C&source=web_search_result_notes&type=51",
+            "title": "绿堤公园 骑行 - 小红书搜索",
+            "cards": [
+              {
+                "href": "https://www.xiaohongshu.com/explore/69d27c880000000021011f37",
+                "text": "亲子骑行-永定河绿道 | 溜达🛬 | 04-05 | 40",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/90d2b0f6678bb587e5f4e8f68835346f/notes_pre_post/1040g3k031uj7fpoviq4g415bo9eibtqh6s5gq8g!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/6870856500000000170317f8",
+                "text": "京西永定绿道，独享森林｜北京绿道骑行攻略 | 靠谱的金秋 | 2025-07-11 | 195",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/78ba1518e731a2fff178571958f825b2/notes_pre_post/1040g3k831jphtlbh2o705ng48psg8ss3s3d98to!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/69a3fd030000000016009433",
+                "text": "永定绿道春日骑行 | 海带丝 | 03-01 | 31",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/b4b04e1d14289f1c6f3486e31796fa9d/note_pre_post_uhdr/1040g3r031t5qqdl1lk005oj41e0ocftrea5br00!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/68466330000000002202d7c9",
+                "text": "三刷绿堤公园！南区隐藏玩法大公开✨​ | 超哥带你玩北京 | 2025-06-09 | 80",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/a75c9e9f8c82c16b2a716c5b84e18a0c/spectrum/1040g0k031igdg07dni0048jodnj01p1ls5gl820!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/6a084cc8000000003701df32",
+                "text": "绿堤公园步道骑行15公里 | 张鱼小丸子 | 6天前 | 3",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/d18321be4ae3f253010ad5b04af0ea3f/notes_pre_post/1040g3k83207pee3gls9g43r3t136ol89i8dk2oo!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/69fdd5a4000000003700c145",
+                "text": "推荐一个中老年骑友“休闲骑”的圣地 | 弓长先森-幸会48 | 05-08 | 17",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/28e27ff0d6d5f44c3849f5fae59d3953/1040g00831vtighcj2i105po2c377e1rm0b7rl38!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/69e82a98000000001a03446b",
+                "text": "北京打卡记 | 05-03 | 3",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/33a1c7f539b5b851362171d08b6fa6f0/spectrum/1040g0k031v8ddrmpk0005n668shlmur5od2bdqo!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/68ad9b24000000001b0215ab",
+                "text": "【佛系路书】绿堤公园-全程约16公里 | 柳某人 | 2025-08-26 | 29",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/74ea69797ca6d448ce863efc4caf509e/notes_pre_post/1040g3k831ll7591q5i8g40134rlkd86igpbira0!nc_n_webp_mw_1"
+              }
+            ]
+          },
+          "details": [
+            {
+              "card": {
+                "href": "https://www.xiaohongshu.com/explore/69d27c880000000021011f37",
+                "text": "亲子骑行-永定河绿道 | 溜达🛬 | 04-05 | 40",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/90d2b0f6678bb587e5f4e8f68835346f/notes_pre_post/1040g3k031uj7fpoviq4g415bo9eibtqh6s5gq8g!nc_n_webp_mw_1"
+              },
+              "click": {
+                "ok": true,
+                "href": "https://www.xiaohongshu.com/explore/69d27c880000000021011f37"
+              },
+              "detail": {
+                "url": "https://www.xiaohongshu.com/website-login/captcha?redirectPath=http%3A%2F%2Fwww.xiaohongshu.com%2Fexplore%3FexSource%3Dnull&verifyUuid=596db369-1920-4dcc-85e8-0bcbc1a8c81c&verifyType=216&verifyBiz=461&verifyMsg=null",
+                "title": "Security Verification",
+                "text": "Security Verification\n题库加载中...\n验证\nFeedback",
+                "imgs": []
+              }
+            },
+            {
+              "card": {
+                "href": "https://www.xiaohongshu.com/explore/6870856500000000170317f8",
+                "text": "京西永定绿道，独享森林｜北京绿道骑行攻略 | 靠谱的金秋 | 2025-07-11 | 195",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/78ba1518e731a2fff178571958f825b2/notes_pre_post/1040g3k831jphtlbh2o705ng48psg8ss3s3d98to!nc_n_webp_mw_1"
+              },
+              "click": {
+                "ok": true,
+                "href": "https://www.xiaohongshu.com/explore/6870856500000000170317f8"
+              },
+              "detail": {
+                "url": "https://www.xiaohongshu.com/website-login/captcha?redirectPath=http%3A%2F%2Fwww.xiaohongshu.com%2Fexplore%3FexSource%3Dnull&verifyUuid=d4889721-cf39-495c-bf9b-1d906c3e4eff&verifyType=216&verifyBiz=461&verifyMsg=null",
+                "title": "Security Verification",
+                "text": "Security Verification\n题库加载中...\n验证\nFeedback",
+                "imgs": []
+              }
+            }
+          ]
+        },
+        {
+          "query": "永定河休闲森林公园 骑行",
+          "search": {
+            "url": "https://www.xiaohongshu.com/search_result/?keyword=%E6%B0%B8%E5%AE%9A%E6%B2%B3%E4%BC%91%E9%97%B2%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD+%E9%AA%91%E8%A1%8C&source=web_search_result_notes&type=51",
+            "title": "永定河休闲森林公园 骑行 - 小红书搜索",
+            "cards": []
+          },
+          "details": []
+        }
+      ]
+    },
+    {
+      "id": "tongzhou-canal",
+      "name": "通州大运河绿道 / 大运河森林公园",
+      "xhs_queries": [
+        {
+          "query": "大运河森林公园 骑行",
+          "search": {
+            "url": "https://www.xiaohongshu.com/search_result/?keyword=%E5%A4%A7%E8%BF%90%E6%B2%B3%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD+%E9%AA%91%E8%A1%8C&source=web_search_result_notes&type=51",
+            "title": "大运河森林公园 骑行 - 小红书搜索",
+            "cards": []
+          },
+          "details": []
+        },
+        {
+          "query": "通州大运河绿道 亲子骑行",
+          "search": {
+            "url": "https://www.xiaohongshu.com/search_result/?keyword=%E9%80%9A%E5%B7%9E%E5%A4%A7%E8%BF%90%E6%B2%B3%E7%BB%BF%E9%81%93+%E4%BA%B2%E5%AD%90%E9%AA%91%E8%A1%8C&source=web_search_result_notes&type=51",
+            "title": "通州大运河绿道 亲子骑行 - 小红书搜索",
+            "cards": []
+          },
+          "details": []
+        }
+      ]
+    }
+  ]
+}

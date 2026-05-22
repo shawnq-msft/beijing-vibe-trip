@@ -1,0 +1,2681 @@
+{
+  "generated_at": "2026-05-22T19:32:44",
+  "policy": "整理已采集数据；不再访问点评。餐厅低于4.2不展示；咖啡/蛋糕仅作待复核高分候选；点评直开商户URL的数据标记为需后续从搜索页点击复核。 已补充小红书 deep click 踩点（前3条路线），不访问大众点评。 后续小红书搜索-only 踩点触发验证后停止。",
+  "routes": [
+    {
+      "id": "sanshanwuyuan-beiwu",
+      "name": "三山五园绿道北坞/玉东段",
+      "area": "海淀",
+      "xhs_cards": [
+        {
+          "title_text": "不是新西兰🌳是北京的四环 | 户外香菜 | 04-10 | 491",
+          "url": "https://www.xiaohongshu.com/explore/69d8bc83000000002202718d",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221857/01ba5f994d7321b4b05cb26a412339fb/notes_pre_post/1040g3k031upb82r52i005pgkku7hoptqve3bkjg!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "🤫悄悄说！北京8条亲子骑行路线，不去特亏！ | 桔猪🍊 | 03-14 | 661",
+          "url": "https://www.xiaohongshu.com/explore/69b38d47000000001f006e05",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221857/f1d795aa90126570ca55d062af86b5af/notes_pre_post/1040g3k031tl0s4k6723g48j8udpphq4ieend7to!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "号称北京蕞治愈的，我替你们去过了，是真的 | 熊小昕🐻 | 04-10 | 1960",
+          "url": "https://www.xiaohongshu.com/explore/69d620ba0000000022002c97",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221857/f42bff5caf3c5e9e241e2473d5535e1b/1040g00831upfshs2iq305nh2me408jcpvbc64q8!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "北京遛娃骑行超友好｜6条绝美路线闭眼冲 | apple🍎（辣妈版） | 3天前 | 113",
+          "url": "https://www.xiaohongshu.com/explore/6a0c2abd00000000350225cb",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221857/78d583403f43bf3557c3147edb77c81d/notes_pre_post/1040g3k0320bia9ta5i2042laakpiqrlrldlc51o!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "📍北京绿道天花板🔥三山五园超详细骑行攻略 | 骑车小天菜 | 1天前 | 152",
+          "url": "https://www.xiaohongshu.com/explore/6a0ec9a400000000060321b8",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221857/519c8f7714cde5cc62c424d4daee05ae/1040g008320dv9r8gm2005n5ditp5rvfkp5a4al8!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "骑行党必看❗北京这6条春日路线绝美🌸 | 北京周末去哪 | 03-18 | 234",
+          "url": "https://www.xiaohongshu.com/explore/69b942d4000000001d01eb69",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221857/ee139e5fdfd131cd15739ef40052f3d9/spectrum/1040g34o31tqjgof60a705p2pjkh51ud231mpq20!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "不是新西兰，是北京的四环🌳北京骑行 | 喔喔野趣 | 2025-02-24 | 536",
+          "url": "https://www.xiaohongshu.com/explore/67b42f84000000002901b8ea",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221857/38470a8e0814deed0f0819ed861e61c0/1040g2sg31e1l1ca8085g4a37mrj5jicb2ue5270!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "跳进梵高的调色盘❗北京隐藏版油画公园 | 小兔队长 | 2025-08-27 | 177",
+          "url": "https://www.xiaohongshu.com/explore/68aeff7b000000001c037f65",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221857/b9fafef43a301cbbe473499db85c3b56/notes_pre_post/1040g3k031lmit2c14u00400nvvuadg1n3lg5sm0!nc_n_webp_mw_1"
+        }
+      ],
+      "poi_dp_queries": [
+        {
+          "query": "北坞公园",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E5%8C%97%E5%9D%9E%E5%85%AC%E5%9B%AD",
+          "shops": [
+            {
+              "name": "北坞公园",
+              "rating": "4.9",
+              "reviews": "5688",
+              "avg": "225",
+              "rank": "海淀区公园好评榜 · 第4名",
+              "hours": "营业中06:00-21:00",
+              "address": "",
+              "url": "https://www.dianping.com/shop/k8cnzEH6eKnWkJU5",
+              "cardText": "北坞公园 |   | 5686 条评价 | | | 人均 - | 公园 | 颐和园",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/tdctraveldark/61b04cf9ae8b02038ce190c15ab36342386792.png%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 528
+                }
+              ]
+            },
+            {
+              "name": "玉东郊野公园-春苗绣野",
+              "rating": "4.9",
+              "reviews": "70",
+              "avg": "16232",
+              "rank": "",
+              "hours": "",
+              "address": "",
+              "url": "https://www.dianping.com/shop/l6Na1bG1svc8qga6",
+              "cardText": "玉东郊野公园-春苗绣野 |   | 70 条评价 | | | 人均 - | 游玩 | 颐和园",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/poipicadd/f4f4208db9069435844e24e436a4d09f358567.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 500
+                }
+              ]
+            }
+          ],
+          "source_note": "已采集，但后续正式页面需从搜索结果页点击复核"
+        },
+        {
+          "query": "玉东郊野公园",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E7%8E%89%E4%B8%9C%E9%83%8A%E9%87%8E%E5%85%AC%E5%9B%AD",
+          "shops": [
+            {
+              "name": "玉东郊野公园-春苗绣野",
+              "rating": "4.9",
+              "reviews": "70",
+              "avg": "16232",
+              "rank": "",
+              "hours": "",
+              "address": "",
+              "url": "https://www.dianping.com/shop/l6Na1bG1svc8qga6",
+              "cardText": "玉东郊野公园-春苗绣野 |   | 70 条评价 | | | 人均 - | 游玩 | 颐和园",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/poipicadd/f4f4208db9069435844e24e436a4d09f358567.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 500
+                }
+              ]
+            },
+            {
+              "name": "玉泉郊野公园",
+              "rating": "3.6",
+              "reviews": "10",
+              "avg": "746",
+              "rank": "",
+              "hours": "",
+              "address": "",
+              "url": "https://www.dianping.com/shop/k50xlfpbac03aKMV",
+              "cardText": "玉泉郊野公园 |   | 10 条评价 | | | 人均 - | 休闲公园 | 颐和园",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://qcloud.dpfile.com/pc/-xPZbTfN3rpiOQerUzko3VBHzeiVosDuyZqFQPfzF41qzS4ipXgm2rGn_G_gjoTTtinsm4wZBU2JBzCyrLLxBw.webp",
+                  "w": 750,
+                  "h": 466
+                }
+              ]
+            }
+          ],
+          "source_note": "已采集，但后续正式页面需从搜索结果页点击复核"
+        },
+        {
+          "query": "中坞公园",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E4%B8%AD%E5%9D%9E%E5%85%AC%E5%9B%AD",
+          "shops": [
+            {
+              "name": "中坞公园",
+              "rating": "4.8",
+              "reviews": "1526",
+              "avg": "1090",
+              "rank": "",
+              "hours": "",
+              "address": "",
+              "url": "https://www.dianping.com/shop/l7OsclUYgcvM8mH5",
+              "cardText": "中坞公园 |   | 1525 条评价 | | | 人均 - | 休闲公园 | 颐和园",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/ugcpic/6c94bcffe532cb4f1005899a408011c3%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 1000
+                }
+              ]
+            },
+            {
+              "name": "北坞公园",
+              "rating": "4.9",
+              "reviews": "5688",
+              "avg": "6414",
+              "rank": "海淀区公园好评榜 · 第4名",
+              "hours": "营业中06:00-21:00",
+              "address": "",
+              "url": "https://www.dianping.com/shop/k8cnzEH6eKnWkJU5",
+              "cardText": "北坞公园 |   | 5686 条评价 | | | 人均 - | 公园 | 颐和园",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/tdctraveldark/61b04cf9ae8b02038ce190c15ab36342386792.png%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 528
+                }
+              ]
+            }
+          ],
+          "source_note": "已采集，但后续正式页面需从搜索结果页点击复核"
+        }
+      ],
+      "food_candidates": [
+        {
+          "query": "北坞公园 咖啡 蛋糕",
+          "kind": "cafe_bakery",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E5%8C%97%E5%9D%9E%E5%85%AC%E5%9B%AD%20%E5%92%96%E5%95%A1%20%E8%9B%8B%E7%B3%95",
+          "shops": [
+            {
+              "name": "Peet's 皮爷咖啡(星悦荟店)",
+              "rating": "4.7",
+              "reviews": "1471",
+              "avg": "390",
+              "rank": "颐和园咖啡好评榜 · 第1名",
+              "hours": "营业中07:30-20:30",
+              "address": "距地铁4号线西苑站C2西南口步行290m",
+              "url": "https://www.dianping.com/shop/FroO1nkBl2roitd1",
+              "cardText": "Peet's 皮爷咖啡(星悦荟店) |    | 1470 条评价 | | | 人均 ￥41 | 咖啡 | 颐和园 | 优惠：此餐馆有优惠券",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/content/a4e7368523778626ac7bcd2492205d1c127497.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 750
+                }
+              ]
+            },
+            {
+              "name": "巴黎贝甜(万柳华联店)",
+              "rating": "4.3",
+              "reviews": "1625",
+              "avg": "95000",
+              "rank": "",
+              "hours": "营业中07:00-21:00",
+              "address": "距地铁10号线巴沟站出入口步行290m",
+              "url": "https://www.dianping.com/shop/G62GozzMEwwwPBWC",
+              "cardText": "巴黎贝甜(万柳华联店) |   | 1624 条评价 | | | 人均 ￥34 | 面包蛋糕 | 万柳",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/biztone/da81965f06151ce614feb4fa8f886c42133840.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 640,
+                  "h": 640
+                }
+              ]
+            },
+            {
+              "name": "星巴克(北京玉泉商业中心店)",
+              "rating": "4.4",
+              "reviews": "336",
+              "avg": "741",
+              "rank": "颐和园咖啡口味榜 · 第5名",
+              "hours": "营业中06:30-21:30",
+              "address": "",
+              "url": "https://www.dianping.com/shop/k4Vjscv06S6G6I8L",
+              "cardText": "星巴克(北京玉泉商业中心店) |   | 335 条评价 | | | 人均 ￥33 | 咖啡 | 颐和园",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/content/cd754316a2f2ecb977e18efa24b45f1729565.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 500,
+                  "h": 500
+                }
+              ]
+            }
+          ],
+          "source_note": "仅作候选；正式发布需低频从搜索页点击复核"
+        },
+        {
+          "query": "颐和园西门 咖啡 蛋糕",
+          "kind": "cafe_bakery",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E9%A2%90%E5%92%8C%E5%9B%AD%E8%A5%BF%E9%97%A8%20%E5%92%96%E5%95%A1%20%E8%9B%8B%E7%B3%95",
+          "shops": [
+            {
+              "name": "星巴克(北京玉泉商业中心店)",
+              "rating": "4.4",
+              "reviews": "336",
+              "avg": "1090",
+              "rank": "颐和园咖啡口味榜 · 第5名",
+              "hours": "营业中06:30-21:30",
+              "address": "",
+              "url": "https://www.dianping.com/shop/k4Vjscv06S6G6I8L",
+              "cardText": "星巴克(北京玉泉商业中心店) |   | 335 条评价 | | | 人均 ￥33 | 咖啡 | 颐和园",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/content/cd754316a2f2ecb977e18efa24b45f1729565.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 500,
+                  "h": 500
+                }
+              ]
+            }
+          ],
+          "source_note": "仅作候选；正式发布需低频从搜索页点击复核"
+        },
+        {
+          "query": "北坞公园 餐厅",
+          "kind": "restaurant",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E5%8C%97%E5%9D%9E%E5%85%AC%E5%9B%AD%20%E9%A4%90%E5%8E%85",
+          "shops": [
+            {
+              "name": "丹江渔村•小院(四季御园店)",
+              "rating": "4.8",
+              "reviews": "8259",
+              "avg": "367",
+              "rank": "海淀区湖北菜回头客榜 · 第1名",
+              "hours": "营业中11:00-14:30, 17:00-21:30",
+              "address": "",
+              "url": "https://www.dianping.com/shop/l6S4vDUkgS3EHk0a",
+              "cardText": "丹江渔村•小院(四季御园店) |    | 8256 条评价 | | | 人均 ￥196 | 湖北菜 | 颐和园 | 优惠：此餐馆有优惠券",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/content/b165eef307f15acc70a2d476defc06c7556894.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 750
+                }
+              ]
+            },
+            {
+              "name": "陶记(北坞店)",
+              "rating": "4.2",
+              "reviews": "2409",
+              "avg": "70298",
+              "rank": "颐和园北京菜回头客榜 · 第4名",
+              "hours": "营业中06:00-09:30, 10:30-14:00, 16:30-21:00",
+              "address": "",
+              "url": "https://www.dianping.com/shop/k3WGbr7rOzs3CrRN",
+              "cardText": "陶记(北坞店) |   | 2408 条评价 | | | 人均 ￥89 | 京菜 | 颐和园",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/merchant/0835e351f20467fdf39dcc9a47072f1c122841.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 563
+                }
+              ]
+            },
+            {
+              "name": "熟悉家宴烤鸭·鱼头泡饼",
+              "rating": "4.4",
+              "reviews": "",
+              "avg": "23128",
+              "rank": "颐和园北京菜回头客榜 · 第2名",
+              "hours": "营业中10:30-21:30",
+              "address": "",
+              "url": "https://www.dianping.com/shop/H5drS4hrpERVYJrO",
+              "cardText": "熟悉家宴烤鸭·鱼头泡饼 |   | 8730 条评价 | | | 人均 ￥83 | 烤鸭 | 颐和园",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/content/02b037f9226991f17dbd85eb89bbc36934455.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 750
+                }
+              ]
+            }
+          ],
+          "source_note": "仅作候选；正式发布需低频从搜索页点击复核"
+        }
+      ],
+      "notes": [],
+      "xhs_deep_queries": [
+        {
+          "query": "北坞公园 骑行",
+          "search": {
+            "url": "https://www.xiaohongshu.com/search_result/?keyword=%E5%8C%97%E5%9D%9E%E5%85%AC%E5%9B%AD+%E9%AA%91%E8%A1%8C&source=web_search_result_notes&type=51",
+            "title": "北坞公园 骑行 - 小红书搜索",
+            "cards": [
+              {
+                "href": "https://www.xiaohongshu.com/explore/69b3d5e1000000002301d4e6",
+                "text": "三山五园绿道休闲骑行 | 锋芒～ | 03-13 | 582",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/999244457f7b117a692a5d71cc5a6e0b/1040g00831tl9uaio780g5nkqci5g9916tpn5b2o!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/69e6045c000000002103b9da",
+                "text": "🚲适合低幼骑行｜三山五园春日骑行攻略 | 桐桐麻麻 | 04-20 | 54",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/78874c9652837863a068242e288b0a13/notes_pre_post/1040g3k831v69vhr92i8049bvirvhnm77li3qerg!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/69d8bc83000000002202718d",
+                "text": "不是新西兰🌳是北京的四环 | 户外香菜 | 04-10 | 491",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/64559ca59aa8154e1cf327008040ea4f/notes_pre_post/1040g3k031upb82r52i005pgkku7hoptqve3bkjg!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/686a8d7f00000000110027d1",
+                "text": "骑共享单车逛公园原来如此轻松🚴 | MissRainieY | 2025-07-06 | 91",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/1c0b896bfbd960f31a1523767b626afd/1040g00831jjn1o0kia0048is3llfkp3i6v5vi7g!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/69ec5ad7000000001a02d715",
+                "text": "🚴‍♀️4+2亲子骑行｜北坞绿道树荫咖啡 | 壮壮妈 | 04-25 | 34",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/00fa01394b9ad335cb1431b31491703a/notes_pre_post/1040g3k831vcg07iuigd04b8q4ckcv0pfn8upc9g!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/6841a0360000000022004f4a",
+                "text": "北京16条神仙亲子骑行道 | 榴莲钉钉 | 2025-06-06 | 458",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/5034313319185961bb1fd7a21956f726/1040g00831ibp18a1g260416a23dbcsph0g0rfco!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/69db9a62000000002202772e",
+                "text": "关于北坞公园停车和实际情况的几点订正 | Chihuahua | 04-12 | 9",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/133a89eb8320f59919f0c3a5f91095f5/notes_pre_post/1040g3k031us3kv6djq005o3nioogbs1sb7v7v3g!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/68c81a70000000001d005878",
+                "text": "亲子骑行一定不要错过三山五园 | 灰灰 | 2025-09-15 | 25",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/0be38a8f90f305ce51b346a91351d8f7/1040g2sg31mf39avql2kg5ph18jshom1dq24lkt0!nc_n_webp_mw_1"
+              }
+            ]
+          },
+          "details": [
+            {
+              "card": {
+                "href": "https://www.xiaohongshu.com/explore/69b3d5e1000000002301d4e6",
+                "text": "三山五园绿道休闲骑行 | 锋芒～ | 03-13 | 582",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/999244457f7b117a692a5d71cc5a6e0b/1040g00831tl9uaio780g5nkqci5g9916tpn5b2o!nc_n_webp_mw_1"
+              },
+              "click": {
+                "ok": true,
+                "href": "https://www.xiaohongshu.com/explore/69b3d5e1000000002301d4e6"
+              },
+              "detail": {
+                "url": "https://www.xiaohongshu.com/explore",
+                "title": "小红书 - 你的生活兴趣社区",
+                "text": "创作中心\n业务合作\n发现\n直播\n发布\n通知\n沪ICP备13030189号 | 营业执照 | 2024沪公网安备31010102002533号 | 增值电信业务经营许可证：沪B2-20150021 | 医疗器械网络交易服务第三方平台备案：(沪)网械平台备字[2019]第00006号 | 互联网药品信息服务资格证书：(沪)-经营性-2023-0144 | 违法不良信息举报电话：4006676810 | 上海市互联网举报中心 | 网上有害信息举报专区 | 自营经营者信息 | 网络文化经营许可证：沪网文(2024)1344-086号 | 个性化推荐算法 网信算备310101216601302230019号\n© 2014-2026\n行吟信息科技（上海）有限公司\n地址：上海市黄浦区马当路388号C座\n电话：9501-3888\n更多\n关于我们\n沪ICP备13030189号 | 营业执照 | 2024沪公网安备31010102002533号 | 增值电信业务经营许可证：沪B2-20150021 | 医疗器械网络交易服务第三方平台备案：(沪)网械平台备字[2019]第00006号 | 互联网药品信息服务资格证书：(沪)-经营性-2023-0144 | 违法不良信息举报电话：4006676810 | 上海市互联网举报中心 | 网上有害信息举报专区 | 自营经营者信息 | 网络文化经营许可证：沪网文(2024)1344-086号 | 个性化推荐算法 网信算备310101216601302230019号\n© 2014-2026\n行吟信息科技（上海）有限公司\n地址：上海市黄浦区马当路388号C座\n电话：9501-3888\n推荐\n穿搭\n美食\n彩妆\n影视\n职场\n情感\n家居\n游戏\n旅行\n健身",
+                "imgs": []
+              }
+            },
+            {
+              "card": {
+                "href": "https://www.xiaohongshu.com/explore/69e6045c000000002103b9da",
+                "text": "🚲适合低幼骑行｜三山五园春日骑行攻略 | 桐桐麻麻 | 04-20 | 54",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/78874c9652837863a068242e288b0a13/notes_pre_post/1040g3k831v69vhr92i8049bvirvhnm77li3qerg!nc_n_webp_mw_1"
+              },
+              "click": {
+                "ok": true,
+                "href": "https://www.xiaohongshu.com/explore/69e6045c000000002103b9da"
+              },
+              "detail": {
+                "url": "https://www.xiaohongshu.com/explore",
+                "title": "小红书 - 你的生活兴趣社区",
+                "text": "创作中心\n业务合作\n发现\n直播\n发布\n通知\n沪ICP备13030189号 | 营业执照 | 2024沪公网安备31010102002533号 | 增值电信业务经营许可证：沪B2-20150021 | 医疗器械网络交易服务第三方平台备案：(沪)网械平台备字[2019]第00006号 | 互联网药品信息服务资格证书：(沪)-经营性-2023-0144 | 违法不良信息举报电话：4006676810 | 上海市互联网举报中心 | 网上有害信息举报专区 | 自营经营者信息 | 网络文化经营许可证：沪网文(2024)1344-086号 | 个性化推荐算法 网信算备310101216601302230019号\n© 2014-2026\n行吟信息科技（上海）有限公司\n地址：上海市黄浦区马当路388号C座\n电话：9501-3888\n更多\n关于我们\n沪ICP备13030189号 | 营业执照 | 2024沪公网安备31010102002533号 | 增值电信业务经营许可证：沪B2-20150021 | 医疗器械网络交易服务第三方平台备案：(沪)网械平台备字[2019]第00006号 | 互联网药品信息服务资格证书：(沪)-经营性-2023-0144 | 违法不良信息举报电话：4006676810 | 上海市互联网举报中心 | 网上有害信息举报专区 | 自营经营者信息 | 网络文化经营许可证：沪网文(2024)1344-086号 | 个性化推荐算法 网信算备310101216601302230019号\n© 2014-2026\n行吟信息科技（上海）有限公司\n地址：上海市黄浦区马当路388号C座\n电话：9501-3888\n推荐\n穿搭\n美食\n彩妆\n影视\n职场\n情感\n家居\n游戏\n旅行\n健身",
+                "imgs": []
+              }
+            }
+          ]
+        },
+        {
+          "query": "玉东郊野公园 亲子骑行",
+          "search": {
+            "url": "https://www.xiaohongshu.com/search_result/?keyword=%E7%8E%89%E4%B8%9C%E9%83%8A%E9%87%8E%E5%85%AC%E5%9B%AD+%E4%BA%B2%E5%AD%90%E9%AA%91%E8%A1%8C&source=web_search_result_notes&type=51",
+            "title": "玉东郊野公园 亲子骑行 - 小红书搜索",
+            "cards": [
+              {
+                "href": "https://www.xiaohongshu.com/explore/69d8bc83000000002202718d",
+                "text": "不是新西兰🌳是北京的四环 | 户外香菜 | 04-10 | 491",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/64559ca59aa8154e1cf327008040ea4f/notes_pre_post/1040g3k031upb82r52i005pgkku7hoptqve3bkjg!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/68bd05d3000000001b03cd1b",
+                "text": "骑行50KM | 海淀最美骑行路线 | 狂人不走 | 2025-09-07 | 25",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/32703666e815a8fb1c60f8256c76aeca/1040g00831m496in258005oilf018cgsj69obf80!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/666fadf6000000000d00fc6e",
+                "text": "#一路骑行到童话世界｜三山五园绿道推荐# | Dressing蜜 | 2024-06-17 | 7",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/d399941b326b38bde1799d2ed0645fec/1040g0083144o7c1p1c0040qsp2i5p70oahbo650!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/67126c3c000000001b02fbb5",
+                "text": "这儿绝对是市里蕞美的亲子骑行路| 北京骑行 | 户外香菜 | 2024-10-19 | 31",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/0924783cee69c4cb13084fd4fcac624c/1040g2sg3193lui4cl4cg5pgkku7hoptqgl08u80!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/664b0d520000000005006296",
+                "text": "不是新西兰，是北京的四环🌳附骑行路线 | 喔喔野趣 | 2024-06-20 | 293",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/0ccb684de430fb711f382617d1db3a58/1040g2sg3130vja45jsag4a37mrj5jicbj4n15jg!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/667a81cb000000001c0347fd",
+                "text": "夏日遛娃宝藏公园💦人少免费🆓可玩水可骑行 | 慢慢长大的小麦子 | 2024-06-25 | 164",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/198f04730b0b0a707058f280a0a42d66/1040g008314faiod96e105p4hlbr4864icqq0fo0!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/6618e940000000001a00fde4",
+                "text": "北京｜景好人少花繁的野餐好去处—玉东公园 | 若非龙 | 2024-04-12 | 10",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/4ba48a616536121aef041fd9e6b4c8df/1040g2sg311g0mt53mo0g4a4v5bcacce1bhi3f30!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/67b3f1ad0000000029027b82",
+                "text": "🚴‍♂️ 北京带娃骑行的宝藏公园 | 双宝探险家 | 2025-02-18 | 62",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/ea7eb8ffd06d250523ac5df049f20d3a/1040g00831e1dfr3f08005n3i4ap4maai565ejvo!nc_n_webp_mw_1"
+              }
+            ]
+          },
+          "details": [
+            {
+              "card": {
+                "href": "https://www.xiaohongshu.com/explore/69d8bc83000000002202718d",
+                "text": "不是新西兰🌳是北京的四环 | 户外香菜 | 04-10 | 491",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/64559ca59aa8154e1cf327008040ea4f/notes_pre_post/1040g3k031upb82r52i005pgkku7hoptqve3bkjg!nc_n_webp_mw_1"
+              },
+              "click": {
+                "ok": true,
+                "href": "https://www.xiaohongshu.com/explore/69d8bc83000000002202718d"
+              },
+              "detail": {
+                "url": "https://www.xiaohongshu.com/explore",
+                "title": "小红书 - 你的生活兴趣社区",
+                "text": "创作中心\n业务合作\n发现\n直播\n发布\n通知\n沪ICP备13030189号 | 营业执照 | 2024沪公网安备31010102002533号 | 增值电信业务经营许可证：沪B2-20150021 | 医疗器械网络交易服务第三方平台备案：(沪)网械平台备字[2019]第00006号 | 互联网药品信息服务资格证书：(沪)-经营性-2023-0144 | 违法不良信息举报电话：4006676810 | 上海市互联网举报中心 | 网上有害信息举报专区 | 自营经营者信息 | 网络文化经营许可证：沪网文(2024)1344-086号 | 个性化推荐算法 网信算备310101216601302230019号\n© 2014-2026\n行吟信息科技（上海）有限公司\n地址：上海市黄浦区马当路388号C座\n电话：9501-3888\n更多\n关于我们\n沪ICP备13030189号 | 营业执照 | 2024沪公网安备31010102002533号 | 增值电信业务经营许可证：沪B2-20150021 | 医疗器械网络交易服务第三方平台备案：(沪)网械平台备字[2019]第00006号 | 互联网药品信息服务资格证书：(沪)-经营性-2023-0144 | 违法不良信息举报电话：4006676810 | 上海市互联网举报中心 | 网上有害信息举报专区 | 自营经营者信息 | 网络文化经营许可证：沪网文(2024)1344-086号 | 个性化推荐算法 网信算备310101216601302230019号\n© 2014-2026\n行吟信息科技（上海）有限公司\n地址：上海市黄浦区马当路388号C座\n电话：9501-3888\n推荐\n穿搭\n美食\n彩妆\n影视\n职场\n情感\n家居\n游戏\n旅行\n健身",
+                "imgs": []
+              }
+            },
+            {
+              "card": {
+                "href": "https://www.xiaohongshu.com/explore/68bd05d3000000001b03cd1b",
+                "text": "骑行50KM | 海淀最美骑行路线 | 狂人不走 | 2025-09-07 | 25",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/32703666e815a8fb1c60f8256c76aeca/1040g00831m496in258005oilf018cgsj69obf80!nc_n_webp_mw_1"
+              },
+              "click": {
+                "ok": false
+              },
+              "detail": {
+                "url": "https://www.xiaohongshu.com/search_result/?keyword=%E7%8E%89%E4%B8%9C%E9%83%8A%E9%87%8E%E5%85%AC%E5%9B%AD+%E4%BA%B2%E5%AD%90%E9%AA%91%E8%A1%8C&source=web_search_result_notes&type=51",
+                "title": "玉东郊野公园 亲子骑行 - 小红书搜索",
+                "text": "创作中心\n业务合作\n发现\n直播\n发布\n16\n通知\n我\n沪ICP备13030189号 | 营业执照 | 2024沪公网安备31010102002533号 | 增值电信业务经营许可证：沪B2-20150021 | 医疗器械网络交易服务第三方平台备案：(沪)网械平台备字[2019]第00006号 | 互联网药品信息服务资格证书：(沪)-经营性-2023-0144 | 违法不良信息举报电话：4006676810 | 上海市互联网举报中心 | 网上有害信息举报专区 | 自营经营者信息 | 网络文化经营许可证：沪网文(2024)1344-086号 | 个性化推荐算法 网信算备310101216601302230019号\n© 2014-2026\n行吟信息科技（上海）有限公司\n地址：上海市黄浦区马当路388号C座\n电话：9501-3888\n更多\n关于我们\n沪ICP备13030189号 | 营业执照 | 2024沪公网安备31010102002533号 | 增值电信业务经营许可证：沪B2-20150021 | 医疗器械网络交易服务第三方平台备案：(沪)网械平台备字[2019]第00006号 | 互联网药品信息服务资格证书：(沪)-经营性-2023-0144 | 违法不良信息举报电话：4006676810 | 上海市互联网举报中心 | 网上有害信息举报专区 | 自营经营者信息 | 网络文化经营许可证：沪网文(2024)1344-086号 | 个性化推荐算法 网信算备310101216601302230019号\n© 2014-2026\n行吟信息科技（上海）有限公司\n地址：上海市黄浦区马当路388号C座\n电话：9501-3888\n全部\n图文\n图文\n视频\n视频\n用户\n用户\n筛选\n综合\n路线图\n门票\n今日实况\n不是新西兰🌳是北京的四环\n户外香菜\n04-10\n491\n夏日遛娃宝藏公园💦人少免费🆓可玩水可骑行\n慢慢长大的小麦子\n2024-06-25\n164\n这儿绝对是市里蕞美的亲子骑行路| 北京骑行\n户外香菜\n2024-10-19\n31\n#一路骑行到童话世界｜三山五园绿道推荐#\nDressing蜜\n2024-06-17\n7\n北京｜景好人少花繁的野餐好去处—玉东公园\n若非龙\n2024-04-12\n10\n🚴‍♂️ 北京带娃骑行的宝藏公园\n双宝探险家\n2025-02-18\n62\n大家都在搜\n玉东郊野公园亲子骑行攻略\n西城儿童骑行路线\n北京东边骑行路线\n带孩子骑行的好处和危害\n不是新西兰，是北京的四环🌳附骑行路线\n喔喔野趣\n2024-06-20\n293\n🤫悄悄说！北京8条亲子骑行路线，不去特亏！\n桔猪🍊\n03-14\n661\n📍谁说北京没有“翡翠河”还有绿野仙踪❗️❗️\n花漫雪\n04-27\n185\n北坞公园/玉东郊野公园\n卡皮巴拉小孟\n2025-09-29\n7\n绝美林荫道❗️迄今为止最爱的亲子骑行路线🚴\n疯娃夏子\n2025-05-26\n260\n北京遛娃｜亲测‼️超亲子的稻田骑行路线🌳\n开心步步酱\n2024-12-01\n276\n我发现北京蕞适合亲子骑行的绿道‼️低幼友好\n会玩儿的米乐麻麻\n2025-07-08\n319\n三山五园绿道休闲骑行\n锋芒～\n03-13\n582\n我们在帝都遛娃徒步捡化石，这条鱼好特别\n大李和小李\n2025-09-15\n258\n大家都在搜\n三山五园骑行路书\n带娃骑行座椅最大能坐几岁\n玉东郊野公园骑车\n红领巾公园骑行\n北京16条神仙亲子骑行道\n榴莲钉钉\n2025-06-06\n458\n北京7⃣个免费亲子骑行公园，共享单车可进\n张大富\n2025-03-22\n407\n北京市区❸条宛如宫崎骏世界的夏日骑行路线\nAimee萌小妞\n2024-05-28\n259\n又到亲子骑行季，与孩子一起成长！\n北京周末去哪\n2025-09-23\n14\n🚲适合低幼骑行｜三山五园春日骑行攻略\n桐桐麻麻\n04-20\n54\n活动",
+                "imgs": [
+                  {
+                    "src": "https://sns-avatar-qc.xhscdn.com/avatar/411309441983cdc4ce073ff8da73b5b6.jpg?imageView2/2/w/360/format/webp",
+                    "w": 360,
+                    "h": 360,
+                    "alt": ""
+                  },
+                  {
+                    "src": "https://sns-webpic-qc.xhscdn.com/202605221930/64559ca59aa8154e1cf327008040ea4f/notes_pre_post/1040g3k031upb82r52i005pgkku7hoptqve3bkjg!nc_n_webp_mw_1",
+                    "w": 640,
+                    "h": 853,
+                    "alt": ""
+                  },
+                  {
+                    "src": "https://sns-webpic-qc.xhscdn.com/202605221930/198f04730b0b0a707058f280a0a42d66/1040g008314faiod96e105p4hlbr4864icqq0fo0!nc_n_webp_mw_1",
+                    "w": 640,
+                    "h": 853,
+                    "alt": ""
+                  },
+                  {
+                    "src": "https://sns-webpic-qc.xhscdn.com/202605221930/0924783cee69c4cb13084fd4fcac624c/1040g2sg3193lui4cl4cg5pgkku7hoptqgl08u80!nc_n_webp_mw_1",
+                    "w": 640,
+                    "h": 853,
+                    "alt": ""
+                  },
+                  {
+                    "src": "https://sns-webpic-qc.xhscdn.com/202605221930/d399941b326b38bde1799d2ed0645fec/1040g0083144o7c1p1c0040qsp2i5p70oahbo650!nc_n_webp_mw_1",
+                    "w": 640,
+                    "h": 853,
+                    "alt": ""
+                  },
+                  {
+                    "src": "https://sns-webpic-qc.xhscdn.com/202605221930/4ba48a616536121aef041fd9e6b4c8df/1040g2sg311g0mt53mo0g4a4v5bcacce1bhi3f30!nc_n_webp_mw_1",
+                    "w": 640,
+                    "h": 853,
+                    "alt": ""
+                  },
+                  {
+                    "src": "https://sns-webpic-qc.xhscdn.com/202605221930/ea7eb8ffd06d250523ac5df049f20d3a/1040g00831e1dfr3f08005n3i4ap4maai565ejvo!nc_n_webp_mw_1",
+                    "w": 640,
+                    "h": 777,
+                    "alt": ""
+                  },
+                  {
+                    "src": "https://sns-webpic-qc.xhscdn.com/202605221930/0ccb684de430fb711f382617d1db3a58/1040g2sg3130vja45jsag4a37mrj5jicbj4n15jg!nc_n_webp_mw_1",
+                    "w": 640,
+                    "h": 853,
+                    "alt": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yongding-lvdao",
+      "name": "永定绿道 / 绿堤公园串联",
+      "area": "丰台",
+      "xhs_cards": [
+        {
+          "title_text": "🤫悄悄说！北京8条亲子骑行路线，不去特亏！ | 桔猪🍊 | 03-14 | 661",
+          "url": "https://www.xiaohongshu.com/explore/69b38d47000000001f006e05",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221858/26ff6026e9423d0dab8291d5d9cad242/notes_pre_post/1040g3k031tl0s4k6723g48j8udpphq4ieend7to!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "骑行党必看❗北京这6条春日路线绝美🌸 | 北京周末去哪 | 03-18 | 234",
+          "url": "https://www.xiaohongshu.com/explore/69b942d4000000001d01eb69",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221858/b056f37e0769be0ce24aa9773036d474/spectrum/1040g34o31tqjgof60a705p2pjkh51ud231mpq20!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "北京打卡记 | 05-03 | 3",
+          "url": "https://www.xiaohongshu.com/explore/69e82a98000000001a03446b",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221858/bd9285e8a1b9778c1390bd7cd4f40105/spectrum/1040g0k031v8ddrmpk0005n668shlmur5od2bdqo!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "小众绿堤公园，恢复免费开放🌟 | 北京LOOK | 04-22 | 53",
+          "url": "https://www.xiaohongshu.com/explore/69e89047000000001a021c9b",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221858/d30a84358911c802c0919c326055e7c6/notes_pre_post/1040g3k031v8pql03ii004bq5a3bci8prmauk0hg!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "北京绿堤公园｜在五环边，找到一片宝地 | 企鹅宝宝 | 05-04 | 10",
+          "url": "https://www.xiaohongshu.com/explore/69f878030000000022028cf2",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221858/1618468e0af185b01c64542fc75a5f55/notes_pre_post/1040g3k831voas2712i005n94ub24797gom92g1o!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "我们在帝都遛娃徒步捡化石，这条鱼好特别 | 大李和小李 | 2025-09-15 | 258",
+          "url": "https://www.xiaohongshu.com/explore/6792525f000000002902fed2",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221858/81684502ff402026c37d0a9eac617094/1040g2sg31d0ipio7gmdg5p14u2f4cf4n89qidb0!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "免费白沙滩隐秘小岛🏝️京郊山水天花板‼️ | 一枚酥酥 | 2025-09-25 | 2083",
+          "url": "https://www.xiaohongshu.com/explore/6838226500000000120052b8",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221858/75538b71470da1dc3e4e120cd754e526/notes_pre_post/1040g3k031i2fsnivnc505ocm6ojk1bgktdg6tq8!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "多部门联动整治违投“亲子单车” | 北京交通 | 03-24 | 10",
+          "url": "https://www.xiaohongshu.com/explore/69c2408a000000001a02f915",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221858/e2a57ea55d86562ce1d5cf8faa8b5b07/spectrum/1040g0k031u3cj81nhm005q5l0f7mkmopg9c8aio!nc_n_webp_mw_1"
+        }
+      ],
+      "poi_dp_queries": [
+        {
+          "query": "绿堤公园",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E7%BB%BF%E5%A0%A4%E5%85%AC%E5%9B%AD",
+          "shops": [
+            {
+              "name": "绿堤公园",
+              "rating": "4.9",
+              "reviews": "2297",
+              "avg": "10328",
+              "rank": "丰台区公园好评榜 · 第4名",
+              "hours": "",
+              "address": "农场路",
+              "url": "https://www.dianping.com/shop/j8XmRw1W2Mx81NOO",
+              "cardText": "绿堤公园 |   | 2296 条评价 | | | 人均 - | 公园 | 丰台区",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/ugcpic/6dcb3ef15c026040bef5b8da0ffe79cf%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 488
+                }
+              ]
+            },
+            {
+              "name": "绿堤公园-宛平湖休闲广场",
+              "rating": "3.8",
+              "reviews": "8",
+              "avg": "412",
+              "rank": "",
+              "hours": "",
+              "address": "",
+              "url": "https://www.dianping.com/shop/G2k4cuQGyyeF7bPV",
+              "cardText": "绿堤公园-宛平湖休闲广场 |   | 8 条评价 | | | 人均 - | 休闲广场 | 卢沟桥商圈",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://qcloud.dpfile.com/pc/xvoSS8xC86XEsw9IeD5R8K9gYsgSffBYwFZHvjGENRJrrnYGh3mR50R2kiE32Sqqtinsm4wZBU2JBzCyrLLxBw.webp",
+                  "w": 750,
+                  "h": 563
+                }
+              ]
+            }
+          ],
+          "source_note": "已采集，但后续正式页面需从搜索结果页点击复核"
+        },
+        {
+          "query": "永定河休闲森林公园",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E6%B0%B8%E5%AE%9A%E6%B2%B3%E4%BC%91%E9%97%B2%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD",
+          "shops": [
+            {
+              "name": "永定河休闲森林公园-河档档河",
+              "rating": "3.5",
+              "reviews": "3",
+              "avg": "1090",
+              "rank": "",
+              "hours": "",
+              "address": "京原路55号",
+              "url": "https://www.dianping.com/shop/la2eElh0od5HSxuK",
+              "cardText": "永定河休闲森林公园-河档档河 |   | 3 条评价 | | | 人均 - | 游玩 | 石景山区",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://qcloud.dpfile.com/pc/DpV3QNbKE28Mmz6s6GwC_ILhjEfQhfGROPdCGAI9pMCYb_hQlHTO1cZtC-Gb4cdEtinsm4wZBU2JBzCyrLLxBw.webp",
+                  "w": 750,
+                  "h": 563
+                }
+              ]
+            },
+            {
+              "name": "首钢园",
+              "rating": "4.9",
+              "reviews": "20987",
+              "avg": "55496",
+              "rank": "",
+              "hours": "",
+              "address": "距地铁11号线新首钢站C口步行1.1km",
+              "url": "https://www.dianping.com/shop/l8aMCpu0T9cFo8uk",
+              "cardText": "首钢园 |   | 20982 条评价 | | | 人均 - | 地标建筑 | 石景山区",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/ugcpic/83b68b28e70f07da0011fdc42a893511%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 422
+                }
+              ]
+            }
+          ],
+          "source_note": "已采集，但后续正式页面需从搜索结果页点击复核"
+        },
+        {
+          "query": "卢沟桥",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E5%8D%A2%E6%B2%9F%E6%A1%A5",
+          "shops": [
+            {
+              "name": "",
+              "rating": "",
+              "reviews": "",
+              "avg": "102",
+              "rank": "",
+              "hours": "休息中次日08:00开始营业",
+              "address": "距地铁16号线宛平城站D西南口步行1.1km",
+              "url": "https://www.dianping.com/shop/H410dTLumgSSGWjd",
+              "cardText": "卢沟桥文化旅游区(卢沟桥) |   | 5776 条评价 | | | 人均 - | 人文古迹 | 卢沟桥商圈",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/tdctraveldark/45aacd4524bec4983abba99649ff50283825369.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 500
+                }
+              ]
+            },
+            {
+              "name": "卢沟桥",
+              "rating": "4.0",
+              "reviews": "20",
+              "avg": "102",
+              "rank": "",
+              "hours": "",
+              "address": "",
+              "url": "https://www.dianping.com/shop/H4ZASzRNulZAf7Wn",
+              "cardText": "卢沟桥 |   | 18 条评价 | | | 人均 - | 桥 | 卢沟桥商圈",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/poipicadd/e2cbb2ea667f3ad89ae983b4ae578833224694.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 1000
+                }
+              ]
+            }
+          ],
+          "source_note": "已采集，但后续正式页面需从搜索结果页点击复核"
+        }
+      ],
+      "food_candidates": [
+        {
+          "query": "绿堤公园 咖啡 蛋糕",
+          "kind": "cafe_bakery",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E7%BB%BF%E5%A0%A4%E5%85%AC%E5%9B%AD%20%E5%92%96%E5%95%A1%20%E8%9B%8B%E7%B3%95",
+          "shops": [
+            {
+              "name": "PAST-POST COFFEE(长辛店国潮时尚街店)",
+              "rating": "4.3",
+              "reviews": "256",
+              "avg": "6808",
+              "rank": "云岗商圈咖啡好评榜 · 第2名",
+              "hours": "营业中11:00-20:30",
+              "address": "",
+              "url": "https://www.dianping.com/shop/G5hYVM7i4Mntg2ty",
+              "cardText": "PAST-POST COFFEE(长辛店国潮时尚街店) |   | 255 条评价 | | | 人均 ￥27 | 咖啡 | 云岗商圈",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/biztone/8884ece0fcf7fecd1ed55604072b254c864432.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 750
+                }
+              ]
+            },
+            {
+              "name": "DQ.蛋糕.冰淇淋(资和信大厦B1店)",
+              "rating": "4.3",
+              "reviews": "1865",
+              "avg": "111",
+              "rank": "看丹桥/新华街饮品好评榜 · 第1名",
+              "hours": "营业中10:00-21:00",
+              "address": "距地铁16号线富丰桥站A西北口步行290m",
+              "url": "https://www.dianping.com/shop/k4Ni3BO1Z6OUf8pF",
+              "cardText": "DQ.蛋糕.冰淇淋(资和信大厦B1店) |   | 1863 条评价 | | | 人均 ￥25 | 冰淇淋 | 看丹桥/新华街",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/content/c0d74dc8f800ea04ab59395c0236bc2227778.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 750
+                }
+              ]
+            },
+            {
+              "name": "星巴克(北京西四环南路店)",
+              "rating": "4.2",
+              "reviews": "533",
+              "avg": "149",
+              "rank": "看丹桥/新华街咖啡热门榜 · 第2名",
+              "hours": "营业中06:30-21:30",
+              "address": "距地铁16号线富丰桥站A西北口步行270m",
+              "url": "https://www.dianping.com/shop/l2DzImfTxgObsYv8",
+              "cardText": "星巴克(北京西四环南路店) |   分店 | 533 条评价 | | | 人均 ￥37 | 咖啡 | 看丹桥/新华街",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/content/cd754316a2f2ecb977e18efa24b45f1729565.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 500,
+                  "h": 500
+                }
+              ]
+            }
+          ],
+          "source_note": "仅作候选；正式发布需低频从搜索页点击复核"
+        },
+        {
+          "query": "卢沟桥 咖啡 蛋糕",
+          "kind": "cafe_bakery",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E5%8D%A2%E6%B2%9F%E6%A1%A5%20%E5%92%96%E5%95%A1%20%E8%9B%8B%E7%B3%95",
+          "shops": [
+            {
+              "name": "星巴克(北京橡树澜湾店)",
+              "rating": "4.4",
+              "reviews": "148",
+              "avg": "1090",
+              "rank": "卢沟桥商圈咖啡热门榜 · 第5名",
+              "hours": "营业中06:30-21:00",
+              "address": "张仪村路18号院9号楼的地上一层102-3单元",
+              "url": "https://www.dianping.com/shop/l4thi7SKSWdLhM9Q",
+              "cardText": "星巴克(北京橡树澜湾店) |   | 147 条评价 | | | 人均 ￥37 | 咖啡 | 卢沟桥商圈",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/content/cd754316a2f2ecb977e18efa24b45f1729565.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 500,
+                  "h": 500
+                }
+              ]
+            },
+            {
+              "name": "麦当劳(杜家坎店)",
+              "rating": "4.2",
+              "reviews": "812",
+              "avg": "4929",
+              "rank": "卢沟桥商圈小吃快餐回头客榜 · 第5名",
+              "hours": "营业中07:00-23:00",
+              "address": "",
+              "url": "https://www.dianping.com/shop/G8TIQpffPQa3ybhQ",
+              "cardText": "麦当劳(杜家坎店) |   | 811 条评价 | | | 人均 ￥33 | 西式快餐 | 卢沟桥商圈",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/content/f01e4ef8a743eff45b4b2245837ef524174780.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 750
+                }
+              ]
+            }
+          ],
+          "source_note": "仅作候选；正式发布需低频从搜索页点击复核"
+        },
+        {
+          "query": "绿堤公园 餐厅",
+          "kind": "restaurant",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E7%BB%BF%E5%A0%A4%E5%85%AC%E5%9B%AD%20%E9%A4%90%E5%8E%85",
+          "shops": [
+            {
+              "name": "麗鲸餐厅",
+              "rating": "4.6",
+              "reviews": "1924",
+              "avg": "5263",
+              "rank": "云岗商圈西餐热门榜 · 第1名",
+              "hours": "营业中10:00-21:00",
+              "address": "长辛店街道长辛店二七厂路二七厂1897科创城N16-1号（近北门）",
+              "url": "https://www.dianping.com/shop/G8R7yYOZos4np1Gb",
+              "cardText": "麗鲸餐厅 |   | 1924 条评价 | | | 人均 ￥115 | 牛排 | 云岗商圈",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/content/5674b497d50d29b1a0a6b1e19234afc6907476.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 743
+                }
+              ]
+            },
+            {
+              "name": "绿堤公园",
+              "rating": "4.9",
+              "reviews": "2297",
+              "avg": "49",
+              "rank": "丰台区公园好评榜 · 第4名",
+              "hours": "",
+              "address": "农场路",
+              "url": "https://www.dianping.com/shop/j8XmRw1W2Mx81NOO",
+              "cardText": "绿堤公园 |   | 2296 条评价 | | | 人均 - | 公园 | 丰台区",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/ugcpic/6dcb3ef15c026040bef5b8da0ffe79cf%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 488
+                }
+              ]
+            }
+          ],
+          "source_note": "仅作候选；正式发布需低频从搜索页点击复核"
+        }
+      ],
+      "notes": [],
+      "xhs_deep_queries": [
+        {
+          "query": "绿堤公园 骑行",
+          "search": {
+            "url": "https://www.xiaohongshu.com/search_result/?keyword=%E7%BB%BF%E5%A0%A4%E5%85%AC%E5%9B%AD+%E9%AA%91%E8%A1%8C&source=web_search_result_notes&type=51",
+            "title": "绿堤公园 骑行 - 小红书搜索",
+            "cards": [
+              {
+                "href": "https://www.xiaohongshu.com/explore/69d27c880000000021011f37",
+                "text": "亲子骑行-永定河绿道 | 溜达🛬 | 04-05 | 40",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/90d2b0f6678bb587e5f4e8f68835346f/notes_pre_post/1040g3k031uj7fpoviq4g415bo9eibtqh6s5gq8g!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/6870856500000000170317f8",
+                "text": "京西永定绿道，独享森林｜北京绿道骑行攻略 | 靠谱的金秋 | 2025-07-11 | 195",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/78ba1518e731a2fff178571958f825b2/notes_pre_post/1040g3k831jphtlbh2o705ng48psg8ss3s3d98to!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/69a3fd030000000016009433",
+                "text": "永定绿道春日骑行 | 海带丝 | 03-01 | 31",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/b4b04e1d14289f1c6f3486e31796fa9d/note_pre_post_uhdr/1040g3r031t5qqdl1lk005oj41e0ocftrea5br00!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/68466330000000002202d7c9",
+                "text": "三刷绿堤公园！南区隐藏玩法大公开✨​ | 超哥带你玩北京 | 2025-06-09 | 80",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/a75c9e9f8c82c16b2a716c5b84e18a0c/spectrum/1040g0k031igdg07dni0048jodnj01p1ls5gl820!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/6a084cc8000000003701df32",
+                "text": "绿堤公园步道骑行15公里 | 张鱼小丸子 | 6天前 | 3",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/d18321be4ae3f253010ad5b04af0ea3f/notes_pre_post/1040g3k83207pee3gls9g43r3t136ol89i8dk2oo!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/69fdd5a4000000003700c145",
+                "text": "推荐一个中老年骑友“休闲骑”的圣地 | 弓长先森-幸会48 | 05-08 | 17",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/28e27ff0d6d5f44c3849f5fae59d3953/1040g00831vtighcj2i105po2c377e1rm0b7rl38!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/69e82a98000000001a03446b",
+                "text": "北京打卡记 | 05-03 | 3",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/33a1c7f539b5b851362171d08b6fa6f0/spectrum/1040g0k031v8ddrmpk0005n668shlmur5od2bdqo!nc_n_webp_mw_1"
+              },
+              {
+                "href": "https://www.xiaohongshu.com/explore/68ad9b24000000001b0215ab",
+                "text": "【佛系路书】绿堤公园-全程约16公里 | 柳某人 | 2025-08-26 | 29",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/74ea69797ca6d448ce863efc4caf509e/notes_pre_post/1040g3k831ll7591q5i8g40134rlkd86igpbira0!nc_n_webp_mw_1"
+              }
+            ]
+          },
+          "details": [
+            {
+              "card": {
+                "href": "https://www.xiaohongshu.com/explore/69d27c880000000021011f37",
+                "text": "亲子骑行-永定河绿道 | 溜达🛬 | 04-05 | 40",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/90d2b0f6678bb587e5f4e8f68835346f/notes_pre_post/1040g3k031uj7fpoviq4g415bo9eibtqh6s5gq8g!nc_n_webp_mw_1"
+              },
+              "click": {
+                "ok": true,
+                "href": "https://www.xiaohongshu.com/explore/69d27c880000000021011f37"
+              },
+              "detail": {
+                "url": "https://www.xiaohongshu.com/website-login/captcha?redirectPath=http%3A%2F%2Fwww.xiaohongshu.com%2Fexplore%3FexSource%3Dnull&verifyUuid=596db369-1920-4dcc-85e8-0bcbc1a8c81c&verifyType=216&verifyBiz=461&verifyMsg=null",
+                "title": "Security Verification",
+                "text": "Security Verification\n题库加载中...\n验证\nFeedback",
+                "imgs": []
+              }
+            },
+            {
+              "card": {
+                "href": "https://www.xiaohongshu.com/explore/6870856500000000170317f8",
+                "text": "京西永定绿道，独享森林｜北京绿道骑行攻略 | 靠谱的金秋 | 2025-07-11 | 195",
+                "img": "https://sns-webpic-qc.xhscdn.com/202605221930/78ba1518e731a2fff178571958f825b2/notes_pre_post/1040g3k831jphtlbh2o705ng48psg8ss3s3d98to!nc_n_webp_mw_1"
+              },
+              "click": {
+                "ok": true,
+                "href": "https://www.xiaohongshu.com/explore/6870856500000000170317f8"
+              },
+              "detail": {
+                "url": "https://www.xiaohongshu.com/website-login/captcha?redirectPath=http%3A%2F%2Fwww.xiaohongshu.com%2Fexplore%3FexSource%3Dnull&verifyUuid=d4889721-cf39-495c-bf9b-1d906c3e4eff&verifyType=216&verifyBiz=461&verifyMsg=null",
+                "title": "Security Verification",
+                "text": "Security Verification\n题库加载中...\n验证\nFeedback",
+                "imgs": []
+              }
+            }
+          ]
+        },
+        {
+          "query": "永定河休闲森林公园 骑行",
+          "search": {
+            "url": "https://www.xiaohongshu.com/search_result/?keyword=%E6%B0%B8%E5%AE%9A%E6%B2%B3%E4%BC%91%E9%97%B2%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD+%E9%AA%91%E8%A1%8C&source=web_search_result_notes&type=51",
+            "title": "永定河休闲森林公园 骑行 - 小红书搜索",
+            "cards": []
+          },
+          "details": []
+        }
+      ]
+    },
+    {
+      "id": "tongzhou-canal",
+      "name": "通州大运河绿道 / 大运河森林公园",
+      "area": "通州",
+      "xhs_cards": [
+        {
+          "title_text": "北京遛娃骑行超友好｜6条绝美路线闭眼冲 | apple🍎（辣妈版） | 3天前 | 113",
+          "url": "https://www.xiaohongshu.com/explore/6a0c2abd00000000350225cb",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221901/0bdf3c33fca15988eda8806628d01e94/notes_pre_post/1040g3k0320bia9ta5i2042laakpiqrlrldlc51o!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "🤫悄悄说！北京8条亲子骑行路线，不去特亏！ | 桔猪🍊 | 03-14 | 661",
+          "url": "https://www.xiaohongshu.com/explore/69b38d47000000001f006e05",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221901/b85ea5f0fbd4767ea321e07a1b977702/notes_pre_post/1040g3k031tl0s4k6723g48j8udpphq4ieend7to!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "通州大运河森林公园骑行路线 | 琦臻懿宝 | 05-04 | 52",
+          "url": "https://www.xiaohongshu.com/explore/69f8a60f0000000036019f10",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221901/8f3ee71e0eb28f14649ea0f78744087e/1040g2sg31vogfsdb2i705n1gogl18d86q02qkg8!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "推荐一个适合“遛娃骑行”大公园 | 大鑫-北京礼拜七 | 04-30 | 143",
+          "url": "https://www.xiaohongshu.com/explore/69f34933000000001a0354e2",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221901/d94783efbbdd38be0c52ff1b5212422e/spectrum/1040g0k031vj8rdu64c005nv9vm2g950ea4psl20!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "户外日常更新，大运河骑行打卡✅ | 文杰儿 | 04-02 | 29",
+          "url": "https://www.xiaohongshu.com/explore/69ce2abc000000001f006df1",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221901/571588f842c1728897e583510c16fc34/notes_pre_post/1040g3k031uf0g6552odg48q2271172mdomqoj5g!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "🚲西集骑行驿站升级🌸樱游运河美在西集 | Hi北京通州 | 03-16 | 29",
+          "url": "https://www.xiaohongshu.com/explore/69b7778b000000001a0225fd",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221901/de0661a2937217310090f036445b3e82/1040g00831tore6v6mu6g5pele275pljt2351nko!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "骑行党必看❗北京这6条春日路线绝美🌸 | 北京周末去哪 | 03-18 | 234",
+          "url": "https://www.xiaohongshu.com/explore/69b942d4000000001d01eb69",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221901/163bc69cfade5e73bf4515835241aced/spectrum/1040g34o31tqjgof60a705p2pjkh51ud231mpq20!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "我发现北京蕞适合亲子骑行的绿道‼️低幼友好 | 会玩儿的米乐麻麻 | 2025-07-08 | 319",
+          "url": "https://www.xiaohongshu.com/explore/682d98fd0000000021005721",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221901/5dd53f5203c53f716171dfe2c4e7f2b9/notes_pre_post/1040g3k031ho73qhjjo205onnp0bnqhs0hm4asco!nc_n_webp_mw_1"
+        }
+      ],
+      "poi_dp_queries": [
+        {
+          "query": "大运河森林公园",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E5%A4%A7%E8%BF%90%E6%B2%B3%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD",
+          "shops": [
+            {
+              "name": "北京（通州）大运河文化旅游景区",
+              "rating": "4.9",
+              "reviews": "11165",
+              "avg": "117",
+              "rank": "北京度假景区好评榜 · 第1名",
+              "hours": "",
+              "address": "大成街1号",
+              "url": "https://www.dianping.com/shop/G3bpqZCesecSwUpV",
+              "cardText": "北京（通州）大运河文化旅游景区 |   | 11163 条评价 | | | 人均 - | 度假景区 | 通州区",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/ugcpic/05f0fb6457385879c49f766e78efe350%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 562
+                }
+              ]
+            },
+            {
+              "name": "大运河森林公园-西园",
+              "rating": "4.9",
+              "reviews": "309",
+              "avg": "117",
+              "rank": "通州区公园好评榜 · 第3名",
+              "hours": "",
+              "address": "",
+              "url": "https://www.dianping.com/shop/k3wt5NuzuDtEOt6E",
+              "cardText": "大运河森林公园-西园 |   | 309 条评价 | | | 人均 - | 森林公园 | 通州区",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/ugcpic/d584ecc5c74c931b1c9e78a34c19bd64%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 563
+                }
+              ]
+            }
+          ],
+          "source_note": "已采集，但后续正式页面需从搜索结果页点击复核"
+        },
+        {
+          "query": "北京城市绿心森林公园",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E5%8C%97%E4%BA%AC%E5%9F%8E%E5%B8%82%E7%BB%BF%E5%BF%83%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD",
+          "shops": [
+            {
+              "name": "城市绿心森林公园",
+              "rating": "4.9",
+              "reviews": "4641",
+              "avg": "2284",
+              "rank": "通州区公园好评榜 · 第2名",
+              "hours": "",
+              "address": "京塘路与东六环路交叉口东北角",
+              "url": "https://www.dianping.com/shop/H7XNemuaeAN1HDUe",
+              "cardText": "城市绿心森林公园 |   | 4639 条评价 | | | 人均 - | 森林公园 | 土桥",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/ugcpic/6efa9ded5e91f3d40900a116d4b3548d%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 562
+                }
+              ]
+            },
+            {
+              "name": "奇趣多•绿野森林乐园(绿心店)",
+              "rating": "4.2",
+              "reviews": "1697",
+              "avg": "150",
+              "rank": "通州区儿童乐园热门榜 · 第3名",
+              "hours": "休息中次日09:00开始营业",
+              "address": "绿心路与运兴路交叉口东800米路南（城市绿心森林公园内）",
+              "url": "https://www.dianping.com/shop/H3WVaHTEuYHIqQXj",
+              "cardText": "奇趣多•绿野森林乐园(绿心店) |   | 1697 条评价 | | | 人均 ￥111 | 儿童乐园 | 土桥",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/dpmerchantpic/aa3ad8b2d1b1b75e9768c161fe5f0a72758608.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 750
+                }
+              ]
+            }
+          ],
+          "source_note": "已采集，但后续正式页面需从搜索结果页点击复核"
+        },
+        {
+          "query": "北京艺术中心",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E5%8C%97%E4%BA%AC%E8%89%BA%E6%9C%AF%E4%B8%AD%E5%BF%83",
+          "shops": [
+            {
+              "name": "北京（通州区）北京艺术中心-歌剧院",
+              "rating": "4.9",
+              "reviews": "224",
+              "avg": "38",
+              "rank": "",
+              "hours": "",
+              "address": "绿心路1号院1号楼、2号楼",
+              "url": "https://www.dianping.com/shop/k5eGOLVQtLG4mDao",
+              "cardText": "北京（通州区）北京艺术中心-歌剧院 |   | 223 条评价 | | | 人均 - | 剧场/剧院 | 土桥",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/kylisean/13cd0d74cc09e6884bcd0af9fc728fdb420666.png%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 448,
+                  "h": 448
+                }
+              ]
+            },
+            {
+              "name": "北京艺术中心",
+              "rating": "4.9",
+              "reviews": "1286",
+              "avg": "26186",
+              "rank": "",
+              "hours": "休息中次日10:00开始营业",
+              "address": "绿心路1号院1号楼、2号楼",
+              "url": "https://www.dianping.com/shop/H6iWwTK0ZTNYD5dS",
+              "cardText": "北京艺术中心 |   | 1286 条评价 | | | 人均 - | 剧场/剧院 | 土桥",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/kylisean/6e2327b53b1ed2eeb031224445b6918586362.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 480,
+                  "h": 480
+                }
+              ]
+            }
+          ],
+          "source_note": "已采集，但后续正式页面需从搜索结果页点击复核"
+        }
+      ],
+      "food_candidates": [
+        {
+          "query": "大运河森林公园 咖啡 蛋糕",
+          "kind": "cafe_bakery",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E5%A4%A7%E8%BF%90%E6%B2%B3%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD%20%E5%92%96%E5%95%A1%20%E8%9B%8B%E7%B3%95",
+          "shops": [
+            {
+              "name": "有毛之地(朗清店)",
+              "rating": "4.7",
+              "reviews": "86",
+              "avg": "79",
+              "rank": "",
+              "hours": "营业中10:00-20:00",
+              "address": "",
+              "url": "https://www.dianping.com/shop/G5So0Nomm4CGLUNL",
+              "cardText": "有毛之地(朗清店) |   | 86 条评价 | | | 人均 ￥53 | 咖啡 | 通州区",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/biztone/9fa80f30c05185d837ab39964ceedc1b293095.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 750
+                }
+              ]
+            },
+            {
+              "name": "Moment·咖啡·蛋糕·甜品",
+              "rating": "4.3",
+              "reviews": "51",
+              "avg": "79",
+              "rank": "土桥咖啡新店榜 · 第1名",
+              "hours": "营业中10:00-22:00",
+              "address": "临河里街道金隅花石匠·自由筑二期",
+              "url": "https://www.dianping.com/shop/l86X7KlPuaBboXUK",
+              "cardText": "Moment·咖啡·蛋糕·甜品 |   | 48 条评价 | | | 人均 ￥32 | 咖啡 | 土桥",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/content/ebeab91e756558c082640696feb609fa87441.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 750
+                }
+              ]
+            },
+            {
+              "name": "星巴克臻选(北京通州万象汇店)",
+              "rating": "4.2",
+              "reviews": "230",
+              "avg": "304",
+              "rank": "通州区咖啡销量榜 · 第7名",
+              "hours": "营业中08:30-22:00",
+              "address": "",
+              "url": "https://www.dianping.com/shop/k9oRyiQrhmUERckt",
+              "cardText": "星巴克臻选(北京通州万象汇店) |   | 230 条评价 | | | 人均 ￥34 | 咖啡 | 通州区",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/content/cd754316a2f2ecb977e18efa24b45f1729565.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 500,
+                  "h": 500
+                }
+              ]
+            }
+          ],
+          "source_note": "仅作候选；正式发布需低频从搜索页点击复核"
+        },
+        {
+          "query": "通州绿心公园 咖啡 蛋糕",
+          "kind": "cafe_bakery",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E9%80%9A%E5%B7%9E%E7%BB%BF%E5%BF%83%E5%85%AC%E5%9B%AD%20%E5%92%96%E5%95%A1%20%E8%9B%8B%E7%B3%95",
+          "shops": [
+            {
+              "name": "Moment·咖啡·蛋糕·甜品",
+              "rating": "4.3",
+              "reviews": "51",
+              "avg": "3404",
+              "rank": "土桥咖啡新店榜 · 第1名",
+              "hours": "营业中10:00-22:00",
+              "address": "临河里街道金隅花石匠·自由筑二期",
+              "url": "https://www.dianping.com/shop/l86X7KlPuaBboXUK",
+              "cardText": "Moment·咖啡·蛋糕·甜品 |   | 48 条评价 | | | 人均 ￥32 | 咖啡 | 土桥",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/content/ebeab91e756558c082640696feb609fa87441.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 750
+                }
+              ]
+            },
+            {
+              "name": "有毛之地(朗清店)",
+              "rating": "4.7",
+              "reviews": "86",
+              "avg": "3404",
+              "rank": "",
+              "hours": "营业中10:00-20:00",
+              "address": "",
+              "url": "https://www.dianping.com/shop/G5So0Nomm4CGLUNL",
+              "cardText": "有毛之地(朗清店) |   | 86 条评价 | | | 人均 ￥53 | 咖啡 | 通州区",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/biztone/9fa80f30c05185d837ab39964ceedc1b293095.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 750
+                }
+              ]
+            },
+            {
+              "name": "星巴克臻选(北京通州万象汇店)",
+              "rating": "4.2",
+              "reviews": "230",
+              "avg": "304",
+              "rank": "通州区咖啡销量榜 · 第7名",
+              "hours": "营业中08:30-22:00",
+              "address": "",
+              "url": "https://www.dianping.com/shop/k9oRyiQrhmUERckt",
+              "cardText": "星巴克臻选(北京通州万象汇店) |   | 230 条评价 | | | 人均 ￥34 | 咖啡 | 通州区",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/content/cd754316a2f2ecb977e18efa24b45f1729565.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 500,
+                  "h": 500
+                }
+              ]
+            }
+          ],
+          "source_note": "仅作候选；正式发布需低频从搜索页点击复核"
+        },
+        {
+          "query": "大运河森林公园 餐厅",
+          "kind": "restaurant",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E5%A4%A7%E8%BF%90%E6%B2%B3%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD%20%E9%A4%90%E5%8E%85",
+          "shops": [
+            {
+              "name": "北京宴(通州大运河店)",
+              "rating": "4.9",
+              "reviews": "1669",
+              "avg": "6121",
+              "rank": "通州区特色菜热门榜 · 第1名",
+              "hours": "营业中11:00-14:00, 17:00-21:00",
+              "address": "",
+              "url": "https://www.dianping.com/shop/l4auBSiyLZ6KxoEj",
+              "cardText": "北京宴(通州大运河店) |   | 1668 条评价 | | | 人均 ￥337 | 特色菜 | 土桥",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/content/3cea0c3eeeaae7f07eff711b32f4bddf91830.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 750
+                }
+              ]
+            },
+            {
+              "name": "遇上·烤鸭·创意中国菜(运河店)",
+              "rating": "4.8",
+              "reviews": "5283",
+              "avg": "7526",
+              "rank": "通州区烤鸭回头客榜 · 第1名",
+              "hours": "营业中10:00-21:30",
+              "address": "",
+              "url": "https://www.dianping.com/shop/l1jeXxBStbPxcNak",
+              "cardText": "遇上·烤鸭·创意中国菜(运河店) |    | 5283 条评价 | | | 人均 ￥142 | 烤鸭 | 武夷花园 | 优惠：此餐馆有优惠券",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/biztone/62236323_1701409452379.jpeg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 750
+                }
+              ]
+            }
+          ],
+          "source_note": "仅作候选；正式发布需低频从搜索页点击复核"
+        }
+      ],
+      "notes": [],
+      "xhs_deep_queries": [
+        {
+          "query": "大运河森林公园 骑行",
+          "search": {
+            "url": "https://www.xiaohongshu.com/search_result/?keyword=%E5%A4%A7%E8%BF%90%E6%B2%B3%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD+%E9%AA%91%E8%A1%8C&source=web_search_result_notes&type=51",
+            "title": "大运河森林公园 骑行 - 小红书搜索",
+            "cards": []
+          },
+          "details": []
+        },
+        {
+          "query": "通州大运河绿道 亲子骑行",
+          "search": {
+            "url": "https://www.xiaohongshu.com/search_result/?keyword=%E9%80%9A%E5%B7%9E%E5%A4%A7%E8%BF%90%E6%B2%B3%E7%BB%BF%E9%81%93+%E4%BA%B2%E5%AD%90%E9%AA%91%E8%A1%8C&source=web_search_result_notes&type=51",
+            "title": "通州大运河绿道 亲子骑行 - 小红书搜索",
+            "cards": []
+          },
+          "details": []
+        }
+      ]
+    },
+    {
+      "id": "bahe",
+      "name": "朝阳绿道·坝河段",
+      "area": "朝阳",
+      "xhs_cards": [
+        {
+          "title_text": "北京遛娃骑行超友好｜6条绝美路线闭眼冲 | apple🍎（辣妈版） | 3天前 | 113",
+          "url": "https://www.xiaohongshu.com/explore/6a0c2abd00000000350225cb",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221903/e52848da29634c40db374770c483877b/notes_pre_post/1040g3k0320bia9ta5i2042laakpiqrlrldlc51o!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "预测会火❗️北京坝河美到Next level❗️ | 脸大但是帅 | 2025-06-08 | 427",
+          "url": "https://www.xiaohongshu.com/explore/6840dede0000000023015582",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221903/5438adf5be7e6d12cf5551a340b403c8/1040g2sg31ib1cs756mg05ng5ncm085v5l67j01g!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "骑行党必看❗北京这6条春日路线绝美🌸 | 北京周末去哪 | 03-18 | 234",
+          "url": "https://www.xiaohongshu.com/explore/69b942d4000000001d01eb69",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221903/d00355e0f8c9687845c488cde0f1b5b6/spectrum/1040g34o31tqjgof60a705p2pjkh51ud231mpq20!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "迄今为止，我最爱的北京亲子骑行路线出现了 | 理想兔 | 2025-12-09 | 279",
+          "url": "https://www.xiaohongshu.com/explore/69297ffc000000001e03b735",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221903/79e757e1c1a709d2ba58713c84917b64/1040g2sg31pe6nikfi8gg5pfqi152psicsrff4r0!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "北京16个绝美亲子骑行园🚴‍♂️都有无动力园 | 黄豆&雯雯 | 2025-09-29 | 269",
+          "url": "https://www.xiaohongshu.com/explore/68da5b670000000012014a02",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221903/0182b093686879f1940c6eb58c23b002/1040g2sg31n0tsg0fku3g46i6ick7m33f2oaeppo!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "再推荐“亲子骑行路线”封闭！有共享单车！ | 大鑫-北京礼拜七 | 04-07 | 686",
+          "url": "https://www.xiaohongshu.com/explore/69d4f99a000000001f004113",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221903/0a2fc97d3334b249f15da2861178d471/spectrum/1040g0k031ull04qd34005nv9vm2g950e230675o!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "我们在帝都遛娃徒步捡化石，这条鱼好特别 | 大李和小李 | 2025-09-15 | 258",
+          "url": "https://www.xiaohongshu.com/explore/6792525f000000002902fed2",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221903/3f2368f471c0c6e5cefb65c52013356c/1040g2sg31d0ipio7gmdg5p14u2f4cf4n89qidb0!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "又到亲子骑行季，与孩子一起成长！ | 北京周末去哪 | 2025-09-23 | 14",
+          "url": "https://www.xiaohongshu.com/explore/68d0a65300000000120220b4",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221903/556004c5cc5f1f5f9cf584dee0e4fe0b/spectrum/1040g34o31mneh890kq105p2pjkh51ud2p4mv6og!nc_n_webp_mw_1"
+        }
+      ],
+      "poi_dp_queries": [
+        {
+          "query": "坝河",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E5%9D%9D%E6%B2%B3",
+          "shops": [
+            {
+              "name": "坝河休闲公园",
+              "rating": "4.4",
+              "reviews": "333",
+              "avg": "388",
+              "rank": "",
+              "hours": "",
+              "address": "",
+              "url": "https://www.dianping.com/shop/G3QnlTOlN6QrOUX3",
+              "cardText": "坝河休闲公园 |   | 333 条评价 | | | 人均 - | 休闲公园 | 东坝",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/ugcpic/ae51a72b19484d897a0eb1a8600152f7%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 563
+                }
+              ]
+            },
+            {
+              "name": "坝河",
+              "rating": "4.0",
+              "reviews": "54",
+              "avg": "746",
+              "rank": "",
+              "hours": "",
+              "address": "东坝地区",
+              "url": "https://www.dianping.com/shop/k9dnylMoHqEhqd4C",
+              "cardText": "坝河 |   | 54 条评价 | | | 人均 - | 河流 | 东坝",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p1.meituan.net/poipicadd/712ac9154f6c7fd1565889a286bc5f08775815.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 562
+                }
+              ]
+            }
+          ],
+          "source_note": "已采集，但后续正式页面需从搜索结果页点击复核"
+        },
+        {
+          "query": "朝阳公园",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E6%9C%9D%E9%98%B3%E5%85%AC%E5%9B%AD",
+          "shops": [
+            {
+              "name": "朝阳公园",
+              "rating": "4.9",
+              "reviews": "29862",
+              "avg": "285",
+              "rank": "北京公园热门榜 · 第1名",
+              "hours": "",
+              "address": "距地铁14号线枣营站D西南口步行890m",
+              "url": "https://www.dianping.com/shop/EOiQQF5Nqmm02jaX",
+              "cardText": "朝阳公园 |   | 29849 条评价 | | | 人均 - | 公园 | 朝阳公园/团结湖",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/ugcpic/a81d323318d4f2b71c3c4e995c740af0%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 563
+                }
+              ]
+            },
+            {
+              "name": "泡泡玛特城市乐园",
+              "rating": "4.8",
+              "reviews": "13066",
+              "avg": "931",
+              "rank": "",
+              "hours": "营业中10:00-20:00",
+              "address": "距地铁14号线枣营站D西南口步行410m",
+              "url": "https://www.dianping.com/shop/k30f1QRqtevxegXc",
+              "cardText": "泡泡玛特城市乐园 |   | 13056 条评价 | | | 人均 - | 主题乐园 | 朝阳公园/团结湖",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/tdctraveldark/992ae4f2f82b3e9159ff18eedcf6abe71336973.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 422
+                }
+              ]
+            }
+          ],
+          "source_note": "已采集，但后续正式页面需从搜索结果页点击复核"
+        },
+        {
+          "query": "东坝郊野公园",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E4%B8%9C%E5%9D%9D%E9%83%8A%E9%87%8E%E5%85%AC%E5%9B%AD",
+          "shops": [
+            {
+              "name": "东坝公园",
+              "rating": "4.9",
+              "reviews": "4089",
+              "avg": "102",
+              "rank": "朝阳区公园好评榜 · 第10名",
+              "hours": "",
+              "address": "康各庄路与管庄路交叉口西南角",
+              "url": "https://www.dianping.com/shop/FFqSsAImONbq6NoA",
+              "cardText": "东坝公园 |   | 4086 条评价 | | | 人均 - | 公园 | 东坝",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/ugcpic/9677c300ba0023d0f625c9cd9ff3387b%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 562
+                }
+              ]
+            },
+            {
+              "name": "蓝调庄园",
+              "rating": "4.8",
+              "reviews": "6271",
+              "avg": "4824",
+              "rank": "北京度假景区好评榜 · 第2名",
+              "hours": "营业中09:00-21:00",
+              "address": "金盏乡楼梓庄村南1号",
+              "url": "https://www.dianping.com/shop/k571gKdWzSfuzoZO",
+              "cardText": "蓝调庄园 |   | 6270 条评价 | | | 人均 - | 度假景区 | 朝阳区",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/tdctraveldark/899f46e41587b33aa4132b8ce0eb54a38341743.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 500
+                }
+              ]
+            }
+          ],
+          "source_note": "已采集，但后续正式页面需从搜索结果页点击复核"
+        }
+      ],
+      "food_candidates": [
+        {
+          "query": "坝河 咖啡 蛋糕",
+          "kind": "cafe_bakery",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E5%9D%9D%E6%B2%B3%20%E5%92%96%E5%95%A1%20%E8%9B%8B%E7%B3%95",
+          "shops": [
+            {
+              "name": "dotcom coffee古点咖啡(郎园Station店)",
+              "rating": "4.6",
+              "reviews": "754",
+              "avg": "8733",
+              "rank": "酒仙桥商圈咖啡热门榜 · 第5名",
+              "hours": "休息中次日10:00开始营业",
+              "address": "",
+              "url": "https://www.dianping.com/shop/H3FhHkSGFB4zVEyQ",
+              "cardText": "dotcom coffee古点咖啡(郎园Station店) |   | 754 条评价 | | | 人均 ￥47 | 咖啡 | 酒仙桥商圈",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/merchant/46b00a9dbe6ba77bae96f4f14b15b85c37996.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 749
+                }
+              ]
+            },
+            {
+              "name": "林语花间",
+              "rating": "4.2",
+              "reviews": "723",
+              "avg": "746",
+              "rank": "酒仙桥商圈咖啡热门榜 · 第6名",
+              "hours": "休息中次日10:00开始营业",
+              "address": "",
+              "url": "https://www.dianping.com/shop/G9Qi25R27OpaBj91",
+              "cardText": "林语花间 |   | 721 条评价 | | | 人均 ￥54 | 咖啡 | 酒仙桥商圈",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p1.meituan.net/biztone/1064754026_1673081140446.jpeg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 699,
+                  "h": 699
+                }
+              ]
+            },
+            {
+              "name": "蓝羊咖啡·小酒馆(酒仙桥店)",
+              "rating": "4.6",
+              "reviews": "1795",
+              "avg": "285",
+              "rank": "798/大山子咖啡打卡人气榜 · 第5名",
+              "hours": "营业中09:00-20:00",
+              "address": "距798艺术区步行1.5km",
+              "url": "https://www.dianping.com/shop/k4efc75Abgh8raQC",
+              "cardText": "蓝羊咖啡·小酒馆(酒仙桥店) |   | 1796 条评价 | | | 人均 ￥63 | 咖啡 | 798/大山子",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/merchant/89895b9fe19854d98e308e056fb64af8911717.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 563
+                }
+              ]
+            }
+          ],
+          "source_note": "仅作候选；正式发布需低频从搜索页点击复核"
+        },
+        {
+          "query": "东坝 咖啡 蛋糕",
+          "kind": "cafe_bakery",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E4%B8%9C%E5%9D%9D%20%E5%92%96%E5%95%A1%20%E8%9B%8B%E7%B3%95",
+          "shops": [
+            {
+              "name": "M Stand(北京东坝万达店)",
+              "rating": "4.2",
+              "reviews": "418",
+              "avg": "217",
+              "rank": "东坝咖啡销量榜 · 第1名",
+              "hours": "营业中07:30-22:00",
+              "address": "",
+              "url": "https://www.dianping.com/shop/k19eFCsnVQ3xxGd2",
+              "cardText": "M Stand(北京东坝万达店) |   | 418 条评价 | | | 人均 ￥34 | 咖啡 | 东坝",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/content/8d90a185a42c043c4a1fce19df254e6a657553.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 750
+                }
+              ]
+            },
+            {
+              "name": "星巴克臻选(北京东坝万达店)",
+              "rating": "4.4",
+              "reviews": "422",
+              "avg": "425",
+              "rank": "东坝咖啡回头客榜 · 第1名",
+              "hours": "营业中06:30-22:00",
+              "address": "",
+              "url": "https://www.dianping.com/shop/k3ptkmAdn28a69RQ",
+              "cardText": "星巴克臻选(北京东坝万达店) |   | 421 条评价 | | | 人均 ￥38 | 咖啡 | 东坝",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/content/cd754316a2f2ecb977e18efa24b45f1729565.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 500,
+                  "h": 500
+                }
+              ]
+            },
+            {
+              "name": "奈雪的茶(东坝万达广场店)",
+              "rating": "4.4",
+              "reviews": "1645",
+              "avg": "10534",
+              "rank": "东坝茶饮果汁口味榜 · 第2名",
+              "hours": "营业中09:00-22:00",
+              "address": "",
+              "url": "https://www.dianping.com/shop/k7oMHNQgwb8BFgIZ",
+              "cardText": "奈雪的茶(东坝万达广场店) |   | 1644 条评价 | | | 人均 ￥18 | 茶饮果汁 | 东坝",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/content/8a672ec39c5554eae9ea4167465b01f265717.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 750
+                }
+              ]
+            }
+          ],
+          "source_note": "仅作候选；正式发布需低频从搜索页点击复核"
+        },
+        {
+          "query": "坝河 餐厅",
+          "kind": "restaurant",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E5%9D%9D%E6%B2%B3%20%E9%A4%90%E5%8E%85",
+          "shops": [
+            {
+              "name": "香赞·合宴(郎园Station店)",
+              "rating": "4.8",
+              "reviews": "1884",
+              "avg": "5084",
+              "rank": "北京私房菜销量榜 · 第1名",
+              "hours": "营业中11:00-21:00",
+              "address": "",
+              "url": "https://www.dianping.com/shop/k6ZP33nEJ08y7b9z",
+              "cardText": "香赞·合宴(郎园Station店) |    | 1881 条评价 | | | 人均 ￥100 | 私房菜 | 酒仙桥商圈 | 优惠：此餐馆有优惠券",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/content/6196b8c9d60800592bca10560bf1aaea146018.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 750
+                }
+              ]
+            },
+            {
+              "name": "天使食府(东坝中街店)",
+              "rating": "4.2",
+              "reviews": "101",
+              "avg": "3688",
+              "rank": "",
+              "hours": "营业中11:00-14:00, 17:30-22:00",
+              "address": "",
+              "url": "https://www.dianping.com/shop/G3hy3CAPRH3u38is",
+              "cardText": "天使食府(东坝中街店) |   | 100 条评价 | | | 人均 ￥111 | 江西菜 | 东坝",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://qcloud.dpfile.com/pc/Phr4Pvb8RN7KPcA7myaremBGPUjDg7WFNeUJcEL4ihwZKYYRXixzgIZQ7jRNVfCStinsm4wZBU2JBzCyrLLxBw.webp",
+                  "w": 750,
+                  "h": 422
+                }
+              ]
+            },
+            {
+              "name": "董家大院·京味家常菜(东坝店)",
+              "rating": "4.4",
+              "reviews": "2648",
+              "avg": "5084",
+              "rank": "东坝美食销量榜 · 第10名",
+              "hours": "营业中10:00-21:30",
+              "address": "",
+              "url": "https://www.dianping.com/shop/G69v42kgEfRPkAvJ",
+              "cardText": "董家大院·京味家常菜(东坝店) |    | 2648 条评价 | | | 人均 ￥98 | 家常菜 | 东坝 | 优惠：此餐馆有优惠券",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/content/8c878a8c291ef1e119e1de6b1bad65f5191973.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 750
+                }
+              ]
+            }
+          ],
+          "source_note": "仅作候选；正式发布需低频从搜索页点击复核"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "wenyuhe",
+      "name": "温榆河绿道",
+      "area": "朝阳/顺义/通州",
+      "xhs_cards": [
+        {
+          "title_text": "北京新开免费亲子骑行公园🚲共享单车可进 | 小禾Seed | 05-04 | 483",
+          "url": "https://www.xiaohongshu.com/explore/69f85c3700000000360039cc",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221905/a9d15c04c42a532095d812fa261a10f5/1040g2sg31vo7c12p1m7g5p15k6ji3f9jiui7sao!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "温榆河骑行：真不戳！ | 钱德勒🎾 | 03-28 | 434",
+          "url": "https://www.xiaohongshu.com/explore/69c75de1000000002003a489",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221905/370dd58444f8ae3eebdee3763261811f/notes_pre_post/1040g3k031u8cdmspiq604a6pnmshd61tf4dqvqg!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "北京遛娃骑行超友好｜6条绝美路线闭眼冲 | apple🍎（辣妈版） | 3天前 | 113",
+          "url": "https://www.xiaohongshu.com/explore/6a0c2abd00000000350225cb",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221905/3592f5aa9df5669b115d8d0b2bfeb368/notes_pre_post/1040g3k0320bia9ta5i2042laakpiqrlrldlc51o!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "🤫悄悄说！北京8条亲子骑行路线，不去特亏！ | 桔猪🍊 | 03-14 | 661",
+          "url": "https://www.xiaohongshu.com/explore/69b38d47000000001f006e05",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221905/53247365714f1168566bc449f76b0671/notes_pre_post/1040g3k031tl0s4k6723g48j8udpphq4ieend7to!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "骑行党必看❗北京这6条春日路线绝美🌸 | 北京周末去哪 | 03-18 | 234",
+          "url": "https://www.xiaohongshu.com/explore/69b942d4000000001d01eb69",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221905/57827fce914d75bab6bbd9b4af89d1dc/spectrum/1040g34o31tqjgof60a705p2pjkh51ud231mpq20!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "迄今为止，我最爱的北京亲子骑行路线出现了 | 理想兔 | 2025-12-09 | 279",
+          "url": "https://www.xiaohongshu.com/explore/69297ffc000000001e03b735",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221905/81207edb0ff3ced53416ddf2b094cecd/1040g2sg31pe6nikfi8gg5pfqi152psicsrff4r0!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "北京❗果然最牛的遛娃宝地都免费❗ | 桔猪🍊 | 2025-04-03 | 359",
+          "url": "https://www.xiaohongshu.com/explore/67ecfd59000000000f03a633",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221905/cbe3fb1539a4777d5bd2e275f0691873/1040g00831fpu6q1ng00048j8udpphq4id4r41h8!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "温榆河骑行绿道遛娃真的香 | 米麦豆妈Gisele | 2025-05-07 | 57",
+          "url": "https://www.xiaohongshu.com/explore/681b080b00000000220068e9",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221905/3a95ea9cd3287b8347ec2859663b7ece/notes_pre_post/1040g3k831h62q0rpji1g49mo8rn0fenfnsmklqo!nc_n_webp_mw_1"
+        }
+      ],
+      "poi_dp_queries": [
+        {
+          "query": "温榆河公园",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E6%B8%A9%E6%A6%86%E6%B2%B3%E5%85%AC%E5%9B%AD",
+          "shops": [
+            {
+              "name": "北京温榆河公园",
+              "rating": "4.9",
+              "reviews": "12782",
+              "avg": "302",
+              "rank": "北京公园热门榜 · 第6名",
+              "hours": "",
+              "address": "来广营北路与滨河路交叉口东南角",
+              "url": "https://www.dianping.com/shop/l38mjAeErFnUNlxs",
+              "cardText": "北京温榆河公园 |   | 12780 条评价 | | | 人均 - | 公园 | 朝阳区",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/tdctraveldark/0f127682953375c86262f17948b5ecfd745367.png%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 400
+                }
+              ]
+            },
+            {
+              "name": "北京温榆河公园-芸上梯田",
+              "rating": "4.9",
+              "reviews": "826",
+              "avg": "103674",
+              "rank": "朝阳区自然景观好评榜 · 第1名",
+              "hours": "",
+              "address": "来广营北路北京温榆河公园西园内",
+              "url": "https://www.dianping.com/shop/H1XJf8C7CYY24u0W",
+              "cardText": "北京温榆河公园-芸上梯田 |   | 827 条评价 | | | 人均 - | 自然景观 | 朝阳区",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/poipicadd/342a5f33e7f30de02510ab52d712fecc733169.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 563
+                }
+              ]
+            }
+          ],
+          "source_note": "已采集，但后续正式页面需从搜索结果页点击复核"
+        },
+        {
+          "query": "温榆河绿道",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E6%B8%A9%E6%A6%86%E6%B2%B3%E7%BB%BF%E9%81%93",
+          "shops": [
+            {
+              "name": "温榆河绿道",
+              "rating": "3.8",
+              "reviews": "9",
+              "avg": "118",
+              "rank": "",
+              "hours": "",
+              "address": "",
+              "url": "https://www.dianping.com/shop/l6ahAInOiL7xoI8W",
+              "cardText": "温榆河绿道 |   | 9 条评价 | | | 人均 - | 道路名 | 金盏",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/poipicadd/c1d8aa0bdae0a56e08ed86e33975deb4396417.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 1001
+                }
+              ]
+            },
+            {
+              "name": "温榆河滨水绿道",
+              "rating": "3.8",
+              "reviews": "7",
+              "avg": "7917",
+              "rank": "",
+              "hours": "",
+              "address": "",
+              "url": "https://www.dianping.com/shop/HarthAnLsTeWObAW",
+              "cardText": "温榆河滨水绿道 |   | 7 条评价 | | | 人均 - | 道路名 | 北七家商圈",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://qcloud.dpfile.com/pc/uXioJePGNajA46E1a2n68xn2_9fOZalaQ1osBZsY7Z8W37pS2Y5rCxSKlQx4nQqNtinsm4wZBU2JBzCyrLLxBw.webp",
+                  "w": 750,
+                  "h": 563
+                }
+              ]
+            }
+          ],
+          "source_note": "已采集，但后续正式页面需从搜索结果页点击复核"
+        },
+        {
+          "query": "清河营郊野公园",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E6%B8%85%E6%B2%B3%E8%90%A5%E9%83%8A%E9%87%8E%E5%85%AC%E5%9B%AD",
+          "shops": [
+            {
+              "name": "清河营郊野公园",
+              "rating": "4.9",
+              "reviews": "915",
+              "avg": "302",
+              "rank": "",
+              "hours": "",
+              "address": "",
+              "url": "https://www.dianping.com/shop/l57LA9Bast4fkWLh",
+              "cardText": "清河营郊野公园 |   | 914 条评价 | | | 人均 - | 公园 | 朝阳区",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/hoteltdc/e259b73926399537a969a7fd74c10fca1510236.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 563
+                }
+              ]
+            },
+            {
+              "name": "庭院新淮扬·四季江南菜·北京烤鸭(北苑•清河营郊野公园店)",
+              "rating": "4.0",
+              "reviews": "1270",
+              "avg": "210",
+              "rank": "立水桥美食打卡人气榜 · 第6名",
+              "hours": "营业中10:30-14:00, 17:00-21:00",
+              "address": "",
+              "url": "https://www.dianping.com/shop/iYDTim6ze6nvzMDm",
+              "cardText": "庭院新淮扬·四季江南菜·北京烤鸭(北苑•清河营郊野公... |   | 1270 条评价 | | | 人均 ￥122 | 淮扬菜 | 立水桥",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/content/5c9006aa1331ccf58ffeed7d4b968186253217.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 750
+                }
+              ]
+            }
+          ],
+          "source_note": "已采集，但后续正式页面需从搜索结果页点击复核"
+        }
+      ],
+      "food_candidates": [
+        {
+          "query": "温榆河公园 咖啡 蛋糕",
+          "kind": "cafe_bakery",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E6%B8%A9%E6%A6%86%E6%B2%B3%E5%85%AC%E5%9B%AD%20%E5%92%96%E5%95%A1%20%E8%9B%8B%E7%B3%95",
+          "shops": [
+            {
+              "name": "Basepoint咖啡(龙湾别墅店)",
+              "rating": "4.7",
+              "reviews": "1870",
+              "avg": "1090",
+              "rank": "顺义区咖啡热门榜 · 第1名",
+              "hours": "休息中次日09:00开始营业",
+              "address": "",
+              "url": "https://www.dianping.com/shop/EjMTIVQvVI5iYXYx",
+              "cardText": "Basepoint咖啡(龙湾别墅店) |   | 1870 条评价 | | | 人均 ￥51 | 咖啡 | 后沙峪龙湖别墅",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://img.meituan.net/content/12db547527f24f018de7396117e9b04594960.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 749
+                }
+              ]
+            },
+            {
+              "name": "Jamaicablue Coffeeshop(顺义优山美地店)",
+              "rating": "4.4",
+              "reviews": "1314",
+              "avg": "1027",
+              "rank": "顺义区咖啡销量榜 · 第2名",
+              "hours": "营业中07:00-20:00",
+              "address": "馨园五路温榆庄园二区1号（后沙峪镇优山美地俱乐部）",
+              "url": "https://www.dianping.com/shop/H5DJOKkase73NEgQ",
+              "cardText": "Jamaicablue Coffeeshop(顺义优山美地店) |   分店 | 1313 条评价 | | | 人均 ￥83 | 咖啡 | 顺义区",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/biztone/382dcab4d3b2c464157b1fc804cf41c365174.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 707,
+                  "h": 707
+                }
+              ]
+            },
+            {
+              "name": "93neighborhood玖叁邻",
+              "rating": "4.8",
+              "reviews": "178",
+              "avg": "521",
+              "rank": "孙河美食口味榜 · 第1名",
+              "hours": "营业中08:30-20:00",
+              "address": "西甸路16号院",
+              "url": "https://www.dianping.com/shop/l7qNBYmO7XEbt97f",
+              "cardText": "93neighborhood玖叁邻 |   | 178 条评价 | | | 人均 ￥61 | 咖啡 | 孙河",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/biztone/75642cf4ce87c5860683f90f9cdcddaa254017.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 751
+                }
+              ]
+            }
+          ],
+          "source_note": "仅作候选；正式发布需低频从搜索页点击复核"
+        },
+        {
+          "query": "温榆河公园 餐厅",
+          "kind": "restaurant",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E6%B8%A9%E6%A6%86%E6%B2%B3%E5%85%AC%E5%9B%AD%20%E9%A4%90%E5%8E%85",
+          "shops": [],
+          "source_note": "仅作候选；正式发布需低频从搜索页点击复核"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "beixiaohe",
+      "name": "朝阳绿道·北小河段",
+      "area": "朝阳",
+      "xhs_cards": [
+        {
+          "title_text": "骑行绝佳路线🚴‍♀️一路4个免费无动力❗️ | 黄豆&雯雯 | 03-19 | 226",
+          "url": "https://www.xiaohongshu.com/explore/69ba7ba1000000001d019a2c",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221906/2b0d4ee42868d215946183b5b2d1cfbd/notes_pre_post/1040g3k031trpqe83mq0046i6ick7m33fdm3u46g!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "北京赏花骑行路线🌸一条线串起3大顶流花海 | 小兔队长 | 04-10 | 140",
+          "url": "https://www.xiaohongshu.com/explore/69d87ebe0000000021006ef8",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221906/464852ad9a9e613501d6a78cf8e433d0/notes_pre_post/1040g3k831up3lgq5hu70400nvvuadg1nv5gkqio!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "我们在帝都遛娃徒步捡化石，这条鱼好特别 | 大李和小李 | 2025-09-15 | 258",
+          "url": "https://www.xiaohongshu.com/explore/6792525f000000002902fed2",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221906/bb919c697cda3ea6da1fce07e97fa762/1040g2sg31d0ipio7gmdg5p14u2f4cf4n89qidb0!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "不是新西兰🌳是北京的四环 | 户外香菜 | 04-10 | 491",
+          "url": "https://www.xiaohongshu.com/explore/69d8bc83000000002202718d",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221906/9c1ec6df2e2fafd580a60187643a21b3/notes_pre_post/1040g3k031upb82r52i005pgkku7hoptqve3bkjg!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "绝美林荫道❗️迄今为止最爱的亲子骑行路线🚴 | 疯娃夏子 | 2025-05-26 | 260",
+          "url": "https://www.xiaohongshu.com/explore/68301c6a0000000020029169",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221906/806bd81f6c5171e058f13567046fc442/1040g00831hqlfh9s3o10401abf2986ce6g12fm0!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "🤫悄悄说！北京8条亲子骑行路线，不去特亏！ | 桔猪🍊 | 03-14 | 661",
+          "url": "https://www.xiaohongshu.com/explore/69b38d47000000001f006e05",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221906/e6d61da0a97a29344814f7be6158b815/notes_pre_post/1040g3k031tl0s4k6723g48j8udpphq4ieend7to!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "北京遛娃骑行超友好｜6条绝美路线闭眼冲 | apple🍎（辣妈版） | 3天前 | 113",
+          "url": "https://www.xiaohongshu.com/explore/6a0c2abd00000000350225cb",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221906/c515c1cbaa31759d049f5c6646a47aa9/notes_pre_post/1040g3k0320bia9ta5i2042laakpiqrlrldlc51o!nc_n_webp_mw_1"
+        },
+        {
+          "title_text": "又到亲子骑行季，与孩子一起成长！ | 北京周末去哪 | 2025-09-23 | 14",
+          "url": "https://www.xiaohongshu.com/explore/68d0a65300000000120220b4",
+          "img": "https://sns-webpic-qc.xhscdn.com/202605221906/d68fa0c5d681fe7d739e528c196dc45e/spectrum/1040g34o31mneh890kq105p2pjkh51ud2p4mv6og!nc_n_webp_mw_1"
+        }
+      ],
+      "poi_dp_queries": [
+        {
+          "query": "北小河公园",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E5%8C%97%E5%B0%8F%E6%B2%B3%E5%85%AC%E5%9B%AD",
+          "shops": [
+            {
+              "name": "北小河公园",
+              "rating": "4.7",
+              "reviews": "2655",
+              "avg": "302",
+              "rank": "",
+              "hours": "营业中06:00-21:00",
+              "address": "",
+              "url": "https://www.dianping.com/shop/H6cN49hdnaieLOVw",
+              "cardText": "北小河公园 |   | 2649 条评价 | | | 人均 - | 休闲公园 | 望京",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/ugcpic/3e71d6da4e0e13e7a0372ab4010b6b06%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 562
+                }
+              ]
+            },
+            {
+              "name": "北小河都市风情水岸",
+              "rating": "4.7",
+              "reviews": "35",
+              "avg": "102",
+              "rank": "",
+              "hours": "",
+              "address": "距地铁15号线望京东站B东北口步行410m",
+              "url": "https://www.dianping.com/shop/H72ENvJ4JJOOr3i3",
+              "cardText": "北小河都市风情水岸 |   | 35 条评价 | | | 人均 - | 公园景点售票处 | 望京",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p1.meituan.net/tdctraveldark/8f14800ec5ba35c87c37bf41dbf7df0c2995301.png%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 513
+                }
+              ]
+            }
+          ],
+          "source_note": "已采集，但后续正式页面需从搜索结果页点击复核"
+        },
+        {
+          "query": "望湖公园",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E6%9C%9B%E6%B9%96%E5%85%AC%E5%9B%AD",
+          "shops": [
+            {
+              "name": "望湖公园",
+              "rating": "4.8",
+              "reviews": "613",
+              "avg": "102",
+              "rank": "",
+              "hours": "",
+              "address": "距地铁14号线东湖渠站A西北口步行1.0km",
+              "url": "https://www.dianping.com/shop/jHMlXSjHeGgoABv0",
+              "cardText": "望湖公园 |   | 613 条评价 | | | 人均 - | 公园 | 望京",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/ugcpic/84b227001d7fe80ed9c08b1eba6432a9%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 563
+                }
+              ]
+            },
+            {
+              "name": "北小河公园",
+              "rating": "4.7",
+              "reviews": "2655",
+              "avg": "302",
+              "rank": "",
+              "hours": "营业中06:00-21:00",
+              "address": "",
+              "url": "https://www.dianping.com/shop/H6cN49hdnaieLOVw",
+              "cardText": "北小河公园 |   | 2649 条评价 | | | 人均 - | 休闲公园 | 望京",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/ugcpic/3e71d6da4e0e13e7a0372ab4010b6b06%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 562
+                }
+              ]
+            }
+          ],
+          "source_note": "已采集，但后续正式页面需从搜索结果页点击复核"
+        },
+        {
+          "query": "大望京公园",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E5%A4%A7%E6%9C%9B%E4%BA%AC%E5%85%AC%E5%9B%AD",
+          "shops": [
+            {
+              "name": "大望京公园",
+              "rating": "4.9",
+              "reviews": "2079",
+              "avg": "102",
+              "rank": "",
+              "hours": "",
+              "address": "距地铁15号线望京东站B东北口步行940m",
+              "url": "https://www.dianping.com/shop/l4jkqGg2XFsamqeo",
+              "cardText": "大望京公园 |   | 2075 条评价 | | | 人均 - | 公园 | 望京",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p1.meituan.net/tdctraveldark/898dfe5cb32cbb6b1d55e651fbff344f226151.png%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 516
+                }
+              ]
+            },
+            {
+              "name": "大望京儿童游乐场",
+              "rating": "4.6",
+              "reviews": "3112",
+              "avg": "79116",
+              "rank": "",
+              "hours": "休息中次日09:00开始营业",
+              "address": "距地铁15号线望京东站B东北口步行660m",
+              "url": "https://www.dianping.com/shop/l24veyl7hkZidK8d",
+              "cardText": "大望京儿童游乐场 |   | 3111 条评价 | | | 人均 ￥106 | 儿童乐园 | 望京",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/dpmerchantpic/a7d5a22efb82aa877d318d30f8ee7e2461438.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 750
+                }
+              ]
+            }
+          ],
+          "source_note": "已采集，但后续正式页面需从搜索结果页点击复核"
+        }
+      ],
+      "food_candidates": [
+        {
+          "query": "北小河公园 咖啡 蛋糕",
+          "kind": "cafe_bakery",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E5%8C%97%E5%B0%8F%E6%B2%B3%E5%85%AC%E5%9B%AD%20%E5%92%96%E5%95%A1%20%E8%9B%8B%E7%B3%95",
+          "shops": [
+            {
+              "name": "好利来(望京中福店)",
+              "rating": "4.2",
+              "reviews": "1253",
+              "avg": "55496",
+              "rank": "望京面包蛋糕销量榜 · 第9名",
+              "hours": "营业中07:30-21:00",
+              "address": "距地铁14号线望京站F东北口步行740m",
+              "url": "https://www.dianping.com/shop/Ew3Tmz8EHkC5dtuE",
+              "cardText": "好利来(望京中福店) |   分店 | 1253 条评价 | | | 人均 ￥47 | 面包蛋糕 | 望京",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/bbia/2036fc6bd9838ae9acd432d01588e9ea118411.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 750
+                }
+              ]
+            },
+            {
+              "name": "咖啡丽奥 CAFELIO 카페리오",
+              "rating": "4.6",
+              "reviews": "333",
+              "avg": "8733",
+              "rank": "望京咖啡口味榜 · 第5名",
+              "hours": "营业中09:00-21:00",
+              "address": "距地铁15号线望京站A西北口步行610m",
+              "url": "https://www.dianping.com/shop/H7CGlYXeOPjuHzL5",
+              "cardText": "咖啡丽奥 CAFELIO 카페리오 |   | 333 条评价 | | | 人均 ￥48 | 咖啡 | 望京",
+              "imgs": [
+                {
+                  "src": "https://p1.meituan.net/travelcube/502ddd78b21c65e707616de943594b5210695.png",
+                  "w": 216,
+                  "h": 106
+                },
+                {
+                  "src": "https://p0.meituan.net/poipicadd/14d0c68ba80884c27d80390f9d2c6a7e202802.jpg%40750w_1e_1l%7Cwatermark%3D0.webp",
+                  "w": 750,
+                  "h": 1000
+                }
+              ]
+            }
+          ],
+          "source_note": "仅作候选；正式发布需低频从搜索页点击复核"
+        },
+        {
+          "query": "望京 北小河 咖啡 蛋糕",
+          "kind": "cafe_bakery",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E6%9C%9B%E4%BA%AC%20%E5%8C%97%E5%B0%8F%E6%B2%B3%20%E5%92%96%E5%95%A1%20%E8%9B%8B%E7%B3%95",
+          "shops": [],
+          "source_note": "仅作候选；正式发布需低频从搜索页点击复核"
+        },
+        {
+          "query": "北小河公园 餐厅",
+          "kind": "restaurant",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E5%8C%97%E5%B0%8F%E6%B2%B3%E5%85%AC%E5%9B%AD%20%E9%A4%90%E5%8E%85",
+          "shops": [],
+          "source_note": "仅作候选；正式发布需低频从搜索页点击复核"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "dongba",
+      "name": "朝阳绿道·东坝公园段",
+      "area": "朝阳",
+      "xhs_cards": [],
+      "poi_dp_queries": [
+        {
+          "query": "东坝公园",
+          "result_url": "https://www.dianping.com/note/434733454_29",
+          "shops": [],
+          "source_note": "已采集，但后续正式页面需从搜索结果页点击复核"
+        },
+        {
+          "query": "东坝郊野公园",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E4%B8%9C%E5%9D%9D%E9%83%8A%E9%87%8E%E5%85%AC%E5%9B%AD",
+          "shops": [
+            {
+              "name": "403 Forbidden",
+              "rating": "",
+              "reviews": "",
+              "avg": "",
+              "rank": "",
+              "hours": "",
+              "address": "",
+              "url": "https://www.dianping.com/shop/FFqSsAImONbq6NoA",
+              "cardText": "东坝公园 |   | 4086 条评价 | | | 人均 - | 公园 | 东坝",
+              "imgs": []
+            },
+            {
+              "name": "403 Forbidden",
+              "rating": "",
+              "reviews": "",
+              "avg": "",
+              "rank": "",
+              "hours": "",
+              "address": "",
+              "url": "https://www.dianping.com/shop/FFqSsAImONbq6NoA",
+              "cardText": "蓝调庄园 |   | 6270 条评价 | | | 人均 - | 度假景区 | 朝阳区",
+              "imgs": []
+            }
+          ],
+          "source_note": "已采集，但后续正式页面需从搜索结果页点击复核"
+        },
+        {
+          "query": "坝河",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E5%9D%9D%E6%B2%B3",
+          "shops": [
+            {
+              "name": "403 Forbidden",
+              "rating": "",
+              "reviews": "",
+              "avg": "",
+              "rank": "",
+              "hours": "",
+              "address": "",
+              "url": "https://www.dianping.com/shop/G3QnlTOlN6QrOUX3",
+              "cardText": "坝河休闲公园 |   | 333 条评价 | | | 人均 - | 休闲公园 | 东坝",
+              "imgs": []
+            },
+            {
+              "name": "403 Forbidden",
+              "rating": "",
+              "reviews": "",
+              "avg": "",
+              "rank": "",
+              "hours": "",
+              "address": "",
+              "url": "https://www.dianping.com/shop/k9dnylMoHqEhqd4C",
+              "cardText": "坝河 |   | 54 条评价 | | | 人均 - | 河流 | 东坝",
+              "imgs": []
+            }
+          ],
+          "source_note": "已采集，但后续正式页面需从搜索结果页点击复核"
+        }
+      ],
+      "food_candidates": [
+        {
+          "query": "东坝公园 咖啡 蛋糕",
+          "kind": "cafe_bakery",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E4%B8%9C%E5%9D%9D%E5%85%AC%E5%9B%AD%20%E5%92%96%E5%95%A1%20%E8%9B%8B%E7%B3%95",
+          "shops": [],
+          "source_note": "仅作候选；正式发布需低频从搜索页点击复核"
+        },
+        {
+          "query": "东坝公园 餐厅",
+          "kind": "restaurant",
+          "result_url": "https://www.dianping.com/search/keyword/2/0_%E4%B8%9C%E5%9D%9D%E5%85%AC%E5%9B%AD%20%E9%A4%90%E5%8E%85",
+          "shops": [],
+          "source_note": "仅作候选；正式发布需低频从搜索页点击复核"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "liangshuihe-yizhuang",
+      "name": "凉水河绿道·亦庄新城森林公园段",
+      "xhs_cards": [],
+      "poi_dp_queries": [],
+      "food_candidates": [],
+      "xhs_search_followup": [
+        {
+          "query": "亦庄新城滨河森林公园 骑行",
+          "search": {
+            "url": "https://www.xiaohongshu.com/search_result/?keyword=%E4%BA%A6%E5%BA%84%E6%96%B0%E5%9F%8E%E6%BB%A8%E6%B2%B3%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD+%E9%AA%91%E8%A1%8C&source=web_search_result_notes&type=51",
+            "title": "亦庄新城滨河森林公园 骑行 - 小红书搜索",
+            "blocked": true,
+            "cards": [],
+            "body": "创作中心\n业务合作\n发现\n直播\n发布\n16\n通知\n我\n\n沪ICP备13030189号 | 营业执照 | 2024沪公网安备31010102002533号 | 增值电信业务经营许可证：沪B2-20150021 | 医疗器械网络交易服务第三方平台备案：(沪)网械平台备字[2019]第00006号 | 互联网药品信息服务资格证书：(沪)-经营性-2023-0144 | 违法不良信息举报电话：4006676810 | 上海市互联网举报中心 | 网上有害信息举报专区 | 自营经营者信息 | 网络文化经营许可证：沪网文(2024)1344-086号 | 个性化推荐算法 网信算备310101216601302230019号\n\n© 2014-2026\n\n行吟信息科技（上海）有限公司\n\n地址：上海市黄浦区马当路388号C座\n\n电话：9501-3888\n\n更多\n关于我们\n\n沪ICP备13030189号 | 营业执照 | 2024沪公网安备31010102002533号 | 增值电信业务经营许可证：沪B2-20150021 | 医疗器械网络交易服务第三方平台备案：(沪)网械平台备字[2019]第00006号 | 互联网药品信息服务资格证书：(沪)-经营性-2023-0144 | 违法不良信息举报电话：4006676810 | 上海市互联网举报中心 | 网上有害信息举报专区 | 自营经营者信息 | 网络文化经营许可证：沪网文(2024)1344-086号 | 个性化推荐算法 网信算备310101216601302230019号\n\n© 2014-2026\n\n行吟信息科技（上海）有限公司\n\n地址：上海市黄浦区马当路388号C座\n\n电话：9501-3888\n\n全部\n图文\n图文\n视频\n视频\n用户\n用户\n筛选\n综合\n今天\n今日实况\n路线\n没找到相关内容，换个词试试吧\n活动\nSecurity Verifica"
+          }
+        }
+      ]
+    }
+  ]
+}
