@@ -200,3 +200,25 @@ figcaption { padding: 10px 12px; font-size: 13px; color: var(--muted); line-heig
   .dp-cards { grid-template-columns: 1fr; }
   .dp-detailgrid { grid-template-columns: 1fr; }
 }
+
+/* ---- side-by-side comparison itinerary (暑期特别) ---- */
+.sbs { table-layout: fixed; }
+.sbs th:first-child, .sbs td:first-child { width: 52px; text-align: center; white-space: nowrap; font-weight: 700; font-size: 13px; }
+.sbs th:nth-child(2), .sbs th:nth-child(3) { width: auto; }
+.sbs td { font-size: 13px; line-height: 1.65; vertical-align: top; }
+.sbs .seg { display: block; margin: 4px 0; }
+.sbs .cost { color: var(--warm); font-weight: 700; white-space: nowrap; }
+.sbs .sub { display:block; margin-top:6px; padding-top:6px; border-top:1px dashed var(--line); color: var(--green); font-weight:700; font-size:12.5px; }
+.sbs .hl { background: #fff7ed; }
+.sbs .new { color: var(--accent); font-weight: 700; }
+.legend { display:flex; flex-wrap:wrap; gap:8px 14px; font-size:13px; color:var(--muted); }
+.legend span { white-space: nowrap; }
+@media (max-width: 760px) {
+  .sbs, .sbs thead, .sbs tbody, .sbs tr, .sbs td, .sbs th { display:block; width:100% !important; }
+  .sbs thead { display:none; }
+  .sbs tr { border:1px solid var(--line); border-radius:14px; margin-bottom:12px; overflow:hidden; }
+  .sbs td { border:none; border-bottom:1px solid var(--line); }
+  .sbs td:first-child { text-align:left; background:#f8fafc; font-size:15px; padding:8px 12px; }
+  .sbs td:nth-child(2)::before { content:"📖 原方案 / 跟团"; display:block; font-weight:700; color:var(--accent); margin-bottom:4px; }
+  .sbs td:nth-child(3)::before { content:"✨ 推荐 / 自助"; display:block; font-weight:700; color:var(--green); margin-bottom:4px; }
+}
