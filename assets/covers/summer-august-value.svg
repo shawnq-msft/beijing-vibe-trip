@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" role="img" aria-label="暑期特别 8月北京出发多目的地性价比对比">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef3ff"/>
+      <stop offset="0.52" stop-color="#fff7ed"/>
+      <stop offset="1" stop-color="#e8fffb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#152033" flood-opacity=".16"/>
+    </filter>
+  </defs>
+  <rect width="960" height="640" rx="44" fill="url(#bg)"/>
+  <circle cx="778" cy="96" r="72" fill="#f59e0b" opacity=".22"/>
+  <circle cx="132" cy="548" r="110" fill="#3658d4" opacity=".10"/>
+  <path d="M90 420 C190 330 260 355 350 265 C455 160 610 200 700 122 C760 70 825 54 892 68" fill="none" stroke="#3658d4" stroke-width="10" stroke-linecap="round" opacity=".55"/>
+  <g filter="url(#shadow)">
+    <rect x="86" y="84" width="788" height="440" rx="34" fill="#fff"/>
+    <rect x="118" y="126" width="230" height="124" rx="24" fill="#e9eeff"/>
+    <rect x="370" y="126" width="230" height="124" rx="24" fill="#fff7ed"/>
+    <rect x="622" y="126" width="220" height="124" rx="24" fill="#e8fffb"/>
+    <rect x="118" y="278" width="230" height="124" rx="24" fill="#fff7ed"/>
+    <rect x="370" y="278" width="230" height="124" rx="24" fill="#e8fffb"/>
+    <rect x="622" y="278" width="220" height="124" rx="24" fill="#e9eeff"/>
+  </g>
+  <text x="120" y="78" fill="#152033" font-size="44" font-family="Arial,'Microsoft YaHei',sans-serif" font-weight="800">暑期特别 · 性价比优先</text>
+  <text x="122" y="174" fill="#3658d4" font-size="30" font-family="Arial,'Microsoft YaHei',sans-serif" font-weight="800">格鲁吉亚</text>
+  <text x="122" y="214" fill="#5a6475" font-size="18" font-family="Arial,'Microsoft YaHei',sans-serif">高加索 / 免签 / 徒步</text>
+  <text x="394" y="174" fill="#92400e" font-size="30" font-family="Arial,'Microsoft YaHei',sans-serif" font-weight="800">大理 / 川南</text>
+  <text x="394" y="214" fill="#5a6475" font-size="18" font-family="Arial,'Microsoft YaHei',sans-serif">竹海恐龙 / 亲子备选</text>
+  <text x="646" y="174" fill="#0f766e" font-size="30" font-family="Arial,'Microsoft YaHei',sans-serif" font-weight="800">北海道</text>
+  <text x="646" y="214" fill="#5a6475" font-size="18" font-family="Arial,'Microsoft YaHei',sans-serif">凉爽 / 花田 / 动物园</text>
+  <text x="122" y="326" fill="#92400e" font-size="30" font-family="Arial,'Microsoft YaHei',sans-serif" font-weight="800">冲绳</text>
+  <text x="122" y="366" fill="#5a6475" font-size="18" font-family="Arial,'Microsoft YaHei',sans-serif">海岛 / 水族馆 / 台风险</text>
+  <text x="394" y="326" fill="#0f766e" font-size="30" font-family="Arial,'Microsoft YaHei',sans-serif" font-weight="800">斯里兰卡</text>
+  <text x="394" y="366" fill="#5a6475" font-size="18" font-family="Arial,'Microsoft YaHei',sans-serif">东海岸 / 动物 / 文化</text>
+  <text x="646" y="326" fill="#3658d4" font-size="30" font-family="Arial,'Microsoft YaHei',sans-serif" font-weight="800">甲米自驾</text>
+  <text x="646" y="366" fill="#5a6475" font-size="18" font-family="Arial,'Microsoft YaHei',sans-serif">Mangrovebay / 雨季低价</text>
+  <rect x="120" y="456" width="706" height="44" rx="22" fill="#152033"/>
+  <text x="146" y="485" fill="#fff" font-size="22" font-family="Arial,'Microsoft YaHei',sans-serif" font-weight="700">北京出发 · 2大1小1老 · 8月第一周 · 10天左右</text>
+</svg>
