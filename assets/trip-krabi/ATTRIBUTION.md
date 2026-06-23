@@ -23,5 +23,14 @@ Additional locally downloaded / reused real photos for restaurant and activity c
 - rock-climbing.jpg: Extreme At Railay, Thitigul Kaewchingdoung, CC BY 3.0, Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Extreme_At_Railay_(63650921).jpeg)
 - kayak-mangrove.jpg: 2017 Sarasota Red Mangrove Tunnels, Wikimedia Commons (https://commons.wikimedia.org/wiki/File:2017_Sarasota_Red_Mangrove_Tunnels_1_FRD_9441.jpg)
 - rooftop-bar.jpg: Lascar Bangkok at night from Moon Bar at Vertigo, Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Lascar_Bangkok_at_night_from_Moon_Bar_at_Vertigo_(4509095211).jpg)
-- viewpoint-dining.jpg: reused local copy of hong-island.jpg as a sea-view restaurant representative image.
 - hiking-viewpoint.jpg: reused local copy of railay-beach.jpg as a Krabi viewpoint / coastal hiking representative image.
+
+Additional license-filtered image-search originals:
+
+- ao-nang-night-market.jpg: Mom enjoys night market food, ironypoisoning, CC BY-SA, Flickr via Openverse (https://www.flickr.com/photos/22251936@N00/33605293985)
+- ao-nang-monkey-trail.jpg: Pai Plong bay, Jukk_a, CC BY, Flickr via Openverse (https://www.flickr.com/photos/97702840@N00/12359610875)
+- emerald-pool.jpg: The Emerald Pool that never dries up, carey*w, CC BY-SA, Flickr via Openverse (https://www.flickr.com/photos/54868568@N06/11186886635)
+- khaothong-hill.jpg: View from Khaothong Hill SF0001, Stefan Fussan, CC BY-SA, Wikimedia Commons via Openverse (https://commons.wikimedia.org/w/index.php?curid=178144679)
+- photo-placeholder.jpg: local fallback image generated for cards whose image source fails to load.
+
+For cards without a sufficiently relevant downloadable open-licensed original, the page keeps platform links and a Bing image-search link so users can open the current real-photo sources directly.
