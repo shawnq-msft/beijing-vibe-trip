@@ -6,6 +6,17 @@
   <title>暑期特别 · 甲米 Mangrovebay 已订 · Phuket 可选收尾</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="../assets/shared.css" />
+  <style>
+    .dp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    .dp-card{background:#fff;border:1px solid #edf0f5;border-radius:22px;overflow:hidden;box-shadow:0 10px 28px rgba(21,32,51,.08)}
+    .dp-card img{width:100%;height:170px;object-fit:cover;display:block}
+    .dp-body{padding:14px 16px 16px}
+    .dp-title{font-size:18px;font-weight:800;color:#152033;margin:0 0 6px}
+    .dp-rating{color:#f97316;font-weight:800}
+    .dp-meta{color:#667085;font-size:13px;margin:4px 0 8px}
+    .dp-tags span{display:inline-block;background:#fff7ed;color:#9a3412;border-radius:999px;padding:3px 9px;margin:3px 4px 0 0;font-size:12px}
+    .dp-card p{margin:8px 0;color:#344054}
+  </style>
 </head>
 <body>
   <div class="page">
@@ -27,15 +38,35 @@
     </section>
 
     <section class="panel" style="margin-top:18px;">
-      <h2>📷 本地图集（已下载，不热链）</h2>
-      <div class="grid">
-        <section class="panel"><img src="../assets/trip-krabi/hong-island.jpg" alt="Hong Island Krabi" style="width:100%;height:180px;object-fit:cover;border-radius:18px;"><h3>Hong Island</h3><p class="note">唯一固定出海日，天气窗口好再去。</p></section>
-        <section class="panel"><img src="../assets/trip-krabi/railay-beach.jpg" alt="Railay Beach Krabi" style="width:100%;height:180px;object-fit:cover;border-radius:18px;"><h3>Railay / Phra Nang</h3><p class="note">机动半日，天气好且体力足再安排。</p></section>
-        <section class="panel"><img src="../assets/trip-krabi/ao-nang-beach.jpg" alt="Ao Nang Krabi" style="width:100%;height:180px;object-fit:cover;border-radius:18px;"><h3>Ao Nang</h3><p class="note">夜市 + 餐厅补给，不建议天天跑。</p></section>
-        <section class="panel"><img src="../assets/trip-krabi/phuket-old-town.jpg" alt="Old Phuket Town" style="width:100%;height:180px;object-fit:cover;border-radius:18px;"><h3>Old Phuket Town</h3><p class="note">+2晚时的城市/老街体验。</p></section>
-        <section class="panel"><img src="../assets/trip-krabi/phuket-big-buddha.jpg" alt="Big Buddha Phuket" style="width:100%;height:180px;object-fit:cover;border-radius:18px;"><h3>Big Buddha Phuket</h3><p class="note">Phuket观景点，注意寺庙着装。</p></section>
+      <h2>📷 目的地点评卡（图片已下载，不热链）</h2>
+      <div class="dp-grid">
+        <article class="dp-card"><img src="../assets/trip-krabi/hong-island.jpg" alt="Hong Island Krabi"><div class="dp-body"><h3 class="dp-title">Hong Island</h3><div><span class="dp-rating">TripAdvisor 4.x 高分热门</span></div><div class="dp-meta">出海 / 泻湖 / 白沙滩 / 天气窗口</div><div class="dp-tags"><span>唯一固定出海</span><span>中高潮更好</span></div><p>全程只安排一次，避免雨季天天赌海况。</p></div></article>
+        <article class="dp-card"><img src="../assets/trip-krabi/railay-beach.jpg" alt="Railay Beach Krabi"><div class="dp-body"><h3 class="dp-title">Railay / Phra Nang</h3><div><span class="dp-rating">TripAdvisor 热门海滩</span></div><div class="dp-meta">机动半日 / 长尾船 / 悬崖海景</div><div class="dp-tags"><span>天气好再去</span><span>老人量力</span></div><p>不是硬性行程，作为D7机动备选。</p></div></article>
+        <article class="dp-card"><img src="../assets/trip-krabi/ao-nang-beach.jpg" alt="Ao Nang Krabi"><div class="dp-body"><h3 class="dp-title">Ao Nang</h3><div><span class="dp-rating">夜市/餐厅集中区</span></div><div class="dp-meta">夜市 / 补给 / 餐厅 / 船码头</div><div class="dp-tags"><span>夜市1次</span><span>餐厅多</span></div><p>从Villa开车进城，建议集中一次解决夜市和补给。</p></div></article>
+        <article class="dp-card"><img src="../assets/trip-krabi/phuket-old-town.jpg" alt="Old Phuket Town"><div class="dp-body"><h3 class="dp-title">Old Phuket Town</h3><div><span class="dp-rating">TripAdvisor 文化街区</span></div><div class="dp-meta">+2晚时体验 / 老街 / 咖啡 / 南洋菜</div><div class="dp-tags"><span>老街</span><span>雨天也可</span></div><p>Phuket重点放老街、餐厅、Kata/Karon和海景酒吧。</p></div></article>
       </div>
       <p class="note">图片来源记录见 <a href="../assets/trip-krabi/ATTRIBUTION.md">assets/trip-krabi/ATTRIBUTION.md</a>；均为下载到本地的开放/可复用来源，不使用酒店/点评站版权图。</p>
+    </section>
+
+    <section class="panel" style="margin-top:18px;">
+      <h2>🌊 每日潮汐与活动判断</h2>
+      <p class="summary">潮汐影响两件事：<strong>出海/上下船</strong>更适合中高潮，<strong>本地赶海/礁石观察</strong>更适合低潮前后。以下为公开潮汐站/搜索结果口径，Krabi以Ban Ao Nang/Ao Nang作近似，Hong Island/Ao Thalane需出发前再用船家和 <a href="https://www.krabiboatlagoon.com/marina-boat-repairs/tide-table-weather/">Krabi Boat Lagoon tide table</a> 复核。</p>
+      <table>
+        <thead><tr><th>日期</th><th>住宿/区域</th><th>潮汐口径</th><th>活动建议</th></tr></thead>
+        <tbody>
+          <tr><td>8/1</td><td>抵达Krabi</td><td>Ao Nang：低 05:07 0.14m；高 11:25 2.11m；低 17:43 -0.03m</td><td>抵达日不出海。傍晚低潮适合Villa周边看滩涂/红树林，但不摸不认识的生物。</td></tr>
+          <tr><td>8/2</td><td>Villa</td><td>Ao Nang：高 12:07 2.10m；低 18:32 0.33m；晚高 23:53 1.69m</td><td>傍晚低潮适合本地赶海/看小螃蟹；中午高潮不适合滩涂走太远。</td></tr>
+          <tr><td>8/3</td><td>Ao Thalane</td><td>精确表需复核；早8月通常双高潮/双低潮，时间逐日后移</td><td>红树林皮划艇问店家选中高潮，太低潮可能泥滩浅、划不动。</td></tr>
+          <tr><td>8/4</td><td>Ao Nang夜市</td><td>精确表需复核；夜市与潮汐无强绑定</td><td>白天不安排海上活动，傍晚进Ao Nang吃饭/补给。</td></tr>
+          <tr><td>8/5</td><td>Hong Island</td><td>Ao Nang：高 01:01 1.65m；低 06:51 0.34m；高 13:15 2.01m；低 19:35 0.21m</td><td><strong>最适合排Hong Island</strong>：中午前后高潮利于船进出与泻湖；早低潮不建议赶早船硬上。</td></tr>
+          <tr><td>8/6</td><td>Klong Muang / Khaothong Hill</td><td>精确表需复核；非出海核心日</td><td>出海后恢复日，潮汐只影响海滩可走范围；晚餐看天气，不看潮。</td></tr>
+          <tr><td>8/7</td><td>机动日</td><td>精确表需复核；若补Hong Island必须问船家</td><td>Dragon Crest登山/温泉不受潮汐影响；若补出海，按D5逻辑等中高潮窗口。</td></tr>
+          <tr><td>8/8</td><td>转Phuket</td><td>Phuket小时潮位：00:00 2.0m，03:00 2.5m，06:00 2.6m，15:00-18:00 约1.8m</td><td>转场日，不安排海上活动；下午到Phuket后只做Old Town/海边散步。</td></tr>
+          <tr><td>8/9</td><td>Phuket</td><td>Phuket小时潮位：06:00 2.6m；18:00 1.7m；21:00 1.9m</td><td>海滩照/玩水看天气和红旗；Old Town、餐厅和AKOYA不受潮汐影响。</td></tr>
+          <tr><td>8/10</td><td>返程</td><td>Phuket小时潮位：06:00-09:00 约2.7m；18:00 1.8m；21:00 1.6m</td><td>返程日不排海边活动，只去机场。</td></tr>
+        </tbody>
+      </table>
+      <p class="note">来源：Ao Nang 8/1、8/2、8/5公开潮汐搜索结果；Phuket 8/8-8/10公开长程潮汐结果。用于旅行规划，不用于航海导航；出海前以船家、Krabi Boat Lagoon/Thai Navy/当天海况为准。</p>
     </section>
 
     <section class="panel" style="margin-top:18px;">
@@ -107,7 +138,7 @@
         <tbody>
           <tr><td>D1-D7<br>8/1-8/7</td><td>同方案A，Mangrovebay连住，保留 Ao Nang Night Market 1次 + Hong Island 1次。</td><td>Mangrovebay</td></tr>
           <tr><td>D8<br>8/8</td><td>退房，开车去 Phuket（约2.5-3.5h）；入住 Old Town 或 Kata/Karon。酒店查 <a href="https://www.booking.com/city/th/phuket.html">Booking Phuket</a>。下午只做酒店/海边恢复。</td><td>Phuket</td></tr>
-          <tr><td>D9<br>8/9</td><td>Phuket差异体验：上午 <a href="https://www.tripadvisor.com/Attractions-g293920-Activities-c47-t163-Phuket.html">Old Phuket Town</a>，午餐 <a href="https://www.tripadvisor.com/Restaurant_Review-g2315818-d7911101-Reviews-Tu_Kab_Khao_Restaurant-Phuket_Town_Phuket.html">Tu Kab Khao</a> 或 <a href="https://www.tripadvisor.com/Restaurant_Review-g2315818-d1657632-Reviews-Blue_Elephant_Phuket-Phuket_Town_Phuket.html">Blue Elephant</a>；下午 <a href="https://www.tripadvisor.com/Attraction_Review-g293920-d317743-Reviews-Big_Buddha_Phuket-Phuket.html">Big Buddha Phuket</a> 或 Kata/Karon beach；傍晚如想山顶/海景酒吧，选 <a href="https://www.tripadvisor.com/Restaurant_Review-g2315814-d23682010-Reviews-AKOYA_Star_Lounge-Wichit_Phuket_Town_Phuket.html">AKOYA Star Lounge</a>，比 Baba Nest 更适合家庭。</td><td>Phuket</td></tr>
+          <tr><td>D9<br>8/9</td><td>Phuket差异体验：上午 <a href="https://www.tripadvisor.com/Attractions-g293920-Activities-c47-t163-Phuket.html">Old Phuket Town</a>，午餐 <a href="https://www.tripadvisor.com/Restaurant_Review-g2315818-d7911101-Reviews-Tu_Kab_Khao_Restaurant-Phuket_Town_Phuket.html">Tu Kab Khao</a> 或 <a href="https://www.tripadvisor.com/Restaurant_Review-g2315818-d1657632-Reviews-Blue_Elephant_Phuket-Phuket_Town_Phuket.html">Blue Elephant</a>；下午 Kata/Karon beach 或回酒店休息；傍晚如想山顶/海景酒吧，选 <a href="https://www.tripadvisor.com/Restaurant_Review-g2315814-d23682010-Reviews-AKOYA_Star_Lounge-Wichit_Phuket_Town_Phuket.html">AKOYA Star Lounge</a>，比 Baba Nest 更适合家庭。</td><td>Phuket</td></tr>
           <tr><td>D10<br>8/10</td><td>Phuket Airport 还Hertz车，直飞/转机返北京。返程查 <a href="https://www.trip.com/flights/phuket-to-beijing/">Trip.com Phuket-Beijing</a>；上午只安排早餐和机场。</td><td>—</td></tr>
         </tbody>
       </table>
@@ -122,10 +153,24 @@
           <tr><td>Ao Nang</td><td>Ao Nang Night Market</td><td>唯一固定夜市：吃饭、补给、买小东西；比每天开车进城更轻松。</td><td><a href="https://www.tripadvisor.com/Attraction_Review-g1507054-d12866446-Reviews-Ao_Nang_Night_Market-Ao_Nang_Krabi_Town_Krabi_Province.html">TripAdvisor</a> / <a href="https://www.dianping.com/search/keyword/2/0_Ao%20Nang%20Night%20Market">大众点评搜索</a></td></tr>
           <tr><td>海岛</td><td>Hong Islands</td><td>全程唯一固定出海日；白沙、泻湖、浮潜，天气窗口好再去。</td><td><a href="https://www.tripadvisor.com/Attraction_Review-g297927-d454837-Reviews-Hong_Islands-Krabi_Town_Krabi_Province.html">TripAdvisor Hong Islands</a> / <a href="https://www.getyourguide.com/krabi-l2174/">GetYourGuide Krabi tours</a></td></tr>
           <tr><td>备选海滩</td><td>Klong Muang / Railay / Phra Nang</td><td>Klong Muang适合自驾日落；Railay/Phra Nang适合天气好时半日轻游。</td><td><a href="https://www.tripadvisor.com/Attraction_Review-g298908-d408875-Reviews-Klong_Muang_Beach-Krabi_Town_Krabi_Province.html">Klong Muang</a> / <a href="https://www.tripadvisor.com/Attraction_Review-g1507054-d454759-Reviews-Railay_Beach-Ao_Nang_Krabi_Town_Krabi_Province.html">Railay</a></td></tr>
-          <tr><td>Phuket</td><td>Old Town / Big Buddha / Kata-Karon</td><td>加2晚时体验不同：城市老街、观景、成熟海滩与餐饮。</td><td><a href="https://www.tripadvisor.com/Attractions-g293920-Activities-c47-t163-Phuket.html">Old Town</a> / <a href="https://www.tripadvisor.com/Attraction_Review-g293920-d317743-Reviews-Big_Buddha_Phuket-Phuket.html">Big Buddha</a> / <a href="https://www.tripadvisor.com/Restaurants-g293920-zfp6-Phuket.html">Phuket family restaurants</a></td></tr>
+          <tr><td>Phuket</td><td>Old Town / Kata-Karon / AKOYA</td><td>加2晚时体验不同：城市老街、成熟海滩与海景餐饮。</td><td><a href="https://www.tripadvisor.com/Attractions-g293920-Activities-c47-t163-Phuket.html">Old Town</a> / <a href="https://www.tripadvisor.com/Restaurants-g293920-zfp6-Phuket.html">Phuket family restaurants</a> / <a href="https://www.tripadvisor.com/Restaurant_Review-g2315814-d23682010-Reviews-AKOYA_Star_Lounge-Wichit_Phuket_Town_Phuket.html">AKOYA</a></td></tr>
         </tbody>
       </table>
       <p class="note">大众点评主要作为中文口碑/导航入口；泰国POI英文评价量更完整，最终以TripAdvisor/Booking/Google Maps和现场天气为准。</p>
+    </section>
+
+    <section class="panel" style="margin-top:18px;">
+      <h2>🍽️ 活动区域吃喝覆盖表</h2>
+      <table>
+        <thead><tr><th>区域</th><th>高分餐厅 / 菜式</th><th>评分口径</th><th>安排建议</th></tr></thead>
+        <tbody>
+          <tr><td>Khao Thong / Villa近</td><td>Khaothong Hill（Thai/咖啡/山海景）、Khaothong Terrace（海鲜/Thai）、Kuan Nom Saow（Thai/山景）</td><td>Khaothong Hill 4.9/5 2000+评；Terrace 4.6/5 167评；Kuan Nom Saow 5.0/5 12评</td><td>D2/D6晚餐优先，离Villa相对近，适合不想开去Ao Nang。</td></tr>
+          <tr><td>Ao Nang夜市区</td><td>Kodam Kitchen（Thai/海鲜）、Carnivore（牛排）、Jenna's Bistro（西餐/酒）、Ali Baba（Indian/Halal）、Umberto's（Italian）</td><td>Kodam 4.7/5 4000+评；Carnivore 4.5/5 3700+评；Jenna's 4.5/5 约2000评；Ali Baba 4.9/5；Umberto's 4.5/5</td><td>D4夜市日或D7机动日使用；适合解决不同口味。</td></tr>
+          <tr><td>Klong Muang</td><td>Thai Me、Twin Lotus、Le Cafe Terrace、Bai Tong、Balibar On Sunset</td><td>Thai Me 4.7/5 1290+评；Twin Lotus 4.7/5 297评；Le Cafe 4.5/5 492评；Bai Tong 4.6/5 367评</td><td>D6看日落后晚餐，距离比Ao Nang轻松。</td></tr>
+          <tr><td>Krabi Town</td><td>Ruen Mai（正宗Thai）、Gecko Cabane（法泰融合，8月前复核营业）</td><td>Ruen Mai 4.7/5 114评；Gecko Cabane 4.7/5 800+评</td><td>如果要去Krabi Town买东西/雨天换口味，可以安排午餐或晚餐。</td></tr>
+          <tr><td>Phuket</td><td>Tu Kab Khao、Blue Elephant、Red Onion、Two Chefs Kata、AKOYA Star Lounge</td><td>AKOYA 4.8/5 30+评；其他为TripAdvisor高热度家庭餐厅</td><td>+2晚时用：Old Town午餐 + AKOYA日落；Kata/Karon海滩后用Red Onion/Two Chefs。</td></tr>
+        </tbody>
+      </table>
     </section>
 
     <section class="panel" style="margin-top:18px;">
@@ -151,7 +196,7 @@
           <tr><td>机票</td><td>¥12,000-18,000</td><td>¥12,500-20,000</td><td>Phuket直飞往返优先；round trip 通常更便宜。</td></tr>
           <tr><td>酒店</td><td>已订 Mangrovebay 7晚</td><td>已订 Mangrovebay 7晚 + Phuket 2晚 ¥3,000-8,000</td><td>Phuket住Old Town/Kata/Karon，按可取消优先。</td></tr>
           <tr><td>Hertz租车</td><td>¥4,500-7,000</td><td>¥5,500-8,500</td><td>含基础租金估算，不含押金/保险升级/异地还车差价。</td></tr>
-          <tr><td>活动</td><td>¥2,000-4,000</td><td>¥3,000-5,500</td><td>Hong Island 1次为主；Phuket加Big Buddha/Old Town基本低成本。</td></tr>
+          <tr><td>活动</td><td>¥2,000-4,000</td><td>¥3,000-5,500</td><td>Hong Island 1次为主；Phuket加Old Town、Kata/Karon、AKOYA等低/中成本体验。</td></tr>
           <tr><td>餐饮/油费/杂费</td><td>¥8,000-11,000</td><td>¥10,000-14,000</td><td>Villa餐厅+夜市+Phuket餐厅。</td></tr>
         </tbody>
       </table>
