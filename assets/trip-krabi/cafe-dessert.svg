@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Cafe and dessert">
+  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#fef3c7"/><stop offset="1" stop-color="#fecdd3"/></linearGradient></defs>
+  <rect width="960" height="540" fill="url(#g)"/>
+  <path d="M294 218h300v140c0 80-65 145-145 145h-10c-80 0-145-65-145-145z" fill="#92400e"/>
+  <path d="M594 258h92c34 0 62 28 62 62s-28 62-62 62h-92" fill="none" stroke="#92400e" stroke-width="36"/>
+  <path d="M342 178c-22-34 26-48 4-82M448 178c-22-34 26-48 4-82M554 178c-22-34 26-48 4-82" stroke="#fff7ed" stroke-width="18" fill="none" stroke-linecap="round"/>
+  <text x="70" y="92" font-family="Arial, sans-serif" font-size="52" font-weight="700" fill="#0f172a">Cafe / light meal</text>
+  <text x="70" y="455" font-family="Arial, sans-serif" font-size="28" fill="#7c2d12">Easy family stop</text>
+</svg>

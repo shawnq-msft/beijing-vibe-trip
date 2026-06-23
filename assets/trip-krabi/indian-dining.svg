@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Indian dining">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ffedd5"/><stop offset="1" stop-color="#fef08a"/></linearGradient></defs>
+  <rect width="960" height="540" fill="url(#g)"/>
+  <circle cx="340" cy="300" r="120" fill="#dc2626"/>
+  <circle cx="620" cy="300" r="120" fill="#f97316"/>
+  <circle cx="480" cy="292" r="94" fill="#fff7ed"/>
+  <path d="M430 292c28-38 72-38 100 0M425 330h110" stroke="#92400e" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <text x="70" y="92" font-family="Arial, sans-serif" font-size="52" font-weight="700" fill="#0f172a">Indian / halal</text>
+  <text x="70" y="455" font-family="Arial, sans-serif" font-size="28" fill="#7c2d12">Curry, tandoori, family dishes</text>
+</svg>

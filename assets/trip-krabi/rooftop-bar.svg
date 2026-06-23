@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Rooftop bar">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#312e81"/><stop offset="1" stop-color="#fb7185"/></linearGradient></defs>
+  <rect width="960" height="540" fill="url(#g)"/>
+  <circle cx="760" cy="110" r="66" fill="#fde68a" opacity=".9"/>
+  <path d="M0 390l168-74 136 42 154-96 142 68 138-88 222 132v166H0z" fill="#0f172a" opacity=".85"/>
+  <path d="M364 230h180l-32 132H396z" fill="#f8fafc" opacity=".9"/>
+  <path d="M454 362v72M396 434h116" stroke="#f8fafc" stroke-width="18" stroke-linecap="round"/>
+  <path d="M392 230l64 58 62-58" stroke="#fb7185" stroke-width="16" fill="none"/>
+  <text x="70" y="92" font-family="Arial, sans-serif" font-size="52" font-weight="700" fill="#fff">Sunset / rooftop</text>
+  <text x="70" y="455" font-family="Arial, sans-serif" font-size="28" fill="#ffe4e6">AKOYA, Lae Lay, The Hilltop</text>
+</svg>

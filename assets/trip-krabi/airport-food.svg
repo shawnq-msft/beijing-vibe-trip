@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Airport dining">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#dbeafe"/><stop offset="1" stop-color="#fed7aa"/></linearGradient></defs>
+  <rect width="960" height="540" fill="url(#g)"/>
+  <circle cx="760" cy="120" r="92" fill="#fff7ed" opacity=".78"/>
+  <path d="M160 355h620v54H160z" fill="#1e293b" opacity=".85"/>
+  <path d="M192 304h156l46 51H146z" fill="#f97316"/>
+  <path d="M392 238h284l-52 117H340z" fill="#0f766e"/>
+  <path d="M642 238h70l38 117h-96z" fill="#115e59"/>
+  <path d="M440 190c40-46 92-46 132 0" fill="none" stroke="#fff" stroke-width="22" stroke-linecap="round"/>
+  <text x="70" y="94" font-family="Arial, sans-serif" font-size="52" font-weight="700" fill="#0f172a">Airport dining</text>
+  <text x="70" y="455" font-family="Arial, sans-serif" font-size="28" fill="#334155">HKT nearby restaurants</text>
+</svg>

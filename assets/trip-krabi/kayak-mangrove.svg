@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Mangrove kayaking">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ccfbf1"/><stop offset="1" stop-color="#d9f99d"/></linearGradient></defs>
+  <rect width="960" height="540" fill="url(#g)"/>
+  <path d="M0 380c210-72 324-72 520 0s282 72 440 0v160H0z" fill="#0f766e" opacity=".78"/>
+  <path d="M228 314c126 42 348 42 474 0-50 70-424 70-474 0z" fill="#f97316"/>
+  <path d="M180 246l600 150M780 246L180 396" stroke="#78350f" stroke-width="14" stroke-linecap="round"/>
+  <path d="M124 100v240M836 84v250" stroke="#14532d" stroke-width="22" stroke-linecap="round"/>
+  <path d="M84 170h92M790 156h98" stroke="#14532d" stroke-width="18" stroke-linecap="round"/>
+  <text x="70" y="92" font-family="Arial, sans-serif" font-size="52" font-weight="700" fill="#0f172a">Mangrove kayak</text>
+  <text x="70" y="455" font-family="Arial, sans-serif" font-size="28" fill="#134e4a">Ao Thalane tide-sensitive</text>
+</svg>
