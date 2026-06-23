@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Viewpoint hiking">
-  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#bfdbfe"/><stop offset="1" stop-color="#bbf7d0"/></linearGradient></defs>
-  <rect width="960" height="540" fill="url(#g)"/>
-  <path d="M0 410l180-150 120 92 160-190 168 208 104-86 228 158v98H0z" fill="#14532d"/>
-  <path d="M410 340l54-118 58 118M464 222v170" stroke="#f8fafc" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="464" cy="180" r="32" fill="#f97316"/>
-  <text x="70" y="92" font-family="Arial, sans-serif" font-size="52" font-weight="700" fill="#0f172a">Viewpoint hiking</text>
-  <text x="70" y="455" font-family="Arial, sans-serif" font-size="28" fill="#14532d">Dragon Crest / Tiger Cave / Railay</text>
-</svg>
