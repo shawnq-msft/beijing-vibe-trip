@@ -94,56 +94,28 @@
     </section>
 
     <section class="panel" style="margin-top:18px;">
-      <h2>✈️ 机票调研：北京 ⇄ Phuket / Krabi（2026-06-24 agent-browser + Trip.com）</h2>
-      <p class="summary">已用 agent-browser 连接你的本地浏览器 session 打开携程国际机票页；账号态可见，但携程 Web 端结果页多次回跳到频道页，未能稳定进入具体航班列表。因此本表采用<strong>携程集团 Trip.com 航线页公开价格口径</strong>做交叉参考，最终下单仍建议在携程 App 里按同一组合实时比价。人民币估算按 US$1≈¥7.25 粗算。</p>
+      <h2>✈️ 机票调研：Ctrip 查询架构实测（2026-06-24）</h2>
+      <p class="summary">这次不只看 Trip.com 航线页，而是用 agent-browser 连接你的浏览器 session，反查携程前端请求。携程国际机票频道使用 <code>https://m.ctrip.com/restapi/soa2/19728/json/fuzzySearch</code> 做低价聚合，payload 形如 <code>{tt:"2", source:"online_flight_intl", segments:[{dcl:["BJS"], acl:["HKT"], ddate:"2026-08-01", rdate:"2026-08-10"}]}</code>。以下为该接口返回的<strong>含税低价 CNY/人</strong>，最终仍需在携程 App/网页结果页确认具体航班、行李、退改和儿童票。</p>
       <table>
-        <thead><tr><th>方案</th><th>日期/航线</th><th>可见价格口径</th><th>4人机票粗估</th><th>判断</th></tr></thead>
+        <thead><tr><th>组合</th><th>Ctrip fuzzySearch 低价</th><th>4人机票</th><th>额外成本</th><th>结论</th></tr></thead>
         <tbody>
-          <tr>
-            <td><strong>A. 北京 ⇄ Phuket 直飞/少中转</strong></td>
-            <td>8/1-8/8 或 8/1-8/10<br>BJS/PEK ⇄ HKT</td>
-            <td><a href="https://www.trip.com/flights/beijing-to-phuket/airfares-bjs-hkt/">Trip.com BJS-HKT</a> 显示 one-way from <strong>US$180</strong>、round-trip from <strong>US$329</strong>；8月单程价格洞察约 <strong>US$219</strong>；航司洞察含 Air China / Hainan / Cathay / Thai Vietjet。</td>
-            <td>约 ¥9,500 起；直飞/好时段常见约 ¥12,000-13,600</td>
-            <td><strong>首选</strong>。Phuket直飞+Hertz自驾到Mangrovebay，比Krabi转机更稳；8/10返程通常比8/8更从容。</td>
-          </tr>
-          <tr>
-            <td><strong>B. 北京 ⇄ Krabi 往返</strong></td>
-            <td>8/1-8/8<br>BJS ⇄ KBV</td>
-            <td><a href="https://www.trip.com/flights/beijing-to-krabi/airfares-bjs-kbv/">Trip.com BJS-KBV</a> 显示 one-way from <strong>US$192</strong>、round-trip from <strong>US$427</strong>；常见航司含 China Airlines / AirAsia X / China Eastern / Air China，通常需转机。</td>
-            <td>约 ¥12,400 起；旺季好时段约 ¥14,000-19,000</td>
-            <td>省 HKT⇄Krabi 自驾，但转机对老人孩子更累；除非便宜 ≥¥2,000/4人或时间明显更好，否则不优先。</td>
-          </tr>
-          <tr>
-            <td><strong>C. 提前一天出发</strong></td>
-            <td>7/31 北京 → Phuket/Krabi<br>8/1 白天到Villa</td>
-            <td>用 7/31 晚到或红眼低价票，机场附近住1晚；Phuket机场酒店/机场外餐厅可作为缓冲。</td>
-            <td>机票可能省 ¥1,000-3,000/4人；加酒店/接驳约 ¥700-1,500</td>
-            <td><strong>很值得比价</strong>：如果8/1直飞时间差或价格高，7/31晚到HKT住机场附近，8/1上午开去Villa更轻松。</td>
-          </tr>
-          <tr>
-            <td><strong>D. Singapore 5.5h+ 中转 / city tour</strong></td>
-            <td>北京 → Singapore → Phuket<br>可5.5h+转机或1晚</td>
-            <td>Singapore/Scoot组合公开口径约 <strong>US$379-471/人</strong>；<a href="https://www.changiairport.com/en/fly/transit-guide.html">Changi transit guide</a> 可查转机活动/Jewel/Free Tour状态。</td>
-            <td>约 ¥11,000-13,700；若1晚新加坡另加 ¥1,200-2,500+</td>
-            <td>不一定省钱，但体验最好。若有5.5h+白天转机，可做 Jewel / Marina Bay 轻 city tour；带老人孩子比红眼硬转舒服。</td>
-          </tr>
-          <tr>
-            <td><strong>E. Kuala Lumpur / Bangkok 1-2晚停留</strong></td>
-            <td>北京 → KUL/BKK → Phuket/Krabi</td>
-            <td>AirAsia / Thai / Bangkok Airways 分段可能低价，但托运行李、自助转机和延误风险需计入；多城市搜索常见整体约 <strong>US$350-600/人</strong>。</td>
-            <td>约 ¥10,000-17,400；加1-2晚酒店/交通 ¥1,500-4,000</td>
-            <td>适合“压成本 + 顺便玩城市”但不适合赶Villa入住。KUL偏省钱，BKK city tour体验更直接；分段票不要压太短衔接。</td>
-          </tr>
-          <tr>
-            <td><strong>F. Hong Kong / Cathay 中转</strong></td>
-            <td>北京 → Hong Kong → Phuket</td>
-            <td>Cathay通常舒适但不一定便宜；适合拿好时段或用里程，不作为压成本首选。</td>
-            <td>多为 ¥13,000-20,000+</td>
-            <td>除非价格接近直飞或想在香港停1晚，否则优先级低于HKT直飞和Singapore中转。</td>
-          </tr>
+          <tr><td><strong>北京 ⇄ Phuket 8/1-8/10</strong></td><td>¥2,620/人 · BJS-HKT round trip</td><td><strong>¥10,480</strong></td><td>Phuket⇄Villa自驾；+2晚Phuket酒店</td><td><strong>当前最优</strong>：比8/8返程更便宜，还能自然接Phuket 2晚。</td></tr>
+          <tr><td><strong>北京 ⇄ Phuket 8/1-8/8</strong></td><td>¥2,805/人 · BJS-HKT round trip</td><td>¥11,220</td><td>8/8需从Villa开回HKT返程</td><td>若不加Phuket 2晚可用，但价格反而略高。</td></tr>
+          <tr><td><strong>北京 ⇄ Phuket 7/31-8/10</strong></td><td>¥2,620/人 · BJS-HKT round trip</td><td>¥10,480</td><td>7/31机场酒店约¥700-1,500</td><td>适合航班晚到/红眼：7/31住HKT机场，8/1白天开去Villa，节奏最好。</td></tr>
+          <tr><td><strong>北京 ⇄ Krabi 8/1-8/8</strong></td><td>¥2,807/人 · BJS-KBV round trip</td><td>¥11,228</td><td>省HKT⇄Krabi长途自驾，但多为转机</td><td>价格几乎不比HKT低，且转机更累；只有航班时间显著更好才选。</td></tr>
+          <tr><td><strong>北京 ⇄ Krabi 7/31-8/8</strong></td><td>¥3,089/人 · BJS-KBV round trip</td><td>¥12,356</td><td>7/31多住1晚</td><td>不推荐：提前一天飞KBV反而更贵。</td></tr>
         </tbody>
       </table>
-      <p class="note">实操比价顺序：1) 携程 App 查 8/1-8/8 与 8/1-8/10 北京⇄Phuket round trip；2) 同查 7/31-8/8/10，算上机场酒店；3) 查北京⇄Krabi；4) 查 Singapore 5.5h+白天中转或1晚；5) 只有当 KUL/BKK 分段票总价明显低且转机时间宽松，才考虑自助中转。</p>
+      <table style="margin-top:14px;">
+        <thead><tr><th>停留/转机城市</th><th>分段低价（Ctrip）</th><th>8/10从HKT返京闭环</th><th>4人机票</th><th>是否压成本</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Bangkok 1晚</strong></td><td>BJS→BKK 7/31 ¥981；BKK→HKT 8/1 ¥303；HKT→BJS 8/10 ¥1,402</td><td>¥2,686/人</td><td>¥10,744</td><td>机票接近HKT round trip，但加酒店/行李后不省；适合想顺路曼谷city tour。</td></tr>
+          <tr><td><strong>Kuala Lumpur 1晚</strong></td><td>BJS→KUL 7/31 ¥1,175；KUL→HKT 8/1 ¥388；HKT→BJS 8/10 ¥1,402</td><td>¥2,965/人</td><td>¥11,860</td><td>不比HKT直飞省；AirAsia分段还要算托运行李。</td></tr>
+          <tr><td><strong>Singapore 1晚 / 5.5h+</strong></td><td>BJS→SIN 7/31 ¥1,165；SIN→HKT 8/1 ¥614；HKT→BJS 8/10 ¥1,402</td><td>¥3,181/人</td><td>¥12,724</td><td>不省钱，但体验最好；可查 <a href="https://www.changiairport.com/en/fly/transit-guide.html">Changi transit guide</a> 安排Jewel/Free Tour。</td></tr>
+          <tr><td><strong>Hong Kong 1晚</strong></td><td>BJS→HKG 7/31 ¥679；HKG→HKT 8/1 ¥1,054；HKT→BJS 8/10 ¥1,402</td><td>¥3,135/人</td><td>¥12,540</td><td>不作为压成本首选，除非想香港停留或拿到更好航班时间。</td></tr>
+        </tbody>
+      </table>
+      <p class="note">推荐下单策略：先锁定 8/1-8/10 北京⇄Phuket round trip；若8/1起飞/到达时间不好，再比 7/31-8/10 加机场酒店。Bangkok/KUL/Singapore分段票只在“想顺路玩1晚”时考虑，不要为了省钱硬拆票；拆票必须留足过夜或至少6小时以上中转，并重新核算托运行李。</p>
     </section>
 
     <section class="panel" style="margin-top:18px;">
