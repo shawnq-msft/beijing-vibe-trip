@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>暑期特别 · 甲米 Mangrovebay 周边高分餐厅 80 家（图片版）</title>
+  <title>暑期特别 · 甲米 Mangrovebay 周边高分餐厅 87 家（图片版）</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="../assets/shared.css" />
   <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
@@ -41,6 +41,18 @@
     .rt.r49 { color:#fff; background:#059669; padding:1px 8px; border-radius:999px; }
     .rt.na { color:#b8c2cc; }
     .drv { font-size:11.5px; color:var(--muted); white-space:nowrap; }
+
+    /* multi-platform rating + distance row */
+    .rt-w { font-size:12.5px; font-weight:800; color:#c2410c; white-space:nowrap;
+      background:#fff7ed; padding:1px 7px; border-radius:999px; }
+    .rt-w.na { color:#cbb9ac; background:#faf6f2; font-weight:700; }
+    .rt { font-size:12.5px; }
+    .fcard-meta2 { display:flex; align-items:center; gap:7px; margin-top:6px; flex-wrap:wrap; }
+    .mi { font-size:11px; font-weight:700; padding:1px 7px; border-radius:999px; white-space:nowrap; line-height:1.5; }
+    .mi-dist { background:var(--accent-soft); color:var(--accent); }
+    .mi-drv  { background:#f1f5f9; color:var(--muted); }
+    .noimg-card .fcard-img { background:linear-gradient(135deg,#eef2f7,#e3ebf5); }
+    .noimg-card .noimg { height:104px; }
     .villa-box { margin-top:14px; padding:12px 14px; background:#f8fbff; border:1px dashed var(--line); border-radius:14px; font-size:14px; line-height:1.7; }
     .villa-box b { color:var(--accent); }
     .warn-box { margin-top:12px; padding:11px 14px; background:var(--warm-soft); border-left:3px solid #f59e0b; border-radius:12px; font-size:14px; line-height:1.7; color:#92400e; }
@@ -51,20 +63,20 @@
 <body>
   <div class="page">
     <section class="hero">
-      <h1>🦀 甲米 Mangrovebay 周边高分餐厅 · 80 家</h1>
-      <p class="subtitle">围绕已订的 <b>Mangrove Bay Krabi Beachfront Pool Villa</b>（8/1–8/8）。瀑布流卡片：每张 = 真实门店照 + 餐饮类型 + 距别墅车程 + Google 评分。按「距别墅距离」分 4 档，档内按评分排序。点卡片跳 Google 地图。</p>
+      <h1>🦀 甲米 Mangrovebay 周边高分餐厅 · 87 家</h1>
+      <p class="subtitle">围绕已订的 <b>Mangrove Bay Krabi Beachfront Pool Villa</b>（8/1–8/8）。瀑布流卡片：每张 = 门店照 + 餐饮类型 + 距别墅「距离＋车程」+ Google／泰评双评分。按「距别墅距离」分 4 档，档内按评分排序。点卡片跳 Google 地图。</p>
       <div class="badges">
         <span class="badge warm">暑期特别 · 配套</span>
         <span class="badge">图片瀑布流</span>
         <span class="badge">Google 实时评分</span>
-        <span class="badge green">共 80 家</span>
+        <span class="badge green">共 87 家</span>
         <span class="badge">4 档 · 车程标注</span>
       </div>
     </section>
 
     <section class="panel" style="margin-top:18px;">
       <h2>一句话结论</h2>
-      <p class="summary">别墅在<strong>甲米镇以北 ~22km 的塔兰湾（Tha Lane / Ao Thalane）红树林海岸</strong>，日常吃优先第①②档（山景咖啡 + 河海鲜，安静出片）；进城补给或 Ao Nang 夜市那天，顺路解决第③④档的名店。照片与评分来自浏览器<strong>实时抓取的 Google 地图</strong>。</p>
+      <p class="summary">别墅在<strong>甲米镇以北 ~22km 的塔兰湾（Tha Lane / Ao Thalane）红树林海岸</strong>，日常吃优先第①②档（山景咖啡 + 河海鲜，安静出片）；进城补给或 Ao Nang 夜市那天，顺路解决第③④档的名店。照片与 Google 评分来自浏览器<strong>实时抓取的 Google 地图</strong>，另叠加 <strong>Wongnai（泰国本地点评）</strong> 评分。</p>
       <div class="villa-box">
         🏝️ <b>别墅定位</b>：Mangrove Bay Krabi Beachfront Pool Villa ·
         <a href="https://www.booking.com/hotel/th/mangrovebay-krabi-beachfront-pool-villa.html" target="_blank" rel="noopener">Booking 页</a> ·
@@ -75,7 +87,7 @@
       </div>
       <div class="legend2">
         <span>🖼️ 卡片图 = Google 地图商户照（已下载到本仓库 <code>assets/krabi-food/</code>，非热链）</span>
-        <span>★ = Google 星级 · 🚗 = 距别墅车程 · 左下角胶囊 = 餐饮类型</span>
+        <span>G ★ = Google 星级 · 泰评 ★ = Wongnai 泰国本地点评 · 📍 = 距别墅直线距离 · 🚗 = 自驾车程 · 胶囊 = 餐饮类型</span>
         <span>点卡片 → 打开 Google 地图</span>
       </div>
     </section>
@@ -91,230 +103,161 @@
         <div class="fcard-img"><img src="../assets/krabi-food/ana-restaurant.jpg" alt="aNA Restaurant" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">aNA Restaurant</div>
-          <div class="fcard-meta">
-            <span class="rt r49">★ 5.0</span>
-            <span class="drv">🚗 车程 2–10 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r49" title="Google 地图星级">G ★ 5.0</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 0–5 km</span><span class="mi mi-drv">🚗 2–10 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Hop%20Chafe%27%20%E0%B8%AA%E0%B8%B2%E0%B8%82%E0%B8%B2%E0%B9%83%E0%B8%99%E0%B8%AA%E0%B8%A3%E0%B8%B0%20%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B5%E0%B9%88%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/hop-chafe.jpg" alt="Hop Chafe&#x27; สาขาในสระ กระบี่" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Hop Chafe&#x27; สาขาในสระ กระบี่</div>
-          <div class="fcard-meta">
-            <span class="rt r49">★ 5.0</span>
-            <span class="drv">🚗 车程 2–10 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r49" title="Google 地图星级">G ★ 5.0</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 0–5 km</span><span class="mi mi-drv">🚗 2–10 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Kuan%20Nom%20Saow%20Restaurant%20and%20Viewpoint%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/kuan-nom-saow-restaurant-and-viewpoint.jpg" alt="Kuan Nom Saow Restaurant and Viewpoint" loading="lazy" decoding="async" width="400" /><span class="cui-chip">观景餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Kuan Nom Saow Restaurant and Viewpoint</div>
-          <div class="fcard-meta">
-            <span class="rt r49">★ 4.9</span>
-            <span class="drv">🚗 车程 2–10 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r49" title="Google 地图星级">G ★ 4.9</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 0–5 km</span><span class="mi mi-drv">🚗 2–10 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=%E0%B9%80%E0%B8%94%E0%B9%87%E0%B8%94%E0%B9%83%E0%B8%9A%E0%B8%8A%E0%B8%B2%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%97%E0%B8%AD%E0%B8%87%20DedbaichaKhaothong%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/dedbaichakhaothong.jpg" alt="เด็ดใบชาเขาทอง DedbaichaKhaothong" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">เด็ดใบชาเขาทอง DedbaichaKhaothong</div>
-          <div class="fcard-meta">
-            <span class="rt r49">★ 4.9</span>
-            <span class="drv">🚗 车程 2–10 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r49" title="Google 地图星级">G ★ 4.9</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 0–5 km</span><span class="mi mi-drv">🚗 2–10 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Into%20the%20forest%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/into-the-forest.jpg" alt="Into the forest" loading="lazy" decoding="async" width="400" /><span class="cui-chip">咖啡</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Into the forest</div>
-          <div class="fcard-meta">
-            <span class="rt r49">★ 4.9</span>
-            <span class="drv">🚗 车程 2–10 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r49" title="Google 地图星级">G ★ 4.9</span><span class="rt-w" title="Wongnai 泰国本地点评">泰评 ★ 4.5</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 0–5 km</span><span class="mi mi-drv">🚗 2–10 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=%E0%B8%A3%E0%B8%B4%E0%B8%A1%E0%B9%80%E0%B8%A5%20%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%A7%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%A5%E0%B8%99%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/th-f4c0cc99.jpg" alt="ริมเล อ่าวท่าเลน" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">ริมเล อ่าวท่าเลน</div>
-          <div class="fcard-meta">
-            <span class="rt r49">★ 4.9</span>
-            <span class="drv">🚗 车程 2–10 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r49" title="Google 地图星级">G ★ 4.9</span><span class="rt-w" title="Wongnai 泰国本地点评">泰评 ★ 5.0</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 0–5 km</span><span class="mi mi-drv">🚗 2–10 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=%E0%B8%9F%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%A1%E0%B9%80%E0%B8%AD%E0%B8%9F%E0%B8%81%E0%B8%B8%E0%B9%89%E0%B8%87%E0%B8%A1%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%A3%207%20%E0%B8%AA%E0%B8%B5%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/th-d0734e48.jpg" alt="ฟาร์มเอฟกุ้งมังกร 7 สี" loading="lazy" decoding="async" width="400" /><span class="cui-chip">海鲜</span></div>
         <div class="fcard-body">
           <div class="fcard-name">ฟาร์มเอฟกุ้งมังกร 7 สี</div>
-          <div class="fcard-meta">
-            <span class="rt r49">★ 4.9</span>
-            <span class="drv">🚗 车程 2–10 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r49" title="Google 地图星级">G ★ 4.9</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 0–5 km</span><span class="mi mi-drv">🚗 2–10 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=%E0%B8%88%E0%B8%B8%E0%B8%94%E0%B8%8A%E0%B8%A1%E0%B8%A7%E0%B8%B4%E0%B8%A7%20%E0%B8%84%E0%B8%A7%E0%B8%99%E0%B8%99%E0%B8%A1%E0%B8%AA%E0%B8%B2%E0%B8%A7%20cafe%26Camping%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/cafecamping.jpg" alt="จุดชมวิว ควนนมสาว cafe&amp;Camping" loading="lazy" decoding="async" width="400" /><span class="cui-chip">咖啡</span></div>
         <div class="fcard-body">
           <div class="fcard-name">จุดชมวิว ควนนมสาว cafe&amp;Camping</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.8</span>
-            <span class="drv">🚗 车程 2–10 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.8</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 0–5 km</span><span class="mi mi-drv">🚗 2–10 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%88%E0%B9%8A%E0%B8%B0%E0%B8%AB%E0%B8%A1%E0%B8%B6%E0%B8%81%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/th-75ba7d2a.jpg" alt="ร้านจ๊ะหมึก" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">ร้านจ๊ะหมึก</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.8</span>
-            <span class="drv">🚗 车程 2–10 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.8</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 0–5 km</span><span class="mi mi-drv">🚗 2–10 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=The%20Hidden%20Gem%20Krabi%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/the-hidden-gem-krabi.jpg" alt="The Hidden Gem Krabi" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">The Hidden Gem Krabi</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.7</span>
-            <span class="drv">🚗 车程 2–10 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.7</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 0–5 km</span><span class="mi mi-drv">🚗 2–10 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=The%20Bay%20Thalane%20Restaurant%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/the-bay-thalane-restaurant.jpg" alt="The Bay Thalane Restaurant" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">The Bay Thalane Restaurant</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.7</span>
-            <span class="drv">🚗 车程 2–10 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.7</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 0–5 km</span><span class="mi mi-drv">🚗 2–10 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Saffron%20at%20Banyan%20Tree%20Krabi%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/saffron-at-banyan-tree-krabi.jpg" alt="Saffron at Banyan Tree Krabi" loading="lazy" decoding="async" width="400" /><span class="cui-chip">泰餐</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Saffron at Banyan Tree Krabi</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.7</span>
-            <span class="drv">🚗 车程 2–10 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.7</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 0–5 km</span><span class="mi mi-drv">🚗 2–10 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Monkeys%20Cafe%20%26%20Bistro%20at%20Thalane%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/monkeys-cafe-bistro-at-thalane.jpg" alt="Monkeys Cafe &amp; Bistro at Thalane" loading="lazy" decoding="async" width="400" /><span class="cui-chip">咖啡·小馆</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Monkeys Cafe &amp; Bistro at Thalane</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.7</span>
-            <span class="drv">🚗 车程 2–10 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.7</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 0–5 km</span><span class="mi mi-drv">🚗 2–10 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=The%20Bananas%20Bungalows%20%26%20Restaurant%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/the-bananas-bungalows-restaurant.jpg" alt="The Bananas Bungalows &amp; Restaurant" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">The Bananas Bungalows &amp; Restaurant</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.7</span>
-            <span class="drv">🚗 车程 2–10 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.7</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 0–5 km</span><span class="mi mi-drv">🚗 2–10 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Khaothong%20Hill%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/khaothong-hill.jpg" alt="Khaothong Hill" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Khaothong Hill</div>
-          <div class="fcard-meta">
-            <span class="rt r45">★ 4.6</span>
-            <span class="drv">🚗 车程 2–10 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r45" title="Google 地图星级">G ★ 4.6</span><span class="rt-w" title="Wongnai 泰国本地点评">泰评 ★ 4.3</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 0–5 km</span><span class="mi mi-drv">🚗 2–10 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B9%83%E0%B8%95%E0%B9%89%E0%B8%A3%E0%B9%88%E0%B8%A1%E0%B8%9B%E0%B8%B2%E0%B8%A5%E0%B9%8C%E0%B8%A1%20%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%A5%E0%B8%99%20%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B5%E0%B9%88%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/th-43c45273.jpg" alt="ร้านใต้ร่มปาล์ม ท่าเลน กระบี่" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">ร้านใต้ร่มปาล์ม ท่าเลน กระบี่</div>
-          <div class="fcard-meta">
-            <span class="rt r45">★ 4.6</span>
-            <span class="drv">🚗 车程 2–10 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r45" title="Google 地图星级">G ★ 4.6</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 0–5 km</span><span class="mi mi-drv">🚗 2–10 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=The%20Whale%20Bar%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/the-whale-bar.jpg" alt="The Whale Bar" loading="lazy" decoding="async" width="400" /><span class="cui-chip">酒吧·餐</span></div>
         <div class="fcard-body">
           <div class="fcard-name">The Whale Bar</div>
-          <div class="fcard-meta">
-            <span class="rt r45">★ 4.6</span>
-            <span class="drv">🚗 车程 2–10 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r45" title="Google 地图星级">G ★ 4.6</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 0–5 km</span><span class="mi mi-drv">🚗 2–10 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Khaothong%20Terrace%20Resort%26Restaurant%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/khaothong-terrace-resortrestaurant.jpg" alt="Khaothong Terrace Resort&amp;Restaurant" loading="lazy" decoding="async" width="400" /><span class="cui-chip">度假酒店餐</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Khaothong Terrace Resort&amp;Restaurant</div>
-          <div class="fcard-meta">
-            <span class="rt r45">★ 4.5</span>
-            <span class="drv">🚗 车程 2–10 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r45" title="Google 地图星级">G ★ 4.5</span><span class="rt-w" title="Wongnai 泰国本地点评">泰评 ★ 4.3</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 0–5 km</span><span class="mi mi-drv">🚗 2–10 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Khaothong%20Pool%20Villa%20%26%20The%20Dome%20Cafe%27%20Krabi%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/khaothong-pool-villa-the-dome-cafe-krabi.jpg" alt="Khaothong Pool Villa &amp; The Dome Cafe&#x27; Krabi" loading="lazy" decoding="async" width="400" /><span class="cui-chip">咖啡</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Khaothong Pool Villa &amp; The Dome Cafe&#x27; Krabi</div>
-          <div class="fcard-meta">
-            <span class="rt r45">★ 4.5</span>
-            <span class="drv">🚗 车程 2–10 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r45" title="Google 地图星级">G ★ 4.5</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 0–5 km</span><span class="mi mi-drv">🚗 2–10 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Klong%20Kruad%20Seafood%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/klong-kruad-seafood.jpg" alt="Klong Kruad Seafood" loading="lazy" decoding="async" width="400" /><span class="cui-chip">海鲜</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Klong Kruad Seafood</div>
-          <div class="fcard-meta">
-            <span class="rt r45">★ 4.5</span>
-            <span class="drv">🚗 车程 2–10 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r45" title="Google 地图星级">G ★ 4.5</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 0–5 km</span><span class="mi mi-drv">🚗 2–10 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Ao%20Thalane%20Seafood%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/ao-thalane-seafood.jpg" alt="Ao Thalane Seafood" loading="lazy" decoding="async" width="400" /><span class="cui-chip">海鲜</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Ao Thalane Seafood</div>
-          <div class="fcard-meta">
-            <span class="rt r45">★ 4.5</span>
-            <span class="drv">🚗 车程 2–10 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r45" title="Google 地图星级">G ★ 4.5</span><span class="rt-w" title="Wongnai 泰国本地点评">泰评 ★ 5.0</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 0–5 km</span><span class="mi mi-drv">🚗 2–10 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Bac-a-Sable%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/bac-a-sable.jpg" alt="Bac-a-Sable" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Bac-a-Sable</div>
-          <div class="fcard-meta">
-            <span class="rt ">★ 4.4</span>
-            <span class="drv">🚗 车程 2–10 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.4</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 0–5 km</span><span class="mi mi-drv">🚗 2–10 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Khao%20Thong%20View%20Point%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/khao-thong-view-point.jpg" alt="Khao Thong View Point" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Khao Thong View Point</div>
-          <div class="fcard-meta">
-            <span class="rt ">★ 4.3</span>
-            <span class="drv">🚗 车程 2–10 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.3</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 0–5 km</span><span class="mi mi-drv">🚗 2–10 分钟</span></div>
         </div>
       </a>
       </div>
@@ -322,7 +265,7 @@
     <section class="panel tier-panel" style="margin-top:18px;">
       <div class="tier-head">
         <h2>② Tubkaek / Klong Muang 海滩度假带</h2>
-        <div class="tier-tags"><span class="t-dist">📍 距别墅 10–15 km</span><span class="t-drv">🚗 车程 20–30 分钟</span><span class="t-cnt">17 家</span></div>
+        <div class="tier-tags"><span class="t-dist">📍 距别墅 10–15 km</span><span class="t-drv">🚗 车程 20–30 分钟</span><span class="t-cnt">18 家</span></div>
       </div>
       <p class="tier-desc">南边高端海滩度假区（Banyan Tree / The Tubkaak），适合看日落 + 一顿正餐，也是 Hong Island 出海码头方向。</p>
       <div class="masonry-grid" data-masonry='{"itemSelector":".fcard","gutter":14,"percentPosition":true}'>
@@ -330,178 +273,134 @@
         <div class="fcard-img"><img src="../assets/krabi-food/ple-tam-zap-restaurant-khlong-muang-krabi.jpg" alt="Ple Tam Zap Restaurant, Khlong Muang, Krabi" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Ple Tam Zap Restaurant, Khlong Muang, Krabi</div>
-          <div class="fcard-meta">
-            <span class="rt r49">★ 4.9</span>
-            <span class="drv">🚗 车程 20–30 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r49" title="Google 地图星级">G ★ 4.9</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 10–15 km</span><span class="mi mi-drv">🚗 20–30 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=BaiTong%20Restaurant%20Krabi%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/baitong-restaurant-krabi.jpg" alt="BaiTong Restaurant Krabi" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">BaiTong Restaurant Krabi</div>
-          <div class="fcard-meta">
-            <span class="rt r49">★ 4.9</span>
-            <span class="drv">🚗 车程 20–30 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r49" title="Google 地图星级">G ★ 4.9</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 10–15 km</span><span class="mi mi-drv">🚗 20–30 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Royal%20Tandoor%20Krabi%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/royal-tandoor-krabi.jpg" alt="Royal Tandoor Krabi" loading="lazy" decoding="async" width="400" /><span class="cui-chip">印度菜</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Royal Tandoor Krabi</div>
-          <div class="fcard-meta">
-            <span class="rt r49">★ 4.9</span>
-            <span class="drv">🚗 车程 20–30 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r49" title="Google 地图星级">G ★ 4.9</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 10–15 km</span><span class="mi mi-drv">🚗 20–30 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Mom%27s%20Bar%20and%20Restaurant%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/moms-bar-and-restaurant.jpg" alt="Mom&#x27;s Bar and Restaurant" loading="lazy" decoding="async" width="400" /><span class="cui-chip">酒吧·餐</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Mom&#x27;s Bar and Restaurant</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.8</span>
-            <span class="drv">🚗 车程 20–30 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.8</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 10–15 km</span><span class="mi mi-drv">🚗 20–30 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=The%20Best%20Restaurant%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/the-best-restaurant.jpg" alt="The Best Restaurant" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">The Best Restaurant</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.8</span>
-            <span class="drv">🚗 车程 20–30 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.8</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 10–15 km</span><span class="mi mi-drv">🚗 20–30 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=The%20Tubkaak%20Krabi%20Boutique%20Resort%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/the-tubkaak-krabi-boutique-resort.jpg" alt="The Tubkaak Krabi Boutique Resort" loading="lazy" decoding="async" width="400" /><span class="cui-chip">度假酒店餐</span></div>
         <div class="fcard-body">
           <div class="fcard-name">The Tubkaak Krabi Boutique Resort</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.7</span>
-            <span class="drv">🚗 车程 20–30 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.7</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 10–15 km</span><span class="mi mi-drv">🚗 20–30 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Thanakh%20Gardens%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/thanakh-gardens.jpg" alt="Thanakh Gardens" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Thanakh Gardens</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.7</span>
-            <span class="drv">🚗 车程 20–30 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.7</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 10–15 km</span><span class="mi mi-drv">🚗 20–30 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Saing%20Restaurant%20%26%20Bar%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/saing-restaurant-bar.jpg" alt="Saing Restaurant &amp; Bar" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Saing Restaurant &amp; Bar</div>
-          <div class="fcard-meta">
-            <span class="rt r45">★ 4.6</span>
-            <span class="drv">🚗 车程 20–30 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r45" title="Google 地图星级">G ★ 4.6</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 10–15 km</span><span class="mi mi-drv">🚗 20–30 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Mama%20Kitchen%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/mama-kitchen.jpg" alt="Mama Kitchen" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Mama Kitchen</div>
-          <div class="fcard-meta">
-            <span class="rt r45">★ 4.6</span>
-            <span class="drv">🚗 车程 20–30 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r45" title="Google 地图星级">G ★ 4.6</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 10–15 km</span><span class="mi mi-drv">🚗 20–30 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Anyavee%20Tubkaek%20Beach%20Resort%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/anyavee-tubkaek-beach-resort.jpg" alt="Anyavee Tubkaek Beach Resort" loading="lazy" decoding="async" width="400" /><span class="cui-chip">度假酒店餐</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Anyavee Tubkaek Beach Resort</div>
-          <div class="fcard-meta">
-            <span class="rt ">★ 4.3</span>
-            <span class="drv">🚗 车程 20–30 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.3</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 10–15 km</span><span class="mi mi-drv">🚗 20–30 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Di%20Mare%20Italian%20Trattoria%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/di-mare-italian-trattoria.jpg" alt="Di Mare Italian Trattoria" loading="lazy" decoding="async" width="400" /><span class="cui-chip">意餐</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Di Mare Italian Trattoria</div>
-          <div class="fcard-meta">
-            <span class="rt ">★ 4.3</span>
-            <span class="drv">🚗 车程 20–30 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.3</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 10–15 km</span><span class="mi mi-drv">🚗 20–30 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Tubkaek%20Seafood%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/tubkaek-seafood.jpg" alt="Tubkaek Seafood" loading="lazy" decoding="async" width="400" /><span class="cui-chip">海鲜</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Tubkaek Seafood</div>
-          <div class="fcard-meta">
-            <span class="rt ">★ 4.2</span>
-            <span class="drv">🚗 车程 20–30 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.2</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 10–15 km</span><span class="mi mi-drv">🚗 20–30 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=The%20Arundina%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/the-arundina.jpg" alt="The Arundina" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">The Arundina</div>
-          <div class="fcard-meta">
-            <span class="rt ">★ 4.2</span>
-            <span class="drv">🚗 车程 20–30 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.2</span><span class="rt-w" title="Wongnai 泰国本地点评">泰评 ★ 4.8</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 10–15 km</span><span class="mi mi-drv">🚗 20–30 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Mama%20kitchen%20%26%20Moonbar%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/mama-kitchen-moonbar.jpg" alt="Mama kitchen &amp; Moonbar" loading="lazy" decoding="async" width="400" /><span class="cui-chip">酒吧·餐</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Mama kitchen &amp; Moonbar</div>
-          <div class="fcard-meta">
-            <span class="rt ">★ 4.2</span>
-            <span class="drv">🚗 车程 20–30 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.2</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 10–15 km</span><span class="mi mi-drv">🚗 20–30 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=The%20Beach%20House%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/the-beach-house.jpg" alt="The Beach House" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">The Beach House</div>
-          <div class="fcard-meta">
-            <span class="rt ">★ 4.1</span>
-            <span class="drv">🚗 车程 20–30 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.1</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 10–15 km</span><span class="mi mi-drv">🚗 20–30 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=%40Beach%20Bar%20%26%20Restaurant%20-%20Krabi%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/beach-bar-restaurant-krabi.jpg" alt="@Beach Bar &amp; Restaurant - Krabi" loading="lazy" decoding="async" width="400" /><span class="cui-chip">酒吧·餐</span></div>
         <div class="fcard-body">
           <div class="fcard-name">@Beach Bar &amp; Restaurant - Krabi</div>
-          <div class="fcard-meta">
-            <span class="rt ">★ 4.0</span>
-            <span class="drv">🚗 车程 20–30 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.0</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 10–15 km</span><span class="mi mi-drv">🚗 20–30 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Tup%20kaek%20sunset%20restaurant%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/tup-kaek-sunset-restaurant.jpg" alt="Tup kaek sunset restaurant" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Tup kaek sunset restaurant</div>
-          <div class="fcard-meta">
-            <span class="rt ">★ 3.3</span>
-            <span class="drv">🚗 车程 20–30 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 3.3</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 10–15 km</span><span class="mi mi-drv">🚗 20–30 分钟</span></div>
         </div>
       </a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Baan%20Tubkaek%20Hotel%20Krabi%20Thailand" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🍽️<span>暂无实拍图</span></div><span class="cui-chip">酒店餐饮</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Baan Tubkaek Hotel (酒店餐厅)</div>
+    <div class="fcard-meta"><span class="rt r45" title="Google 地图星级">G ★ 4.5</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 10–15 km</span><span class="mi mi-drv">🚗 20–30 分钟</span></div>
+  </div>
+</a>
       </div>
     </section>
     <section class="panel tier-panel" style="margin-top:18px;">
       <div class="tier-head">
         <h2>③ 甲米镇 Krabi Town（值得专程）</h2>
-        <div class="tier-tags"><span class="t-dist">📍 距别墅 22–28 km</span><span class="t-drv">🚗 车程 30–35 分钟</span><span class="t-cnt">20 家</span></div>
+        <div class="tier-tags"><span class="t-dist">📍 距别墅 22–28 km</span><span class="t-drv">🚗 车程 30–35 分钟</span><span class="t-cnt">22 家</span></div>
       </div>
       <p class="tier-desc">本地人气 + 夜市 + 南部泰菜老店，选择最多、性价比最高。补给日顺路解决一顿正餐。</p>
       <div class="masonry-grid" data-masonry='{"itemSelector":".fcard","gutter":14,"percentPosition":true}'>
@@ -509,208 +408,162 @@
         <div class="fcard-img"><img src="../assets/krabi-food/e-kin-x-kl-boutique-restaurant-krabi-town.jpg" alt="E-Kin x K.L. Boutique Restaurant , Krabi town" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">E-Kin x K.L. Boutique Restaurant , Krabi town</div>
-          <div class="fcard-meta">
-            <span class="rt r49">★ 4.9</span>
-            <span class="drv">🚗 车程 30–35 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r49" title="Google 地图星级">G ★ 4.9</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22–28 km</span><span class="mi mi-drv">🚗 30–35 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Woods%20and%20Hoods%20Krabi%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/woods-and-hoods-krabi.jpg" alt="Woods and Hoods Krabi" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Woods and Hoods Krabi</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.8</span>
-            <span class="drv">🚗 车程 30–35 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.8</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22–28 km</span><span class="mi mi-drv">🚗 30–35 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Meet%20town%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/meet-town.jpg" alt="Meet town" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Meet town</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.8</span>
-            <span class="drv">🚗 车程 30–35 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.8</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22–28 km</span><span class="mi mi-drv">🚗 30–35 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Lan%20Lek%20Lek%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/lan-lek-lek.jpg" alt="Lan Lek Lek" loading="lazy" decoding="async" width="400" /><span class="cui-chip">泰餐</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Lan Lek Lek</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.8</span>
-            <span class="drv">🚗 车程 30–35 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.8</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22–28 km</span><span class="mi mi-drv">🚗 30–35 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Homlinda%20Restaurant%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/homlinda-restaurant.jpg" alt="Homlinda Restaurant" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Homlinda Restaurant</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.8</span>
-            <span class="drv">🚗 车程 30–35 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.8</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22–28 km</span><span class="mi mi-drv">🚗 30–35 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Ra%20Beung%20Lay%20Seafood%20Restaurant%20%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%80%E0%B8%A5%20%E0%B8%8B%E0%B8%B5%E0%B8%9F%E0%B8%B9%E0%B9%89%E0%B8%94%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/ra-beung-lay-seafood-restaurant.jpg" alt="Ra Beung Lay Seafood Restaurant ระเบียงเล ซีฟู้ด" loading="lazy" decoding="async" width="400" /><span class="cui-chip">海鲜</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Ra Beung Lay Seafood Restaurant ระเบียงเล ซีฟู้ด</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.8</span>
-            <span class="drv">🚗 车程 30–35 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.8</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22–28 km</span><span class="mi mi-drv">🚗 30–35 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=TinGrill%20restaurant%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/tingrill-restaurant.jpg" alt="TinGrill restaurant" loading="lazy" decoding="async" width="400" /><span class="cui-chip">烧烤</span></div>
         <div class="fcard-body">
           <div class="fcard-name">TinGrill restaurant</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.8</span>
-            <span class="drv">🚗 车程 30–35 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.8</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22–28 km</span><span class="mi mi-drv">🚗 30–35 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Play%20Cafe%20Krabi%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/play-cafe-krabi.jpg" alt="Play Cafe Krabi" loading="lazy" decoding="async" width="400" /><span class="cui-chip">咖啡</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Play Cafe Krabi</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.8</span>
-            <span class="drv">🚗 车程 30–35 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.8</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22–28 km</span><span class="mi mi-drv">🚗 30–35 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Racha%20Seafood%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/racha-seafood.jpg" alt="Racha Seafood" loading="lazy" decoding="async" width="400" /><span class="cui-chip">泰餐</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Racha Seafood</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.8</span>
-            <span class="drv">🚗 车程 30–35 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.8</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22–28 km</span><span class="mi mi-drv">🚗 30–35 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Joy%20Beach%20Thai%20Food%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/joy-beach-thai-food.jpg" alt="Joy Beach Thai Food" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Joy Beach Thai Food</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.8</span>
-            <span class="drv">🚗 车程 30–35 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.8</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22–28 km</span><span class="mi mi-drv">🚗 30–35 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Koh%20Klang%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/koh-klang.jpg" alt="Koh Klang" loading="lazy" decoding="async" width="400" /><span class="cui-chip">海鲜</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Koh Klang</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.8</span>
-            <span class="drv">🚗 车程 30–35 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.8</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22–28 km</span><span class="mi mi-drv">🚗 30–35 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=First%20Restaurant%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/first-restaurant.jpg" alt="First Restaurant" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">First Restaurant</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.8</span>
-            <span class="drv">🚗 车程 30–35 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.8</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22–28 km</span><span class="mi mi-drv">🚗 30–35 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=RuenMai%20Krabi%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/ruenmai-krabi.jpg" alt="RuenMai Krabi" loading="lazy" decoding="async" width="400" /><span class="cui-chip">泰餐</span></div>
         <div class="fcard-body">
           <div class="fcard-name">RuenMai Krabi</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.7</span>
-            <span class="drv">🚗 车程 30–35 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.7</span><span class="rt-w" title="Wongnai 泰国本地点评">泰评 ★ 4.4</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22–28 km</span><span class="mi mi-drv">🚗 30–35 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Marni%20Krabi%20town%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/marni-krabi-town.jpg" alt="Marni Krabi town" loading="lazy" decoding="async" width="400" /><span class="cui-chip">意餐</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Marni Krabi town</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.7</span>
-            <span class="drv">🚗 车程 30–35 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.7</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22–28 km</span><span class="mi mi-drv">🚗 30–35 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Kanabnam%20View%20Seafood%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/kanabnam-view-seafood.jpg" alt="Kanabnam View Seafood" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Kanabnam View Seafood</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.7</span>
-            <span class="drv">🚗 车程 30–35 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.7</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22–28 km</span><span class="mi mi-drv">🚗 30–35 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Chalita%20Cafe%20%26%20Restaurant%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/chalita-cafe-restaurant.jpg" alt="Chalita Cafe &amp; Restaurant" loading="lazy" decoding="async" width="400" /><span class="cui-chip">咖啡</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Chalita Cafe &amp; Restaurant</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.7</span>
-            <span class="drv">🚗 车程 30–35 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.7</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22–28 km</span><span class="mi mi-drv">🚗 30–35 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=The%20River%20Restaurant%20%26%20Bar%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/the-river-restaurant-bar.jpg" alt="The River Restaurant &amp; Bar" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">The River Restaurant &amp; Bar</div>
-          <div class="fcard-meta">
-            <span class="rt r45">★ 4.6</span>
-            <span class="drv">🚗 车程 30–35 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r45" title="Google 地图星级">G ★ 4.6</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22–28 km</span><span class="mi mi-drv">🚗 30–35 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Much%20%26%20Mellow%20Cafe%20Krabi%20Town%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/much-mellow-cafe-krabi-town.jpg" alt="Much &amp; Mellow Cafe Krabi Town" loading="lazy" decoding="async" width="400" /><span class="cui-chip">咖啡</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Much &amp; Mellow Cafe Krabi Town</div>
-          <div class="fcard-meta">
-            <span class="rt r45">★ 4.6</span>
-            <span class="drv">🚗 车程 30–35 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r45" title="Google 地图星级">G ★ 4.6</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22–28 km</span><span class="mi mi-drv">🚗 30–35 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Viva%20Restaurant%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/viva-restaurant.jpg" alt="Viva Restaurant" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Viva Restaurant</div>
-          <div class="fcard-meta">
-            <span class="rt r45">★ 4.5</span>
-            <span class="drv">🚗 车程 30–35 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r45" title="Google 地图星级">G ★ 4.5</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22–28 km</span><span class="mi mi-drv">🚗 30–35 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Baitoey%20Seafood%20Restaurant%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/baitoey-seafood-restaurant.jpg" alt="Baitoey Seafood Restaurant" loading="lazy" decoding="async" width="400" /><span class="cui-chip">海鲜</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Baitoey Seafood Restaurant</div>
-          <div class="fcard-meta">
-            <span class="rt r45">★ 4.5</span>
-            <span class="drv">🚗 车程 30–35 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r45" title="Google 地图星级">G ★ 4.5</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22–28 km</span><span class="mi mi-drv">🚗 30–35 分钟</span></div>
         </div>
       </a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Baan%20Teen%20Topp%20Krabi%20Thailand" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🍽️<span>暂无实拍图</span></div><span class="cui-chip">泰式餐厅</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Baan Teen Topp</div>
+    <div class="fcard-meta"><span class="rt r49" title="Google 地图星级">G ★ 5.0</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22–28 km</span><span class="mi mi-drv">🚗 30–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=The%20Lake%20View%20Restaurant%20%26%20Kayak%20Krabi%20Thailand" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🍽️<span>暂无实拍图</span></div><span class="cui-chip">餐厅/皮划艇</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">The Lake View Restaurant &amp; Kayak</div>
+    <div class="fcard-meta"><span class="rt r49" title="Google 地图星级">G ★ 4.9</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22–28 km</span><span class="mi mi-drv">🚗 30–35 分钟</span></div>
+  </div>
+</a>
       </div>
     </section>
     <section class="panel tier-panel" style="margin-top:18px;">
       <div class="tier-head">
         <h2>④ Ao Nang 奥南（较远，值得再去）</h2>
-        <div class="tier-tags"><span class="t-dist">📍 距别墅 45–50 km</span><span class="t-drv">🚗 车程 55–70 分钟</span><span class="t-cnt">20 家</span></div>
+        <div class="tier-tags"><span class="t-dist">📍 距别墅 45–50 km</span><span class="t-drv">🚗 车程 55–70 分钟</span><span class="t-cnt">24 家</span></div>
       </div>
       <p class="tier-desc">游客区，海滨餐厅密集。较远，建议和 Ao Nang 夜市那次行程合并。</p>
       <div class="masonry-grid" data-masonry='{"itemSelector":".fcard","gutter":14,"percentPosition":true}'>
@@ -718,202 +571,170 @@
         <div class="fcard-img"><img src="../assets/krabi-food/maison-de-paris-aonang-krabi.jpg" alt="Maison de Paris Aonang Krabi" loading="lazy" decoding="async" width="400" /><span class="cui-chip">法餐</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Maison de Paris Aonang Krabi</div>
-          <div class="fcard-meta">
-            <span class="rt r49">★ 4.9</span>
-            <span class="drv">🚗 车程 55–70 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r49" title="Google 地图星级">G ★ 4.9</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Loong%20Wich%20Restaurant%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/loong-wich-restaurant.jpg" alt="Loong Wich Restaurant" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Loong Wich Restaurant</div>
-          <div class="fcard-meta">
-            <span class="rt r49">★ 4.9</span>
-            <span class="drv">🚗 车程 55–70 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r49" title="Google 地图星级">G ★ 4.9</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Tee%20restaurant%20in%20the%20jungle%20and%20bungalow%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/tee-restaurant-in-the-jungle-and-bungalow.jpg" alt="Tee restaurant in the jungle and bungalow" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Tee restaurant in the jungle and bungalow</div>
-          <div class="fcard-meta">
-            <span class="rt r49">★ 4.9</span>
-            <span class="drv">🚗 车程 55–70 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r49" title="Google 地图星级">G ★ 4.9</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Ra%20Beung%20Lay%20Seafood%20%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%80%E0%B8%A5%20%E0%B8%8B%E0%B8%B5%E0%B8%9F%E0%B8%B9%E0%B9%89%E0%B8%94%20%28Ao%20Nang%29%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/ra-beung-lay-seafood-ao-nang.jpg" alt="Ra Beung Lay Seafood ระเบียงเล ซีฟู้ด (Ao Nang)" loading="lazy" decoding="async" width="400" /><span class="cui-chip">海鲜</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Ra Beung Lay Seafood ระเบียงเล ซีฟู้ด (Ao Nang)</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.8</span>
-            <span class="drv">🚗 车程 55–70 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.8</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=GAIA%20Kitchen%20%26%20Bar%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/gaia-kitchen-bar.jpg" alt="GAIA Kitchen &amp; Bar" loading="lazy" decoding="async" width="400" /><span class="cui-chip">酒吧·餐</span></div>
         <div class="fcard-body">
           <div class="fcard-name">GAIA Kitchen &amp; Bar</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.8</span>
-            <span class="drv">🚗 车程 55–70 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.8</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Sound%20of%20tree%20Restaurant%20%26%20bar%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/sound-of-tree-restaurant-bar.jpg" alt="Sound of tree Restaurant &amp; bar" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Sound of tree Restaurant &amp; bar</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.8</span>
-            <span class="drv">🚗 车程 55–70 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.8</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Chomlay%20Restaurant%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/chomlay-restaurant.jpg" alt="Chomlay Restaurant" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Chomlay Restaurant</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.8</span>
-            <span class="drv">🚗 车程 55–70 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.8</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Sunrise%20Tacos%20Krabi%20-%20Ao%20Nang%20Landmark%20Night%20Market%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/sunrise-tacos-krabi-ao-nang-landmark-night-marke.jpg" alt="Sunrise Tacos Krabi - Ao Nang Landmark Night Market" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Sunrise Tacos Krabi - Ao Nang Landmark Night Market</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.8</span>
-            <span class="drv">🚗 车程 55–70 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.8</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Kodam%20Kitchen%20branch%201%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/kodam-kitchen-branch-1.jpg" alt="Kodam Kitchen branch 1" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Kodam Kitchen branch 1</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.7</span>
-            <span class="drv">🚗 车程 55–70 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.7</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=CRU%20Kitchen%20%26%20Bar%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/cru-kitchen-bar.jpg" alt="CRU Kitchen &amp; Bar" loading="lazy" decoding="async" width="400" /><span class="cui-chip">酒吧·餐</span></div>
         <div class="fcard-body">
           <div class="fcard-name">CRU Kitchen &amp; Bar</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.7</span>
-            <span class="drv">🚗 车程 55–70 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.7</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Sea%20Salt%20Krabi%20Restaurant%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/sea-salt-krabi-restaurant.jpg" alt="Sea Salt Krabi Restaurant" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Sea Salt Krabi Restaurant</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.7</span>
-            <span class="drv">🚗 车程 55–70 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.7</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Tandoori%20Night%27s%20Restaurant%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/tandoori-nights-restaurant.jpg" alt="Tandoori Night&#x27;s Restaurant" loading="lazy" decoding="async" width="400" /><span class="cui-chip">印度菜</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Tandoori Night&#x27;s Restaurant</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.7</span>
-            <span class="drv">🚗 车程 55–70 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.7</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Kiran%20Kitchen%20Restaurant%20-%20Ao%20Nang%20Beach%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/kiran-kitchen-restaurant-ao-nang-beach.jpg" alt="Kiran Kitchen Restaurant - Ao Nang Beach" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Kiran Kitchen Restaurant - Ao Nang Beach</div>
-          <div class="fcard-meta">
-            <span class="rt r47">★ 4.7</span>
-            <span class="drv">🚗 车程 55–70 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.7</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Rabiangsuan%20Restaurant%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/rabiangsuan-restaurant.jpg" alt="Rabiangsuan Restaurant" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Rabiangsuan Restaurant</div>
-          <div class="fcard-meta">
-            <span class="rt r45">★ 4.6</span>
-            <span class="drv">🚗 车程 55–70 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r45" title="Google 地图星级">G ★ 4.6</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Carnivore%20Steak%20%26%20Grill%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/carnivore-steak-grill.jpg" alt="Carnivore Steak &amp; Grill" loading="lazy" decoding="async" width="400" /><span class="cui-chip">牛排</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Carnivore Steak &amp; Grill</div>
-          <div class="fcard-meta">
-            <span class="rt r45">★ 4.6</span>
-            <span class="drv">🚗 车程 55–70 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r45" title="Google 地图星级">G ★ 4.6</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Thanya%20Kitchen%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/thanya-kitchen.jpg" alt="Thanya Kitchen" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Thanya Kitchen</div>
-          <div class="fcard-meta">
-            <span class="rt r45">★ 4.6</span>
-            <span class="drv">🚗 车程 55–70 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r45" title="Google 地图星级">G ★ 4.6</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Family%20Thai%20Food%20%26%20Seafood%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/family-thai-food-seafood.jpg" alt="Family Thai Food &amp; Seafood" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Family Thai Food &amp; Seafood</div>
-          <div class="fcard-meta">
-            <span class="rt r45">★ 4.6</span>
-            <span class="drv">🚗 车程 55–70 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r45" title="Google 地图星级">G ★ 4.6</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Ton%20Ma%20Yom%20Thaifood%2CAonang%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/ton-ma-yom-thaifoodaonang.jpg" alt="Ton Ma Yom Thaifood,Aonang" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Ton Ma Yom Thaifood,Aonang</div>
-          <div class="fcard-meta">
-            <span class="rt r45">★ 4.6</span>
-            <span class="drv">🚗 车程 55–70 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt r45" title="Google 地图星级">G ★ 4.6</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Lae%20Lay%20Grill%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/lae-lay-grill.jpg" alt="Lae Lay Grill" loading="lazy" decoding="async" width="400" /><span class="cui-chip">烧烤</span></div>
         <div class="fcard-body">
           <div class="fcard-name">Lae Lay Grill</div>
-          <div class="fcard-meta">
-            <span class="rt ">★ 4.4</span>
-            <span class="drv">🚗 车程 55–70 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.4</span><span class="rt-w" title="Wongnai 泰国本地点评">泰评 ★ 4.1</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
         </div>
       </a>
       <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=REEVE%20Beach%20Club%20Krabi%20Krabi%20Thailand" target="_blank" rel="noopener">
         <div class="fcard-img"><img src="../assets/krabi-food/reeve-beach-club-krabi.jpg" alt="REEVE Beach Club Krabi" loading="lazy" decoding="async" width="400" /><span class="cui-chip">餐厅</span></div>
         <div class="fcard-body">
           <div class="fcard-name">REEVE Beach Club Krabi</div>
-          <div class="fcard-meta">
-            <span class="rt ">★ 4.4</span>
-            <span class="drv">🚗 车程 55–70 分钟</span>
-          </div>
+          <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.4</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
         </div>
       </a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Jungle%20Kitchen%20Krabi%20Thailand" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🍽️<span>暂无实拍图</span></div><span class="cui-chip">泰式</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Jungle Kitchen</div>
+    <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.7</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Curry%20Kitchen%20%26%20Bar%20Krabi%20Thailand" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🍽️<span>暂无实拍图</span></div><span class="cui-chip">印度/泰式</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Curry Kitchen &amp; Bar</div>
+    <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.8</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=11/1%20Thaifood%20%26%20Cocktail%20Krabi%20Thailand" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🍽️<span>暂无实拍图</span></div><span class="cui-chip">泰式/酒吧</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">11/1 Thaifood &amp; Cocktail</div>
+    <div class="fcard-meta"><span class="rt r47" title="Google 地图星级">G ★ 4.7</span><span class="rt-w na" title="Wongnai 暂无">泰评 ★ —</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Krua%20Thara%20Krabi%20Thailand" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🍽️<span>暂无实拍图</span></div><span class="cui-chip">海鲜名店</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Krua Thara (ครัวธารา)</div>
+    <div class="fcard-meta"><span class="rt na" title="Google 星级暂缺">G ★ —</span><span class="rt-w" title="Wongnai 泰国本地点评">泰评 ★ 3.9</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 45–50 km</span><span class="mi mi-drv">🚗 55–70 分钟</span></div>
+  </div>
+</a>
       </div>
     </section>
 
