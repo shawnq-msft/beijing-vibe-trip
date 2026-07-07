@@ -30,6 +30,11 @@
     .warn-box { margin-top:12px; padding:11px 14px; background:var(--warm-soft); border-left:3px solid #f59e0b; border-radius:12px; font-size:14px; line-height:1.7; color:#92400e; }
     .legend2 { display:flex; flex-wrap:wrap; gap:10px 16px; margin-top:12px; font-size:12.5px; color:var(--muted); }
     .legend2 .hi { color:#065f46; background:linear-gradient(90deg,#dcfce7,transparent); padding:1px 7px; border-radius:5px; font-weight:700; }
+    .food-gallery { grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); }
+    .food-gallery figure { border-radius:16px; }
+    .food-gallery img { aspect-ratio:auto; border-radius:16px 16px 0 0; }
+    .food-gallery figcaption { font-size:12.5px; line-height:1.5; }
+    .fig-tier { display:inline-block; background:var(--accent-soft); color:var(--accent); font-weight:700; font-size:11px; padding:1px 6px; border-radius:999px; margin-right:4px; }
   </style>
 </head>
 <body>
@@ -63,6 +68,65 @@
         <span><b>Wongnai</b> = 泰国本地点评评分/评论数（交叉验证；评论数偏少属正常）</span>
         <span><span class="hi">4.9+</span> = 顶级口碑</span>
         <span>点击餐厅名 → 打开 Google 地图</span>
+      </div>
+    </section>
+
+    <section class="panel" style="margin-top:18px;">
+      <h2>📷 餐厅实拍（图片已下载到本仓库，非热链）</h2>
+      <p class="tier-desc">以下为部分代表餐厅的真实门店/菜品照（来源：Wongnai 商户相册，已下载到 <code>assets/krabi-food/</code> 用相对路径引用）。点图可跳 Google 地图。</p>
+      <div class="gallery food-gallery">
+        <figure>
+          <a href="https://www.google.com/maps/search/?api=1&query=Into%20the%20Forest%20%E5%92%96%E5%95%A1%20Krabi%20Thailand" target="_blank" rel="noopener"><img src="../assets/krabi-food/into-the-forest.jpg" alt="Into the Forest 咖啡 · Google 4.9" loading="lazy" width="400" decoding="async" /></a>
+          <figcaption><span class="fig-tier">① 极近圈</span> Into the Forest 咖啡 · Google 4.9</figcaption>
+        </figure>
+        <figure>
+          <a href="https://www.google.com/maps/search/?api=1&query=Khaothong%20Hill%20%E5%B1%B1%E6%99%AF%20Krabi%20Thailand" target="_blank" rel="noopener"><img src="../assets/krabi-food/khaothong-hill.jpg" alt="Khaothong Hill 山景 · Google 4.6" loading="lazy" width="400" decoding="async" /></a>
+          <figcaption><span class="fig-tier">① 极近圈</span> Khaothong Hill 山景 · Google 4.6</figcaption>
+        </figure>
+        <figure>
+          <a href="https://www.google.com/maps/search/?api=1&query=Khaothong%20Terrace%20Krabi%20Thailand" target="_blank" rel="noopener"><img src="../assets/krabi-food/khaothong-terrace.jpg" alt="Khaothong Terrace · Google 4.5" loading="lazy" width="400" decoding="async" /></a>
+          <figcaption><span class="fig-tier">① 极近圈</span> Khaothong Terrace · Google 4.5</figcaption>
+        </figure>
+        <figure>
+          <a href="https://www.google.com/maps/search/?api=1&query=Ao%20Thalane%20Seafood%20%E6%B2%B3%E6%B5%B7%E9%B2%9C%20Krabi%20Thailand" target="_blank" rel="noopener"><img src="../assets/krabi-food/ao-thalane-seafood.jpg" alt="Ao Thalane Seafood 河海鲜 · Google 4.5" loading="lazy" width="400" decoding="async" /></a>
+          <figcaption><span class="fig-tier">① 极近圈</span> Ao Thalane Seafood 河海鲜 · Google 4.5</figcaption>
+        </figure>
+        <figure>
+          <a href="https://www.google.com/maps/search/?api=1&query=F%20Farm%20%E4%B8%83%E8%89%B2%E9%BE%99%E8%99%BE%20Krabi%20Thailand" target="_blank" rel="noopener"><img src="../assets/krabi-food/f-farm-lobster.jpg" alt="F Farm 七色龙虾 · Google 4.9" loading="lazy" width="400" decoding="async" /></a>
+          <figcaption><span class="fig-tier">① 极近圈</span> F Farm 七色龙虾 · Google 4.9</figcaption>
+        </figure>
+        <figure>
+          <a href="https://www.google.com/maps/search/?api=1&query=Baan%20Tha%20Ley%20Cafe%20Krabi%20Thailand" target="_blank" rel="noopener"><img src="../assets/krabi-food/baan-tha-ley.jpg" alt="Baan Tha Ley Cafe Seafood · Tubkaek" loading="lazy" width="400" decoding="async" /></a>
+          <figcaption><span class="fig-tier">② 海滩带</span> Baan Tha Ley Cafe Seafood · Tubkaek</figcaption>
+        </figure>
+        <figure>
+          <a href="https://www.google.com/maps/search/?api=1&query=Arundina%20Krabi%20Thailand" target="_blank" rel="noopener"><img src="../assets/krabi-food/arundina.jpg" alt="Arundina · Wongnai 4.8" loading="lazy" width="400" decoding="async" /></a>
+          <figcaption><span class="fig-tier">② 海滩带</span> Arundina · Wongnai 4.8</figcaption>
+        </figure>
+        <figure>
+          <a href="https://www.google.com/maps/search/?api=1&query=Dragon%20View%20Bar%20%26%20Krabi%20Thailand" target="_blank" rel="noopener"><img src="../assets/krabi-food/dragon-view.jpg" alt="Dragon View Bar &amp; Restaurant" loading="lazy" width="400" decoding="async" /></a>
+          <figcaption><span class="fig-tier">② 海滩带</span> Dragon View Bar &amp; Restaurant</figcaption>
+        </figure>
+        <figure>
+          <a href="https://www.google.com/maps/search/?api=1&query=Ruenthip%20Klong%20Son%20%E6%B3%B0%E8%8F%9C%20Krabi%20Thailand" target="_blank" rel="noopener"><img src="../assets/krabi-food/ruenthip.jpg" alt="Ruenthip Klong Son 泰菜" loading="lazy" width="400" decoding="async" /></a>
+          <figcaption><span class="fig-tier">② 海滩带</span> Ruenthip Klong Son 泰菜</figcaption>
+        </figure>
+        <figure>
+          <a href="https://www.google.com/maps/search/?api=1&query=Ruen%20Mai%20%E5%8D%97%E9%83%A8%E6%B3%B0%E8%8F%9C%20Krabi%20Thailand" target="_blank" rel="noopener"><img src="../assets/krabi-food/ruenmai.jpg" alt="Ruen Mai 南部泰菜 · Google 4.7" loading="lazy" width="400" decoding="async" /></a>
+          <figcaption><span class="fig-tier">③ 甲米镇</span> Ruen Mai 南部泰菜 · Google 4.7</figcaption>
+        </figure>
+        <figure>
+          <a href="https://www.google.com/maps/search/?api=1&query=Krua%20Thara%20%E6%8B%9B%E7%89%8C%E6%B5%B7%E9%B2%9C%20Krabi%20Thailand" target="_blank" rel="noopener"><img src="../assets/krabi-food/krua-thara.jpg" alt="Krua Thara 招牌海鲜 · 奥南榜首" loading="lazy" width="400" decoding="async" /></a>
+          <figcaption><span class="fig-tier">④ 奥南</span> Krua Thara 招牌海鲜 · 奥南榜首</figcaption>
+        </figure>
+        <figure>
+          <a href="https://www.google.com/maps/search/?api=1&query=Lae%20Lay%20Grill%20%E6%B5%B7%E6%99%AF%E7%83%A7%E7%83%A4%20Krabi%20Thailand" target="_blank" rel="noopener"><img src="../assets/krabi-food/lae-lay-grill.jpg" alt="Lae Lay Grill 海景烧烤" loading="lazy" width="400" decoding="async" /></a>
+          <figcaption><span class="fig-tier">④ 奥南</span> Lae Lay Grill 海景烧烤</figcaption>
+        </figure>
+        <figure>
+          <a href="https://www.google.com/maps/search/?api=1&query=the%20boat%20coffee%20Krabi%20Thailand" target="_blank" rel="noopener"><img src="../assets/krabi-food/the-boat-coffee.jpg" alt="the boat coffee · Wongnai 5.0" loading="lazy" width="400" decoding="async" /></a>
+          <figcaption><span class="fig-tier">② 海滩带</span> the boat coffee · Wongnai 5.0</figcaption>
+        </figure>
       </div>
     </section>
 
