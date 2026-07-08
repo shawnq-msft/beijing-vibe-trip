@@ -4,7 +4,11 @@
    Zero deps. Include after the page body:
      <link rel="stylesheet" href="../assets/favorites.css">
      <script src="../assets/favorites.js"></script>
-   Optionally set window.FAV_SELECTORS before the script to override targets. */
+   Optionally set window.FAV_SELECTORS before the script to override targets.
+
+   Grouping: multiple DOM nodes sharing the same label (e.g. a venue's photo
+   card AND its summary-table row) are grouped under one id, so favoriting from
+   either place highlights both and counts once. */
 (function () {
   "use strict";
 
@@ -38,12 +42,38 @@
       if (h2) lbl = h2.textContent.replace(/^[^\u4e00-\u9fa5A-Za-z]+/, "").trim().split(/[·（(]/)[0].trim() + "：" + lbl;
       return lbl;
     }
-    // activity / restaurant card: use its name
-    var nm = el.querySelector(".act-nm, .fcard-title, h3, .name, strong");
-    return nm ? nm.textContent.trim() : (el.textContent.trim().slice(0, 40));
+    // summary-table row (restaurant / activity 总表): use data-name + tier/rating
+    if (el.tagName === "TR") {
+      var dn = el.getAttribute("data-name");
+      var nameCell = el.querySelector(".c-name");
+      var base = (dn || (nameCell ? nameCell.textContent.trim() : "")).trim();
+      if (!base) return "";
+      var tierEl = el.querySelector(".c-tier .tg, .c-tier");
+      var gEl = el.querySelector(".c-g .gstar, .c-g");
+      var extra = [];
+      if (tierEl && tierEl.textContent.trim()) extra.push(tierEl.textContent.trim());
+      if (gEl && gEl.textContent.trim()) extra.push("★" + gEl.textContent.trim());
+      return base + (extra.length ? "（" + extra.join(" ") + "）" : "");
+    }
+    // activity / restaurant photo card: use its name (strip trailing rating/meta)
+    var nm = el.querySelector(".fcard-name, .act-nm, .fcard-title, h3, .name, strong");
+    if (nm) {
+      // fcard-name may contain child spans (rating badges); take first text node
+      var t = nm.firstChild && nm.firstChild.nodeType === 3 ? nm.firstChild.textContent : nm.textContent;
+      return t.trim();
+    }
+    return el.textContent.trim().slice(0, 40);
+  }
+  // Key used to GROUP nodes of the same venue. For cards+rows we want the bare
+  // venue name to match across both, so strip the row's tier/rating suffix.
+  function groupKey(el, label) {
+    if (el.tagName === "TR" && el.getAttribute("data-name")) return el.getAttribute("data-name").trim();
+    // fcard: bare name already; strip any "（...）" suffix a row may have added
+    return label.replace(/（[^）]*）\s*$/, "").trim();
   }
 
-  var items = [];   // {el, id, label}
+  var groups = {};      // id -> { id, label, els: [el, ...] }
+  var groupList = [];   // insertion-ordered groups
   var favSet = new Set();
 
   // --- storage <-> URL sync ---
@@ -66,31 +96,39 @@
   }
 
   // --- DOM wiring ---
-  function makeHeart(item) {
+  function makeHeart(group) {
     var b = document.createElement("button");
-    b.className = "fav-btn" + (favSet.has(item.id) ? " on" : "");
+    b.className = "fav-btn" + (favSet.has(group.id) ? " on" : "");
     b.type = "button";
     b.title = "收藏 / 取消收藏";
-    b.setAttribute("aria-label", "收藏 " + item.label);
-    b.textContent = favSet.has(item.id) ? "♥" : "♡";
+    b.setAttribute("aria-label", "收藏 " + group.label);
+    b.textContent = favSet.has(group.id) ? "♥" : "♡";
     b.addEventListener("click", function (ev) {
       ev.stopPropagation(); ev.preventDefault();
-      toggle(item, b);
+      toggle(group);
     });
     return b;
   }
-  function applyState(item) {
-    item.el.classList.toggle("is-fav", favSet.has(item.id));
-    var b = item.el.querySelector(".fav-btn");
-    if (b) { b.classList.toggle("on", favSet.has(item.id)); b.textContent = favSet.has(item.id) ? "♥" : "♡"; }
+  function applyState(group) {
+    var on = favSet.has(group.id);
+    group.els.forEach(function (el) {
+      el.classList.toggle("is-fav", on);
+      var b = el.querySelector(".fav-btn");
+      if (b) { b.classList.toggle("on", on); b.textContent = on ? "♥" : "♡"; }
+    });
   }
-  function toggle(item, btn) {
-    if (favSet.has(item.id)) { favSet.delete(item.id); }
-    else { favSet.add(item.id); item.el.classList.add("fav-pulse");
-      setTimeout(function () { item.el.classList.remove("fav-pulse"); }, 1000); }
-    applyState(item);
+  function pulse(group) {
+    group.els.forEach(function (el) {
+      el.classList.add("fav-pulse");
+      setTimeout(function () { el.classList.remove("fav-pulse"); }, 1000);
+    });
+  }
+  function toggle(group) {
+    if (favSet.has(group.id)) favSet.delete(group.id);
+    else { favSet.add(group.id); pulse(group); }
+    applyState(group);
     persist(); renderDock();
-    toast(favSet.has(item.id) ? "已收藏 · 已存入浏览器+链接" : "已取消收藏");
+    toast(favSet.has(group.id) ? "已收藏 · 已存入浏览器+链接" : "已取消收藏");
   }
 
   // --- floating dock ---
@@ -126,22 +164,23 @@
   function renderDock() {
     cntEl.textContent = favSet.size;
     var list = dock.querySelector(".fav-list");
-    var favItems = items.filter(function (it) { return favSet.has(it.id); });
-    if (!favItems.length) { list.innerHTML = '<div class="fav-empty">还没有收藏。点卡片/格子右上的 ♡ 即可收藏。</div>'; return; }
+    var favGroups = groupList.filter(function (g) { return favSet.has(g.id); });
+    if (!favGroups.length) { list.innerHTML = '<div class="fav-empty">还没有收藏。点卡片/格子/表格行上的 ♡ 即可收藏。</div>'; return; }
     list.innerHTML = "";
-    favItems.forEach(function (it) {
+    favGroups.forEach(function (g) {
       var row = document.createElement("div");
       row.className = "fav-row";
       row.innerHTML = '<span class="dot">♥</span><span class="lbl"></span><span class="fav-x" title="移除">✕</span>';
-      row.querySelector(".lbl").textContent = it.label;
+      row.querySelector(".lbl").textContent = g.label;
       row.querySelector(".lbl").addEventListener("click", function () {
         pop.classList.remove("open");
-        it.el.scrollIntoView({ behavior: "smooth", block: "center" });
-        it.el.classList.add("fav-pulse");
-        setTimeout(function () { it.el.classList.remove("fav-pulse"); }, 1000);
+        // scroll to the first VISIBLE node of the group (card may be hidden in a collapsed section)
+        var target = g.els.find(function (e) { return e.offsetParent !== null; }) || g.els[0];
+        target.scrollIntoView({ behavior: "smooth", block: "center" });
+        pulse(g);
       });
       row.querySelector(".fav-x").addEventListener("click", function (e) {
-        e.stopPropagation(); favSet.delete(it.id); applyState(it); persist(); renderDock();
+        e.stopPropagation(); favSet.delete(g.id); applyState(g); persist(); renderDock();
       });
       list.appendChild(row);
     });
@@ -155,7 +194,7 @@
   }
   function clearAll() {
     favSet.clear();
-    items.forEach(applyState);
+    groupList.forEach(applyState);
     persist(); renderDock();
     document.body.classList.remove("fav-only"); onlyBtn.classList.remove("active");
     toast("已清空收藏");
@@ -170,24 +209,30 @@
   // --- init ---
   function init() {
     readInitial();
-    var seen = {};
     document.querySelectorAll(SELECTORS.join(",")).forEach(function (el) {
       if (el.classList.contains("fav-target")) return; // already wired
       var label = labelFor(el);
       if (!label) return;
-      var id = hash(label);
-      while (seen[id]) id = hash(label + "#" + (seen[id]++)); // collision guard
-      seen[id] = (seen[id] || 0) + 1;
-      var item = { el: el, id: id, label: label };
-      items.push(item);
+      var key = groupKey(el, label);
+      var id = hash(key);
+      var group = groups[id];
+      if (!group) { group = { id: id, label: label, els: [] }; groups[id] = group; groupList.push(group); }
+      group.els.push(el);
       el.classList.add("fav-target");
-      el.appendChild(makeHeart(item));
-      applyState(item);
+      // <tr> can't host a positioned child button directly; mount into first cell
+      if (el.tagName === "TR") {
+        var host = el.querySelector("td") || el;
+        host.classList.add("fav-cell-host");
+        host.appendChild(makeHeart(group));
+      } else {
+        el.appendChild(makeHeart(group));
+      }
     });
+    groupList.forEach(applyState);
     buildDock();
     renderDock();
     // prune URL/LS ids that no longer exist on the page
-    var valid = new Set(items.map(function (it) { return it.id; }));
+    var valid = new Set(groupList.map(function (g) { return g.id; }));
     Array.from(favSet).forEach(function (id) { if (!valid.has(id)) favSet.delete(id); });
     persist();
   }
