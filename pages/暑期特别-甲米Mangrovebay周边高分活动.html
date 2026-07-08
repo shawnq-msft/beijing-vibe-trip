@@ -1,0 +1,988 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>暑期特别 · 甲米 Mangrovebay 周边高分活动 87 项（徒步/攀岩/海玩/溯溪）</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/shared.css" />
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <style>
+    .tier-head { display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; }
+    .tier-head h2 { margin:0; }
+    .tier-tags { display:flex; gap:8px; flex-wrap:wrap; }
+    .tier-tags span { font-size:12px; padding:2px 9px; border-radius:999px; white-space:nowrap; }
+    .t-dist { background:var(--accent-soft); color:var(--accent); font-weight:700; }
+    .t-drv { background:#fff7ed; color:#b45309; font-weight:700; }
+    .t-cnt { background:#f1f5f9; color:var(--muted); }
+    .tier-desc { color:var(--muted); font-size:13.5px; margin:8px 0 14px; }
+    .masonry-grid { margin:0 auto; }
+    .fcard { width:271px; margin-bottom:14px; background:#fff; border:1px solid var(--line);
+      border-radius:16px; overflow:hidden; color:inherit; box-shadow:0 6px 16px rgba(20,32,51,.05);
+      transition:transform .18s ease, box-shadow .18s ease; }
+    .fcard:hover { transform:translateY(-3px); box-shadow:0 14px 30px rgba(20,32,51,.11); }
+    .fcard-img { position:relative; line-height:0; background:#eef2f7; }
+    .fcard-img img { width:100%; height:auto; display:block; }
+    .fcard-img .noimg { display:flex; flex-direction:column; align-items:center; justify-content:center;
+      gap:6px; height:120px; color:#94a3b8; font-size:26px; }
+    .fcard-img .noimg span { font-size:12px; }
+    .cui-chip { position:absolute; left:8px; bottom:8px; background:rgba(15,23,42,.82); color:#fff;
+      font-size:11.5px; font-weight:700; padding:3px 9px; border-radius:999px; line-height:1.4;
+      backdrop-filter:blur(2px); }
+    .fcard-body { padding:10px 12px 12px; }
+    .fcard-name { font-size:14px; font-weight:700; line-height:1.35; color:var(--ink);
+      display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; min-height:38px; }
+    .fcard-meta { display:flex; align-items:center; gap:8px; margin-top:7px; flex-wrap:wrap; }
+    .rt { font-size:12.5px; font-weight:800; color:#0f766e; white-space:nowrap; }
+    .rt.g45 { color:#0b8f57; }
+    .rt.g47 { color:#059669; }
+    .rt.g49 { color:#fff; background:#059669; padding:1px 8px; border-radius:999px; }
+    .fcard-meta2 { display:flex; align-items:center; gap:7px; margin-top:6px; flex-wrap:wrap; }
+    .mi { font-size:11px; font-weight:700; padding:1px 7px; border-radius:999px; white-space:nowrap; line-height:1.5; }
+    .mi-dist { background:var(--accent-soft); color:var(--accent); }
+    .mi-drv  { background:#f1f5f9; color:var(--muted); }
+    .noimg-card .fcard-img { background:linear-gradient(135deg,#eef2f7,#e3ebf5); }
+    .noimg-card .noimg { height:104px; }
+    .villa-box { margin-top:14px; padding:12px 14px; background:#f8fbff; border:1px dashed var(--line); border-radius:14px; font-size:14px; line-height:1.7; }
+    .villa-box b { color:var(--accent); }
+    .warn-box { margin-top:12px; padding:11px 14px; background:var(--warm-soft); border-left:3px solid #f59e0b; border-radius:12px; font-size:14px; line-height:1.7; color:#92400e; }
+    .legend2 { display:flex; flex-wrap:wrap; gap:10px 16px; margin-top:12px; font-size:12.5px; color:var(--muted); }
+    /* activity type chips */
+    .chip { font-size:11px; font-weight:700; padding:2px 8px; border-radius:999px; white-space:nowrap; background:#eef2f7; color:#475569; }
+    .chip.c-kayak { background:#e0f2fe; color:#0369a1; }
+    .chip.c-hike  { background:#dcfce7; color:#15803d; }
+    .chip.c-view  { background:#fef9c3; color:#a16207; }
+    .chip.c-climb { background:#ffe4e6; color:#be123c; }
+    .chip.c-beach { background:#cffafe; color:#0e7490; }
+    .chip.c-temple{ background:#fae8ff; color:#a21caf; }
+    .chip.c-water { background:#e0e7ff; color:#4338ca; }
+    .chip.c-family{ background:#ffedd5; color:#c2410c; }
+    .chip.c-nature{ background:#d1fae5; color:#047857; }
+    /* summary table */
+    .tbl-controls { margin:14px 0 10px; }
+    .tbl-filters { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:10px; }
+    .tf { font-size:12.5px; font-weight:700; padding:5px 12px; border-radius:999px; cursor:pointer;
+      border:1px solid var(--line); background:#fff; color:var(--muted); transition:all .15s ease; }
+    .tf:hover { border-color:var(--accent); color:var(--accent); }
+    .tf.active { background:var(--accent); color:#fff; border-color:var(--accent); }
+    .tbl-legend { display:flex; flex-direction:column; gap:3px; font-size:11.5px; color:var(--muted); line-height:1.6; }
+    .tbl-wrap { overflow-x:auto; border:1px solid var(--line); border-radius:14px; }
+    .dtable { width:100%; border-collapse:collapse; font-size:13px; min-width:680px; }
+    .dtable thead th { position:sticky; top:0; background:#f8fafc; color:var(--ink); font-weight:800;
+      text-align:left; padding:9px 10px; border-bottom:2px solid var(--line); white-space:nowrap; z-index:1; }
+    .dtable th.s { cursor:pointer; user-select:none; }
+    .dtable th.s:hover { background:#eef2f7; color:var(--accent); }
+    .dtable th .ar { font-size:9px; margin-left:2px; color:var(--accent); }
+    .dtable th.sortactive { color:var(--accent); background:#eef6f4; }
+    .dtable tbody td { padding:8px 10px; border-bottom:1px solid #eef1f5; vertical-align:middle; }
+    .dtable tbody tr:hover { background:#f8fbff; }
+    .dtable tbody tr:nth-child(even) { background:#fcfdfe; }
+    .dtable tbody tr:nth-child(even):hover { background:#f4f9ff; }
+    .c-rank { color:var(--muted); font-weight:700; font-variant-numeric:tabular-nums; width:32px; }
+    .c-name a { color:var(--ink); font-weight:700; text-decoration:none; }
+    .c-name a:hover { color:var(--accent); text-decoration:underline; }
+    .pick-tag { display:inline-block; margin-left:7px; font-size:10.5px; font-weight:700;
+      color:#b45309; background:#fff7ed; padding:1px 7px; border-radius:999px; white-space:nowrap; }
+    .c-cui { white-space:nowrap; }
+    .tg { font-size:11px; font-weight:700; padding:2px 8px; border-radius:999px; white-space:nowrap; }
+    .tg1 { background:#dcfce7; color:#15803d; }
+    .tg2 { background:#e0f2fe; color:#0369a1; }
+    .tg3 { background:#fef9c3; color:#a16207; }
+    .tg4 { background:#fae8ff; color:#a21caf; }
+    .gstar { font-weight:800; color:#0f766e; font-variant-numeric:tabular-nums; }
+    .gstar.g45 { color:#0b8f57; }
+    .gstar.g47 { color:#059669; }
+    .gstar.g49 { color:#fff; background:#059669; padding:1px 7px; border-radius:999px; }
+    .c-km { font-variant-numeric:tabular-nums; white-space:nowrap; }
+    .c-km.km-precise { font-weight:800; color:var(--ink); }
+    .c-km.km-band { color:var(--muted); }
+    .c-drv { color:var(--muted); font-size:12px; white-space:nowrap; }
+    .c-map a { text-decoration:none; font-size:15px; }
+    tr.hidden-row { display:none; }
+    @media (max-width:560px) {
+      .fcard { width:100%; } .masonry-grid { width:100% !important; }
+      .dtable { font-size:12px; } .dtable tbody td, .dtable thead th { padding:6px 7px; }
+      .pick-tag { display:none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <section class="hero">
+      <h1>🧗 甲米 Mangrovebay 周边高分活动 · 87 项</h1>
+      <p class="subtitle">和餐厅页同一套逻辑，做成「玩什么」专题：围绕已订的 <b>Mangrove Bay Krabi Beachfront Pool Villa</b>（8/1–8/8），把别墅周边<b>徒步 / 观景 / 攀岩 / 皮划艇 / 海滩跳岛 / 洞窟寺庙 / 瀑布水潭 / 大象营 / 亲子</b>的高分玩乐点，按<b>距别墅直线距离</b>分 4 档、档内按 Google 评分排序。瀑布流卡片 + 顶部可排序总表，点卡片/店名跳 Google 地图。</p>
+      <div class="badges">
+        <span class="badge warm">暑期特别 · 玩乐</span>
+        <span class="badge">图片瀑布流</span>
+        <span class="badge">Google 实时评分</span>
+        <span class="badge green">共 87 项</span>
+        <span class="badge">4 档 · 距离实测</span>
+      </div>
+    </section>
+
+    <section class="panel" style="margin-top:18px;">
+      <h2>一句话结论</h2>
+      <p class="summary">别墅在<strong>塔兰湾（Tha Lane / Ao Thalane）红树林海岸</strong>，玩乐资源其实很集中：<strong>出门 2km 就是全甲米最好的红树林皮划艇</strong>（Ao Thalane），<strong>车程 10 分钟内有龙脊徒步（Dragon's Crest）、山景观景台、道德大象营</strong>；想要<strong>世界级攀岩 + 海滩 + 出海跳岛</strong>，集中在 <strong>Ao Nang / Railay（15–20km，一整天）</strong>；<strong>翡翠池 / 蓝池 / 温泉瀑布</strong>要专程往南开（45km+，和跳岛/包车日合并）。评分与照片来自浏览器<strong>实时抓取的 Google 地图</strong>。</p>
+      <div class="villa-box">
+        🏝️ <b>别墅定位</b>：Mangrove Bay Krabi Beachfront Pool Villa ·
+        72 Moo.3, Khao Thong–Ao Thalane Rd, Mueang Krabi 81000 · 坐标 <b>8.1626°N, 98.7453°E</b>（你提供）
+      </div>
+      <div class="warn-box">
+        🧒 <b>毛豆适配</b>：他爱攀岩 / 游泳 / 徒步 / 真实地质采集——甲米简直是量身定做。<b>Railay 是世界级石灰岩攀岩圣地</b>（有新手体验课）；<b>翡翠池/蓝池是丛林里的天然泡池</b>可游泳、地质奇观；<b>龙脊徒步（Dragon's Crest ★4.8）</b>登顶喀斯特峰看全景；红树林皮划艇钻岩洞。⚠️ 蓝池雨季（8月）有时因水位关闭，去前查开放；瀑布/溯溪暴雨日不下水。
+      </div>
+      <div class="legend2">
+        <span>🖼️ 卡片图 = Google 地图实拍照（已下载到本仓库 <code>assets/krabi-activities/</code>，非热链）</span>
+        <span>G ★ = Google 星级 · 📍 = 距别墅直线距离 · 🚗 = 自驾车程（片区估算）· 胶囊 = 活动类型</span>
+        <span>点卡片 / 店名 → 打开 Google 地图</span>
+      </div>
+    </section>
+
+    <section class="panel" id="summary-table-panel" style="margin-top:18px;">
+      <h2>📊 全部 87 项 · 决策速览表</h2>
+      <p class="summary">瀑布流之外的<strong>可排序总表</strong>：点表头按 <strong>评分 / 距别墅 / 类型 / 档区</strong> 排序，用按钮按<strong>距离档</strong>筛选。全部 <strong>87 项都有 Google 坐标实测的直线距离</strong>，61 项有实拍图。默认按 Google 评分从高到低。</p>
+      <div class="tbl-controls">
+        <div class="tbl-filters" id="tier-filters">
+          <button class="tf active" data-tier="0">全部 87</button>
+          <button class="tf" data-tier="1">①极近 15</button>
+          <button class="tf" data-tier="2">②AoNang/Railay 38</button>
+          <button class="tf" data-tier="3">③甲米镇 22</button>
+          <button class="tf" data-tier="4">④远门 12</button>
+        </div>
+        <div class="tbl-legend">
+          <span>🟩 G★=Google 星级 · 📍距别墅=OSM 坐标直线实测 · 🚗车程=片区估算 · 胶囊=活动类型</span>
+          <span>🏅 橙标=毛豆适配精选（攀岩/游泳/徒步/地质/皮划艇）</span>
+        </div>
+      </div>
+      <div class="tbl-wrap">
+        <table class="dtable" id="dtable">
+          <thead>
+            <tr>
+              <th class="s" data-k="rank" data-t="num" title="综合排名">#</th>
+              <th class="s" data-k="name" data-t="str">活动 / 地点</th>
+              <th class="s" data-k="cat" data-t="str" title="活动类型">类型</th>
+              <th class="s" data-k="tier" data-t="num" title="按距别墅分档">档区</th>
+              <th class="s sortactive" data-k="g" data-t="num" title="Google 星级">G★<span class="ar">▼</span></th>
+              <th class="s" data-k="km" data-t="num" title="距别墅直线距离">距别墅</th>
+              <th>车程</th>
+              <th>地图</th>
+            </tr>
+          </thead>
+          <tbody id="dtbody">
+<tr data-rank="1" data-name="Following Giants Krabi / Ao Nang Ethical Elephant Sanctuary" data-tier="1" data-g="5" data-km="6.20" data-cat="自然"><td class="c-rank">1</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Following Giants Krabi / Ao Nang Ethical Elephant Sanctuary" target="_blank" rel="noopener">Following Giants Krabi / Ao Nang Ethical Elephant Sanctuary</a><span class="pick-tag">🐘 道德大象营·近</span></td><td class="c-cui"><span class="chip c-nature">自然</span></td><td class="c-tier"><span class="tg tg1">①</span></td><td class="c-g"><span class="gstar g49">5.0</span></td><td class="c-km km-precise">6.2 km</td><td class="c-drv">5–15 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Following Giants Krabi / Ao Nang Ethical Elephant Sanctuary" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="2" data-name="ATV Nature View Point" data-tier="1" data-g="5" data-km="6.60" data-cat="观景"><td class="c-rank">2</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=ATV Nature View Point" target="_blank" rel="noopener">ATV Nature View Point</a></td><td class="c-cui"><span class="chip c-view">观景</span></td><td class="c-tier"><span class="tg tg1">①</span></td><td class="c-g"><span class="gstar g49">5.0</span></td><td class="c-km km-precise">6.6 km</td><td class="c-drv">5–15 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=ATV Nature View Point" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="3" data-name="Scenic Route" data-tier="2" data-g="5" data-km="14.60" data-cat="观景"><td class="c-rank">3</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Scenic Route" target="_blank" rel="noopener">Scenic Route</a></td><td class="c-cui"><span class="chip c-view">观景</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g49">5.0</span></td><td class="c-km km-precise">14.6 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Scenic Route" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="4" data-name="Krabi Dirt Ride Experience" data-tier="2" data-g="5" data-km="17.30" data-cat="观景"><td class="c-rank">4</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Dirt Ride Experience" target="_blank" rel="noopener">Krabi Dirt Ride Experience</a></td><td class="c-cui"><span class="chip c-view">观景</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g49">5.0</span></td><td class="c-km km-precise">17.3 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Dirt Ride Experience" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="5" data-name="Krabi trip dirtbike tour" data-tier="2" data-g="5" data-km="19.70" data-cat="亲子"><td class="c-rank">5</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Krabi trip dirtbike tour" target="_blank" rel="noopener">Krabi trip dirtbike tour</a></td><td class="c-cui"><span class="chip c-family">亲子</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g49">5.0</span></td><td class="c-km km-precise">19.7 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Krabi trip dirtbike tour" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="6" data-name="CLIMB ON RAILAY &amp; Tours @ OnTheRocks" data-tier="2" data-g="5" data-km="19.80" data-cat="攀岩"><td class="c-rank">6</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=CLIMB ON RAILAY &amp; Tours @ OnTheRocks" target="_blank" rel="noopener">CLIMB ON RAILAY &amp; Tours @ OnTheRocks</a></td><td class="c-cui"><span class="chip c-climb">攀岩</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g49">5.0</span></td><td class="c-km km-precise">19.8 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=CLIMB ON RAILAY &amp; Tours @ OnTheRocks" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="7" data-name="Spider Rock Climbing" data-tier="2" data-g="5" data-km="19.90" data-cat="攀岩"><td class="c-rank">7</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Spider Rock Climbing" target="_blank" rel="noopener">Spider Rock Climbing</a><span class="pick-tag">🧗 Railay世界级攀岩</span></td><td class="c-cui"><span class="chip c-climb">攀岩</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g49">5.0</span></td><td class="c-km km-precise">19.9 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Spider Rock Climbing" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="8" data-name="Krabi Ecological Park" data-tier="3" data-g="5" data-km="21.80" data-cat="自然"><td class="c-rank">8</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Ecological Park" target="_blank" rel="noopener">Krabi Ecological Park</a></td><td class="c-cui"><span class="chip c-nature">自然</span></td><td class="c-tier"><span class="tg tg3">③</span></td><td class="c-g"><span class="gstar g49">5.0</span></td><td class="c-km km-precise">21.8 km</td><td class="c-drv">30–40 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Ecological Park" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="9" data-name="Kayak Point Ao Thalane คายัค พอยต์ อ่าวท่าเเลน" data-tier="1" data-g="4.9" data-km="2.10" data-cat="皮划艇"><td class="c-rank">9</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Kayak Point Ao Thalane คายัค พอยต์ อ่าวท่าเเลน" target="_blank" rel="noopener">Kayak Point Ao Thalane คายัค พอยต์ อ่าวท่าเเลน</a><span class="pick-tag">🛶 出门就到·红树林皮划艇</span></td><td class="c-cui"><span class="chip c-kayak">皮划艇</span></td><td class="c-tier"><span class="tg tg1">①</span></td><td class="c-g"><span class="gstar g49">4.9</span></td><td class="c-km km-precise">2.1 km</td><td class="c-drv">5–15 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Kayak Point Ao Thalane คายัค พอยต์ อ่าวท่าเเลน" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="10" data-name="Trail up to Kuan Nom Saow viewpoint" data-tier="1" data-g="4.9" data-km="4.00" data-cat="徒步"><td class="c-rank">10</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Trail up to Kuan Nom Saow viewpoint" target="_blank" rel="noopener">Trail up to Kuan Nom Saow viewpoint</a><span class="pick-tag">🥾 别墅侧·山景徒步</span></td><td class="c-cui"><span class="chip c-hike">徒步</span></td><td class="c-tier"><span class="tg tg1">①</span></td><td class="c-g"><span class="gstar g49">4.9</span></td><td class="c-km km-precise">4.0 km</td><td class="c-drv">5–15 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Trail up to Kuan Nom Saow viewpoint" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="11" data-name="Karst Aways. Krabi Kayak Tour" data-tier="1" data-g="4.9" data-km="8.20" data-cat="亲子"><td class="c-rank">11</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Karst Aways. Krabi Kayak Tour" target="_blank" rel="noopener">Karst Aways. Krabi Kayak Tour</a></td><td class="c-cui"><span class="chip c-family">亲子</span></td><td class="c-tier"><span class="tg tg1">①</span></td><td class="c-g"><span class="gstar g49">4.9</span></td><td class="c-km km-precise">8.2 km</td><td class="c-drv">5–15 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Karst Aways. Krabi Kayak Tour" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="12" data-name="The Elephant Sanctuary Krabi Thailand" data-tier="2" data-g="4.9" data-km="10.30" data-cat="自然"><td class="c-rank">12</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=The Elephant Sanctuary Krabi Thailand" target="_blank" rel="noopener">The Elephant Sanctuary Krabi Thailand</a></td><td class="c-cui"><span class="chip c-nature">自然</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g49">4.9</span></td><td class="c-km km-precise">10.3 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=The Elephant Sanctuary Krabi Thailand" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="13" data-name="Krabi Roaming Elephant Sanctuary" data-tier="2" data-g="4.9" data-km="11.30" data-cat="自然"><td class="c-rank">13</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Roaming Elephant Sanctuary" target="_blank" rel="noopener">Krabi Roaming Elephant Sanctuary</a></td><td class="c-cui"><span class="chip c-nature">自然</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g49">4.9</span></td><td class="c-km km-precise">11.3 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Roaming Elephant Sanctuary" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="14" data-name="View Point Hong Island" data-tier="2" data-g="4.9" data-km="11.50" data-cat="观景"><td class="c-rank">14</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=View Point Hong Island" target="_blank" rel="noopener">View Point Hong Island</a></td><td class="c-cui"><span class="chip c-view">观景</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g49">4.9</span></td><td class="c-km km-precise">11.5 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=View Point Hong Island" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="15" data-name="Krabi Elephant Local Project (Sanctuary)" data-tier="2" data-g="4.9" data-km="12.00" data-cat="自然"><td class="c-rank">15</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Elephant Local Project (Sanctuary)" target="_blank" rel="noopener">Krabi Elephant Local Project (Sanctuary)</a></td><td class="c-cui"><span class="chip c-nature">自然</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g49">4.9</span></td><td class="c-km km-precise">12.0 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Elephant Local Project (Sanctuary)" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="16" data-name="THAI&#x27;D UP ADVENTURES" data-tier="2" data-g="4.9" data-km="15.60" data-cat="亲子"><td class="c-rank">16</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=THAI&#x27;D UP ADVENTURES" target="_blank" rel="noopener">THAI&#x27;D UP ADVENTURES</a></td><td class="c-cui"><span class="chip c-family">亲子</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g49">4.9</span></td><td class="c-km km-precise">15.6 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=THAI&#x27;D UP ADVENTURES" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="17" data-name="Ao Nang Massive Climb and Hike Adventure" data-tier="2" data-g="4.9" data-km="17.50" data-cat="徒步"><td class="c-rank">17</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Ao Nang Massive Climb and Hike Adventure" target="_blank" rel="noopener">Ao Nang Massive Climb and Hike Adventure</a></td><td class="c-cui"><span class="chip c-hike">徒步</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g49">4.9</span></td><td class="c-km km-precise">17.5 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Ao Nang Massive Climb and Hike Adventure" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="18" data-name="Krabi Rock Climbing" data-tier="2" data-g="4.9" data-km="19.10" data-cat="攀岩"><td class="c-rank">18</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Rock Climbing" target="_blank" rel="noopener">Krabi Rock Climbing</a></td><td class="c-cui"><span class="chip c-climb">攀岩</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g49">4.9</span></td><td class="c-km km-precise">19.1 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Rock Climbing" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="19" data-name="Railay Rock Climbing Shop" data-tier="2" data-g="4.9" data-km="19.70" data-cat="攀岩"><td class="c-rank">19</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Railay Rock Climbing Shop" target="_blank" rel="noopener">Railay Rock Climbing Shop</a></td><td class="c-cui"><span class="chip c-climb">攀岩</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g49">4.9</span></td><td class="c-km km-precise">19.7 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Railay Rock Climbing Shop" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="20" data-name="Hot Rock climbing school" data-tier="2" data-g="4.9" data-km="19.70" data-cat="攀岩"><td class="c-rank">20</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Hot Rock climbing school" target="_blank" rel="noopener">Hot Rock climbing school</a></td><td class="c-cui"><span class="chip c-climb">攀岩</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g49">4.9</span></td><td class="c-km km-precise">19.7 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Hot Rock climbing school" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="21" data-name="Railay Rock You" data-tier="2" data-g="4.9" data-km="19.80" data-cat="攀岩"><td class="c-rank">21</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Railay Rock You" target="_blank" rel="noopener">Railay Rock You</a></td><td class="c-cui"><span class="chip c-climb">攀岩</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g49">4.9</span></td><td class="c-km km-precise">19.8 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Railay Rock You" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="22" data-name="Krabi Street Art : Mardi and Gurney&#x27; Pitta" data-tier="3" data-g="4.9" data-km="21.90" data-cat="亲子"><td class="c-rank">22</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Street Art : Mardi and Gurney&#x27; Pitta" target="_blank" rel="noopener">Krabi Street Art : Mardi and Gurney&#x27; Pitta</a></td><td class="c-cui"><span class="chip c-family">亲子</span></td><td class="c-tier"><span class="tg tg3">③</span></td><td class="c-g"><span class="gstar g49">4.9</span></td><td class="c-km km-precise">21.9 km</td><td class="c-drv">30–40 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Street Art : Mardi and Gurney&#x27; Pitta" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="23" data-name="Kayak Ao Thalane by Local" data-tier="1" data-g="4.8" data-km="2.10" data-cat="皮划艇"><td class="c-rank">23</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Kayak Ao Thalane by Local" target="_blank" rel="noopener">Kayak Ao Thalane by Local</a></td><td class="c-cui"><span class="chip c-kayak">皮划艇</span></td><td class="c-tier"><span class="tg tg1">①</span></td><td class="c-g"><span class="gstar g47">4.8</span></td><td class="c-km km-precise">2.1 km</td><td class="c-drv">5–15 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Kayak Ao Thalane by Local" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="24" data-name="Dragon&#x27;s Crest (Ngon Nak Nature Trail)" data-tier="1" data-g="4.8" data-km="7.30" data-cat="徒步"><td class="c-rank">24</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Dragon&#x27;s Crest (Ngon Nak Nature Trail)" target="_blank" rel="noopener">Dragon&#x27;s Crest (Ngon Nak Nature Trail)</a><span class="pick-tag">⛰️ 甲米最强徒步·龙脊观景</span></td><td class="c-cui"><span class="chip c-hike">徒步</span></td><td class="c-tier"><span class="tg tg1">①</span></td><td class="c-g"><span class="gstar g47">4.8</span></td><td class="c-km km-precise">7.3 km</td><td class="c-drv">5–15 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Dragon&#x27;s Crest (Ngon Nak Nature Trail)" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="25" data-name="Park Ranger Unit 4 (Tub Kak)" data-tier="1" data-g="4.8" data-km="7.30" data-cat="自然"><td class="c-rank">25</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Park Ranger Unit 4 (Tub Kak)" target="_blank" rel="noopener">Park Ranger Unit 4 (Tub Kak)</a></td><td class="c-cui"><span class="chip c-nature">自然</span></td><td class="c-tier"><span class="tg tg1">①</span></td><td class="c-g"><span class="gstar g47">4.8</span></td><td class="c-km km-precise">7.3 km</td><td class="c-drv">5–15 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Park Ranger Unit 4 (Tub Kak)" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="26" data-name="Rest Stop View point Khao Ngon Nak" data-tier="1" data-g="4.8" data-km="7.90" data-cat="徒步"><td class="c-rank">26</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Rest Stop View point Khao Ngon Nak" target="_blank" rel="noopener">Rest Stop View point Khao Ngon Nak</a></td><td class="c-cui"><span class="chip c-hike">徒步</span></td><td class="c-tier"><span class="tg tg1">①</span></td><td class="c-g"><span class="gstar g47">4.8</span></td><td class="c-km km-precise">7.9 km</td><td class="c-drv">5–15 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Rest Stop View point Khao Ngon Nak" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="27" data-name="Natin Spicy Garden" data-tier="2" data-g="4.8" data-km="12.90" data-cat="自然"><td class="c-rank">27</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Natin Spicy Garden" target="_blank" rel="noopener">Natin Spicy Garden</a></td><td class="c-cui"><span class="chip c-nature">自然</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g47">4.8</span></td><td class="c-km km-precise">12.9 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Natin Spicy Garden" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="28" data-name="The Fun Garden" data-tier="2" data-g="4.8" data-km="15.50" data-cat="亲子"><td class="c-rank">28</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=The Fun Garden" target="_blank" rel="noopener">The Fun Garden</a></td><td class="c-cui"><span class="chip c-family">亲子</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g47">4.8</span></td><td class="c-km km-precise">15.5 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=The Fun Garden" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="29" data-name="Real Rocks Climbing School, rock climbing Krabi, Railay Beach" data-tier="2" data-g="4.8" data-km="19.60" data-cat="攀岩"><td class="c-rank">29</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Real Rocks Climbing School, rock climbing Krabi, Railay Beach" target="_blank" rel="noopener">Real Rocks Climbing School, rock climbing Krabi, Railay Beach</a></td><td class="c-cui"><span class="chip c-climb">攀岩</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g47">4.8</span></td><td class="c-km km-precise">19.6 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Real Rocks Climbing School, rock climbing Krabi, Railay Beach" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="30" data-name="Bat Cave" data-tier="2" data-g="4.8" data-km="19.90" data-cat="观景"><td class="c-rank">30</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Bat Cave" target="_blank" rel="noopener">Bat Cave</a></td><td class="c-cui"><span class="chip c-view">观景</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g47">4.8</span></td><td class="c-km km-precise">19.9 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Bat Cave" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="31" data-name="Tiger Cave Temple 虎穴寺" data-tier="2" data-g="4.8" data-km="20.00" data-cat="洞窟/寺庙"><td class="c-rank">31</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Tiger Cave Temple 虎穴寺" target="_blank" rel="noopener">Tiger Cave Temple 虎穴寺</a><span class="pick-tag">🐯 1237级登顶·虎穴寺</span></td><td class="c-cui"><span class="chip c-temple">洞窟/寺庙</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g47">4.8</span></td><td class="c-km km-precise">20.0 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Tiger Cave Temple 虎穴寺" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="32" data-name="Sunset Viewpoint" data-tier="3" data-g="4.8" data-km="24.60" data-cat="观景"><td class="c-rank">32</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Sunset Viewpoint" target="_blank" rel="noopener">Sunset Viewpoint</a></td><td class="c-cui"><span class="chip c-view">观景</span></td><td class="c-tier"><span class="tg tg3">③</span></td><td class="c-g"><span class="gstar g47">4.8</span></td><td class="c-km km-precise">24.6 km</td><td class="c-drv">30–40 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Sunset Viewpoint" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="33" data-name="Khao Ngon Nak Nature Trail" data-tier="1" data-g="4.7" data-km="8.90" data-cat="徒步"><td class="c-rank">33</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Khao Ngon Nak Nature Trail" target="_blank" rel="noopener">Khao Ngon Nak Nature Trail</a></td><td class="c-cui"><span class="chip c-hike">徒步</span></td><td class="c-tier"><span class="tg tg1">①</span></td><td class="c-g"><span class="gstar g47">4.7</span></td><td class="c-km km-precise">8.9 km</td><td class="c-drv">5–15 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Khao Ngon Nak Nature Trail" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="34" data-name="Nong Thale Peak" data-tier="1" data-g="4.7" data-km="9.20" data-cat="徒步"><td class="c-rank">34</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Nong Thale Peak" target="_blank" rel="noopener">Nong Thale Peak</a></td><td class="c-cui"><span class="chip c-hike">徒步</span></td><td class="c-tier"><span class="tg tg1">①</span></td><td class="c-g"><span class="gstar g47">4.7</span></td><td class="c-km km-precise">9.2 km</td><td class="c-drv">5–15 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Nong Thale Peak" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="35" data-name="Phra Nang Cave Beach 公主海滩" data-tier="3" data-g="4.7" data-km="20.20" data-cat="海滩"><td class="c-rank">35</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Phra Nang Cave Beach 公主海滩" target="_blank" rel="noopener">Phra Nang Cave Beach 公主海滩</a><span class="pick-tag">🏖️ 攀岩客海滩·洞穴</span></td><td class="c-cui"><span class="chip c-beach">海滩</span></td><td class="c-tier"><span class="tg tg3">③</span></td><td class="c-g"><span class="gstar g47">4.7</span></td><td class="c-km km-precise">20.2 km</td><td class="c-drv">30–40 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Phra Nang Cave Beach 公主海滩" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="36" data-name="Ko Rang Beach" data-tier="3" data-g="4.7" data-km="20.20" data-cat="海滩"><td class="c-rank">36</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Ko Rang Beach" target="_blank" rel="noopener">Ko Rang Beach</a></td><td class="c-cui"><span class="chip c-beach">海滩</span></td><td class="c-tier"><span class="tg tg3">③</span></td><td class="c-g"><span class="gstar g47">4.7</span></td><td class="c-km km-precise">20.2 km</td><td class="c-drv">30–40 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Ko Rang Beach" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="37" data-name="East Railay Viewpoint" data-tier="3" data-g="4.7" data-km="20.30" data-cat="徒步"><td class="c-rank">37</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=East Railay Viewpoint" target="_blank" rel="noopener">East Railay Viewpoint</a></td><td class="c-cui"><span class="chip c-hike">徒步</span></td><td class="c-tier"><span class="tg tg3">③</span></td><td class="c-g"><span class="gstar g47">4.7</span></td><td class="c-km km-precise">20.3 km</td><td class="c-drv">30–40 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=East Railay Viewpoint" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="38" data-name="Emerald Lagoon Railay hike" data-tier="3" data-g="4.7" data-km="20.50" data-cat="观景"><td class="c-rank">38</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Emerald Lagoon Railay hike" target="_blank" rel="noopener">Emerald Lagoon Railay hike</a></td><td class="c-cui"><span class="chip c-view">观景</span></td><td class="c-tier"><span class="tg tg3">③</span></td><td class="c-g"><span class="gstar g47">4.7</span></td><td class="c-km km-precise">20.5 km</td><td class="c-drv">30–40 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Emerald Lagoon Railay hike" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="39" data-name="Huay To Waterfall" data-tier="3" data-g="4.7" data-km="20.80" data-cat="瀑布/水潭"><td class="c-rank">39</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Huay To Waterfall" target="_blank" rel="noopener">Huay To Waterfall</a><span class="pick-tag">💦 皮南本瀑布·可玩水</span></td><td class="c-cui"><span class="chip c-water">瀑布/水潭</span></td><td class="c-tier"><span class="tg tg3">③</span></td><td class="c-g"><span class="gstar g47">4.7</span></td><td class="c-km km-precise">20.8 km</td><td class="c-drv">30–40 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Huay To Waterfall" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="40" data-name="Bat Cave" data-tier="3" data-g="4.7" data-km="21.50" data-cat="亲子"><td class="c-rank">40</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Bat Cave" target="_blank" rel="noopener">Bat Cave</a></td><td class="c-cui"><span class="chip c-family">亲子</span></td><td class="c-tier"><span class="tg tg3">③</span></td><td class="c-g"><span class="gstar g47">4.7</span></td><td class="c-km km-precise">21.5 km</td><td class="c-drv">30–40 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Bat Cave" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="41" data-name="Ao Thalane Kayak Krabi" data-tier="1" data-g="4.6" data-km="2.20" data-cat="皮划艇"><td class="c-rank">41</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Ao Thalane Kayak Krabi" target="_blank" rel="noopener">Ao Thalane Kayak Krabi</a></td><td class="c-cui"><span class="chip c-kayak">皮划艇</span></td><td class="c-tier"><span class="tg tg1">①</span></td><td class="c-g"><span class="gstar g45">4.6</span></td><td class="c-km km-precise">2.2 km</td><td class="c-drv">5–15 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Ao Thalane Kayak Krabi" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="42" data-name="Checkpoint Mu Ko Phi Phi National Park" data-tier="1" data-g="4.6" data-km="7.30" data-cat="徒步"><td class="c-rank">42</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Checkpoint Mu Ko Phi Phi National Park" target="_blank" rel="noopener">Checkpoint Mu Ko Phi Phi National Park</a></td><td class="c-cui"><span class="chip c-hike">徒步</span></td><td class="c-tier"><span class="tg tg1">①</span></td><td class="c-g"><span class="gstar g45">4.6</span></td><td class="c-km km-precise">7.3 km</td><td class="c-drv">5–15 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Checkpoint Mu Ko Phi Phi National Park" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="43" data-name="Krabi Elephant Shelter" data-tier="2" data-g="4.6" data-km="12.70" data-cat="自然"><td class="c-rank">43</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Elephant Shelter" target="_blank" rel="noopener">Krabi Elephant Shelter</a></td><td class="c-cui"><span class="chip c-nature">自然</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g45">4.6</span></td><td class="c-km km-precise">12.7 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Elephant Shelter" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="44" data-name="Hat Noppharat Thara-Mu Ko Phi Phi National Park" data-tier="2" data-g="4.6" data-km="14.10" data-cat="自然"><td class="c-rank">44</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Hat Noppharat Thara-Mu Ko Phi Phi National Park" target="_blank" rel="noopener">Hat Noppharat Thara-Mu Ko Phi Phi National Park</a></td><td class="c-cui"><span class="chip c-nature">自然</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g45">4.6</span></td><td class="c-km km-precise">14.1 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Hat Noppharat Thara-Mu Ko Phi Phi National Park" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="45" data-name="LAND PARK FARM Playtime with animals friends" data-tier="2" data-g="4.6" data-km="14.70" data-cat="亲子"><td class="c-rank">45</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=LAND PARK FARM Playtime with animals friends" target="_blank" rel="noopener">LAND PARK FARM Playtime with animals friends</a></td><td class="c-cui"><span class="chip c-family">亲子</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g45">4.6</span></td><td class="c-km km-precise">14.7 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=LAND PARK FARM Playtime with animals friends" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="46" data-name="Krabi Snake Park and Kingcobra show" data-tier="2" data-g="4.6" data-km="15.10" data-cat="亲子"><td class="c-rank">46</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Snake Park and Kingcobra show" target="_blank" rel="noopener">Krabi Snake Park and Kingcobra show</a></td><td class="c-cui"><span class="chip c-family">亲子</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g45">4.6</span></td><td class="c-km km-precise">15.1 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Snake Park and Kingcobra show" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="47" data-name="หนองกก Mountain View Krabi" data-tier="2" data-g="4.6" data-km="15.80" data-cat="观景"><td class="c-rank">47</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=หนองกก Mountain View Krabi" target="_blank" rel="noopener">หนองกก Mountain View Krabi</a></td><td class="c-cui"><span class="chip c-view">观景</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g45">4.6</span></td><td class="c-km km-precise">15.8 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=หนองกก Mountain View Krabi" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="48" data-name="Khao Phanom Bencha National Park" data-tier="3" data-g="4.6" data-km="20.50" data-cat="自然"><td class="c-rank">48</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Khao Phanom Bencha National Park" target="_blank" rel="noopener">Khao Phanom Bencha National Park</a></td><td class="c-cui"><span class="chip c-nature">自然</span></td><td class="c-tier"><span class="tg tg3">③</span></td><td class="c-g"><span class="gstar g45">4.6</span></td><td class="c-km km-precise">20.5 km</td><td class="c-drv">30–40 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Khao Phanom Bencha National Park" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="49" data-name="Krabi The watch Tower" data-tier="3" data-g="4.6" data-km="21.30" data-cat="观景"><td class="c-rank">49</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Krabi The watch Tower" target="_blank" rel="noopener">Krabi The watch Tower</a></td><td class="c-cui"><span class="chip c-view">观景</span></td><td class="c-tier"><span class="tg tg3">③</span></td><td class="c-g"><span class="gstar g45">4.6</span></td><td class="c-km km-precise">21.3 km</td><td class="c-drv">30–40 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Krabi The watch Tower" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="50" data-name="Phi phi Viewpoint 1" data-tier="4" data-g="4.6" data-km="46.80" data-cat="观景"><td class="c-rank">50</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Phi phi Viewpoint 1" target="_blank" rel="noopener">Phi phi Viewpoint 1</a></td><td class="c-cui"><span class="chip c-view">观景</span></td><td class="c-tier"><span class="tg tg4">④</span></td><td class="c-g"><span class="gstar g45">4.6</span></td><td class="c-km km-precise">46.8 km</td><td class="c-drv">60–90 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Phi phi Viewpoint 1" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="51" data-name="Thankiri Kamnan Park - Krabi" data-tier="1" data-g="4.5" data-km="5.90" data-cat="亲子"><td class="c-rank">51</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Thankiri Kamnan Park - Krabi" target="_blank" rel="noopener">Thankiri Kamnan Park - Krabi</a></td><td class="c-cui"><span class="chip c-family">亲子</span></td><td class="c-tier"><span class="tg tg1">①</span></td><td class="c-g"><span class="gstar g45">4.5</span></td><td class="c-km km-precise">5.9 km</td><td class="c-drv">5–15 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Thankiri Kamnan Park - Krabi" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="52" data-name="Mirror Lake Krabi" data-tier="1" data-g="4.5" data-km="10.00" data-cat="观景"><td class="c-rank">52</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Mirror Lake Krabi" target="_blank" rel="noopener">Mirror Lake Krabi</a></td><td class="c-cui"><span class="chip c-view">观景</span></td><td class="c-tier"><span class="tg tg1">①</span></td><td class="c-g"><span class="gstar g45">4.5</span></td><td class="c-km km-precise">10.0 km</td><td class="c-drv">5–15 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Mirror Lake Krabi" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="53" data-name="Kayak KlongRoot Viewpoint (คายัคคลองหรูดวิวพอยท์)" data-tier="2" data-g="4.5" data-km="10.10" data-cat="观景"><td class="c-rank">53</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Kayak KlongRoot Viewpoint (คายัคคลองหรูดวิวพอยท์)" target="_blank" rel="noopener">Kayak KlongRoot Viewpoint (คายัคคลองหรูดวิวพอยท์)</a></td><td class="c-cui"><span class="chip c-view">观景</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g45">4.5</span></td><td class="c-km km-precise">10.1 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Kayak KlongRoot Viewpoint (คายัคคลองหรูดวิวพอยท์)" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="54" data-name="Noppharat Thara Beach" data-tier="2" data-g="4.5" data-km="14.20" data-cat="亲子"><td class="c-rank">54</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Noppharat Thara Beach" target="_blank" rel="noopener">Noppharat Thara Beach</a></td><td class="c-cui"><span class="chip c-family">亲子</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g45">4.5</span></td><td class="c-km km-precise">14.2 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Noppharat Thara Beach" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="55" data-name="R.S View point" data-tier="2" data-g="4.5" data-km="16.00" data-cat="观景"><td class="c-rank">55</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=R.S View point" target="_blank" rel="noopener">R.S View point</a></td><td class="c-cui"><span class="chip c-view">观景</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g45">4.5</span></td><td class="c-km km-precise">16.0 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=R.S View point" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="56" data-name="Railay West Beach" data-tier="2" data-g="4.5" data-km="19.40" data-cat="海滩"><td class="c-rank">56</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Railay West Beach" target="_blank" rel="noopener">Railay West Beach</a></td><td class="c-cui"><span class="chip c-beach">海滩</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g45">4.5</span></td><td class="c-km km-precise">19.4 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Railay West Beach" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="57" data-name="Khao Tham Suea Pahksa Sawan Krabi Urban Forest" data-tier="2" data-g="4.5" data-km="19.40" data-cat="观景"><td class="c-rank">57</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Khao Tham Suea Pahksa Sawan Krabi Urban Forest" target="_blank" rel="noopener">Khao Tham Suea Pahksa Sawan Krabi Urban Forest</a></td><td class="c-cui"><span class="chip c-view">观景</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g45">4.5</span></td><td class="c-km km-precise">19.4 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Khao Tham Suea Pahksa Sawan Krabi Urban Forest" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="58" data-name="Railay Walking Street" data-tier="2" data-g="4.5" data-km="19.70" data-cat="海滩"><td class="c-rank">58</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Railay Walking Street" target="_blank" rel="noopener">Railay Walking Street</a></td><td class="c-cui"><span class="chip c-beach">海滩</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar g45">4.5</span></td><td class="c-km km-precise">19.7 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Railay Walking Street" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="59" data-name="Wang Tewada Waterfall" data-tier="3" data-g="4.5" data-km="20.90" data-cat="自然"><td class="c-rank">59</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Wang Tewada Waterfall" target="_blank" rel="noopener">Wang Tewada Waterfall</a></td><td class="c-cui"><span class="chip c-nature">自然</span></td><td class="c-tier"><span class="tg tg3">③</span></td><td class="c-g"><span class="gstar g45">4.5</span></td><td class="c-km km-precise">20.9 km</td><td class="c-drv">30–40 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Wang Tewada Waterfall" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="60" data-name="Khao Khanab Nam" data-tier="3" data-g="4.5" data-km="21.50" data-cat="自然"><td class="c-rank">60</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Khao Khanab Nam" target="_blank" rel="noopener">Khao Khanab Nam</a></td><td class="c-cui"><span class="chip c-nature">自然</span></td><td class="c-tier"><span class="tg tg3">③</span></td><td class="c-g"><span class="gstar g45">4.5</span></td><td class="c-km km-precise">21.5 km</td><td class="c-drv">30–40 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Khao Khanab Nam" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="61" data-name="Cro-magnon Man Intersection" data-tier="3" data-g="4.5" data-km="21.60" data-cat="观景"><td class="c-rank">61</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Cro-magnon Man Intersection" target="_blank" rel="noopener">Cro-magnon Man Intersection</a></td><td class="c-cui"><span class="chip c-view">观景</span></td><td class="c-tier"><span class="tg tg3">③</span></td><td class="c-g"><span class="gstar g45">4.5</span></td><td class="c-km km-precise">21.6 km</td><td class="c-drv">30–40 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Cro-magnon Man Intersection" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="62" data-name="The Mud Crabs Sculpture" data-tier="3" data-g="4.5" data-km="21.70" data-cat="亲子"><td class="c-rank">62</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=The Mud Crabs Sculpture" target="_blank" rel="noopener">The Mud Crabs Sculpture</a></td><td class="c-cui"><span class="chip c-family">亲子</span></td><td class="c-tier"><span class="tg tg3">③</span></td><td class="c-g"><span class="gstar g45">4.5</span></td><td class="c-km km-precise">21.7 km</td><td class="c-drv">30–40 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=The Mud Crabs Sculpture" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="63" data-name="Phi Phi Viewpoint 3" data-tier="4" data-g="4.5" data-km="46.10" data-cat="观景"><td class="c-rank">63</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Phi Phi Viewpoint 3" target="_blank" rel="noopener">Phi Phi Viewpoint 3</a></td><td class="c-cui"><span class="chip c-view">观景</span></td><td class="c-tier"><span class="tg tg4">④</span></td><td class="c-g"><span class="gstar g45">4.5</span></td><td class="c-km km-precise">46.1 km</td><td class="c-drv">60–90 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Phi Phi Viewpoint 3" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="64" data-name="Blue Pool Krabi Thailand" data-tier="4" data-g="4.5" data-km="63.60" data-cat="瀑布/水潭"><td class="c-rank">64</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Blue Pool Krabi Thailand" target="_blank" rel="noopener">Blue Pool Krabi Thailand</a><span class="pick-tag">🩵 蓝池·地质奇观</span></td><td class="c-cui"><span class="chip c-water">瀑布/水潭</span></td><td class="c-tier"><span class="tg tg4">④</span></td><td class="c-g"><span class="gstar g45">4.5</span></td><td class="c-km km-precise">63.6 km</td><td class="c-drv">60–90 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Blue Pool Krabi Thailand" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="65" data-name="Ao Nang Elephant Sanctuary Krabi (Booking is needed)" data-tier="2" data-g="4.4" data-km="11.80" data-cat="自然"><td class="c-rank">65</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Ao Nang Elephant Sanctuary Krabi (Booking is needed)" target="_blank" rel="noopener">Ao Nang Elephant Sanctuary Krabi (Booking is needed)</a></td><td class="c-cui"><span class="chip c-nature">自然</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar ">4.4</span></td><td class="c-km km-precise">11.8 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Ao Nang Elephant Sanctuary Krabi (Booking is needed)" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="66" data-name="Cocokids Summer Cafe Krabi" data-tier="2" data-g="4.4" data-km="14.70" data-cat="亲子"><td class="c-rank">66</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Cocokids Summer Cafe Krabi" target="_blank" rel="noopener">Cocokids Summer Cafe Krabi</a></td><td class="c-cui"><span class="chip c-family">亲子</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar ">4.4</span></td><td class="c-km km-precise">14.7 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Cocokids Summer Cafe Krabi" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="67" data-name="Ao Nang beach" data-tier="2" data-g="4.4" data-km="16.80" data-cat="海滩"><td class="c-rank">67</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Ao Nang beach" target="_blank" rel="noopener">Ao Nang beach</a></td><td class="c-cui"><span class="chip c-beach">海滩</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar ">4.4</span></td><td class="c-km km-precise">16.8 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Ao Nang beach" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="68" data-name="Railay Beach" data-tier="2" data-g="4.4" data-km="19.60" data-cat="海滩"><td class="c-rank">68</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Railay Beach" target="_blank" rel="noopener">Railay Beach</a></td><td class="c-cui"><span class="chip c-beach">海滩</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar ">4.4</span></td><td class="c-km km-precise">19.6 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Railay Beach" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="69" data-name="Andaman Cultural Study Center" data-tier="3" data-g="4.4" data-km="21.10" data-cat="亲子"><td class="c-rank">69</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Andaman Cultural Study Center" target="_blank" rel="noopener">Andaman Cultural Study Center</a></td><td class="c-cui"><span class="chip c-family">亲子</span></td><td class="c-tier"><span class="tg tg3">③</span></td><td class="c-g"><span class="gstar ">4.4</span></td><td class="c-km km-precise">21.1 km</td><td class="c-drv">30–40 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Andaman Cultural Study Center" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="70" data-name="Krabi Urban Forest" data-tier="3" data-g="4.4" data-km="21.30" data-cat="观景"><td class="c-rank">70</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Urban Forest" target="_blank" rel="noopener">Krabi Urban Forest</a></td><td class="c-cui"><span class="chip c-view">观景</span></td><td class="c-tier"><span class="tg tg3">③</span></td><td class="c-g"><span class="gstar ">4.4</span></td><td class="c-km km-precise">21.3 km</td><td class="c-drv">30–40 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Urban Forest" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="71" data-name="กม. 0 - Krabi Nok Awk Monument" data-tier="3" data-g="4.4" data-km="21.70" data-cat="观景"><td class="c-rank">71</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=กม. 0 - Krabi Nok Awk Monument" target="_blank" rel="noopener">กม. 0 - Krabi Nok Awk Monument</a></td><td class="c-cui"><span class="chip c-view">观景</span></td><td class="c-tier"><span class="tg tg3">③</span></td><td class="c-g"><span class="gstar ">4.4</span></td><td class="c-km km-precise">21.7 km</td><td class="c-drv">30–40 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=กม. 0 - Krabi Nok Awk Monument" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="72" data-name="Chao Fah Park" data-tier="3" data-g="4.4" data-km="22.00" data-cat="亲子"><td class="c-rank">72</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Chao Fah Park" target="_blank" rel="noopener">Chao Fah Park</a></td><td class="c-cui"><span class="chip c-family">亲子</span></td><td class="c-tier"><span class="tg tg3">③</span></td><td class="c-g"><span class="gstar ">4.4</span></td><td class="c-km km-precise">22.0 km</td><td class="c-drv">30–40 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Chao Fah Park" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="73" data-name="Thara Park" data-tier="3" data-g="4.4" data-km="22.70" data-cat="亲子"><td class="c-rank">73</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Thara Park" target="_blank" rel="noopener">Thara Park</a></td><td class="c-cui"><span class="chip c-family">亲子</span></td><td class="c-tier"><span class="tg tg3">③</span></td><td class="c-g"><span class="gstar ">4.4</span></td><td class="c-km km-precise">22.7 km</td><td class="c-drv">30–40 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Thara Park" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="74" data-name="Than Bok Khorani National Park" data-tier="3" data-g="4.4" data-km="25.20" data-cat="自然"><td class="c-rank">74</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Than Bok Khorani National Park" target="_blank" rel="noopener">Than Bok Khorani National Park</a></td><td class="c-cui"><span class="chip c-nature">自然</span></td><td class="c-tier"><span class="tg tg3">③</span></td><td class="c-g"><span class="gstar ">4.4</span></td><td class="c-km km-precise">25.2 km</td><td class="c-drv">30–40 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Than Bok Khorani National Park" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="75" data-name="KhongThomNuea Hot Stream Waterfall Krabi" data-tier="4" data-g="4.4" data-km="56.80" data-cat="瀑布/水潭"><td class="c-rank">75</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=KhongThomNuea Hot Stream Waterfall Krabi" target="_blank" rel="noopener">KhongThomNuea Hot Stream Waterfall Krabi</a></td><td class="c-cui"><span class="chip c-water">瀑布/水潭</span></td><td class="c-tier"><span class="tg tg4">④</span></td><td class="c-g"><span class="gstar ">4.4</span></td><td class="c-km km-precise">56.8 km</td><td class="c-drv">60–90 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=KhongThomNuea Hot Stream Waterfall Krabi" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="76" data-name="Scenic Route-Ozone Forest Road" data-tier="2" data-g="4.3" data-km="11.70" data-cat="观景"><td class="c-rank">76</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Scenic Route-Ozone Forest Road" target="_blank" rel="noopener">Scenic Route-Ozone Forest Road</a></td><td class="c-cui"><span class="chip c-view">观景</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar ">4.3</span></td><td class="c-km km-precise">11.7 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Scenic Route-Ozone Forest Road" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="77" data-name="Ao Nam Mao Beach" data-tier="2" data-g="4.3" data-km="19.60" data-cat="观景"><td class="c-rank">77</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Ao Nam Mao Beach" target="_blank" rel="noopener">Ao Nam Mao Beach</a></td><td class="c-cui"><span class="chip c-view">观景</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar ">4.3</span></td><td class="c-km km-precise">19.6 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Ao Nam Mao Beach" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="78" data-name="Krabi Town Night Market" data-tier="3" data-g="4.3" data-km="21.80" data-cat="亲子"><td class="c-rank">78</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Town Night Market" target="_blank" rel="noopener">Krabi Town Night Market</a></td><td class="c-cui"><span class="chip c-family">亲子</span></td><td class="c-tier"><span class="tg tg3">③</span></td><td class="c-g"><span class="gstar ">4.3</span></td><td class="c-km km-precise">21.8 km</td><td class="c-drv">30–40 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Town Night Market" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="79" data-name="Saline Hot Spring Khlong Thom" data-tier="4" data-g="4.3" data-km="49.20" data-cat="瀑布/水潭"><td class="c-rank">79</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Saline Hot Spring Khlong Thom" target="_blank" rel="noopener">Saline Hot Spring Khlong Thom</a></td><td class="c-cui"><span class="chip c-water">瀑布/水潭</span></td><td class="c-tier"><span class="tg tg4">④</span></td><td class="c-g"><span class="gstar ">4.3</span></td><td class="c-km km-precise">49.2 km</td><td class="c-drv">60–90 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Saline Hot Spring Khlong Thom" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="80" data-name="Emerald Pool" data-tier="4" data-g="4.3" data-km="63.30" data-cat="瀑布/水潭"><td class="c-rank">80</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Emerald Pool" target="_blank" rel="noopener">Emerald Pool</a><span class="pick-tag">💎 翡翠池·丛林泡池游泳</span></td><td class="c-cui"><span class="chip c-water">瀑布/水潭</span></td><td class="c-tier"><span class="tg tg4">④</span></td><td class="c-g"><span class="gstar ">4.3</span></td><td class="c-km km-precise">63.3 km</td><td class="c-drv">60–90 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Emerald Pool" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="81" data-name="Namtok Hin Phoeng" data-tier="4" data-g="4.3" data-km="65.40" data-cat="瀑布/水潭"><td class="c-rank">81</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Namtok Hin Phoeng" target="_blank" rel="noopener">Namtok Hin Phoeng</a></td><td class="c-cui"><span class="chip c-water">瀑布/水潭</span></td><td class="c-tier"><span class="tg tg4">④</span></td><td class="c-g"><span class="gstar ">4.3</span></td><td class="c-km km-precise">65.4 km</td><td class="c-drv">60–90 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Namtok Hin Phoeng" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="82" data-name="Monkey Trail, Ao Nang" data-tier="2" data-g="4.2" data-km="17.80" data-cat="徒步"><td class="c-rank">82</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Monkey Trail, Ao Nang" target="_blank" rel="noopener">Monkey Trail, Ao Nang</a></td><td class="c-cui"><span class="chip c-hike">徒步</span></td><td class="c-tier"><span class="tg tg2">②</span></td><td class="c-g"><span class="gstar ">4.2</span></td><td class="c-km km-precise">17.8 km</td><td class="c-drv">20–35 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Monkey Trail, Ao Nang" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="83" data-name="Roi Chan Phan Wang Waterfall" data-tier="4" data-g="4.1" data-km="69.70" data-cat="瀑布/水潭"><td class="c-rank">83</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Roi Chan Phan Wang Waterfall" target="_blank" rel="noopener">Roi Chan Phan Wang Waterfall</a></td><td class="c-cui"><span class="chip c-water">瀑布/水潭</span></td><td class="c-tier"><span class="tg tg4">④</span></td><td class="c-g"><span class="gstar ">4.1</span></td><td class="c-km km-precise">69.7 km</td><td class="c-drv">60–90 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Roi Chan Phan Wang Waterfall" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="84" data-name="Crystal Pool" data-tier="4" data-g="4" data-km="63.00" data-cat="瀑布/水潭"><td class="c-rank">84</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Crystal Pool" target="_blank" rel="noopener">Crystal Pool</a></td><td class="c-cui"><span class="chip c-water">瀑布/水潭</span></td><td class="c-tier"><span class="tg tg4">④</span></td><td class="c-g"><span class="gstar ">4.0</span></td><td class="c-km km-precise">63.0 km</td><td class="c-drv">60–90 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Crystal Pool" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="85" data-name="Krabi Hot Spring Park" data-tier="4" data-g="3.9" data-km="40.30" data-cat="瀑布/水潭"><td class="c-rank">85</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Hot Spring Park" target="_blank" rel="noopener">Krabi Hot Spring Park</a></td><td class="c-cui"><span class="chip c-water">瀑布/水潭</span></td><td class="c-tier"><span class="tg tg4">④</span></td><td class="c-g"><span class="gstar ">3.9</span></td><td class="c-km km-precise">40.3 km</td><td class="c-drv">60–90 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Hot Spring Park" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="86" data-name="Crystal Pool, Blue Pool, Emerald Pool Entrance" data-tier="4" data-g="3.7" data-km="62.60" data-cat="瀑布/水潭"><td class="c-rank">86</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Crystal Pool, Blue Pool, Emerald Pool Entrance" target="_blank" rel="noopener">Crystal Pool, Blue Pool, Emerald Pool Entrance</a></td><td class="c-cui"><span class="chip c-water">瀑布/水潭</span></td><td class="c-tier"><span class="tg tg4">④</span></td><td class="c-g"><span class="gstar ">3.7</span></td><td class="c-km km-precise">62.6 km</td><td class="c-drv">60–90 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Crystal Pool, Blue Pool, Emerald Pool Entrance" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+<tr data-rank="87" data-name="Krabi Hot Springs" data-tier="4" data-g="3.5" data-km="40.20" data-cat="瀑布/水潭"><td class="c-rank">87</td><td class="c-name"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Hot Springs" target="_blank" rel="noopener">Krabi Hot Springs</a></td><td class="c-cui"><span class="chip c-water">瀑布/水潭</span></td><td class="c-tier"><span class="tg tg4">④</span></td><td class="c-g"><span class="gstar ">3.5</span></td><td class="c-km km-precise">40.2 km</td><td class="c-drv">60–90 分钟</td><td class="c-map"><a href="https://www.google.com/maps/search/?api=1&query=Krabi Hot Springs" target="_blank" rel="noopener" title="Google 地图">🗺️</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note" style="margin-top:10px;color:var(--muted);font-size:12.5px;">
+        距离锚点：别墅坐标 8.1626°N, 98.7453°E（你提供）。每项距离为 Google 地图坐标经 haversine 算的<strong>直线距离</strong>（87/87 项）。车程为片区级估算（乡村海岸带 OSRM 里程不可靠）。评分为 Google 地图实时星级；未登录时评论数不可见，故只用星级排序。已剔除纯订票代理/跳岛船店，保留真实可玩的体验点。
+      </p>
+    </section>
+
+    <section class="panel tier-panel" style="margin-top:18px;">
+      <div class="tier-head">
+        <h2>① 别墅极近圈 · 塔兰湾 / Tubkaek 海岸</h2>
+        <div class="tier-tags"><span class="t-dist">📍 距别墅 ≤10 km</span><span class="t-drv">🚗 车程 5–15 分钟</span><span class="t-cnt">15 项</span></div>
+      </div>
+      <p class="tier-desc">别墅所在塔兰湾—Tubkaek 海岸带，出门就能玩：红树林皮划艇、山景徒步观景、就近大象营。</p>
+      <div class="masonry-grid" data-masonry='{"itemSelector":".fcard","gutter":14,"percentPosition":true}'>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Following Giants Krabi / Ao Nang Ethical Elephant Sanctuary" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/following-giants-krabi-ao-nang-ethical-elephant-.jpg" alt="Following Giants Krabi / Ao Nang Ethical Elephant Sanctuary" loading="lazy" decoding="async" width="400" /><span class="cui-chip">自然</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Following Giants Krabi / Ao Nang Ethical Elephant Sanctuary</div>
+    <div class="fcard-meta"><span class="rt g49" title="Google 地图星级">G ★ 5.0</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 6.2 km</span><span class="mi mi-drv">🚗 5–15 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=ATV Nature View Point" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">观景</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">ATV Nature View Point</div>
+    <div class="fcard-meta"><span class="rt g49" title="Google 地图星级">G ★ 5.0</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 6.6 km</span><span class="mi mi-drv">🚗 5–15 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Kayak Point Ao Thalane คายัค พอยต์ อ่าวท่าเเลน" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/kayak-point-ao-thalane.jpg" alt="Kayak Point Ao Thalane คายัค พอยต์ อ่าวท่าเเลน" loading="lazy" decoding="async" width="400" /><span class="cui-chip">皮划艇</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Kayak Point Ao Thalane คายัค พอยต์ อ่าวท่าเเลน</div>
+    <div class="fcard-meta"><span class="rt g49" title="Google 地图星级">G ★ 4.9</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 2.1 km</span><span class="mi mi-drv">🚗 5–15 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Trail up to Kuan Nom Saow viewpoint" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/trail-up-to-kuan-nom-saow-viewpoint.jpg" alt="Trail up to Kuan Nom Saow viewpoint" loading="lazy" decoding="async" width="400" /><span class="cui-chip">徒步</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Trail up to Kuan Nom Saow viewpoint</div>
+    <div class="fcard-meta"><span class="rt g49" title="Google 地图星级">G ★ 4.9</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 4.0 km</span><span class="mi mi-drv">🚗 5–15 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Karst Aways. Krabi Kayak Tour" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/karst-aways-krabi-kayak-tour.jpg" alt="Karst Aways. Krabi Kayak Tour" loading="lazy" decoding="async" width="400" /><span class="cui-chip">亲子</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Karst Aways. Krabi Kayak Tour</div>
+    <div class="fcard-meta"><span class="rt g49" title="Google 地图星级">G ★ 4.9</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 8.2 km</span><span class="mi mi-drv">🚗 5–15 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Kayak Ao Thalane by Local" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/kayak-ao-thalane-by-local.jpg" alt="Kayak Ao Thalane by Local" loading="lazy" decoding="async" width="400" /><span class="cui-chip">皮划艇</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Kayak Ao Thalane by Local</div>
+    <div class="fcard-meta"><span class="rt g47" title="Google 地图星级">G ★ 4.8</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 2.1 km</span><span class="mi mi-drv">🚗 5–15 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Dragon&#x27;s Crest (Ngon Nak Nature Trail)" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/dragon-s-crest-ngon-nak-nature-trail.jpg" alt="Dragon&#x27;s Crest (Ngon Nak Nature Trail)" loading="lazy" decoding="async" width="400" /><span class="cui-chip">徒步</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Dragon&#x27;s Crest (Ngon Nak Nature Trail)</div>
+    <div class="fcard-meta"><span class="rt g47" title="Google 地图星级">G ★ 4.8</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 7.3 km</span><span class="mi mi-drv">🚗 5–15 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Park Ranger Unit 4 (Tub Kak)" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/park-ranger-unit-4-tub-kak.jpg" alt="Park Ranger Unit 4 (Tub Kak)" loading="lazy" decoding="async" width="400" /><span class="cui-chip">自然</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Park Ranger Unit 4 (Tub Kak)</div>
+    <div class="fcard-meta"><span class="rt g47" title="Google 地图星级">G ★ 4.8</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 7.3 km</span><span class="mi mi-drv">🚗 5–15 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Rest Stop View point Khao Ngon Nak" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/rest-stop-view-point-khao-ngon-nak.jpg" alt="Rest Stop View point Khao Ngon Nak" loading="lazy" decoding="async" width="400" /><span class="cui-chip">徒步</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Rest Stop View point Khao Ngon Nak</div>
+    <div class="fcard-meta"><span class="rt g47" title="Google 地图星级">G ★ 4.8</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 7.9 km</span><span class="mi mi-drv">🚗 5–15 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Khao Ngon Nak Nature Trail" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/khao-ngon-nak-nature-trail.jpg" alt="Khao Ngon Nak Nature Trail" loading="lazy" decoding="async" width="400" /><span class="cui-chip">徒步</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Khao Ngon Nak Nature Trail</div>
+    <div class="fcard-meta"><span class="rt g47" title="Google 地图星级">G ★ 4.7</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 8.9 km</span><span class="mi mi-drv">🚗 5–15 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Nong Thale Peak" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/nong-thale-peak.jpg" alt="Nong Thale Peak" loading="lazy" decoding="async" width="400" /><span class="cui-chip">徒步</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Nong Thale Peak</div>
+    <div class="fcard-meta"><span class="rt g47" title="Google 地图星级">G ★ 4.7</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 9.2 km</span><span class="mi mi-drv">🚗 5–15 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Ao Thalane Kayak Krabi" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/ao-thalane-kayak-krabi.jpg" alt="Ao Thalane Kayak Krabi" loading="lazy" decoding="async" width="400" /><span class="cui-chip">皮划艇</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Ao Thalane Kayak Krabi</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.6</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 2.2 km</span><span class="mi mi-drv">🚗 5–15 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Checkpoint Mu Ko Phi Phi National Park" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/checkpoint-mu-ko-phi-phi-national-park.jpg" alt="Checkpoint Mu Ko Phi Phi National Park" loading="lazy" decoding="async" width="400" /><span class="cui-chip">徒步</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Checkpoint Mu Ko Phi Phi National Park</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.6</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 7.3 km</span><span class="mi mi-drv">🚗 5–15 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Thankiri Kamnan Park - Krabi" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/thankiri-kamnan-park-krabi.jpg" alt="Thankiri Kamnan Park - Krabi" loading="lazy" decoding="async" width="400" /><span class="cui-chip">亲子</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Thankiri Kamnan Park - Krabi</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.5</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 5.9 km</span><span class="mi mi-drv">🚗 5–15 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Mirror Lake Krabi" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">观景</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Mirror Lake Krabi</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.5</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 10.0 km</span><span class="mi mi-drv">🚗 5–15 分钟</span></div>
+  </div>
+</a>
+      </div>
+    </section>
+    <section class="panel tier-panel" style="margin-top:18px;">
+      <div class="tier-head">
+        <h2>② Ao Nang / Railay 玩乐带</h2>
+        <div class="tier-tags"><span class="t-dist">📍 距别墅 10–20 km</span><span class="t-drv">🚗 车程 20–35 分钟</span><span class="t-cnt">38 项</span></div>
+      </div>
+      <p class="tier-desc">Ao Nang / Railay 半岛核心玩乐带，攀岩、海滩、虎穴寺、出海跳岛登船口都在这，安排一整天最划算。</p>
+      <div class="masonry-grid" data-masonry='{"itemSelector":".fcard","gutter":14,"percentPosition":true}'>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Scenic Route" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">观景</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Scenic Route</div>
+    <div class="fcard-meta"><span class="rt g49" title="Google 地图星级">G ★ 5.0</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 14.6 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Krabi Dirt Ride Experience" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/krabi-dirt-ride-experience.jpg" alt="Krabi Dirt Ride Experience" loading="lazy" decoding="async" width="400" /><span class="cui-chip">观景</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Krabi Dirt Ride Experience</div>
+    <div class="fcard-meta"><span class="rt g49" title="Google 地图星级">G ★ 5.0</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 17.3 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Krabi trip dirtbike tour" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/krabi-trip-dirtbike-tour.jpg" alt="Krabi trip dirtbike tour" loading="lazy" decoding="async" width="400" /><span class="cui-chip">亲子</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Krabi trip dirtbike tour</div>
+    <div class="fcard-meta"><span class="rt g49" title="Google 地图星级">G ★ 5.0</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 19.7 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=CLIMB ON RAILAY &amp; Tours @ OnTheRocks" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">攀岩</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">CLIMB ON RAILAY &amp; Tours @ OnTheRocks</div>
+    <div class="fcard-meta"><span class="rt g49" title="Google 地图星级">G ★ 5.0</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 19.8 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Spider Rock Climbing" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">攀岩</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Spider Rock Climbing</div>
+    <div class="fcard-meta"><span class="rt g49" title="Google 地图星级">G ★ 5.0</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 19.9 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=The Elephant Sanctuary Krabi Thailand" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/the-elephant-sanctuary-krabi-thailand.jpg" alt="The Elephant Sanctuary Krabi Thailand" loading="lazy" decoding="async" width="400" /><span class="cui-chip">自然</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">The Elephant Sanctuary Krabi Thailand</div>
+    <div class="fcard-meta"><span class="rt g49" title="Google 地图星级">G ★ 4.9</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 10.3 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Krabi Roaming Elephant Sanctuary" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/krabi-roaming-elephant-sanctuary.jpg" alt="Krabi Roaming Elephant Sanctuary" loading="lazy" decoding="async" width="400" /><span class="cui-chip">自然</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Krabi Roaming Elephant Sanctuary</div>
+    <div class="fcard-meta"><span class="rt g49" title="Google 地图星级">G ★ 4.9</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 11.3 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=View Point Hong Island" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">观景</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">View Point Hong Island</div>
+    <div class="fcard-meta"><span class="rt g49" title="Google 地图星级">G ★ 4.9</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 11.5 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Krabi Elephant Local Project (Sanctuary)" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/krabi-elephant-local-project-sanctuary.jpg" alt="Krabi Elephant Local Project (Sanctuary)" loading="lazy" decoding="async" width="400" /><span class="cui-chip">自然</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Krabi Elephant Local Project (Sanctuary)</div>
+    <div class="fcard-meta"><span class="rt g49" title="Google 地图星级">G ★ 4.9</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 12.0 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=THAI&#x27;D UP ADVENTURES" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/thai-d-up-adventures.jpg" alt="THAI&#x27;D UP ADVENTURES" loading="lazy" decoding="async" width="400" /><span class="cui-chip">亲子</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">THAI&#x27;D UP ADVENTURES</div>
+    <div class="fcard-meta"><span class="rt g49" title="Google 地图星级">G ★ 4.9</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 15.6 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Ao Nang Massive Climb and Hike Adventure" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/ao-nang-massive-climb-and-hike-adventure.jpg" alt="Ao Nang Massive Climb and Hike Adventure" loading="lazy" decoding="async" width="400" /><span class="cui-chip">徒步</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Ao Nang Massive Climb and Hike Adventure</div>
+    <div class="fcard-meta"><span class="rt g49" title="Google 地图星级">G ★ 4.9</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 17.5 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Krabi Rock Climbing" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">攀岩</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Krabi Rock Climbing</div>
+    <div class="fcard-meta"><span class="rt g49" title="Google 地图星级">G ★ 4.9</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 19.1 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Railay Rock Climbing Shop" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">攀岩</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Railay Rock Climbing Shop</div>
+    <div class="fcard-meta"><span class="rt g49" title="Google 地图星级">G ★ 4.9</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 19.7 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Hot Rock climbing school" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">攀岩</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Hot Rock climbing school</div>
+    <div class="fcard-meta"><span class="rt g49" title="Google 地图星级">G ★ 4.9</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 19.7 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Railay Rock You" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">攀岩</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Railay Rock You</div>
+    <div class="fcard-meta"><span class="rt g49" title="Google 地图星级">G ★ 4.9</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 19.8 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Natin Spicy Garden" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/natin-spicy-garden.jpg" alt="Natin Spicy Garden" loading="lazy" decoding="async" width="400" /><span class="cui-chip">自然</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Natin Spicy Garden</div>
+    <div class="fcard-meta"><span class="rt g47" title="Google 地图星级">G ★ 4.8</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 12.9 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=The Fun Garden" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/the-fun-garden.jpg" alt="The Fun Garden" loading="lazy" decoding="async" width="400" /><span class="cui-chip">亲子</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">The Fun Garden</div>
+    <div class="fcard-meta"><span class="rt g47" title="Google 地图星级">G ★ 4.8</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 15.5 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Real Rocks Climbing School, rock climbing Krabi, Railay Beach" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">攀岩</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Real Rocks Climbing School, rock climbing Krabi, Railay Beach</div>
+    <div class="fcard-meta"><span class="rt g47" title="Google 地图星级">G ★ 4.8</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 19.6 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Bat Cave" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">观景</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Bat Cave</div>
+    <div class="fcard-meta"><span class="rt g47" title="Google 地图星级">G ★ 4.8</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 19.9 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Tiger Cave Temple 虎穴寺" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">洞窟/寺庙</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Tiger Cave Temple 虎穴寺</div>
+    <div class="fcard-meta"><span class="rt g47" title="Google 地图星级">G ★ 4.8</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 20.0 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Krabi Elephant Shelter" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/krabi-elephant-shelter.jpg" alt="Krabi Elephant Shelter" loading="lazy" decoding="async" width="400" /><span class="cui-chip">自然</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Krabi Elephant Shelter</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.6</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 12.7 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Hat Noppharat Thara-Mu Ko Phi Phi National Park" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/hat-noppharat-thara-mu-ko-phi-phi-national-park.jpg" alt="Hat Noppharat Thara-Mu Ko Phi Phi National Park" loading="lazy" decoding="async" width="400" /><span class="cui-chip">自然</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Hat Noppharat Thara-Mu Ko Phi Phi National Park</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.6</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 14.1 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=LAND PARK FARM Playtime with animals friends" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/land-park-farm-playtime-with-animals-friends.jpg" alt="LAND PARK FARM Playtime with animals friends" loading="lazy" decoding="async" width="400" /><span class="cui-chip">亲子</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">LAND PARK FARM Playtime with animals friends</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.6</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 14.7 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Krabi Snake Park and Kingcobra show" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/krabi-snake-park-and-kingcobra-show.jpg" alt="Krabi Snake Park and Kingcobra show" loading="lazy" decoding="async" width="400" /><span class="cui-chip">亲子</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Krabi Snake Park and Kingcobra show</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.6</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 15.1 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=หนองกก Mountain View Krabi" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">观景</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">หนองกก Mountain View Krabi</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.6</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 15.8 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Kayak KlongRoot Viewpoint (คายัคคลองหรูดวิวพอยท์)" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">观景</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Kayak KlongRoot Viewpoint (คายัคคลองหรูดวิวพอยท์)</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.5</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 10.1 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Noppharat Thara Beach" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/noppharat-thara-beach.jpg" alt="Noppharat Thara Beach" loading="lazy" decoding="async" width="400" /><span class="cui-chip">亲子</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Noppharat Thara Beach</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.5</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 14.2 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=R.S View point" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">观景</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">R.S View point</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.5</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 16.0 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Railay West Beach" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/railay-west-beach.jpg" alt="Railay West Beach" loading="lazy" decoding="async" width="400" /><span class="cui-chip">海滩</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Railay West Beach</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.5</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 19.4 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Khao Tham Suea Pahksa Sawan Krabi Urban Forest" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">观景</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Khao Tham Suea Pahksa Sawan Krabi Urban Forest</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.5</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 19.4 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Railay Walking Street" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/railay-walking-street.jpg" alt="Railay Walking Street" loading="lazy" decoding="async" width="400" /><span class="cui-chip">海滩</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Railay Walking Street</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.5</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 19.7 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Ao Nang Elephant Sanctuary Krabi (Booking is needed)" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/ao-nang-elephant-sanctuary-krabi-booking-is-need.jpg" alt="Ao Nang Elephant Sanctuary Krabi (Booking is needed)" loading="lazy" decoding="async" width="400" /><span class="cui-chip">自然</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Ao Nang Elephant Sanctuary Krabi (Booking is needed)</div>
+    <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.4</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 11.8 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Cocokids Summer Cafe Krabi" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/cocokids-summer-cafe-krabi.jpg" alt="Cocokids Summer Cafe Krabi" loading="lazy" decoding="async" width="400" /><span class="cui-chip">亲子</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Cocokids Summer Cafe Krabi</div>
+    <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.4</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 14.7 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Ao Nang beach" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/ao-nang-beach.jpg" alt="Ao Nang beach" loading="lazy" decoding="async" width="400" /><span class="cui-chip">海滩</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Ao Nang beach</div>
+    <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.4</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 16.8 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Railay Beach" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/railay-beach.jpg" alt="Railay Beach" loading="lazy" decoding="async" width="400" /><span class="cui-chip">海滩</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Railay Beach</div>
+    <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.4</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 19.6 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Scenic Route-Ozone Forest Road" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">观景</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Scenic Route-Ozone Forest Road</div>
+    <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.3</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 11.7 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Ao Nam Mao Beach" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/ao-nam-mao-beach.jpg" alt="Ao Nam Mao Beach" loading="lazy" decoding="async" width="400" /><span class="cui-chip">观景</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Ao Nam Mao Beach</div>
+    <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.3</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 19.6 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Monkey Trail, Ao Nang" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/monkey-trail-ao-nang.jpg" alt="Monkey Trail, Ao Nang" loading="lazy" decoding="async" width="400" /><span class="cui-chip">徒步</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Monkey Trail, Ao Nang</div>
+    <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.2</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 17.8 km</span><span class="mi mi-drv">🚗 20–35 分钟</span></div>
+  </div>
+</a>
+      </div>
+    </section>
+    <section class="panel tier-panel" style="margin-top:18px;">
+      <div class="tier-head">
+        <h2>③ 甲米镇及城郊</h2>
+        <div class="tier-tags"><span class="t-dist">📍 距别墅 20–30 km</span><span class="t-drv">🚗 车程 30–40 分钟</span><span class="t-cnt">22 项</span></div>
+      </div>
+      <p class="tier-desc">甲米镇及城郊：夜市、街头艺术、城市森林公园、皮南本瀑布国家公园，进城补给顺路玩。</p>
+      <div class="masonry-grid" data-masonry='{"itemSelector":".fcard","gutter":14,"percentPosition":true}'>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Krabi Ecological Park" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/krabi-ecological-park.jpg" alt="Krabi Ecological Park" loading="lazy" decoding="async" width="400" /><span class="cui-chip">自然</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Krabi Ecological Park</div>
+    <div class="fcard-meta"><span class="rt g49" title="Google 地图星级">G ★ 5.0</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 21.8 km</span><span class="mi mi-drv">🚗 30–40 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Krabi Street Art : Mardi and Gurney&#x27; Pitta" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/krabi-street-art-mardi-and-gurney-pitta.jpg" alt="Krabi Street Art : Mardi and Gurney&#x27; Pitta" loading="lazy" decoding="async" width="400" /><span class="cui-chip">亲子</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Krabi Street Art : Mardi and Gurney&#x27; Pitta</div>
+    <div class="fcard-meta"><span class="rt g49" title="Google 地图星级">G ★ 4.9</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 21.9 km</span><span class="mi mi-drv">🚗 30–40 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Sunset Viewpoint" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">观景</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Sunset Viewpoint</div>
+    <div class="fcard-meta"><span class="rt g47" title="Google 地图星级">G ★ 4.8</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 24.6 km</span><span class="mi mi-drv">🚗 30–40 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Phra Nang Cave Beach 公主海滩" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/phra-nang-cave-beach.jpg" alt="Phra Nang Cave Beach 公主海滩" loading="lazy" decoding="async" width="400" /><span class="cui-chip">海滩</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Phra Nang Cave Beach 公主海滩</div>
+    <div class="fcard-meta"><span class="rt g47" title="Google 地图星级">G ★ 4.7</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 20.2 km</span><span class="mi mi-drv">🚗 30–40 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Ko Rang Beach" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/ko-rang-beach.jpg" alt="Ko Rang Beach" loading="lazy" decoding="async" width="400" /><span class="cui-chip">海滩</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Ko Rang Beach</div>
+    <div class="fcard-meta"><span class="rt g47" title="Google 地图星级">G ★ 4.7</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 20.2 km</span><span class="mi mi-drv">🚗 30–40 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=East Railay Viewpoint" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/east-railay-viewpoint.jpg" alt="East Railay Viewpoint" loading="lazy" decoding="async" width="400" /><span class="cui-chip">徒步</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">East Railay Viewpoint</div>
+    <div class="fcard-meta"><span class="rt g47" title="Google 地图星级">G ★ 4.7</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 20.3 km</span><span class="mi mi-drv">🚗 30–40 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Emerald Lagoon Railay hike" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">观景</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Emerald Lagoon Railay hike</div>
+    <div class="fcard-meta"><span class="rt g47" title="Google 地图星级">G ★ 4.7</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 20.5 km</span><span class="mi mi-drv">🚗 30–40 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Huay To Waterfall" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/huay-to-waterfall.jpg" alt="Huay To Waterfall" loading="lazy" decoding="async" width="400" /><span class="cui-chip">瀑布/水潭</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Huay To Waterfall</div>
+    <div class="fcard-meta"><span class="rt g47" title="Google 地图星级">G ★ 4.7</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 20.8 km</span><span class="mi mi-drv">🚗 30–40 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Bat Cave" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/bat-cave.jpg" alt="Bat Cave" loading="lazy" decoding="async" width="400" /><span class="cui-chip">亲子</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Bat Cave</div>
+    <div class="fcard-meta"><span class="rt g47" title="Google 地图星级">G ★ 4.7</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 21.5 km</span><span class="mi mi-drv">🚗 30–40 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Khao Phanom Bencha National Park" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/khao-phanom-bencha-national-park.jpg" alt="Khao Phanom Bencha National Park" loading="lazy" decoding="async" width="400" /><span class="cui-chip">自然</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Khao Phanom Bencha National Park</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.6</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 20.5 km</span><span class="mi mi-drv">🚗 30–40 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Krabi The watch Tower" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">观景</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Krabi The watch Tower</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.6</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 21.3 km</span><span class="mi mi-drv">🚗 30–40 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Wang Tewada Waterfall" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/wang-tewada-waterfall.jpg" alt="Wang Tewada Waterfall" loading="lazy" decoding="async" width="400" /><span class="cui-chip">自然</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Wang Tewada Waterfall</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.5</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 20.9 km</span><span class="mi mi-drv">🚗 30–40 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Khao Khanab Nam" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/khao-khanab-nam.jpg" alt="Khao Khanab Nam" loading="lazy" decoding="async" width="400" /><span class="cui-chip">自然</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Khao Khanab Nam</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.5</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 21.5 km</span><span class="mi mi-drv">🚗 30–40 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Cro-magnon Man Intersection" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">观景</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Cro-magnon Man Intersection</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.5</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 21.6 km</span><span class="mi mi-drv">🚗 30–40 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=The Mud Crabs Sculpture" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/the-mud-crabs-sculpture.jpg" alt="The Mud Crabs Sculpture" loading="lazy" decoding="async" width="400" /><span class="cui-chip">亲子</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">The Mud Crabs Sculpture</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.5</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 21.7 km</span><span class="mi mi-drv">🚗 30–40 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Andaman Cultural Study Center" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/andaman-cultural-study-center.jpg" alt="Andaman Cultural Study Center" loading="lazy" decoding="async" width="400" /><span class="cui-chip">亲子</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Andaman Cultural Study Center</div>
+    <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.4</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 21.1 km</span><span class="mi mi-drv">🚗 30–40 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Krabi Urban Forest" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">观景</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Krabi Urban Forest</div>
+    <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.4</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 21.3 km</span><span class="mi mi-drv">🚗 30–40 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=กม. 0 - Krabi Nok Awk Monument" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">观景</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">กม. 0 - Krabi Nok Awk Monument</div>
+    <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.4</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 21.7 km</span><span class="mi mi-drv">🚗 30–40 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Chao Fah Park" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/chao-fah-park.jpg" alt="Chao Fah Park" loading="lazy" decoding="async" width="400" /><span class="cui-chip">亲子</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Chao Fah Park</div>
+    <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.4</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22.0 km</span><span class="mi mi-drv">🚗 30–40 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Thara Park" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/thara-park.jpg" alt="Thara Park" loading="lazy" decoding="async" width="400" /><span class="cui-chip">亲子</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Thara Park</div>
+    <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.4</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 22.7 km</span><span class="mi mi-drv">🚗 30–40 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Than Bok Khorani National Park" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/than-bok-khorani-national-park.jpg" alt="Than Bok Khorani National Park" loading="lazy" decoding="async" width="400" /><span class="cui-chip">自然</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Than Bok Khorani National Park</div>
+    <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.4</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 25.2 km</span><span class="mi mi-drv">🚗 30–40 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Krabi Town Night Market" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/krabi-town-night-market.jpg" alt="Krabi Town Night Market" loading="lazy" decoding="async" width="400" /><span class="cui-chip">亲子</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Krabi Town Night Market</div>
+    <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.3</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 21.8 km</span><span class="mi mi-drv">🚗 30–40 分钟</span></div>
+  </div>
+</a>
+      </div>
+    </section>
+    <section class="panel tier-panel" style="margin-top:18px;">
+      <div class="tier-head">
+        <h2>④ 专程远门 · 溯溪温泉 / Phi Phi</h2>
+        <div class="tier-tags"><span class="t-dist">📍 距别墅 30 km+</span><span class="t-drv">🚗 车程 60–90 分钟</span><span class="t-cnt">12 项</span></div>
+      </div>
+      <p class="tier-desc">要专程开车的远门经典：翡翠池/蓝池/珍珠泉溯溪、Khlong Thom 温泉瀑布、Phi Phi 出海——和跳岛或包车日合并。</p>
+      <div class="masonry-grid" data-masonry='{"itemSelector":".fcard","gutter":14,"percentPosition":true}'>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Phi phi Viewpoint 1" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">观景</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Phi phi Viewpoint 1</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.6</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 46.8 km</span><span class="mi mi-drv">🚗 60–90 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard noimg-card" href="https://www.google.com/maps/search/?api=1&query=Phi Phi Viewpoint 3" target="_blank" rel="noopener">
+  <div class="fcard-img"><div class="noimg">🏞️<span>暂无实拍图</span></div><span class="cui-chip">观景</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Phi Phi Viewpoint 3</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.5</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 46.1 km</span><span class="mi mi-drv">🚗 60–90 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Blue Pool Krabi Thailand" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/blue-pool-krabi-thailand.jpg" alt="Blue Pool Krabi Thailand" loading="lazy" decoding="async" width="400" /><span class="cui-chip">瀑布/水潭</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Blue Pool Krabi Thailand</div>
+    <div class="fcard-meta"><span class="rt g45" title="Google 地图星级">G ★ 4.5</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 63.6 km</span><span class="mi mi-drv">🚗 60–90 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=KhongThomNuea Hot Stream Waterfall Krabi" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/khongthomnuea-hot-stream-waterfall-krabi.jpg" alt="KhongThomNuea Hot Stream Waterfall Krabi" loading="lazy" decoding="async" width="400" /><span class="cui-chip">瀑布/水潭</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">KhongThomNuea Hot Stream Waterfall Krabi</div>
+    <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.4</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 56.8 km</span><span class="mi mi-drv">🚗 60–90 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Saline Hot Spring Khlong Thom" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/saline-hot-spring-khlong-thom.jpg" alt="Saline Hot Spring Khlong Thom" loading="lazy" decoding="async" width="400" /><span class="cui-chip">瀑布/水潭</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Saline Hot Spring Khlong Thom</div>
+    <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.3</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 49.2 km</span><span class="mi mi-drv">🚗 60–90 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Emerald Pool" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/emerald-pool.jpg" alt="Emerald Pool" loading="lazy" decoding="async" width="400" /><span class="cui-chip">瀑布/水潭</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Emerald Pool</div>
+    <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.3</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 63.3 km</span><span class="mi mi-drv">🚗 60–90 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Namtok Hin Phoeng" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/namtok-hin-phoeng.jpg" alt="Namtok Hin Phoeng" loading="lazy" decoding="async" width="400" /><span class="cui-chip">瀑布/水潭</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Namtok Hin Phoeng</div>
+    <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.3</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 65.4 km</span><span class="mi mi-drv">🚗 60–90 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Roi Chan Phan Wang Waterfall" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/roi-chan-phan-wang-waterfall.jpg" alt="Roi Chan Phan Wang Waterfall" loading="lazy" decoding="async" width="400" /><span class="cui-chip">瀑布/水潭</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Roi Chan Phan Wang Waterfall</div>
+    <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.1</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 69.7 km</span><span class="mi mi-drv">🚗 60–90 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Crystal Pool" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/crystal-pool.jpg" alt="Crystal Pool" loading="lazy" decoding="async" width="400" /><span class="cui-chip">瀑布/水潭</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Crystal Pool</div>
+    <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 4.0</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 63.0 km</span><span class="mi mi-drv">🚗 60–90 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Krabi Hot Spring Park" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/krabi-hot-spring-park.jpg" alt="Krabi Hot Spring Park" loading="lazy" decoding="async" width="400" /><span class="cui-chip">瀑布/水潭</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Krabi Hot Spring Park</div>
+    <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 3.9</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 40.3 km</span><span class="mi mi-drv">🚗 60–90 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Crystal Pool, Blue Pool, Emerald Pool Entrance" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/crystal-pool-blue-pool-emerald-pool-entrance.jpg" alt="Crystal Pool, Blue Pool, Emerald Pool Entrance" loading="lazy" decoding="async" width="400" /><span class="cui-chip">瀑布/水潭</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Crystal Pool, Blue Pool, Emerald Pool Entrance</div>
+    <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 3.7</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 62.6 km</span><span class="mi mi-drv">🚗 60–90 分钟</span></div>
+  </div>
+</a>
+      <a class="fcard" href="https://www.google.com/maps/search/?api=1&query=Krabi Hot Springs" target="_blank" rel="noopener">
+  <div class="fcard-img"><img src="../assets/krabi-activities/krabi-hot-springs.jpg" alt="Krabi Hot Springs" loading="lazy" decoding="async" width="400" /><span class="cui-chip">瀑布/水潭</span></div>
+  <div class="fcard-body">
+    <div class="fcard-name">Krabi Hot Springs</div>
+    <div class="fcard-meta"><span class="rt " title="Google 地图星级">G ★ 3.5</span></div><div class="fcard-meta2"><span class="mi mi-dist">📍 40.2 km</span><span class="mi mi-drv">🚗 60–90 分钟</span></div>
+  </div>
+</a>
+      </div>
+    </section>
+
+    <section class="panel" style="margin-top:18px;">
+      <h2>📋 数据来源与口径</h2>
+      <ul style="font-size:14px;line-height:1.9;color:var(--muted);margin:0;padding-left:20px;">
+        <li><b>评分 + 照片</b>：浏览器实时抓取的 <b>Google 地图</b>商户/景点卡（真实 session），按 hiking / viewpoint / climb / cave·temple / waterfall·pool / kayak / beach / nature / family 等 10 类关键词、锚定别墅坐标分档检索。</li>
+        <li><b>距离</b>：每项取 Google 坐标，与别墅坐标做 haversine 直线距离；分 ①≤10km / ②10–20km / ③20–30km / ④30km+ 四档。</li>
+        <li><b>车程</b>：片区级估算——泰南乡村海岸带缺沿海小路，OSRM 会算爆，故用直线距离 + 当地常识给区间，非逐点导航值。</li>
+        <li><b>筛选</b>：核心玩乐类（徒步/攀岩/皮划艇/瀑布/洞窟寺庙）全保留；其余按 Google ★≥4.3 收；剔除纯订票代理、跳岛船票中介（SEACOOLTOURS、各 Tour Co. 等），只留真实到得了、玩得到的点。</li>
+        <li><b>图片本地化</b>：Google 实拍图放大到 w400 下载进仓库 <code>assets/krabi-activities/</code>，相对路径引用，非热链，验过 JPEG 魔数。</li>
+      </ul>
+    </section>
+  </div>
+
+  <script>
+    document.querySelectorAll('.masonry-grid').forEach(function(grid){
+      var m = new Masonry(grid, { itemSelector:'.fcard', gutter:14, fitWidth:true, transitionDuration:0 });
+      imagesLoaded(grid).on('progress', function(){ m.layout(); });
+    });
+  </script>
+  <script>
+  (function(){
+    var tbody = document.getElementById('dtbody');
+    if(!tbody) return;
+    var rows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
+    var curTier = 0;
+    var sortState = { k:'g', dir:-1 };
+    function applyFilter(){
+      rows.forEach(function(tr){
+        var t = parseInt(tr.getAttribute('data-tier'),10);
+        tr.classList.toggle('hidden-row', !(curTier===0 || t===curTier));
+      });
+    }
+    function sortBy(k, t, dir){
+      var mult = dir;
+      rows.sort(function(a,b){
+        var va, vb;
+        if(t==='str'){
+          va=a.getAttribute('data-'+k)||''; vb=b.getAttribute('data-'+k)||'';
+          return va.localeCompare(vb)*mult;
+        } else {
+          va=parseFloat(a.getAttribute('data-'+k))||0;
+          vb=parseFloat(b.getAttribute('data-'+k))||0;
+          if(va===vb){ return (parseFloat(a.getAttribute('data-rank'))-parseFloat(b.getAttribute('data-rank'))); }
+          return (va-vb)*mult;
+        }
+      });
+      rows.forEach(function(tr){ tbody.appendChild(tr); });
+    }
+    document.querySelectorAll('#dtable th.s').forEach(function(th){
+      th.addEventListener('click', function(){
+        var k = th.getAttribute('data-k'), t = th.getAttribute('data-t');
+        var defDir = (t==='str' || k==='rank' || k==='tier' || k==='km') ? 1 : -1;
+        var dir = (sortState.k===k) ? -sortState.dir : defDir;
+        sortState = { k:k, dir:dir };
+        sortBy(k, t, dir);
+        document.querySelectorAll('#dtable th.s').forEach(function(o){
+          o.classList.remove('sortactive');
+          var ar=o.querySelector('.ar'); if(ar) ar.remove();
+        });
+        th.classList.add('sortactive');
+        var span=document.createElement('span'); span.className='ar';
+        span.textContent = dir===1 ? '▲' : '▼';
+        th.appendChild(span);
+      });
+    });
+    document.querySelectorAll('#tier-filters .tf').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        document.querySelectorAll('#tier-filters .tf').forEach(function(b){ b.classList.remove('active'); });
+        btn.classList.add('active');
+        curTier = parseInt(btn.getAttribute('data-tier'),10);
+        applyFilter();
+      });
+    });
+  })();
+  </script>
+</body>
+</html>
