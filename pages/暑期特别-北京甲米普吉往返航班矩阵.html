@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>暑期特别 · 北京⇄甲米/普吉 往返航班决策矩阵（去程×返程×曼谷停留）</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/shared.css" />
+  <style>
+    .warn-box { margin-top:12px; padding:11px 14px; background:var(--warm-soft); border-left:3px solid #f59e0b; border-radius:12px; font-size:14px; line-height:1.7; color:#92400e; }
+    .villa-box { margin-top:14px; padding:12px 14px; background:#f8fbff; border:1px dashed var(--line); border-radius:14px; font-size:14px; line-height:1.7; }
+    .villa-box b { color:var(--accent); }
+    .legend2 { display:flex; flex-wrap:wrap; gap:10px 16px; margin-top:12px; font-size:12.5px; color:var(--muted); }
+    /* ---- decision matrix ---- */
+    .mx-wrap { overflow-x:auto; border:1px solid var(--line); border-radius:16px; margin-top:6px; }
+    table.matrix { border-collapse:separate; border-spacing:0; width:100%; min-width:720px; font-size:13px; }
+    table.matrix th, table.matrix td { border-bottom:1px solid #eef1f5; border-right:1px solid #eef1f5; padding:10px 12px; vertical-align:top; }
+    table.matrix thead th { background:#f8fafc; position:sticky; top:0; z-index:1; }
+    .corner { background:#f1f5f9 !important; font-weight:800; color:var(--muted); font-size:12px; white-space:nowrap; }
+    .colh, .rowh { text-align:left; }
+    .colh .cap, .rowh .cap { font-weight:800; color:var(--ink); font-size:13.5px; }
+    .colh .sub, .rowh .sub { color:var(--accent); font-weight:700; font-size:12px; margin-top:2px; }
+    .colh .sub2, .rowh .sub2 { color:var(--muted); font-size:11.5px; margin-top:3px; line-height:1.5; font-weight:400; }
+    .rowh { background:#fbfdff; min-width:150px; }
+    .colh { min-width:150px; }
+    td.mcell { text-align:center; }
+    .mcell .stars { font-size:15px; letter-spacing:1px; color:#f59e0b; font-weight:700; }
+    .mcell .price { font-size:17px; font-weight:800; color:var(--ink); margin-top:4px; }
+    .mcell .pn { font-size:11px; color:var(--muted); margin-top:1px; }
+    .ctag { display:inline-block; margin-top:6px; margin-right:3px; font-size:10.5px; font-weight:700; padding:1px 7px; border-radius:999px; background:#f1f5f9; color:#475569; line-height:1.6; }
+    .cell-best { background:#ecfdf5; }
+    .cell-best .price { color:#047857; }
+    .cell-good { background:#f0fdf4; }
+    .cell-ok   { background:#fffdf5; }
+    .cell-poor { background:#fef2f2; }
+    .cell-poor .stars { color:#dc2626; }
+    .best-badge { display:inline-block; margin-left:6px; font-size:10px; font-weight:800; color:#fff; background:#059669; padding:1px 7px; border-radius:999px; vertical-align:middle; }
+    /* ---- flight detail ---- */
+    .leg-h { font-size:15px; font-weight:800; color:var(--ink); margin:20px 0 8px; }
+    .fl-wrap { overflow-x:auto; border:1px solid var(--line); border-radius:14px; }
+    table.fltable { border-collapse:collapse; width:100%; min-width:760px; font-size:12.5px; }
+    table.fltable thead th { background:#f8fafc; text-align:left; padding:8px 10px; border-bottom:2px solid var(--line); white-space:nowrap; font-weight:800; }
+    table.fltable tbody td { padding:8px 10px; border-bottom:1px solid #eef1f5; vertical-align:top; }
+    .fl-route { font-weight:700; color:var(--ink); white-space:nowrap; }
+    .fl-car { color:#0369a1; font-weight:700; white-space:nowrap; }
+    .fl-time { white-space:nowrap; font-variant-numeric:tabular-nums; }
+    .fl-dur { color:var(--muted); font-size:11px; }
+    .fl-price { font-weight:800; color:#047857; white-space:nowrap; }
+    .srcpill { font-size:10.5px; font-weight:700; padding:1px 7px; border-radius:999px; background:#eef2f7; color:#475569; white-space:nowrap; }
+    .fl-note { color:var(--muted); font-size:12px; line-height:1.55; min-width:220px; }
+    .keyrow { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:12px; }
+    @media (max-width:640px) { .keyrow { grid-template-columns:1fr; } }
+    .keycard { background:#fff; border:1px solid var(--line); border-radius:14px; padding:12px 14px; font-size:13px; line-height:1.6; }
+    .keycard b { color:var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <section class="hero">
+      <h1>✈️ 北京 ⇄ 甲米/普吉 · 往返航班决策矩阵</h1>
+      <p class="subtitle">围绕已订 <b>Mangrove Bay Krabi Villa（8/1–8/8 入住）</b>，把<b>去程出发日（提前 2/1/0 天）</b>× <b>返程日（曼谷停 0/1/2 晚）</b>摆成一张矩阵：中间格子给<b>全家 5 人机票+曼谷住宿总价</b>与<b>推荐星级</b>，下方接<b>逐段航班细节</b>。原则：<b>尽量把 8/1–8/8 别墅时间用满</b>、<b>避开大陆航司</b>、长途飞大枢纽再短跳进岛。</p>
+      <div class="badges">
+        <span class="badge warm">暑期特别 · 航班</span>
+        <span class="badge">去程×返程矩阵</span>
+        <span class="badge">曼谷停留玩乐</span>
+        <span class="badge green">全家5人总价</span>
+        <span class="badge">非大陆航司</span>
+      </div>
+    </section>
+
+    <section class="panel" style="margin-top:18px;">
+      <h2>一句话结论</h2>
+      <p class="summary">最优是 <strong>提前 1 天飞（7/31）+ 返程曼谷停 1 晚（8/9 周日）</strong>：去程曼谷睡 1 晚倒时差、8/1 上午短跳进别墅把酒店<strong>头一晚用满</strong>；返程 8/8–8/9 卡在<strong>周末恰图恰植物市场</strong>（毛豆/绿植控必逛），8/9 泰航白天直飞下午到京。全家 5 人机票+曼谷住宿约 <strong>¥16,551</strong>。避开的坑：<strong>去程当天飞（8/1）根本进不了别墅</strong>（非大陆直飞落地已 21:15，赶不上甲米航班，白扔一晚别墅）；<strong>返程当天走（8/8）要么赶早要么红眼凌晨落地</strong>，老人孩子累。</p>
+      <div class="villa-box">
+        🏝️ <b>锚点</b>：Mangrove Bay Krabi Villa 入住 <b>8/1（周六）→ 退房 8/8（周六）</b>共 7 晚 · 甲米机场 KBV 距别墅约 30–35 分钟车程 · 全家 = <b>2 大 + 毛豆 + 2 老人 = 5 人</b>
+      </div>
+      <div class="warn-box">
+        ⚠️ <b>非大陆航司的硬约束</b>：北京直飞甲米没有非大陆航司，必须<b>长途飞曼谷 BKK（泰航直飞 5h10）+ 泰国廉航短跳甲米（1h20）</b>。这天然产生一次曼谷落脚——把它<b>变成想要的停留</b>而不是机场枯等，正是这张矩阵的意义。普吉 HKT 有国泰经香港/泰航经曼谷的非大陆选择，作为备选另列。
+      </div>
+    </section>
+
+    <section class="panel" id="matrix-panel" style="margin-top:18px;">
+      <h2>📊 决策矩阵 · 去程（纵）× 返程（横）</h2>
+      <p class="summary">纵轴 = <strong>去程提前几天出发</strong>（早走的天数在<strong>曼谷停留玩</strong>，因为 8/1 前进不了别墅）；横轴 = <strong>返程在曼谷停几晚</strong>（延住玩）。格子 = <strong>全家 5 人「长途往返+甲米短跳往返+曼谷住宿」总价</strong> + 推荐星级。绿=推荐，红=避坑。</p>
+      <div class="mx-wrap">
+        <table class="matrix"><thead><tr><th class="corner">去程 ＼ 返程</th><th class="colh"><div class="cap">当天走</div><div class="sub">8/8 周六</div><div class="sub2">甲米当天飞→曼谷转→回京</div></th><th class="colh"><div class="cap">曼谷+1 晚</div><div class="sub">8/9 周日</div><div class="sub2">甲米→曼谷玩 1 晚（周末恰图恰植物市场），白天回京</div></th><th class="colh"><div class="cap">曼谷+2 晚</div><div class="sub">8/10 周一</div><div class="sub2">甲米→曼谷玩 2 晚（整周末），白天回京</div></th></tr></thead><tbody><tr><th class="rowh"><div class="cap">提前 2 天飞</div><div class="sub">7/30 周四</div><div class="sub2">北京→曼谷，曼谷玩 2 晚，8/1 晨飞甲米进别墅</div></th><td class="mcell cell-poor"><div class="stars">★★☆☆☆</div><div class="price">¥16,551</div><div class="pn">全家5人·2晚曼谷</div><span class="ctag">⚠️返程赶/红眼</span></td><td class="mcell cell-good"><div class="stars">★★★★☆</div><div class="price">¥17,351</div><div class="pn">全家5人·3晚曼谷</div><span class="ctag">🌿周末植物市场</span></td><td class="mcell cell-ok"><div class="stars">★★★☆☆</div><div class="price">¥18,151</div><div class="pn">全家5人·4晚曼谷</div><span class="ctag">🌿周末植物市场</span></td></tr><tr><th class="rowh"><div class="cap">提前 1 天飞</div><div class="sub">7/31 周五</div><div class="sub2">北京→曼谷，曼谷玩 1 晚，8/1 晨飞甲米进别墅</div></th><td class="mcell cell-ok"><div class="stars">★★★☆☆</div><div class="price">¥15,751</div><div class="pn">全家5人·1晚曼谷</div><span class="ctag">⚠️返程赶/红眼</span></td><td class="mcell cell-best"><div class="stars">★★★★★<span class="best-badge">最优</span></div><div class="price">¥16,551</div><div class="pn">全家5人·2晚曼谷</div><span class="ctag">🌿周末植物市场</span></td><td class="mcell cell-good"><div class="stars">★★★★☆</div><div class="price">¥17,351</div><div class="pn">全家5人·3晚曼谷</div><span class="ctag">🌿周末植物市场</span></td></tr><tr><th class="rowh"><div class="cap">当天飞</div><div class="sub">8/1 周六</div><div class="sub2">北京→曼谷→甲米想当天进别墅（非大陆航司做不到，见下）</div></th><td class="mcell cell-poor"><div class="stars">★☆☆☆☆</div><div class="price">¥14,951</div><div class="pn">全家5人·0晚曼谷</div><span class="ctag">⚠️去程当天到不了</span><span class="ctag">⚠️返程赶/红眼</span></td><td class="mcell cell-poor"><div class="stars">★★☆☆☆</div><div class="price">¥15,751</div><div class="pn">全家5人·1晚曼谷</div><span class="ctag">⚠️去程当天到不了</span><span class="ctag">🌿周末植物市场</span></td><td class="mcell cell-poor"><div class="stars">★☆☆☆☆</div><div class="price">¥16,551</div><div class="pn">全家5人·2晚曼谷</div><span class="ctag">⚠️去程当天到不了</span><span class="ctag">🌿周末植物市场</span></td></tr></tbody></table>
+      </div>
+      <div class="keyrow">
+        <div class="keycard">🟢 <b>最优 ★★★★★</b>：去程 −1（7/31 飞，曼谷 1 晚）× 返程 +1（曼谷 1 晚命中周末植物市场），<b>¥16,551</b>／全家。省心、别墅用满、周末逛市场、白天到京。</div>
+        <div class="keycard">🔴 <b>最差 ★</b>：去程 0（8/1 当天飞）× 返程 +0（8/8 当天走）。去程当天到不了别墅（白扔一晚），返程红眼凌晨落地。省不下几个钱，体验最差。</div>
+      </div>
+      <p class="note" style="margin-top:10px;color:var(--muted);font-size:12.5px;">
+        价格口径：全家 5 人（2 大+毛豆+2 老人，儿童按约 9 折）。<strong>机票基数 ≈ ¥14,951</strong>（北京⇄曼谷泰航直飞往返 ¥2,439/成人 + 曼谷⇄甲米廉航往返 ~¥600/人）+ 曼谷住宿按 <strong>¥800/晚·家庭房</strong>累加。长途/短跳价来自 Google Flights 今日实时（¥，含税）与往期实测；<strong>Ctrip/trip.com 实价待你本机会话恢复后复核</strong>（当前 host 会话未连上，见页底）。星级综合「别墅时间用满 + 到京时段 + 周末植物市场 + 老人孩子舒适度」。
+      </p>
+    </section>
+
+    <section class="panel" style="margin-top:18px;">
+      <h2>🛫 航班细节（逐段真实报价）</h2>
+      <p class="summary">矩阵里的总价由这几段拼成。价格<strong>报价按实际搜索 Google Flights 今日实时（¥含税）</strong>，Ctrip/trip.com 优先待会话恢复后复核替换。所有长途段均为<strong>非大陆航司</strong>。</p>
+      <h3 class="leg-h">① 去程长途（北京→曼谷/普吉，非大陆航司）</h3><div class="fl-wrap"><table class="fltable"><thead><tr><th>航段</th><th>航司</th><th>时刻/时长</th><th>价格</th><th>来源</th><th>说明</th></tr></thead><tbody><tr><td class="fl-route">北京首都 PEK → 曼谷 BKK</td><td class="fl-car">泰航 THAI 直飞</td><td class="fl-time">17:05→21:15<br><span class="fl-dur">5h10 直飞</span></td><td class="fl-price">¥2,439 /成人·往返</td><td class="fl-src"><span class="srcpill">GF实时</span></td><td class="fl-note">唯一非大陆直飞长途；落地21:15太晚赶不上当天甲米航班→曼谷住1晚最顺</td></tr><tr><td class="fl-route">北京首都 PEK → 普吉 HKT</td><td class="fl-car">国泰 Cathay 经香港</td><td class="fl-time">07:25→17:20<br><span class="fl-dur">10h55（含3h45香港转）</span></td><td class="fl-price">¥2,987 /成人·往返</td><td class="fl-src"><span class="srcpill">GF实时</span></td><td class="fl-note">普吉进出的备选；香港可顺带停留；普吉再自驾/短飞到甲米</td></tr><tr><td class="fl-route">北京首都 PEK → 普吉 HKT</td><td class="fl-car">泰航 THAI 经曼谷</td><td class="fl-time">06:45→15:25<br><span class="fl-dur">9h40（含3h曼谷转）</span></td><td class="fl-price">¥3,789 /成人·往返</td><td class="fl-src"><span class="srcpill">GF实时</span></td><td class="fl-note">经曼谷可停留；比国泰贵，但曼谷停留更适合植物市场/亲子</td></tr></tbody></table></div>
+<h3 class="leg-h">② 短跳（曼谷 ⇄ 甲米，泰国廉航）</h3><div class="fl-wrap"><table class="fltable"><thead><tr><th>航段</th><th>航司</th><th>时刻/时长</th><th>价格</th><th>来源</th><th>说明</th></tr></thead><tbody><tr><td class="fl-route">曼谷 BKK/DMK → 甲米 KBV</td><td class="fl-car">越捷/皇雀/泰狮航</td><td class="fl-time">多班 07:05起→约08:30<br><span class="fl-dur">1h20-25</span></td><td class="fl-price">¥273-357 /人·单程</td><td class="fl-src"><span class="srcpill">往期实测</span></td><td class="fl-note">每天多班；8/1 早班中午能进别墅；越捷出BKK素万那普、泰狮航/亚航出DMK廊曼</td></tr><tr><td class="fl-route">甲米 KBV → 曼谷 BKK/DMK</td><td class="fl-car">越捷/皇雀/泰狮航</td><td class="fl-time">约09:00 或 20:35→约10:20/21:55<br><span class="fl-dur">1h20-25</span></td><td class="fl-price">¥273-357 /人·单程</td><td class="fl-src"><span class="srcpill">往期实测</span></td><td class="fl-note">⚠️越捷无下午班：早班09:00(还车偏早)或晚班20:35(杀停留日)</td></tr></tbody></table></div>
+<h3 class="leg-h">③ 返程长途（曼谷→北京，非大陆航司·白天直飞优先）</h3><div class="fl-wrap"><table class="fltable"><thead><tr><th>航段</th><th>航司</th><th>时刻/时长</th><th>价格</th><th>来源</th><th>说明</th></tr></thead><tbody><tr><td class="fl-route">曼谷 BKK → 北京首都 T3</td><td class="fl-car">泰航 THAI 白天直飞</td><td class="fl-time">10:00→15:45<br><span class="fl-dur">5h55 直飞</span></td><td class="fl-price">¥1,432-1,460 /人·单程</td><td class="fl-src"><span class="srcpill">往期实测</span></td><td class="fl-note">避红眼·亲子首选，下午到京；比一票到底（经曼谷5-6h枯等+凌晨05:30落地）好太多</td></tr></tbody></table></div>
+    </section>
+
+    <section class="panel" style="margin-top:18px;">
+      <h2>🗺️ 三种代表路线怎么走（配合矩阵）</h2>
+      <ul style="font-size:14px;line-height:1.95;color:var(--muted);margin:0;padding-left:20px;">
+        <li><b>🥇 最优（−1 / +1）</b>：7/31 北京→曼谷（泰航直飞，曼谷睡 1 晚）→ 8/1 晨 皇雀/越捷 飞甲米中午进别墅 → <b>8/1–8/8 别墅 7 晚</b> → 8/8 甲米→曼谷（停 8/8 六、8/9 日，逛<b>恰图恰周末植物市场</b>）→ 8/9 泰航 10:00→15:45 首都T3。</li>
+        <li><b>🥈 玩最透（−2 / +2）</b>：7/30 就飞，曼谷玩 2 晚（大皇宫/水上市场）→ 8/1 进别墅 → 8/10 才回京，曼谷再停整周末。代价：多 2 晚酒店 + 晚 2 天到家（¥18,151）。</li>
+        <li><b>🥉 普吉进出备选</b>：若想省去曼谷短跳、或香港顺带停留 → 国泰 北京经香港→普吉（¥2,987/成人往返），普吉落地后<b>自驾/短飞到甲米</b>（普吉↔甲米陆路约 3h/含拼船，或短飞 40 分钟）。适合想把「香港」也玩进去的安排。</li>
+      </ul>
+    </section>
+
+    <section class="panel" style="margin-top:18px;">
+      <h2>📋 数据来源与口径</h2>
+      <ul style="font-size:14px;line-height:1.9;color:var(--muted);margin:0;padding-left:20px;">
+        <li><b>机票实价</b>：北京⇄曼谷（泰航直飞往返 ¥2,439/成人）、北京⇄普吉（国泰经港 ¥2,987、泰航经曼谷 ¥3,789）来自 <b>Google Flights 今日实时</b>（币种 CNY，含税，往返总价按人）。曼谷⇄甲米短跳（¥273–357/人单程）、泰航 BKK→首都T3 白天直飞返程（¥1,432–1,460/人）来自本行程<b>往期 Ctrip 实测</b>。</li>
+        <li><b>⚠️ 待复核</b>：你要求<b>报价按 Ctrip/trip.com 优先</b>。本次 <b>host 本机 CN 浏览器会话（:29222）未连上</b>（agent-browser 掉到本地 headless，Ctrip 会 whaleguard 拦截），故先用 Google Flights ¥ 实价兜底。你本机 Edge 保持 Ctrip 登录后告诉我，我连真实会话把每段替换成 Ctrip/trip.com 实价（通常比 GF 更低）。</li>
+        <li><b>非大陆航司</b>：所有长途段排除国航/东航/南航/上航/川航/厦航/海航/深航/吉祥/春秋；用泰航/国泰/新航/越捷/皇雀/泰狮航。</li>
+        <li><b>住宿</b>：曼谷停留按家庭房 ¥800/晚估（含早、老人孩子友好）；实际以你落脚片区（素万那普机场侧 or 市区）Ctrip+Booking 实时价为准。</li>
+        <li><b>星级逻辑</b>：综合「别墅 8/1–8/8 是否用满 + 到京是否白天不红眼 + 曼谷停留是否命中周末恰图恰植物市场 + 老人孩子转机舒适度」，非纯价格。</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
