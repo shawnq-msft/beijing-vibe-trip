@@ -56,17 +56,29 @@
     @media (max-width:640px) { .keyrow { grid-template-columns:1fr; } }
     .keycard { background:#fff; border:1px solid var(--line); border-radius:14px; padding:12px 14px; font-size:13px; line-height:1.6; }
     .keycard b { color:var(--accent); }
+    /* ---- transfer-city activity cards ---- */
+    .act-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:12px; margin-top:12px; }
+    .act-card { border:1px solid var(--line); border-radius:14px; padding:12px 14px; background:#fff; display:flex; flex-direction:column; }
+    .act-h { display:flex; align-items:center; gap:7px; flex-wrap:wrap; }
+    .act-ic { font-size:18px; }
+    .act-nm { font-weight:800; color:var(--ink); font-size:14px; }
+    .act-sec { margin-left:auto; font-size:10.5px; font-weight:700; color:#166534; background:#dcfce7; padding:1px 7px; border-radius:999px; white-space:nowrap; }
+    .act-loc { font-size:11.5px; color:var(--accent); font-weight:700; margin-top:4px; }
+    .act-bl { font-size:12.5px; color:var(--muted); line-height:1.65; margin-top:6px; flex:1; }
+    .act-card .ctag { align-self:flex-start; margin-top:8px; }
+    .ct-hk { background:#ede9fe; color:#6b21a8; }
   </style>
 </head>
 <body>
   <div class="page">
     <section class="hero">
       <h1>✈️ 北京 ⇄ 甲米/普吉 · 往返航班决策矩阵</h1>
-      <p class="subtitle">围绕已订 <b>Mangrove Bay Krabi Villa（8/1–8/8 入住 7 晚）</b>，把<b>去程出发日</b>×<b>返程曼谷停留</b>摆成一张矩阵：格子给<b>全家 5 人机票+曼谷住宿总价</b>与<b>推荐星级</b>，下方接<b>逐段航班细节</b>。基准已按你在<b>携程实测</b>的红眼方案重锚（¥3,215/人·含税），并把它<b>不好的返程</b>改成<b>周末转机曼谷玩 1–2 天</b>。</p>
+      <p class="subtitle">围绕已订 <b>Mangrove Bay Krabi Villa（8/1–8/8 入住 7 晚）</b>，把<b>去程出发日</b>×<b>返程转机停留</b>摆成矩阵：格子给<b>全家 5 人机票+住宿总价</b>与<b>推荐星级</b>，下方接<b>逐段航班细节</b>。<b>甲米线</b>基准按你<b>携程实测</b>红眼方案重锚（¥3,215/人·含税）并修好返程；另附<b>普吉线（经香港）备选矩阵</b>，及<b>曼谷/香港转机地怎么玩</b>的详细攻略（恰图恰 27 区全解、香港迪士尼）。</p>
       <div class="badges">
-        <span class="badge">携程实测重锚</span>
-        <span class="badge">去程×返程矩阵</span>
-        <span class="badge">周末转机玩乐</span>
+        <span class="badge">甲米线·携程实测重锚</span>
+        <span class="badge">普吉线·经香港备选</span>
+        <span class="badge">转机地玩乐攻略</span>
+        <span class="badge">恰图恰27区全解</span>
         <span class="badge">尽量用满别墅</span>
       </div>
     </section>
@@ -94,6 +106,27 @@
       </div>
       <p class="note" style="margin-top:10px;color:var(--muted);font-size:12.5px;">
         价格口径：全家 5 人。<strong>基准 = 你的携程实测 ¥3,215/人 × 5 = ¥16,075</strong>（含税，含「北京大兴⇄曼谷越捷 + 曼谷⇄甲米泰航短跳」往返全程；另有 ¥58/人 中转保障可选）。<strong>每在曼谷城区多住 1 晚 +¥900</strong>（5 人家庭房）。返程改「白天直飞」段用泰航 BKK→首都 T3（往期实测 ¥1,432–1,460/人，与红眼 VZ 段价差已并入基准，主要增量是酒店）。星级综合「别墅用满 + 到京时段 + 周末植物市场 + 老人孩子舒适度」。
+      </p>
+    </section>
+
+        <section class="panel" style="margin-top:18px;">
+      <h2>🏝️ 备选矩阵 · 普吉往返（经香港 · 国泰）</h2>
+      <p class="summary">想把 <strong>香港迪士尼</strong>玩进去、或普吉+甲米双岛，就走<strong>普吉进出</strong>：<strong>国泰经香港</strong>（非大陆航司、品质高、香港可停留）。代价 = 别墅在甲米，普吉落地要 <strong>2.5–3h van 陆运到甲米</strong>。纵轴 = 去程在<strong>香港</strong>停几晚，横轴 = 返程在香港停几晚；格子 = 全家 5 人「国泰往返 + 普吉⇄甲米 van + 香港住宿」总价 + 星级。<strong>中转城市 = 香港</strong>（迪士尼/海洋公园/大佛，见下「转机地怎么玩」）。</p>
+      <div class="mx-wrap">
+        <table class="matrix"><thead><tr><th class="corner">去程 ＼ 返程</th><th class="colh"><div class="cap">香港 0 晚 · 直接回</div><div class="sub">8/8 周六</div><div class="sub2">别墅→van→普吉→香港转→北京，一程到底</div></th><th class="colh"><div class="cap">香港 1 晚 · 玩迪士尼</div><div class="sub">8/9 周日</div><div class="sub2">8/8 到港住 1 晚 · 8/9 整天香港迪士尼 · 当晚/次晨回京</div></th><th class="colh"><div class="cap">香港 2 晚 · 玩透</div><div class="sub">8/10 周一</div><div class="sub2">迪士尼 + 海洋公园/大佛，整周末泡香港 · 8/10 回京</div></th></tr></thead><tbody><tr><th class="rowh"><div class="cap">香港 0 晚 · 当天连飞</div><div class="sub">8/1 周六</div><div class="sub2">国泰 07:25→普吉 17:20 · 再 3h van 到别墅约 21:00（累但别墅头晚用满）</div></th><td class="mcell cell-poor"><div class="stars">★★☆☆☆</div><div class="price">¥15,900</div><div class="pn">全家5人·无香港停留</div><span class="ctag ct-warn">⚠️两头 van 长途累</span></td><td class="mcell cell-good"><div class="stars">★★★★☆</div><div class="price">¥17,300</div><div class="pn">全家5人·香港1晚</div><span class="ctag ct-hk">🏰 迪士尼</span></td><td class="mcell cell-ok"><div class="stars">★★★☆☆</div><div class="price">¥18,700</div><div class="pn">全家5人·香港2晚</div><span class="ctag ct-hk">🏰 迪士尼</span></td></tr><tr><th class="rowh"><div class="cap">香港 1 晚 · 断行程</div><div class="sub">7/31 周五</div><div class="sub2">北京→香港住 1 晚（断开长途/傍晚逛港）· 8/1 续飞普吉→van 进别墅</div></th><td class="mcell cell-ok"><div class="stars">★★★☆☆</div><div class="price">¥17,300</div><div class="pn">全家5人·香港1晚</div></td><td class="mcell cell-good"><div class="stars">★★★★☆</div><div class="price">¥18,700</div><div class="pn">全家5人·香港2晚</div><span class="ctag ct-hk">🏰 迪士尼</span></td><td class="mcell cell-ok"><div class="stars">★★★☆☆</div><div class="price">¥20,100</div><div class="pn">全家5人·香港3晚</div><span class="ctag ct-hk">🏰 迪士尼</span><span class="ctag ct-warn">💰 香港住宿偏贵</span></td></tr><tr><th class="rowh"><div class="cap">香港 2 晚 · 迪士尼玩透</div><div class="sub">7/30 周四</div><div class="sub2">北京→香港 2 晚：7/31 整天迪士尼 · 8/1 上午续飞普吉→van 进别墅</div></th><td class="mcell cell-best"><div class="stars">★★★★★<span class="best-badge">最优</span></div><div class="price">¥18,700</div><div class="pn">全家5人·香港2晚</div><span class="ctag ct-hk">🏰 迪士尼</span></td><td class="mcell cell-ok"><div class="stars">★★★☆☆</div><div class="price">¥20,100</div><div class="pn">全家5人·香港3晚</div><span class="ctag ct-hk">🏰 迪士尼</span><span class="ctag ct-warn">💰 香港住宿偏贵</span></td><td class="mcell cell-poor"><div class="stars">★★☆☆☆</div><div class="price">¥21,500</div><div class="pn">全家5人·香港4晚</div><span class="ctag ct-hk">🏰 迪士尼</span><span class="ctag ct-warn">💰 香港住宿偏贵</span></td></tr></tbody></table>
+      </div>
+      <div class="keyrow">
+        <div class="keycard">🟢 <b>普吉线最优 ★★★★★ · ¥18,700</b>：去程<b>香港住 2 晚·7/31 整天迪士尼</b>（把北京→普吉的长途拆成humane两段、迪士尼从容不赶）× 8/1 续飞普吉→van 进别墅、<b>别墅 8/1–8/8 用满</b> × 8/8 <b>直接一程返京</b>。比甲米线贵约 ¥1,700，溢价买的是<b>香港迪士尼 + 不硬扛长途</b>。</div>
+        <div class="keycard">💡 <b>省钱紧凑版 ★★★★ · ¥17,300</b>（当天飞 × 返程香港 1 晚）：去程 8/1 一路飞到底（累），返程 8/9 香港住 1 晚玩迪士尼。省 2 晚香港房，但去程 van+双飞很赶，老人孩子吃力。</div>
+      </div>
+      <h3 class="leg-h">普吉线 · 逐段与报价</h3>
+      <div class="fl-wrap"><table class="fltable"><thead><tr><th>航段</th><th>航司/方式</th><th>时刻/时长</th><th>价格</th><th>来源</th><th>说明</th></tr></thead><tbody>
+        <tr><td class="fl-route">北京首都 PEK → 香港 → 普吉 HKT</td><td class="fl-car">国泰 Cathay 经港</td><td class="fl-time">07:25→17:20<br><span class="fl-dur">10h55（含 3h45 香港转）</span></td><td class="fl-price">¥2,987 /成人·往返</td><td class="fl-src"><span class="srcpill">GF今日实时</span></td><td class="fl-note">非大陆首选；可把香港转机延成停留玩迪士尼</td></tr>
+        <tr><td class="fl-route">普吉 HKT ⇄ 甲米 KBV（别墅）</td><td class="fl-car">拼车/包车 van（走 4 号公路）</td><td class="fl-time">约 2.5–3h/程</td><td class="fl-price">¥500–800 /程·家庭包车<br><span class="fl-dur">或拼车 ~฿300/人</span></td><td class="fl-src"><span class="srcpill">估算</span></td><td class="fl-note">⚠️ 普吉线的额外成本；含途经攀牙/奥南；晕车/推车家庭需留意</td></tr>
+        <tr><td class="fl-route">北京首都 PEK → 曼谷 → 普吉</td><td class="fl-car">泰航 THAI 经曼谷</td><td class="fl-time">06:45→15:25<br><span class="fl-dur">9h40（含 3h 曼谷转）</span></td><td class="fl-price">¥3,789 /成人·往返</td><td class="fl-src"><span class="srcpill">GF今日实时</span></td><td class="fl-note">若更想在曼谷停留（恰图恰）而非香港，可换这条；比国泰贵</td></tr>
+      </tbody></table></div>
+      <p class="note" style="margin-top:10px;color:var(--muted);font-size:12.5px;">
+        价格口径（普吉线）：<strong>基准 ¥15,900</strong> = 国泰经港往返（¥2,987/成人 × 全家 5 人，儿童约 9 折）≈¥14,900 + 普吉⇄甲米 van 往返 ≈¥1,000。<strong>每在香港多住 1 晚 +¥1,400</strong>（5 人家庭房，港房贵于曼谷）；迪士尼门票另计（成人约 ¥600、小童约 ¥450/人·1 日票）。国泰票价 GF 今日实时，van/港房为估算，<strong>Ctrip/trip.com 实价待本机会话恢复后复核</strong>。
       </p>
     </section>
 
@@ -136,6 +169,39 @@
         <li><b>🎯 你的携程原版（红眼去 / 直连回）· ¥16,075</b>：同样红眼去、别墅用满，但 8/9 返程曼谷死等 7h25、VZ 凌晨 00:15 落地。<b>最省 ¥900</b>，代价是熬这一程。</li>
         <li><b>🥈 玩最透（提前 2 天 / 曼谷停 2 晚）· ¥19,675</b>：7/30 就飞、曼谷先玩 2 晚（大皇宫/水市）→ 8/1 进别墅 → 8/8 回曼谷再住 2 晚整周末 → 8/10 周一白天回京。玩最足，多 4 晚曼谷酒店。</li>
       </ul>
+    </section>
+
+        <section class="panel" style="margin-top:18px;">
+      <h2>🎡 转机地怎么玩（把枯等变成加分项）</h2>
+      <p class="summary">矩阵里每个「停 1–2 晚」的格子，玩的就是这里。<strong>甲米线的中转城市 = 曼谷</strong>，<strong>普吉线的中转城市 = 香港</strong>。下面按城市给出适合<strong>2 大 + 毛豆 + 2 老人</strong>的详细选择，按<strong>停留时长</strong>搭配。</p>
+
+      <h3 class="leg-h">🇹🇭 曼谷 · 恰图恰周末市场全攻略（远不止植物）</h3>
+      <div class="villa-box" style="background:#f0fdf4;border-color:#86efac;">
+        📌 <b>恰图恰 = JJ Market</b>：全泰最大市集，<b>15,000 个摊位 · 11,505 商家 · 27 个分区</b>，<b>仅周六周日营业</b>（约 09:00–18:00，花市/批发清晨 06:00 起）。地铁 MRT <b>Kamphaeng Phet 站</b>出来即达（2 号出口直入花草区）。<b>植物只占其中第 3、4 区</b>——下面这些区一样精彩，够逛一整天：
+      </div>
+      <div class="act-grid">
+        <div class="act-card"><div class="act-h"><span class="act-ic">🌿</span><span class="act-nm">花草园艺</span><span class="act-sec">Sec 3–4</span></div><div class="act-bl">毛豆/绿植控主场：观叶、块根、空气凤梨、兰花、园艺工具与苗木。清晨 6–7 点花市批发气氛最浓，价格也最好。</div><span class="ctag ct-mkt">毛豆必逛</span></div><div class="act-card"><div class="act-h"><span class="act-ic">🎨</span><span class="act-nm">艺术画廊</span><span class="act-sec">Sec 7</span></div><div class="act-bl">独立艺术家原创画、手绘、版画、设计海报。文青/买手办装饰家最爱，也是拍照好背景。</div><span class="ctag ct-mkt">文艺</span></div><div class="act-card"><div class="act-h"><span class="act-ic">👕</span><span class="act-nm">服饰潮牌</span><span class="act-sec">Sec 2–6 / 10–26</span></div><div class="act-bl">全场最大板块：泰国设计师潮牌、复古 vintage、手作皮具、银饰。淘小众衣服鞋包来这。</div><span class="ctag ct-mkt">购物主力</span></div><div class="act-card"><div class="act-h"><span class="act-ic">🧸</span><span class="act-nm">手工艺品</span><span class="act-sec">Sec 8–11</span></div><div class="act-bl">木雕、编织、香薰、陶艺、民族风摆件——买伴手礼/家居装饰的黄金区。</div><span class="ctag ct-mkt">伴手礼</span></div><div class="act-card"><div class="act-h"><span class="act-ic">🍜</span><span class="act-nm">美食小吃</span><span class="act-sec">Sec 2/3/4/23/24/26/27</span></div><div class="act-bl">椰子冰淇淋、烤肉串、船面、泰式奶茶、Viva 8 音乐餐吧。逛累了就往这几区钻，边吃边歇。</div><span class="ctag ct-mkt">亲子补给</span></div><div class="act-card"><div class="act-h"><span class="act-ic">🏺</span><span class="act-nm">陶瓷家居</span><span class="act-sec">Sec 11/13/15/17/19/25</span></div><div class="act-bl">手绘陶瓷、青瓷、家居餐具与装饰。想给别墅/家里添点泰式餐具的看这。</div><span class="ctag ct-mkt">居家</span></div><div class="act-card"><div class="act-h"><span class="act-ic">🛋️</span><span class="act-nm">家具家饰</span><span class="act-sec">Sec 1/3/4/7/8</span></div><div class="act-bl">柚木家具、藤编、灯饰、老物件。大件不好带，但看设计、淘小饰品很值。</div><span class="ctag ct-mkt">设计控</span></div><div class="act-card"><div class="act-h"><span class="act-ic">📚</span><span class="act-nm">书籍古董</span><span class="act-sec">Sec 1/26/27</span></div><div class="act-bl">旧书、黑胶、邮票、老相机、收藏品。慢逛淘宝的区，安静人少。</div><span class="ctag ct-mkt">淘宝</span></div>
+      </div>
+      <p class="note" style="margin-top:8px;color:var(--muted);font-size:12px;">🎫 逛法建议：清晨先杀去 3–4 区花市（人少、凉快、批发价）→ 8 区手工艺/伴手礼 → 7 区艺术 → 中午钻美食区 & 过街去 Or Tor Kor 吃饭吹空调 → 下午服饰潮牌区淘货。带毛豆的话把「儿童探索博物馆」穿插进去放电。宠物/观赏鱼区（邻侧周日市场 2024 年曾失火）建议只远观、注意动物福利。</p>
+
+      <h3 class="leg-h">🇹🇭 曼谷 · 停留更久还能玩什么（老人孩子友好）</h3>
+      <div class="act-grid">
+        <div class="act-card"><div class="act-h"><span class="act-ic">🥬</span><span class="act-nm">Or Tor Kor 市场</span></div><div class="act-loc">📍 恰图恰对面·步行3分钟</div><div class="act-bl">全泰最高档生鲜市场（CNN 评全球十大鲜食市场）：热带水果榴莲山竹、熟食摊、干净有空调。逛完恰图恰过条街就到，中午在这吃饭最舒服。</div><span class="ctag ct-mkt">亲子友好</span></div><div class="act-card"><div class="act-h"><span class="act-ic">🚂</span><span class="act-nm">儿童探索博物馆</span></div><div class="act-loc">📍 恰图恰旁 (CDMB)</div><div class="act-bl">就在恰图恰北侧：沙池、水玩、恐龙、职业扮演，专为学龄儿童设计。毛豆放电首选，室内有空调避暑。</div><span class="ctag ct-mkt">毛豆放电</span></div><div class="act-card"><div class="act-h"><span class="act-ic">👑</span><span class="act-nm">大皇宫 + 玉佛寺</span></div><div class="act-loc">📍 老城 Rattanakosin</div><div class="act-bl">曼谷头号地标：金碧辉煌的王宫与玉佛寺。着装需过膝遮肩。配合郑王庙(黎明寺)+卧佛寺半天连游。</div><span class="ctag ct-mkt">经典必看</span></div><div class="act-card"><div class="act-h"><span class="act-ic">🛍️</span><span class="act-nm">ICONSIAM 河畔商场</span></div><div class="act-loc">📍 湄南河西岸</div><div class="act-bl">顶级空调商场：室内水上市场 SookSiam、河景美食、每晚喷泉秀。暴晒/暴雨天的万能备选，亲子老人都舒适。</div><span class="ctag ct-mkt">避暑万能</span></div><div class="act-card"><div class="act-h"><span class="act-ic">🛥️</span><span class="act-nm">湄南河游船 + 水上市场</span></div><div class="act-loc">📍 Chao Phraya / 丹嫩沙多</div><div class="act-bl">傍晚游船看两岸神庙灯光、晚餐船；或清晨去丹嫩沙多/安帕瓦水上市场坐船买椰香糯米。</div><span class="ctag ct-mkt">特色体验</span></div><div class="act-card"><div class="act-h"><span class="act-ic">🐆</span><span class="act-nm">Safari World 野生动物园</span></div><div class="act-loc">📍 曼谷东郊 Minburi</div><div class="act-bl">开车穿越狮虎长颈鹿区 + 海豚/海狮表演。半日亲子乐园，适合带毛豆看动物（车程约 45 分钟）。</div><span class="ctag ct-mkt">亲子乐园</span></div>
+      </div>
+      <div class="warn-box" style="border-left-color:#0369a1;background:#f0f9ff;color:#075985;">
+        🗓️ <b>按矩阵停留时长搭配</b>：<b>停 1 晚（推荐）</b>→ 周六下午到、周日整天恰图恰+Or Tor Kor，下午泰航直飞回京。<b>停 2 晚</b>→ 加大皇宫/郑王庙半天 + ICONSIAM 避暑一晚，或 Safari World 亲子半天。<b>去程提前到（矩阵纵轴）</b>→ 8/1 前先玩曼谷，但注意 <b>8/1 要一早短跳进甲米别墅</b>，别排太满。
+      </div>
+
+      <h3 class="leg-h">🇭🇰 香港 · 普吉线的中转玩乐（迪士尼为核心）</h3>
+      <div class="villa-box" style="background:#eef2ff;border-color:#c7d2fe;">
+        📌 走<b>普吉线（国泰经香港）</b>时，中转城市就是香港。最大理由是<b>毛豆的迪士尼</b>；香港转机延成 1–2 晚即可玩透，且长途被拆成两段、老人孩子不硬扛 11 小时。
+      </div>
+      <div class="act-grid">
+        <div class="act-card"><div class="act-h"><span class="act-ic">🏰</span><span class="act-nm">香港迪士尼乐园</span></div><div class="act-loc">📍 大屿山·地铁直达</div><div class="act-bl">毛豆的头号理由：《魔雪奇缘》世界(新园区)、反斗奇兵、灰熊山谷、晚间城堡烟花。1 日票成人约 ¥600、小童约 ¥450。建议排 1 整天，配合园内酒店最从容。</div><span class="ctag ct-hk">毛豆最爱</span></div><div class="act-card"><div class="act-h"><span class="act-ic">🐬</span><span class="act-nm">海洋公园</span></div><div class="act-loc">📍 港岛南区</div><div class="act-bl">水族馆 + 过山车 + 大熊猫 + 海豚。比迪士尼更多动物元素、老少咸宜；缆车海景一绝。半天到 1 天。</div><span class="ctag ct-hk">老少咸宜</span></div><div class="act-card"><div class="act-h"><span class="act-ic">🧘</span><span class="act-nm">天坛大佛 + 昂坪360</span></div><div class="act-loc">📍 大屿山</div><div class="act-bl">水晶缆车上山看巨型青铜坐佛、宝莲禅寺素斋。云雾中的大佛很震撼，缆车本身就是体验。半天。</div><span class="ctag ct-hk">观景祈福</span></div><div class="act-card"><div class="act-h"><span class="act-ic">🥟</span><span class="act-nm">点心 + 维港夜景</span></div><div class="act-loc">📍 尖沙咀/中环</div><div class="act-bl">添好运/一盅两件早茶，天星小轮过维港，尖沙咀星光大道看幻彩咏香江灯光秀(每晚 20:00)。转机停留最省时的经典组合。</div><span class="ctag ct-hk">美食夜景</span></div><div class="act-card"><div class="act-h"><span class="act-ic">🚡</span><span class="act-nm">太平山顶</span></div><div class="act-loc">📍 港岛中环</div><div class="act-bl">山顶缆车登太平山，俯瞰维港全景。傍晚上去看日落转夜景最佳。老人孩子都轻松。</div><span class="ctag ct-hk">地标观景</span></div>
+      </div>
+      <div class="warn-box" style="border-left-color:#7c3aed;background:#faf5ff;color:#6b21a8;">
+        🗓️ <b>按普吉矩阵搭配</b>：<b>去程香港停 2 晚</b>（最优）→ 7/31 整天迪士尼、8/1 续飞普吉→van 进别墅。<b>返程香港停 1 晚</b>→ 8/9 迪士尼或海洋公园二选一，当晚回京。想两个乐园都去就停 2 晚。<b>提示</b>：迪士尼门票需另购、旺季建议提前订；园区酒店可省通勤但更贵。
+      </div>
     </section>
 
     <section class="panel" style="margin-top:18px;">
