@@ -1,0 +1,73 @@
+/* beijing-vibe-trip · favorites (红心收藏) — drop-in module.
+   Pairs with assets/favorites.js. Auto-targets .act-card / .mcell / .fcard,
+   or any element carrying [data-fav]. State persists to localStorage + URL. */
+
+.fav-target { position: relative; }
+
+/* heart button */
+.fav-btn {
+  position: absolute; z-index: 4;
+  width: 26px; height: 26px; padding: 0;
+  border-radius: 50%; border: 1px solid var(--line);
+  background: rgba(255,255,255,.92); color: #cbd5e1;
+  cursor: pointer; font-size: 14px; line-height: 1;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,.08);
+  transition: transform .12s ease, color .12s ease, background .12s ease, border-color .12s ease;
+}
+.fav-btn:hover { transform: scale(1.14); color: #fb7185; border-color: #fecdd3; }
+.fav-btn.on { color: #e11d48; border-color: #fecdd3; background: #fff1f2; }
+.fav-btn.on:hover { color: #be123c; }
+
+/* per-context placement (avoid colliding with existing corner elements) */
+.act-card .fav-btn { bottom: 10px; right: 12px; }
+.mcell .fav-btn   { top: 6px; right: 6px; width: 23px; height: 23px; font-size: 12.5px; }
+.fcard .fav-btn   { top: 10px; right: 10px; }
+
+/* highlight when favorited (keeps existing cell colors, adds a red ring) */
+.fav-target.is-fav { box-shadow: 0 0 0 2px #fb7185, 0 0 0 6px rgba(251,113,133,.14) !important;
+  border-color: #fb7185 !important; }
+.act-card.is-fav { background: #fff5f6; }
+.mcell.is-fav { box-shadow: inset 0 0 0 2px #fb7185 !important; }
+.fav-pulse { animation: favpulse 1s ease; }
+@keyframes favpulse { 0%,100%{ box-shadow: 0 0 0 2px #fb7185, 0 0 0 6px rgba(251,113,133,.14); }
+  50%{ box-shadow: 0 0 0 3px #e11d48, 0 0 0 12px rgba(225,29,72,.22); } }
+
+/* "只看收藏" filter mode */
+body.fav-only .act-card:not(.is-fav),
+body.fav-only .fcard:not(.is-fav) { display: none !important; }
+body.fav-only .mcell:not(.is-fav) { opacity: .2; filter: grayscale(.5); }
+
+/* floating dock */
+.fav-dock { position: fixed; right: 18px; bottom: 18px; z-index: 50; }
+.fav-dock-btn { display: flex; align-items: center; gap: 8px;
+  background: #e11d48; color: #fff; border: none; border-radius: 999px;
+  padding: 11px 16px; font-size: 14px; font-weight: 700; cursor: pointer;
+  box-shadow: 0 10px 26px rgba(225,29,72,.34); transition: transform .12s ease; }
+.fav-dock-btn:hover { transform: translateY(-1px); }
+.fav-dock-btn .cnt { background: rgba(255,255,255,.28); border-radius: 999px;
+  padding: 0 8px; min-width: 20px; text-align: center; font-variant-numeric: tabular-nums; }
+.fav-pop { position: absolute; right: 0; bottom: 56px; width: 300px; max-height: 62vh;
+  overflow: auto; background: #fff; border: 1px solid var(--line); border-radius: 16px;
+  box-shadow: 0 18px 46px rgba(20,32,51,.18); padding: 12px; display: none; }
+.fav-pop.open { display: block; }
+.fav-pop h4 { margin: 2px 0 4px; font-size: 14px; }
+.fav-pop .sub { margin: 0 0 10px; font-size: 11.5px; color: var(--muted); }
+.fav-row { display: flex; align-items: center; gap: 8px; padding: 7px 8px;
+  border-radius: 10px; cursor: pointer; font-size: 13px; line-height: 1.4; }
+.fav-row:hover { background: #f8fafc; }
+.fav-row .dot { color: #e11d48; flex: none; }
+.fav-row .lbl { flex: 1; overflow: hidden; text-overflow: ellipsis; }
+.fav-row .fav-x { margin-left: auto; color: #cbd5e1; flex: none; padding: 0 2px; }
+.fav-row .fav-x:hover { color: #e11d48; }
+.fav-acts { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+.fav-acts button { flex: 1 1 auto; font-size: 12px; font-weight: 700; border-radius: 10px;
+  border: 1px solid var(--line); background: #fff; padding: 8px 6px; cursor: pointer; white-space: nowrap; }
+.fav-acts button:hover { background: #f8fafc; }
+.fav-acts button.active { background: #fff1f2; border-color: #fecdd3; color: #e11d48; }
+.fav-empty { color: var(--muted); font-size: 12.5px; text-align: center; padding: 16px 6px; }
+.fav-toast { position: fixed; left: 50%; bottom: 84px; transform: translateX(-50%);
+  background: #152033; color: #fff; font-size: 13px; padding: 9px 16px; border-radius: 999px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.24); opacity: 0; pointer-events: none; transition: opacity .2s ease; z-index: 60; }
+.fav-toast.show { opacity: 1; }
+@media (max-width: 640px) { .fav-pop { width: min(88vw, 300px); } }
