@@ -154,5 +154,7 @@
       "image_caption": "绿植围绕的入口与自然治愈站标识；图示空间不代表全部区域向散客开放。2026-09-27，北京怀柔官方发布，摄影韩轩、薛娇。",
       "image_source": "https://xinwen.bjd.com.cn/content/s6ab88b5cd5de4aef00f29631.html"
     }
-  ]
+  ],
+  "superseded_by": "live-research.json",
+  "archive_notice": "早期公开索引研究存档；实时点评核验、推荐优先级与状态以live-research.json及路线页为准。"
 }
