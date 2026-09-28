@@ -17,5 +17,92 @@
     "file": "water-wall-2.webp",
     "image_url": "https://user-upload-1308320786.cos.ap-chengdu.myqcloud.com/9AR92JSZPZ84M92CE2DNUANFJ184513Wjpg",
     "source": "https://huanghuacheng.com/index.php/Info/infoDetail.html?id=347"
+  },
+  {
+    "file": "xinzhuang-street.webp",
+    "image_url": "https://q6.itc.cn/q_70/images03/20241217/4b966085444747b7aa3cef503693c5d1.jpeg",
+    "source": "https://www.sohu.com/a/838619704_786454",
+    "size": [
+      640,
+      853
+    ],
+    "caption": "辛庄村街区历史参考",
+    "credit": "小红书@薇那verna，经Time Out文章引用",
+    "source_date": "2024-12-17",
+    "historical": true
+  },
+  {
+    "file": "fang-coffee.webp",
+    "image_url": "https://q7.itc.cn/q_70/images03/20241217/4cdf8fed89644c6c965cae7cac82999d.jpeg",
+    "source": "https://www.sohu.com/a/838619704_786454",
+    "size": [
+      640,
+      418
+    ],
+    "caption": "访咖啡历史配图",
+    "credit": "小红书@平行宇宙咖啡频道，经Time Out文章引用",
+    "source_date": "2024-12-17",
+    "historical": true
+  },
+  {
+    "file": "fusan-coffee.webp",
+    "image_url": "https://q6.itc.cn/q_70/images03/20241217/d78046a2c1434bc89560fe9bc3ca043a.jpeg",
+    "source": "https://www.sohu.com/a/838619704_786454",
+    "size": [
+      640,
+      427
+    ],
+    "caption": "福叁咖啡历史配图",
+    "credit": "Time Out文章配图，大蓝（文章默认署名）",
+    "source_date": "2024-12-17",
+    "historical": true
+  },
+  {
+    "file": "yunduoduo.webp",
+    "image_url": "https://q8.itc.cn/q_70/images03/20241217/d8a8b00823824ae6992b0df2598bee56.jpeg",
+    "source": "https://www.sohu.com/a/838619704_786454",
+    "size": [
+      640,
+      418
+    ],
+    "caption": "云朵朵厨房历史配图",
+    "credit": "Time Out文章配图，大蓝（文章默认署名）",
+    "source_date": "2024-12-17",
+    "historical": true
+  },
+  {
+    "file": "the-verse.webp",
+    "image_url": "https://dimg04.c-ctrip.com/images/0100f12000a8bwopf9382.jpg",
+    "source": "https://you.ctrip.com/food/beijing1/24931344-sight.html",
+    "size": [
+      706,
+      457
+    ],
+    "caption": "携程The Verse条目意面照片；历史参考，非现菜单承诺",
+    "credit": "携程公开条目，版权归原作者"
+  },
+  {
+    "file": "gaoling-coffee.webp",
+    "image_url": "https://static.bjd.com.cn/dams-res/mps/image/202609/27/6ab8806ed5de1af872311bf0.jpg",
+    "source": "https://xinwen.bjd.com.cn/content/s6ab88b5cd5de4aef00f29631.html",
+    "size": [
+      1080,
+      607
+    ],
+    "caption": "高嶺咖啡章节配图",
+    "credit": "北京怀柔官方发布，经北京日报北京号发布；摄影韩轩、薛娇",
+    "source_date": "2026-09-27"
+  },
+  {
+    "file": "vivilimo.webp",
+    "image_url": "https://static.bjd.com.cn/dams-res/mps/image/202609/27/6ab88072d5de1af872311bf6.jpg",
+    "source": "https://xinwen.bjd.com.cn/content/s6ab88b5cd5de4aef00f29631.html",
+    "size": [
+      1080,
+      667
+    ],
+    "caption": "vivilimo植物空间章节配图",
+    "credit": "北京怀柔官方发布，经北京日报北京号发布；摄影韩轩、薛娇",
+    "source_date": "2026-09-27"
   }
 ]
