@@ -13,7 +13,9 @@ ROOT=Path(__file__).resolve().parents[1]
 BASE=(sys.argv[1] if len(sys.argv)>1 else 'http://127.0.0.1:18766').rstrip('/')
 REL='pages/national-day-2026-family-events.html'
 data=json.loads((ROOT/'data/national-day-2026-ranked.json').read_text())
-a=data['activities'];assert len(a)==10 and len({x['id'] for x in a})==10
+a=data['activities'];assert len(a)==13 and len({x['id'] for x in a})==13
+assert sum(x['type']=='indoor' for x in a)==8
+assert [x['rank'] for x in a]==list(range(1,14))
 r=requests.get(BASE+'/'+REL,timeout=30);r.raise_for_status();r.encoding='utf-8'
 soup=BeautifulSoup(r.text,'html.parser')
 assert len(soup.select('article.event'))==len(a)
@@ -43,12 +45,17 @@ with sync_playwright() as p:
         imgs=page.locator('img').evaluate_all('(xs)=>xs.map(x=>({ok:x.complete&&x.naturalWidth>0,ratio:Math.abs(x.height/x.width-x.naturalHeight/x.naturalWidth)}))')
         assert all(x['ok'] and x['ratio']<0.015 for x in imgs),imgs
         assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'),width
+        assert page.locator('#kind').input_value()=='indoor'
+        assert page.locator('#day').input_value()=='4'
+        assert page.locator('#geology-schedule tbody tr').count()==4
+        assert page.locator('#geology-schedule .course-list li').count()==6
+        assert '逐日主题待馆方确认' in page.locator('#geology-schedule').inner_text()
         for day in ('all','4','5','6','7'):
             for kind in ('all','indoor','outdoor','sport'):
                 page.select_option('#day',day);page.select_option('#kind',kind)
                 expected=sum((day=='all' or int(day) in x['dates']) and (kind=='all' or x['type']==kind) for x in a)
                 assert page.locator('article.event:visible').count()==expected,(day,kind,expected)
-                assert page.locator('tbody tr:visible').count()==expected
+                assert page.locator('#rankings tbody tr:visible').count()==expected
         page.select_option('#day','all');page.select_option('#kind','all')
         page.screenshot(path=f'/tmp/national-day-2026-{width}.png',full_page=True)
         assert not errors,errors
