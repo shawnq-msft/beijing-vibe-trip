@@ -1,0 +1,101 @@
+{
+  "as_of": "2026-10-04",
+  "audience": "北京家庭，10岁男孩，偏好网球、科技、地质",
+  "scope": "只核验资料，不修改网页、不发布、不购票",
+  "ranking_advice": [
+    {"item": "中网现场观赛", "recommendation": "兴趣匹配度高，适合靠前；10月4日钻石夜场有德约科维奇对兹维列夫。10月5日男单半决赛、10月6日男单决赛也有稀缺性。须先确认余票、儿童政策及价格。", "classification": "研究者建议，不是官方排名"},
+    {"item": "天文馆白天星河趣玩集", "recommendation": "可执行性比夜宿更明确；科技首选10月4日月球车拼装，地质兴趣首选10月5日陨石拓印。活动免费不代表成人入馆免费。", "classification": "研究者建议，不是官方排名"},
+    {"item": "天文馆陨石大侦探夜宿", "recommendation": "内容与地质科技兴趣高度匹配，10岁符合招募年龄；列为条件推荐，不能在主题日期、费用、陪同规则及余票未核前写成已确定行程。", "classification": "研究者建议，不是官方排名"}
+  ],
+  "tennis": {
+    "name": "2026中国网球公开赛",
+    "venue": "国家网球中心",
+    "address": "北京市朝阳区林萃路2号",
+    "transport": "地铁8号线林萃桥站",
+    "event_window": "2026-09-28至2026-10-11，含资格赛；正赛9月30日起",
+    "remaining_schedule": [
+      {"date": "2026-10-04", "ATP500_singles": "四分之一决赛", "WTA1000_singles": "第三轮", "sessions": "日场、晚场"},
+      {"date": "2026-10-05", "ATP500_singles": "半决赛", "WTA1000_singles": "第三轮", "sessions": "日场、晚场"},
+      {"date": "2026-10-06", "ATP500_singles": "决赛，计划表标在晚场", "WTA1000_singles": "第四轮", "sessions": "日场、晚场"},
+      {"date": "2026-10-07", "ATP500_singles": null, "WTA1000_singles": "第四轮", "sessions": "日场、晚场"},
+      {"date": "2026-10-08至2026-10-09", "ATP500_singles": null, "WTA1000_singles": "四分之一决赛"},
+      {"date": "2026-10-10", "ATP500_singles": null, "WTA1000_singles": "半决赛"},
+      {"date": "2026-10-11", "ATP500_singles": null, "WTA1000_singles": "决赛"}
+    ],
+    "oct4_confirmed_highlights": [
+      {"court": "首创钻石球场", "session": "夜场第一场", "match": "德约科维奇对兹维列夫", "clock_time": null},
+      {"court": "首创钻石球场", "session": "夜场第二场", "match": "穆霍娃对萨姆索诺娃", "clock_time": null},
+      {"court": "首创钻石球场", "session": "日场第一场", "match": "萨巴伦卡对巴图科娃", "clock_time": null},
+      {"court": "莲花球场", "session": "先后亮相，具体开赛时间待核", "players": ["米拉·安德列娃", "诺斯科娃", "大坂直美"]}
+    ],
+    "ticket_website": "https://tickets.chinaopen.com/",
+    "ticket_website_verification": "WebIQ缓存页面显示ChinaOpen及中网公司版权；实时动态抓取服务报错，本机直接请求遇证书链验证失败，未取得购票须知与库存。",
+    "children_policy": null,
+    "current_prices": null,
+    "availability": null,
+    "warnings": ["不能把早期开放日或训练开放当成10月4日免费入园。", "不能承诺特定球员后续一定出场。", "剩余赛程为官方计划中的单打轮次，具体场次以实际比赛安排为准。", "搜索出现非官方网站和明确标注AI生成的攻略，儿童1.1米与1.2米规则相互冲突，因此没有采纳。", "10月4日开赛钟点及查询时是否已开打/结束未取得实时Order of Play，不写成实时比赛状态。"],
+    "sources": ["S1", "S2", "S3", "S4", "S5"]
+  },
+  "planetarium": {
+    "venue": "北京天文馆",
+    "address": "北京市西城区西直门外大街138号",
+    "consultation_phone": "010-68312517",
+    "daytime_market": {
+      "name": "星河趣玩集·国庆特别篇",
+      "dates": "2026-10-01至2026-10-07",
+      "times": ["09:30-11:30", "13:30-16:30"],
+      "cost_scope": "市集互动活动全程免费；不能外推为所有人免费入馆或夜宿免费",
+      "zones": {"巧手坊": "B馆二层", "学识铺": "A馆寻找另一个地球展厅", "欢乐档": "A馆一层大厅"},
+      "high_interest_dates": [
+        {"date": "2026-10-04", "handcraft": "月球车模型拼装", "knowledge": "空间站与深空探测", "game": "行星排排队"},
+        {"date": "2026-10-05", "handcraft": "陨石拓印体验", "knowledge": "古代天文主题", "game": "视觉挑战主题"},
+        {"date": "2026-10-06", "handcraft": "星空立体画", "knowledge": "行星与系外行星", "game": "宇宙拼图"}
+      ],
+      "capacity": "每日手作限量开放，先到先得；没有查到实时剩余名额",
+      "sources": ["S6", "S7"]
+    },
+    "overnight": {
+      "dates": "2026-10-01至2026-10-06",
+      "time": "18:00至次日08:00",
+      "age": "6-12岁亲子家庭；10岁符合招募年龄",
+      "accompaniment": "官方国庆总公告明确为亲子家庭，但未列国庆夜宿的成人儿童人数配比、单独入营是否允许或额外成人政策。不要把公告中节后宇宙探索营的一大一小配比直接套用到夜宿。",
+      "booking": "北京天文馆官方微信公众号预约；活动票需阅读对应公众号文章/报名页",
+      "themes_verified": [
+        {"name": "星空里的大怪兽", "content": "天象厅沉浸式星空秀、顶楼观测台、专业望远镜观测及星官神话"},
+        {"name": "陨石大侦探", "content": "金属探测器搜寻、显微镜及试剂鉴定、触摸馆藏陨石、专属认证证书"}
+      ],
+      "fee": null,
+      "meteorite_theme_specific_nights": null,
+      "availability": null,
+      "status": "活动存在、时段和年龄已由原始馆公告确认；具体日期对应主题、收费、陪同规则待微信公众号报名页核验",
+      "sources": ["S6", "S8"]
+    },
+    "ticket_rules": {
+      "exhibition": "未满18周岁免费参观展厅，但需预约；10岁儿童适用。成人免费不能由市集免费推断。",
+      "theater": "未满18周岁享剧场优惠，并非免费；当日有效剧场票可免费参观展厅",
+      "special_activity": "展厅普通优惠政策不含专场或特殊活动，夜宿按活动报名规则",
+      "booking_horizon": "可购买3日内（含当日）展厅票、剧场票；每单最多6张",
+      "official_booking_path": "北京天文馆微信公众号→参观指南→天文馆购票；活动另选购买活动票",
+      "sources": ["S8"]
+    },
+    "other_activity": {"name": "π星球：科学大爆炸", "audience": "全年龄段", "details": "光影魔术、空气大炮、大象牙膏、静电放电等互动实验", "specific_session_and_fee": null, "booking_gate": "官方总公告要求以预约界面为准", "sources": ["S6"]}
+  },
+  "sources": [
+    {"id": "S1", "publisher": "北京市人民政府门户网站，来源北京市体育局", "url": "https://www.beijing.gov.cn/fwcj/calendar/tyss/6a99280188f81c019f703d3d.html", "evidence_type": "WebIQ正文", "quote": "比赛时间：2026-09-28至2026-10-11；赛事场地：国家网球中心；场地地址：北京市朝阳区林萃路2号；赛事交通信息：地铁8号线林萃桥站。"},
+    {"id": "S2", "publisher": "中国网球公开赛官网", "url": "https://www.chinaopen.com/cn/contents/281/1463.html", "evidence_type": "官网实时HTML正文", "quote": "今年中网将在9月28、29日展开资格赛较量。9月30日起，正赛正式开启，其中男子单打将于10月6日决出冠军，女子单打于10月11日迎来巅峰对决！"},
+    {"id": "S3", "publisher": "中国网球公开赛官方文章内赛程海报", "url": "https://sscms.chinaopen.com/ChinaOpen_CN/upload/images/2026/9/f2efcfaa3c51604e.png", "evidence_type": "官方图像读取", "quote": "10月4日：WTA第三轮、ATP1/4决赛；10月5日：WTA第三轮、ATP半决赛；10月6日：WTA第四轮、ATP决赛。注：以上轮次指单打比赛，具体赛程、场次信息以实际比赛安排为准。"},
+    {"id": "S4", "publisher": "中国网球公开赛官网，2026-10-04新闻", "url": "https://www.chinaopen.com/cn/contents/281/1641.html", "evidence_type": "WebIQ官方正文", "quote": "德约科维奇和兹维列夫的焦点之战被安排在了首创钻石球场夜场第一场上演……萨巴伦卡在首创钻石球场日场第一场亮相，对手是26号种子巴图科娃。两位前赛会亚军穆霍娃和萨姆索诺娃将在夜场第二场交手。"},
+    {"id": "S5", "publisher": "中网票务网站", "url": "https://tickets.chinaopen.com/", "evidence_type": "WebIQ缓存页面；实时读取失败", "quote": "ChinaOpen 中国网球公开赛 ©2004-2026 北京中国网球公开赛体育推广有限公司 京ICP备10035508号-5", "limitation": "仅确认站点身份，无法据此核实儿童政策、实时票价及余票"},
+    {"id": "S6", "publisher": "北京天文馆官网", "publication_date": "2026-09-30", "url": "https://www.bjp.org.cn/xwzx/gndt/4028c136a0e9a3c401a0ebbbd4dc0030.shtml", "evidence_type": "WebIQ原始馆公告及官网实时HTML", "quote": "夜宿时间：10月1日-6日18:00-次日8:00；招募对象：6-12岁亲子家庭；参与方式：微信公众号预约。星河趣玩集三大板块全程免费参与；每日手作限量开放，先到先得。", "additional_quote": "陨石大侦探：在‘沙漠’区用金属探测器搜寻线索，用显微镜、试剂亲手鉴定陨石，近距离触摸馆藏天外来客，最终收获专属认证证书。"},
+    {"id": "S7", "publisher": "北京天文馆国庆公告内星河趣玩集排期海报", "url": "https://www.bjp.org.cn/uploads/www/image/2026/1790661065640082957.png.thumb.jpg", "evidence_type": "官方图像读取", "quote": "2026年10月1日-10月7日，每日9:30-11:30、13:30-16:30，活动全程免费参与；10月4日月球车模型拼装，10月5日陨石拓印体验，10月6日星空立体画。"},
+    {"id": "S8", "publisher": "北京天文馆官网票务信息", "url": "https://www.bjp.org.cn/cgzn/pwxx/index.shtml", "evidence_type": "WebIQ官方正文", "quote": "开放日免费及优惠人群（不含专场或特殊活动）：未成年人（未满18周岁）……可凭有效证件免费参观展厅（需预约）。购买剧场票者，可凭当日有效剧场票免费参观展厅。", "additional_quote": "购买活动票：选择想要参加的活动，根据实际参与活动人数购买活动票（部分活动为一票二人、一票三人等），购买前请务必阅读北京天文馆微信公众号相关活动文章介绍。"}
+  ],
+  "unresolved": [
+    "中网儿童票/身高限制/是否必须全价，一人一票规则尚无本次可读取官方依据",
+    "中网实时余票和价格；日夜场及不同球场通用权限需查购票须知",
+    "10月4日具体开赛钟点及是否仍可赶上比赛",
+    "天文馆陨石夜宿10月4-6日具体哪晚开营",
+    "国庆夜宿费用、几大几小及额外成人政策、实时名额",
+    "π星球实验情景剧具体日期时段、费用和剩余名额"
+  ]
+}
