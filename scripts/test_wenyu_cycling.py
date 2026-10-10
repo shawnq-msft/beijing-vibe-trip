@@ -50,6 +50,23 @@ for selector in ['header','#route','#schedule']:
     assert '沙子营南路' not in section_text and '京密路方向' not in section_text
 assert soup.select_one('#map img[src="../assets/wenyu-cycling/user-pink-route.webp"]')
 assert '沈家闸—沙子营闸' in index.select_one(f'a.index-card[href="./{PAGE}"]').get_text()
+assert len(soup.select('#greenway-photos img'))==3, 'Expected sourced greenway photo gallery'
+photo_sets=[json.loads((ROOT/f'data/{name}').read_text()) for name in ['wenyu-western-photos.json','wenyu-original-photos.json']]
+photo_entries=[entry for batch in photo_sets for entry in batch]
+restaurant_ids={cid for d in data['districts'] for cid in d['candidate_ids']}
+assert {entry['id'] for entry in photo_entries}==restaurant_ids
+for entry in photo_entries:
+    merchant=soup.find(id=entry['id'])
+    assert len(merchant.select('.merchant-photos img'))==len(entry['images']),entry['id']
+    if not entry['images']:
+        assert merchant.select_one('.photo-missing'),entry['id']
+    for photo in entry['images']:
+        assert (ROOT/photo['path']).exists()
+        assert photo['source_url'].startswith('http') and photo['verified_branch'],entry['id']
+        assert merchant.select_one(f'img[src="../{photo["path"]}"]'),entry['id']
+assert len(soup.select('#greenway-photos img'))==3
+for fig in soup.select('.merchant-photos figure, #greenway-photos figure'):
+    assert fig.select_one('figcaption a[href]'), 'Missing photo source link'
 class Quiet(SimpleHTTPRequestHandler):
     def log_message(self,format,*args):pass
 server=ThreadingHTTPServer(('127.0.0.1',0),partial(Quiet,directory=str(ROOT)))
@@ -81,6 +98,8 @@ with sync_playwright() as p:
         assert not errors,errors
         tab.goto(base+'/'+PAGE,wait_until='networkidle')
         tab.screenshot(path=f'/tmp/wenyu-{width}.png',full_page=True)
+        tab.locator('#greenway-photos').screenshot(path=f'/tmp/wenyu-greenway-{width}.png')
+        tab.locator('#bellota').screenshot(path=f'/tmp/wenyu-bellota-{width}.png')
         results.append(checks)
         tab.goto(base+'/index.html',wait_until='networkidle')
         card=tab.locator(f'a.index-card[href="./{PAGE}"]');assert card.count()==1

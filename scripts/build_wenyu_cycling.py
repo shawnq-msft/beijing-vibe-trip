@@ -14,14 +14,28 @@ def nav(name):
     return 'https://uri.amap.com/search?keyword='+quote(name)+'&city=北京&view=map'
 def button(name,label=None):
     return f'<a class="action" href="{e(nav(name))}" target="_blank" rel="noopener">{e(label or name)} ↗</a>'
+photo_entries=[]
+for name in ['wenyu-western-photos.json','wenyu-original-photos.json']:
+    photo_entries.extend(json.loads((ROOT/'data'/name).read_text()))
+photos_by_id={entry['id']:entry for entry in photo_entries}
+def photo_figure(photo):
+    return f'<figure><a href="../{e(photo["path"])}" target="_blank" rel="noopener"><img src="../{e(photo["path"])}" width="{photo["width"]}" height="{photo["height"]}" alt="{e(photo["caption"])}" decoding="async"></a><figcaption>{e(photo["caption"])} · <a href="{e(photo["source_url"])}" target="_blank" rel="noopener">图片来源</a>（{e(photo.get("source_date") or "日期未知")}）</figcaption></figure>'
+def merchant_photos(id):
+    entry=photos_by_id[id]
+    if not entry['images']:
+        return '<p class="photo-missing note">暂无已核实的本分店实拍；不以品牌海报或其它分店图代替。</p>'
+    return '<div class="merchant-photos">'+''.join(photo_figure(photo) for photo in entry['images'])+'</div>'
+greenway=json.loads((ROOT/'data/wenyu-greenway-photos.json').read_text())
+greenway_photos='<section id="greenway-photos"><h2>🌳 先看看绿道的样子</h2><p class="note">以下为北京日报2026-09-23清河—温榆河滨水绿道报道实景图。未逐张定位到沈家闸—沙子营闸粉色段，作为区域环境参考；不代表全程无车或当前路况。点击图片可看大图。</p><div class="photo-grid">'+''.join(photo_figure(photo) for photo in greenway if photo['id']!='greenway-1')+'</div></section>'
 cards=[]
 for c in data['candidates']:
     id=c['id']
+    photo_html=merchant_photos(id) if c.get('district_id') else ''
     sources=' · '.join(f'<a href="{e(s["url"])}" target="_blank" rel="noopener">{e(s["publisher"])}</a>（{e(s["source_date"])}；索引抓取 {e(s["crawled_at"])}）' for s in c['sources'])
     cards.append(f'''<article class="merchant" id="{id}">
 <h3>{e(c['name'])}</h3><p class="orange">{e(c['role'])}</p>
 <p><strong>{e(c['rating'])}</strong> · 人均：{e(c['average_cost_per_person'])}</p>
-<p class="alert">{e(c['rank'])}</p><dl><dt>地址</dt><dd>{e(c['address'])}</dd><dt>营业参考</dt><dd>{e(c['opening_hours'])}</dd><dt>吃什么 / 休息</dt><dd>{e('、'.join(c['menu_evidence']))}。{e(c['family_use'])}</dd><dt>空间与停车</dt><dd>{e(c['indoor_seating'])}；{e(c['parking'])}</dd><dt>和骑行区的关系</dt><dd>{e(c['gate_and_parking_relation'])}</dd><dt>用前确认</dt><dd>{e(c['priority'])}。当天营业、座位和实际车程未核；不宣称到店几分钟。</dd></dl>
+<p class="alert">{e(c['rank'])}</p>{photo_html}<dl><dt>地址</dt><dd>{e(c['address'])}</dd><dt>营业参考</dt><dd>{e(c['opening_hours'])}</dd><dt>吃什么 / 休息</dt><dd>{e('、'.join(c['menu_evidence']))}。{e(c['family_use'])}</dd><dt>空间与停车</dt><dd>{e(c['indoor_seating'])}；{e(c['parking'])}</dd><dt>和骑行区的关系</dt><dd>{e(c['gate_and_parking_relation'])}</dd><dt>用前确认</dt><dd>{e(c['priority'])}。当天营业、座位和实际车程未核；不宣称到店几分钟。</dd></dl>
 <a class="action" href="{e(c['sources'][0]['url'])}" target="_blank" rel="noopener">来源原页 ↗</a>{button(c['name'],'地图搜店（核对地址）')}<p class="source">证据：{sources}</p></article>''')
 cardmap = dict(zip([c['id'] for c in data['candidates']], cards))
 groups=[]
@@ -52,7 +66,7 @@ for duration,title,detail in activities:
 assert sum(x[1] for x in rows)==450 and minute==18*60
 schedule=''.join(f'<tr><td>{a}<br><small>{b/60:.2f}h</small></td><td><strong>{c}</strong></td><td>{d}</td></tr>' for a,b,c,d in rows)
 page=(ROOT/'templates/wenyu-cycling.html').read_text()
-page=page.replace('\nLUNCH\n',lunch).replace('NAVPARK',button('北京 沈家闸','地图检索：沈家闸（非停车定位）')).replace('SCHEDULE',schedule).replace('CARDS',''.join(groups)).replace('ROUTE_SOURCE','https://xinwen.bjd.com.cn/content/s6ab3cabae4b0e42f8f00ba4f.html?innerId=1').replace('REPORT',REPORT)
+page=page.replace('GREENWAY_PHOTOS',greenway_photos).replace('\nLUNCH\n',lunch).replace('NAVPARK',button('北京 沈家闸','地图检索：沈家闸（非停车定位）')).replace('SCHEDULE',schedule).replace('CARDS',''.join(groups)).replace('ROUTE_SOURCE','https://xinwen.bjd.com.cn/content/s6ab3cabae4b0e42f8f00ba4f.html?innerId=1').replace('REPORT',REPORT)
 out=ROOT/'pages/wenyu-cycling-wudaokou.html'
 out.write_text(page,encoding='utf-8')
 print(json.dumps({'page':str(out),'merchant_count':len(cards),'schedule_minutes':sum(x[1] for x in rows)},ensure_ascii=False))

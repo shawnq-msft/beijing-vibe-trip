@@ -1,0 +1,104 @@
+[
+  {
+    "id": "nanquan-shisanyi",
+    "images": [
+      {
+        "path": "assets/wenyu-cycling/restaurants/nanquan-shisanyi-1.webp",
+        "source_url": "https://tw.trip.com/restaurant/china/beijing/detail/restaurant-136341522/",
+        "image_url": "https://ak-d.tripcdn.com/images/1me1c12000e5l8gw97A73_D_454_358_R5_Q70.jpg?proc=autoorient",
+        "caption": "新奥购物中心店海鲜砂锅粥实拍：木勺舀起虾仁粥（保留原署名水印）",
+        "width": 454,
+        "height": 358,
+        "verified_branch": true,
+        "source_date": null,
+        "visual_verified": true,
+        "branch_evidence": "Trip.com该分店餐厅详情页标题明确新奥购物中心，来自该店首屏图片画廊；vision确认菜品摄影而非广告"
+      }
+    ],
+    "missing_reason": null
+  },
+  {
+    "id": "yaoyao",
+    "images": [],
+    "missing_reason": "原分店shopshare页受403限制；已改用墙根/携程及图片检索，但未找到可核实鸟巢新奥店的实拍图。已剔除广告。"
+  },
+  {
+    "id": "yujingxuan",
+    "images": [],
+    "missing_reason": "鸟巢新奥店原点评页可读取，但shopPic与官方图库为宣传图，多张已检查用户推荐缩略图为菜单实拍，已剔除；图片搜索未得到该分店可靠替代图。"
+  },
+  {
+    "id": "shuimu-beiyuan",
+    "images": [],
+    "missing_reason": "北苑天街分店页可读取；店图、官方图库、推荐菜菲力牛排和蒜子牛肉均为广告海报，已剔除；图片检索与高德公开页未提供可验证用户实拍。"
+  },
+  {
+    "id": "xita-beiyuan",
+    "images": [
+      {
+        "path": "assets/wenyu-cycling/restaurants/xita-beiyuan-1.webp",
+        "source_url": "https://m.dianping.com/shop/893838766",
+        "image_url": "https://p0.meituan.net/biztone/27ffb059d569fda4ee46561c01f1791b2836367.jpg",
+        "caption": "北苑天街店推荐菜实拍：金色托盘上的雪花纹牛肉片",
+        "width": 5040,
+        "height": 2835,
+        "verified_branch": true,
+        "source_date": null,
+        "visual_verified": true,
+        "branch_evidence": "分店点评页推荐菜单dish890372173对应原图；vision确认实物肉片摄影，非品牌海报"
+      }
+    ],
+    "missing_reason": null
+  },
+  {
+    "id": "meatu-beiyuan",
+    "images": [],
+    "missing_reason": "已存北苑分店点评笔记原页403；WebIQ可读正文但无图片URL。两轮图片检索只返回商场通图和无关米其林餐厅，无法核实具体分店，未采用。"
+  },
+  {
+    "id": "yunli-beiyuan",
+    "images": [],
+    "missing_reason": "已存北苑分店点评笔记原页403；WebIQ正文及城市吧地址页没有可获取的实拍图片URL。两轮图片检索结果均为异地或其他品牌，未采用。"
+  },
+  {
+    "id": "diandachi",
+    "images": [
+      {
+        "path": "assets/wenyu-cycling/restaurants/diandachi-1.webp",
+        "source_url": "https://www.240hoursinchina.com/en-us/beijing/restaurants/dian-dachi-yunnan-cuisine-steam-stone-pot-fish-wangjing-chengying-store",
+        "image_url": "https://aos-comment.amap.com/B0FFHRIH05/comment/36267a702a922e853fdb35498e958792_2048_2048_80.jpg",
+        "caption": "望京诚盈店蒸汽石锅鱼用餐实拍：编织锅罩、蒸汽与配菜",
+        "width": 1500,
+        "height": 2000,
+        "verified_branch": true,
+        "source_date": null,
+        "visual_verified": true,
+        "branch_evidence": "该分店目录原页标题明确Wangjing Chengying Store，主图为高德POI B0FFHRIH05用户图片；vision确认真实用餐场景"
+      }
+    ],
+    "missing_reason": null
+  },
+  {
+    "id": "wanjiangyan",
+    "images": [
+      {
+        "path": "assets/wenyu-cycling/restaurants/wanjiangyan-1.webp",
+        "source_url": "https://m.dianping.com/shop/1617267717",
+        "image_url": "https://p0.meituan.net/dishpic/cb9052d4f194fdb922d0bdc3aa7ad2811994892.jpg",
+        "caption": "来广营西路86号店推荐菜实拍：砂锅蛋饺汤菜",
+        "width": 2000,
+        "height": 1500,
+        "verified_branch": true,
+        "source_date": null,
+        "visual_verified": true,
+        "branch_evidence": "该分店点评页推荐菜单菜链接shop/1617267717/dish948324318绑定此dishpic；vision确认无广告纯菜品摄影"
+      }
+    ],
+    "missing_reason": null
+  },
+  {
+    "id": "beipingshengshi",
+    "images": [],
+    "missing_reason": "来广营店原点评页可读取，但店图、官方图库、三张推荐长图均为带菜名/价格的宣传海报；图片搜索只返回光明桥/中关村等其他分店，未采用。"
+  }
+]

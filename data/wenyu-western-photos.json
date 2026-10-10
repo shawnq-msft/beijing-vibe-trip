@@ -1,0 +1,148 @@
+[
+  {
+    "id": "anku",
+    "images": [
+      {
+        "image_url": "https://lyzz.visitbeijing.com.cn/uploadfile/2023/0104/20230104221458423585.jpg",
+        "width": 600,
+        "height": 450,
+        "path": "assets/wenyu-cycling/restaurants/anku-1.webp",
+        "caption": "安酷荣祥广场813号店室内环境；2022年《旅游》杂志历史实拍，文·图/符轩；来源正文明确荣祥广场813号，视觉核验为实拍",
+        "source_url": "https://lyzz.visitbeijing.com.cn/news/detail?id=24264",
+        "verified_branch": true,
+        "source_date": "2022-12-01"
+      },
+      {
+        "image_url": "https://lyzz.visitbeijing.com.cn/uploadfile/2023/0104/20230104221515918476.jpg",
+        "width": 600,
+        "height": 450,
+        "path": "assets/wenyu-cycling/restaurants/anku-2.webp",
+        "caption": "安酷荣祥广场813号店披萨；2022年《旅游》杂志历史实拍，文·图/符轩；来源正文明确荣祥广场813号，视觉核验为实拍",
+        "source_url": "https://lyzz.visitbeijing.com.cn/news/detail?id=24264",
+        "verified_branch": true,
+        "source_date": "2022-12-01"
+      }
+    ],
+    "missing_reason": ""
+  },
+  {
+    "id": "bellota",
+    "images": [
+      {
+        "source_url": "https://www.trip.com/restaurant/china/beijing/detail/restaurant-144301625/",
+        "image_url": "https://ak-d.tripcdn.com/images/0105w12000fetgizf5303.jpg",
+        "width": 1600,
+        "height": 1067,
+        "source_date": "未标注",
+        "path": "assets/wenyu-cycling/restaurants/bellota-1.webp",
+        "caption": "Bellota荣祥广场店室内餐桌与红墙；原分店页DOM商户图/菜品图，视觉核验为实拍",
+        "verified_branch": true
+      },
+      {
+        "source_url": "https://www.trip.com/restaurant/china/beijing/detail/restaurant-144301625/",
+        "image_url": "https://ak-d.tripcdn.com/images/0104a12000nh1iu8u0598.jpg",
+        "width": 1080,
+        "height": 1440,
+        "source_date": "未标注",
+        "path": "assets/wenyu-cycling/restaurants/bellota-2.webp",
+        "caption": "Bellota荣祥广场店橄榄油爆大虾（来源菜品标签）；原分店页DOM商户图/菜品图，视觉核验为实拍",
+        "verified_branch": true
+      }
+    ],
+    "missing_reason": ""
+  },
+  {
+    "id": "meat-ernest",
+    "images": [
+      {
+        "source_url": "https://www.trip.com/restaurant/china/beijing/detail/meat-by-ernest-44244636/",
+        "image_url": "https://ak-d.tripcdn.com/images/100p14000000wimpu00C9.jpg",
+        "width": 700,
+        "height": 393,
+        "source_date": "未标注",
+        "path": "assets/wenyu-cycling/restaurants/meat-ernest-1.webp",
+        "caption": "MEAT新国展店吧台环境；原分店页DOM商户图/菜品图，视觉核验为实拍",
+        "verified_branch": true
+      },
+      {
+        "source_url": "https://www.trip.com/restaurant/china/beijing/detail/meat-by-ernest-44244636/",
+        "image_url": "https://ak-d.tripcdn.com/images/0103w12000oflzt7b330A.jpg",
+        "width": 1600,
+        "height": 1067,
+        "source_date": "未标注",
+        "path": "assets/wenyu-cycling/restaurants/meat-ernest-2.webp",
+        "caption": "MEAT新国展店西冷牛排（来源菜品标签）；原分店页DOM商户图/菜品图，视觉核验为实拍",
+        "verified_branch": true
+      }
+    ],
+    "missing_reason": ""
+  },
+  {
+    "id": "parkside",
+    "images": [
+      {
+        "source_url": "https://www.visitbeijing.com.cn/article/4R5lTKSrsWW",
+        "image_url": "https://img-rs.visitbeijing.com.cn/imageDir/2fe760108ffcd70e4190b5cc5f3b3f9e.png",
+        "width": 1080,
+        "height": 719,
+        "source_date": "2026-04-09",
+        "path": "assets/wenyu-cycling/restaurants/parkside-1.webp",
+        "caption": "ParkSide祥云店门头与户外餐区；文旅顺义对应店名章节配图，视觉核验为实拍",
+        "verified_branch": true
+      },
+      {
+        "source_url": "https://www.visitbeijing.com.cn/article/4R5lTKSrsWW",
+        "image_url": "https://img-rs.visitbeijing.com.cn/imageDir/57b09482145da0652a12ac4b07332da9.png",
+        "width": 1080,
+        "height": 720,
+        "source_date": "2026-04-09",
+        "path": "assets/wenyu-cycling/restaurants/parkside-2.webp",
+        "caption": "ParkSide祥云店牛排摆盘；文旅顺义对应店名章节配图，视觉核验为实拍",
+        "verified_branch": true
+      }
+    ],
+    "missing_reason": ""
+  },
+  {
+    "id": "fousa",
+    "images": [
+      {
+        "source_url": "https://www.visitbeijing.com.cn/article/4R5lTKSrsWW",
+        "image_url": "https://img-rs.visitbeijing.com.cn/imageDir/58129c8ebe30485e429df10a65cf3191.png",
+        "width": 1067,
+        "height": 1600,
+        "source_date": "2026-04-09",
+        "path": "assets/wenyu-cycling/restaurants/fousa-1.webp",
+        "caption": "弗萨塔可顺义店塔可摆盘；文旅顺义店名章节配图；视觉核验为实拍",
+        "verified_branch": true
+      }
+    ],
+    "missing_reason": "未取得可确认顺义分店的环境照片；原文两张均为菜品，补搜仅见商圈或无关结果，不用异店/商圈图片代替。"
+  },
+  {
+    "id": "luomahu9",
+    "images": [
+      {
+        "source_url": "https://www.visitbeijing.com.cn/article/4R5lTKSrsWW",
+        "image_url": "https://img-rs.visitbeijing.com.cn/imageDir/6e068e584025bbaecc715a0acdcbf794.png",
+        "width": 393,
+        "height": 393,
+        "source_date": "2026-04-09",
+        "path": "assets/wenyu-cycling/restaurants/luomahu9-1.webp",
+        "caption": "罗马湖9号左堤路店夜间门头；文旅顺义对应店名章节配图，视觉核验为实拍",
+        "verified_branch": true
+      },
+      {
+        "source_url": "https://www.visitbeijing.com.cn/article/4R5lTKSrsWW",
+        "image_url": "https://img-rs.visitbeijing.com.cn/imageDir/b5668893923f7d3ecc7ab5b606ad572f.png",
+        "width": 641,
+        "height": 427,
+        "source_date": "2026-04-09",
+        "path": "assets/wenyu-cycling/restaurants/luomahu9-2.webp",
+        "caption": "罗马湖9号左堤路店烤肉摆盘；未确认具体菜名；文旅顺义对应店名章节配图，视觉核验为实拍",
+        "verified_branch": true
+      }
+    ],
+    "missing_reason": ""
+  }
+]
