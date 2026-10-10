@@ -42,8 +42,14 @@ for d in data['districts']:
     for c in d['candidate_ids']:
         assert group.find(id=c),c
 assert len(soup.select('#schedule tbody tr'))==9
-for phrase in ['Bellota','安酷','MEAT by Ernest','ParkSide','弗萨塔可','罗马湖9号','Trip.com','沈家闸','沙子营南路','京密路','往返约10km','野餐垫','水果','零食','自带桌游','分时段开放机动车','具体园名','未知','非GPS轨迹','皖江宴','北平盛世','10:30','15:30—16:45','索引']:
+for phrase in ['Bellota','安酷','MEAT by Ernest','ParkSide','弗萨塔可','罗马湖9号','Trip.com','沈家闸','沙子营闸','粉色段','往返约10km','野餐垫','水果','零食','自带桌游','分时段开放机动车','具体园名','未知','非GPS轨迹','皖江宴','北平盛世','10:30','15:30—16:45','索引']:
     assert phrase in soup.get_text(),phrase
+for selector in ['header','#route','#schedule']:
+    section_text=soup.select_one(selector).get_text()
+    assert '沙子营闸' in section_text, (selector,'missing corrected endpoint')
+    assert '沙子营南路' not in section_text and '京密路方向' not in section_text
+assert soup.select_one('#map img[src="../assets/wenyu-cycling/user-pink-route.webp"]')
+assert '沈家闸—沙子营闸' in index.select_one(f'a.index-card[href="./{PAGE}"]').get_text()
 class Quiet(SimpleHTTPRequestHandler):
     def log_message(self,format,*args):pass
 server=ThreadingHTTPServer(('127.0.0.1',0),partial(Quiet,directory=str(ROOT)))
