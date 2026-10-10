@@ -30,9 +30,19 @@ assert set(newlinks)-oldlinks=={'./'+PAGE}
 assert oldlinks-set(newlinks)==set()
 assert len(newlinks)==len(set(newlinks))
 soup=BeautifulSoup((ROOT/PAGE).read_text(),'html.parser')
-assert len(soup.select('.merchant'))==3
+assert len(soup.select('#merchants .district'))==7, 'Expected seven grouped dining areas including Shunyi Western options'
+assert len(soup.select('.merchant'))>=16, 'Expected expanded dining options'
+data=json.loads((ROOT/'data/wenyu-dining-districts.json').read_text())
+assert len(soup.select('.merchant'))==data['candidate_count']
+assert {c['id'] for c in data['candidates']}=={x['id'] for x in soup.select('.merchant')}
+assert {'wanjiangyan','beipingshengshi','chunhejingming'}.issubset({x['id'] for x in soup.select('.merchant')})
+for d in data['districts']:
+    group=soup.find(id='district-'+d['id'])
+    assert len(group.select('.merchant'))==len(d['candidate_ids'])
+    for c in d['candidate_ids']:
+        assert group.find(id=c),c
 assert len(soup.select('#schedule tbody tr'))==9
-for phrase in ['共享单车','不允许','原点','14公里≠','未知','非GPS轨迹','皖江宴','北平盛世','自带桌游','春和景明','10:30','14:45—15:30','索引','不是口味榜']:
+for phrase in ['Bellota','安酷','MEAT by Ernest','ParkSide','弗萨塔可','罗马湖9号','Trip.com','沈家闸','沙子营南路','京密路','往返约10km','野餐垫','水果','零食','自带桌游','分时段开放机动车','具体园名','未知','非GPS轨迹','皖江宴','北平盛世','10:30','15:30—16:45','索引']:
     assert phrase in soup.get_text(),phrase
 class Quiet(SimpleHTTPRequestHandler):
     def log_message(self,format,*args):pass
@@ -55,9 +65,12 @@ with sync_playwright() as p:
         tab.locator('header a[href="#lunch"]').click();assert tab.evaluate('location.hash')=='#lunch'
         tab.locator('#lunch a[href="#wanjiangyan"]').click();assert tab.evaluate('location.hash')=='#wanjiangyan'
         tab.locator('header a[href="#rest"]').click();assert tab.evaluate('location.hash')=='#rest'
-        assert tab.locator('.merchant').count()==3
+        assert tab.locator('.merchant').count()==data['candidate_count']
+        assert tab.locator('#merchants .district').count()==7
         assert '10:30—11:30' in tab.locator('#schedule').inner_text()
-        assert '14:45—15:30' in tab.locator('#schedule').inner_text()
+        assert '15:30—16:45' in tab.locator('#schedule').inner_text()
+        assert '沈家闸' in tab.locator('#route').inner_text()
+        assert 'P20首选' not in tab.locator('header').inner_text()
         assert '08:30' not in tab.locator('body').inner_text()
         assert not errors,errors
         tab.goto(base+'/'+PAGE,wait_until='networkidle')
@@ -70,4 +83,4 @@ with sync_playwright() as p:
         tab.close()
     browser.close()
 server.shutdown()
-print(json.dumps({'status':'PASS','base':base,'unique_home_cards':len(newlinks),'old_home_cards_preserved':len(oldlinks),'merchant_count':3,'schedule_rows':9,'viewport_checks':results},ensure_ascii=False))
+print(json.dumps({'status':'PASS','base':base,'unique_home_cards':len(newlinks),'old_home_cards_preserved':len(oldlinks),'merchant_count':data['candidate_count'],'schedule_rows':9,'viewport_checks':results},ensure_ascii=False))

@@ -4,9 +4,10 @@ import json
 from html import escape as e
 from urllib.parse import quote
 ROOT = Path(__file__).resolve().parents[1]
-data = json.loads((ROOT/'data/wenyu-late-start-dining.json').read_text())
-assert data['candidate_count'] == len(data['candidates']) == 3
-assert len({x['id'] for x in data['candidates']}) == 3
+data = json.loads((ROOT/'data/wenyu-dining-districts.json').read_text())
+assert data['candidate_count'] == len(data['candidates'])
+assert len({x['id'] for x in data['candidates']}) == data['candidate_count']
+assert len(data['districts']) == 7
 OFFICIAL='https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202608/t20260820_4830458.html'
 REPORT='https://xinwen.bjd.com.cn/content/s6a86ac84e4b0e45f3fd6436a.html'
 def nav(name):
@@ -14,24 +15,34 @@ def nav(name):
 def button(name,label=None):
     return f'<a class="action" href="{e(nav(name))}" target="_blank" rel="noopener">{e(label or name)} ↗</a>'
 cards=[]
-for id in ['wanjiangyan','beipingshengshi','chunhejingming']:
-    c=next(x for x in data['candidates'] if x['id']==id)
+for c in data['candidates']:
+    id=c['id']
     sources=' · '.join(f'<a href="{e(s["url"])}" target="_blank" rel="noopener">{e(s["publisher"])}</a>（{e(s["source_date"])}；索引抓取 {e(s["crawled_at"])}）' for s in c['sources'])
     cards.append(f'''<article class="merchant" id="{id}">
 <h3>{e(c['name'])}</h3><p class="orange">{e(c['role'])}</p>
 <p><strong>{e(c['rating'])}</strong> · 人均：{e(c['average_cost_per_person'])}</p>
 <p class="alert">{e(c['rank'])}</p><dl><dt>地址</dt><dd>{e(c['address'])}</dd><dt>营业参考</dt><dd>{e(c['opening_hours'])}</dd><dt>吃什么 / 休息</dt><dd>{e('、'.join(c['menu_evidence']))}。{e(c['family_use'])}</dd><dt>空间与停车</dt><dd>{e(c['indoor_seating'])}；{e(c['parking'])}</dd><dt>和骑行区的关系</dt><dd>{e(c['gate_and_parking_relation'])}</dd><dt>用前确认</dt><dd>{e(c['priority'])}。当天营业、座位和实际车程未核；不宣称到店几分钟。</dd></dl>
-<a class="action" href="{e(c['sources'][0]['url'])}" target="_blank" rel="noopener">点评原页 ↗</a>{button(c['name'],'地图搜店（核对地址）')}<p class="source">证据：{sources}</p></article>''')
+<a class="action" href="{e(c['sources'][0]['url'])}" target="_blank" rel="noopener">来源原页 ↗</a>{button(c['name'],'地图搜店（核对地址）')}<p class="source">证据：{sources}</p></article>''')
+cardmap = dict(zip([c['id'] for c in data['candidates']], cards))
+groups=[]
+choices=[]
+for d in data['districts']:
+    names=' / '.join(f'<a href="#{cid}">{e(next(c["name"] for c in data["candidates"] if c["id"]==cid))}</a>' for cid in d['candidate_ids'])
+    refs=' · '.join(f'<a href="{e(s["url"])}">位置/停车来源</a>（{e(s["source_date"])}）' for s in d['sources'])
+    groups.append(f'<div class="district" id="district-{d["id"]}"><h3>{e(d["name"])}</h3><p>{e(d["route_note"])}</p><p><strong>落点：</strong>{e(d["anchor"])} · {e(d["address"])}</p><p><strong>停车：</strong>{e(d["parking"])}</p>{button(d["anchor"],"地图搜落点（核对入口）")}<p class="source">{refs}</p>'+''.join(cardmap[cid] for cid in d['candidate_ids'])+'</div>')
+    choices.append(f'<tr><td><a href="#district-{d["id"]}"><strong>{e(d["name"])}</strong></a></td><td>{names}</td><td>{e(d["decision"])}</td></tr>')
+groups.append('<details><summary>历史茶咖备选（不纳入本次下午安排）</summary>'+cardmap['chunhejingming']+'</details>')
+lunch='<section id="lunch"><h2>🍽️ 先选午餐目的地：西餐也认真选</h2><p><strong>一天只去一个商圈、一家餐厅。</strong>新增顺义中央别墅区、同里市集、祥云小镇与罗马湖6家特色西餐；原有奥森、北苑、来广营10家餐厅保留。吃完再自驾到沈家闸，不让孩子骑公共道路去餐厅。</p><table><thead><tr><th>商圈落点</th><th>分店选项</th><th>怎么选</th></tr></thead><tbody>'+''.join(choices)+'</tbody></table><p class="alert"><strong>'+e(data['shortlist'])+'</strong>。罗马湖是目的型绕行，不冒称顺路；导航预估挤占下午，就改选更靠前的午餐节点。没有实测绕行公里数或分钟数。</p><p class="note">新增西餐按特色、菜单、位置和明确标注的平台口碑筛选，未取得点评实时分数的店不挂头部榜。Trip.com少量评论的高分不能等同稳定口碑。原中餐8家有点评评分或细分类榜依据、2家特色待核；缓存均不是当天营业确认。</p></section>'
 activities=[
-(60,'五道口 → 选定午餐店','10:30左右睡饱出发；给自驾与停车预留1小时，非实测车程。'),
-(90,'11:30坐下，好好吃一顿','皖江宴徽菜优先；北平盛世烤鸭备选。只选一家，不串店。'),
-(45,'饭后驾车 → P20/P21','饭后缓一缓再动身；45分钟是接驳缓冲，非导航结果。'),
-(15,'卸车、厕所、确认开放标识','停车区推行；记住原入口、厕所与允许停留的休息区。'),
-(45,'第一段慢骑','沿20号门内现场允许骑行的路段，小环或原路折返。'),
-(45,'坐下休息＋自带桌游','补水点心、UNO或磁吸棋；只在允许停留且不挡路的地方，不保证有桌椅。'),
-(45,'第二段随兴骑','状态好就续骑，想继续桌游就缩短；不刷公里数。'),
-(30,'原入口收车、散步、装车','预留30分钟，不临近关园才找回停车场；天暗或临时管制则提前结束。'),
-(75,'返回五道口','含晚高峰缓冲，约18:00到家是估算，非导航承诺。')]
+(60,'五道口 → 选定午餐店','10:30左右出发；60分钟含停车只是预算。顺义目的地以导航为准，晚出发就选近点或缩短后续骑行。'),
+(90,'午餐／早午餐','安酷、Bellota、MEAT、庭院西餐或原有中餐择一；预约、出餐时长提前问，不串商圈。'),
+(45,'饭后驾车 → 沈家闸附近合法停车点','45分钟仅作接驳预算；不把沈家闸本身视为停车场，泊位与入口尚待核实。'),
+(15,'卸车、如厕、核对通行标识','确认可供儿童骑行的隔离非公共道路空间；不能确认则不按原10km计划骑。'),
+(75,'沈家闸 → 沙子营南路 → 京密路方向 → 原路返回','往返约10km按用户路线目标记录，未核GPS；只走确认允许骑行的滨水段，不上京密路。'),
+(15,'收车、转入周边新公园休息区','具体园名和入口待定；确认可铺垫，必要时先装车再短途自驾，不安排孩子骑公路接驳。'),
+(75,'野餐垫＋水果零食＋自带桌游','15:30—16:45以休息为主；UNO、磁吸棋任选，不再为下午茶专程找咖啡店。'),
+(15,'收垫、装车、垃圾带走','提前收拾，不临近天黑才回头找车。'),
+(60,'返回五道口','约18:00是弹性规划；以光线、天气和实时路况提前返程。')]
 rows=[]
 minute=10*60+30
 for duration,title,detail in activities:
@@ -40,19 +51,8 @@ for duration,title,detail in activities:
     minute=finish
 assert sum(x[1] for x in rows)==450 and minute==18*60
 schedule=''.join(f'<tr><td>{a}<br><small>{b/60:.2f}h</small></td><td><strong>{c}</strong></td><td>{d}</td></tr>' for a,b,c,d in rows)
-page='''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>五道口 → 温榆河｜睡饱出发、特色午餐、下午骑行与桌游</title><meta name="description" content="10:30五道口出发，先吃特色午餐，下午温榆河P20/P21亲子慢骑与自带桌游。附点评索引评分、榜单和来源。"><style>
-:root{--ink:#253d35;--muted:#67786e;--paper:#f5f4ed;--line:#dce4da;--accent:#d65e2f}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.8 system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}main{max-width:1120px;margin:auto;padding:24px}a{color:#236d54;text-underline-offset:3px;overflow-wrap:anywhere}h1{font-size:clamp(30px,5vw,48px);line-height:1.25;margin:15px 0}h2{font-size:26px;line-height:1.4;margin:0 0 18px}h3{font-size:20px;margin:10px 0}p{margin:10px 0}header{padding:30px 0 20px}.eyebrow{font-size:13px;letter-spacing:.16em;color:var(--accent)}.lede{font-size:19px;max-width:820px}.chips,.actions{display:flex;flex-wrap:wrap;gap:9px;margin:18px 0}.chip{padding:4px 12px;border:1px solid var(--line);border-radius:99px;font-size:13px;background:white}.action{display:inline-block;background:#e9efe6;padding:8px 13px;border-radius:9px;text-decoration:none;margin:4px 6px 4px 0;font-size:14px}section{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;margin:20px 0}.gallery{display:grid;grid-template-columns:1.3fr 1fr;gap:18px;padding:0;border:0;background:none}.gallery figure{margin:0}img{display:block;width:100%;height:auto;object-fit:contain;border-radius:14px}.gallery figcaption,.source,.note,small{color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.grid section{margin:0}.alert{border-left:4px solid var(--accent);padding:12px 18px;background:#fff3e8}.orange{color:var(--accent)}table{width:100%;border-collapse:collapse;font-size:15px}td,th{text-align:left;vertical-align:top;padding:13px 10px;border-bottom:1px solid var(--line)}th{color:var(--muted);font-weight:500}td:first-child{min-width:120px}ol,ul{padding-left:22px}li{margin:10px 0}.steps{counter-reset:step}.steps li{padding-bottom:10px}.map{max-width:850px;margin:auto}.merchant{border-top:1px solid var(--line);padding:25px 0;scroll-margin-top:15px}.merchant:last-child{padding-bottom:0}dl{display:grid;grid-template-columns:125px 1fr;gap:8px 18px;font-size:15px}dt{color:var(--muted)}dd{margin:0}.route-flow{display:flex;gap:9px;flex-wrap:wrap;align-items:center;padding:18px;background:#eef3ec;border-radius:12px}.route-flow span{background:white;padding:9px 13px;border:1px solid var(--line);border-radius:9px}details summary{cursor:pointer;color:#236d54;font-weight:600}.foot{padding:20px 0;font-size:13px;color:var(--muted)}@media(max-width:680px){main{padding:15px}.gallery,.grid{grid-template-columns:1fr}section{padding:20px}header{padding-top:16px}dl{grid-template-columns:1fr;gap:2px}dd{margin-bottom:12px}td,th{padding:10px 6px;font-size:13px}td:first-child{min-width:85px}.lede{font-size:17px}}
-</style></head><body><main><a href="../index.html">← 北京周末出行 · vibe trip</a><header><div class="eyebrow">WENYU RIVER · FAMILY CYCLING · 2026.10</div><h1>睡饱了，先好好吃饭。<br>下午骑一段，玩一局。</h1><p class="lede">五道口晚出发 → 来广营特色午餐／北苑茶咖早午餐 → 温榆河P20/P21 → 两段慢骑，中间桌游。餐厅只选一家，不赶早、不刷里程。</p><div class="chips"><span class="chip">P20首选 · P21备用</span><span class="chip">10:30—18:00 · 弹性策划</span><span class="chip">亲子慢骑 · 分两段</span><span class="chip">资料核对：2026-10-10</span></div><div class="actions"><a class="action" href="#route">先看骑法</a><a class="action" href="#lunch">选午餐／早午餐</a><a class="action" href="#rest">桌游休息</a><a class="action" href="#map">看开放地图</a><a class="action" href="#merchants">查店址与来源</a></div></header>
-<section class="gallery"><figure><img src="../assets/wenyu-cycling/report-2.webp" width="1920" height="1368" alt="北京日报报道配图：林荫路上的骑行队伍"><figcaption>林荫骑行氛围参考。<a href="REPORT">北京日报，2026-08-20，记者胡子傲</a>；报道未标明照片具体门区，不作为P20实拍证明。</figcaption></figure><figure><img src="../assets/wenyu-cycling/report-3.webp" width="802" height="527" alt="报道配图：水边建筑旁的骑行者"><figcaption>同一报道配图。建筑并未明确为某家咖啡馆，不据照片认店或规划路线。</figcaption></figure></section>
-<div class="grid"><section><h2>一张行程卡</h2><table><tr><th>出发 / 自驾</th><td>五道口 → 选定餐厅 → 北京温榆河公园-P20停车场。去餐厅预留1h、饭后接驳预留45分钟（均非实测）；道路距离和拥堵以当天导航为准。</td></tr><tr><th>骑行主线</th><td>20号门 → 该入口内允许骑行的小环或折返段 → 同一入口 → P20。P21只作换起点方案，不强行骑行串联。</td></tr><tr><th>距离 / 强度</th><td>不设必达里程；两段各约45分钟，中间留45分钟桌游，第二段可缩短或取消。只重复现场确认安全的小环或原路折返，准确长度及爬升未知。</td></tr><tr><th>装备 / 费用</th><td>自带普通自行车与儿童车、头盔。开放绿道免费免预约；停车收费未知；餐饮另计。</td></tr><tr><th>适合谁</th><td>能稳定刹车、转弯的亲子家庭；儿童只在允许的园内绿道骑，监护人全程陪同。</td></tr></table></section><section><h2>这条线为什么这样走</h2><p>温榆河公园体量大，但不是所有园区都允许自行车进入。<a href="OFFICIAL">北京市政府转载报道（2026-08-20）</a>确认：新开放<strong>8段、共14公里，分布在3个片区</strong>，并有环绿地和环湖的小环线。</p><p>从五道口来，不追全园打卡，选来广营片区就能把时间留给林荫、湿地和慢骑；大人前后照应，孩子累了随时收车。</p><p class="alert"><strong>14公里≠P20一条连续环线。</strong>18、20、21、22、23号门都是该片区入口，但各段之间的骑行连通性未核，不设计“20→21→23”穿越。</p><p>先在北苑／来广营吃饭，再开车进园；骑行与休息都放在下午。自带桌游、水和点心，不把休息绑定一间咖啡店；孩子不骑公共道路追店。</p></section></div>
-<section id="route"><h2>🚲 主线：原点收车，两段慢骑</h2><div class="route-flow" aria-label="行程逻辑示意，非地理比例地图"><span>五道口晚出发</span>→<span>自驾吃午餐</span>→<span>P20 / P21</span>→<span>园内慢骑</span>→<span>桌游休息</span>↺<span>原点装车返家</span></div><p class="note">以上为行程逻辑示意，非GPS轨迹；不提供未经核实的转弯点或虚构GPX。</p><ol class="steps"><li><strong>先找停车场，不搜笼统“温榆河公园”。</strong>导航P20，满位才改P21；确认入口当天允许自带普通车和儿童车。停车区先推行，拍下车位、入口导览和厕所位置。</li><li><strong>从20号门进入，当场确认开放小环。</strong>沿明确允许骑行的园路慢骑；遇到无标识岔路、封闭、木栈道或公共道路接口，就在安全处折返。不能用地图上相邻的粉线猜连通。</li><li><strong>第一段45分钟，停45分钟玩桌游。</strong>以熟悉路面与刹车为主，休息点选不挡通行的合法停留处。湿地只远观，不涉水、不贴河岸骑。</li><li><strong>第二段45分钟，回同一入口。</strong>体力好可重复已经确认的小环；人多、风大或还想玩桌游，就缩短或取消第二段。计划16:15结束骑行，按当天关园时刻、光线和天气提前收车，不延到天黑。</li><li><strong>备选P21出发也执行同一原则。</strong>P21 → 21号门内现场开放段 → 原点返回。若两处均限行，改步行短游或室内桌游，不换到公共道路骑行。</li></ol><div>NAVPARK</div><p class="note">按钮是高德关键词检索入口，非已锁定坐标或实测路线。核对“北京／来广营／P20或P21”，勿误选P2、P9。</p></section>
-<section id="map"><h2>开放边界：看原图，不猜路线</h2><p><a href="OFFICIAL">官方转载</a>列来广营入口<strong>18、20、21、22、23号门</strong>，配套<strong>P20或P21</strong>；原报道中粉色虚线为开放骑行区域。左下方为本次选择的片区。</p><figure class="map"><a href="../assets/wenyu-cycling/report-1.webp"><img src="../assets/wenyu-cycling/report-1.webp" width="1920" height="1590" alt="北京日报2026年8月开放骑行区域原图，粉色虚线，左下为18至23号入口" loading="lazy"></a><figcaption class="source">点图查看大图 · <a href="REPORT">北京日报客户端原报道配图</a>。编号是入口，停车场依据报道正文；图上无法确认20与21/22小环的内部连通关系。2026年8月开放信息不保证每个出行日都无临时管制。</figcaption></figure></section>
-<section id="lunch"><h2>🍽️ 先吃好：两家特色正餐＋一间茶咖备选</h2><p><strong>默认11:30坐下吃午餐：</strong>不用为了“早午餐”硬找西式brunch。先把早餐和午餐合成一顿好饭，再把下午留给骑行。想吃扎实特色菜选A，重视口味榜和孩子接受度选B。</p><table><thead><tr><th>方案</th><th>吃什么 / 为什么选</th><th>适配与边界</th></tr></thead><tbody><tr><td><strong>A · 特色徽菜</strong><br>1.5h</td><td><a href="#wanjiangyan">皖江宴（来广营店）</a>：臭鳜鱼、安庆老鸡汤、脆皮乳鸽。大人尝特色，孩子有较温和的选择。</td><td>来广营西路86号。点评索引4.7、人均约149元；朝阳区徽菜<strong>环境榜第10</strong>，不是口味榜。历史午市11:00—14:00，需确认当日营业。</td></tr><tr><td><strong>B · 北京烤鸭</strong><br>1.5h</td><td><a href="#beipingshengshi">北平盛世（望京·来广营店）</a>：盛世牡丹烤鸭、贝勒爷烤肉、乾隆白菜。</td><td>来广营西路2号院3号楼。点评索引4.8、人均约88元；<strong>望京烤鸭口味榜第1</strong>。问清烤鸭等候与停车，勿套用其他分店时段。</td></tr><tr><td><strong>C · 茶咖＋披萨</strong><br>1.5h</td><td><a href="#chunhejingming">春和景明（北苑铁建店）</a>：披萨、纯素三明治、茶咖；更适合想坐得松弛的早午餐或骑后茶歇。</td><td>点评索引4.7、人均约62元；北苑家园咖啡<strong>环境榜第2</strong>。完整门牌、11:30供餐、包间低消和桌游许可未知，确认后再选，不能作为已落实地点。</td></tr></tbody></table><p class="note">评分、榜单和人均来自2026-10检索到的点评公开索引快照，并非实时App；三种榜单口径不同，不能直接互比。具体数据与来源在页末。</p></section>
-<section id="rest"><h2>🎲 下午留一大段，休息也算主节目</h2><p><strong>默认14:45—15:30：</strong>骑一段就停下来，喝水、吃点心、玩自带UNO或磁吸棋。桌游可以继续，第二段骑行可以缩短；不把一天变成刷里程任务。</p><ul><li><strong>户外安排：</strong>在现场允许的休息区坐下，带坐垫、小块硬板或便携桌前先确认园方规则。不保证固定桌椅或草坪开放，不占骑行道，不在河岸边摆桌。</li><li><strong>有风就收牌：</strong>磁吸棋比轻纸牌省心；纸牌用收纳盒防飞散，垃圾带走。</li><li><strong>室内替代，而非硬加一站：</strong>风大或太冷时缩短骑行，回原停车场装车，再去已电话确认允许自带桌游的茶咖。春和景明只是候选，店里是否提供桌游、能否久坐均未知。</li></ul><p class="note">不把示范区Double U咖啡当作P20/P21沿线补给；本次不为喝咖啡专程跨园。园内厕所与休息区到场按导览确认。</p></section>
-<section id="schedule"><h2>一天节奏｜10:30左右出发，下午为主</h2><p class="note">以下7.5h是弹性规划，不是实时导航或预约承诺。午餐只选一家。若11:30才出门，则约12:30午餐、14:30后进园，缩短骑行但保留桌游；不要整表后移导致天黑收车。</p><table><thead><tr><th>时间 / 时长</th><th>做什么</th><th>落地动作</th></tr></thead><tbody>SCHEDULE</tbody></table></section>
-<section><h2>出发前的四件事</h2><ul><li><strong>准入：</strong>报道明确不允许共享单车、电动车、助力车、滑板、轮滑、成人滑板车和平衡车进入。自带普通自行车与合适的儿童自行车，不押宝现场租车。</li><li><strong>孩子不上公共道路：</strong>未满12岁不能在公共道路骑自行车，家长陪同也不例外（<a href="https://m.bjnews.com.cn/detail/1723636174129786.html">新京报，2024-08-14</a>）。停车区推行，跨片区用汽车，园内也须确认允许骑行、避让行人并控制速度。</li><li><strong>装备与天气：</strong>检查刹车、胎压、链条；全员头盔，带水、点心、补胎工具、薄外套。出行日未指定，本页不预报天气；临行查看北京气象预警与园方公告，雷雨、大风或积水改期。</li><li><strong>补给与午餐：</strong>厕所以现场导览／工作人员确认为准，未核到稳定营业的P20/P21沿线补给店。起床后先查午餐店营业、座位、停车入口和车架限高；不要空腹到园后再找饭。带足水和点心，桌游自备，餐厅不提供桌游的情况也能按计划休息。</li></ul><p class="note">为什么不推荐P9泵道作为本次主线：这是另一项目与片区，不等于新开放绿道。为什么不串三大片区：路线连通未核、跨路接驳增加亲子风险，也挤占午饭和休息。</p></section>
-<section id="merchants"><h2>🍽️ 点评信息卡｜特色正餐与茶咖备选</h2><p class="note">以下评分、人均和细分类榜单来自大众点评公开索引，不是登录App实时数据。环境榜≠口味榜，到店数≠评论量；近期差评样本、团购价格、包间低消未核，不编造。排序是行程适配建议，正文链接可复核。</p>CARDS</section><p class="foot">资料核对：2026-10-10 · 骑行开放证据：2026-08-20 · 当天开放与商户营业需临行复核。<br><a href="../data/wenyu-late-start-dining.json">餐饮研究记录 JSON</a> · <a href="../data/wenyu-official-source.json">开放报道存档</a> · <a href="../index.html">返回路线首页</a></p></main></body></html>'''
-page=page.replace('NAVPARK',button('北京温榆河公园 P20停车场','导航检索：P20首选')+button('北京温榆河公园 P21停车场','导航检索：P21备用')).replace('SCHEDULE',schedule).replace('CARDS',''.join(cards)).replace('OFFICIAL',OFFICIAL).replace('REPORT',REPORT)
+page=(ROOT/'templates/wenyu-cycling.html').read_text()
+page=page.replace('\nLUNCH\n',lunch).replace('NAVPARK',button('北京 沈家闸','地图检索：沈家闸（非停车定位）')).replace('SCHEDULE',schedule).replace('CARDS',''.join(groups)).replace('ROUTE_SOURCE','https://xinwen.bjd.com.cn/content/s6ab3cabae4b0e42f8f00ba4f.html?innerId=1').replace('REPORT',REPORT)
 out=ROOT/'pages/wenyu-cycling-wudaokou.html'
 out.write_text(page,encoding='utf-8')
 print(json.dumps({'page':str(out),'merchant_count':len(cards),'schedule_minutes':sum(x[1] for x in rows)},ensure_ascii=False))
