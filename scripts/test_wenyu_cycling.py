@@ -30,9 +30,9 @@ assert set(newlinks)-oldlinks=={'./'+PAGE}
 assert oldlinks-set(newlinks)==set()
 assert len(newlinks)==len(set(newlinks))
 soup=BeautifulSoup((ROOT/PAGE).read_text(),'html.parser')
-assert len(soup.select('.merchant'))==4
+assert len(soup.select('.merchant'))==3
 assert len(soup.select('#schedule tbody tr'))==9
-for phrase in ['共享单车','不允许','原点','14公里≠','未知','非GPS轨迹','眉州东坡','红太阳','自带野餐','Double U']:
+for phrase in ['共享单车','不允许','原点','14公里≠','未知','非GPS轨迹','皖江宴','北平盛世','自带桌游','春和景明','10:30','14:45—15:30','索引','不是口味榜']:
     assert phrase in soup.get_text(),phrase
 class Quiet(SimpleHTTPRequestHandler):
     def log_message(self,format,*args):pass
@@ -53,7 +53,12 @@ with sync_playwright() as p:
         assert checks['scroll']<=width,checks
         assert all(i['ok'] and i['ratio'] for i in checks['images']),checks
         tab.locator('header a[href="#lunch"]').click();assert tab.evaluate('location.hash')=='#lunch'
-        tab.locator('#lunch a[href="#meizhou-beiyuan-huamao"]').click();assert tab.evaluate('location.hash')=='#meizhou-beiyuan-huamao'
+        tab.locator('#lunch a[href="#wanjiangyan"]').click();assert tab.evaluate('location.hash')=='#wanjiangyan'
+        tab.locator('header a[href="#rest"]').click();assert tab.evaluate('location.hash')=='#rest'
+        assert tab.locator('.merchant').count()==3
+        assert '10:30—11:30' in tab.locator('#schedule').inner_text()
+        assert '14:45—15:30' in tab.locator('#schedule').inner_text()
+        assert '08:30' not in tab.locator('body').inner_text()
         assert not errors,errors
         tab.goto(base+'/'+PAGE,wait_until='networkidle')
         tab.screenshot(path=f'/tmp/wenyu-{width}.png',full_page=True)
@@ -65,4 +70,4 @@ with sync_playwright() as p:
         tab.close()
     browser.close()
 server.shutdown()
-print(json.dumps({'status':'PASS','base':base,'unique_home_cards':len(newlinks),'old_home_cards_preserved':len(oldlinks),'merchant_count':4,'schedule_rows':9,'viewport_checks':results},ensure_ascii=False))
+print(json.dumps({'status':'PASS','base':base,'unique_home_cards':len(newlinks),'old_home_cards_preserved':len(oldlinks),'merchant_count':3,'schedule_rows':9,'viewport_checks':results},ensure_ascii=False))
