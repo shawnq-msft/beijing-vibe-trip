@@ -1,0 +1,28 @@
+{
+  "base": "http://127.0.0.1:18778",
+  "revision": "916d5a3b19a65ddc",
+  "exact_html_sha256": "394d80aa5399e48beaa32a3ebe69b9716358fbfb99dfa6eb3cb0e9bbefa3dad2",
+  "local_http_links": 9,
+  "source_citations": 42,
+  "schools": 8,
+  "itinerary_days": 12,
+  "price_arithmetic": "passed",
+  "existing_cards_preserved": 27,
+  "new_card": "pages/spring-festival-2027-hokkaido-ski-onsen.html",
+  "responsive": [
+    {
+      "width": 390,
+      "new_page_images": 2,
+      "overflow": false,
+      "hero_plan_links": 0,
+      "js_errors": []
+    },
+    {
+      "width": 1440,
+      "new_page_images": 2,
+      "overflow": false,
+      "hero_plan_links": 0,
+      "js_errors": []
+    }
+  ]
+}

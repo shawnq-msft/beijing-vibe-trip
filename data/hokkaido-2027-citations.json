@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://rusutsu.com/en/kids-ski-lessons",
+      "title": "Kid’s Ski Lessons - Rusutsu Resort Hokkaido Japan",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 2,
+      "url": "https://fiss.jp",
+      "title": "Ski School Furano FISS",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 3,
+      "url": "https://fiss.jp/ski_lessons.html",
+      "title": "Ski Lessons",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 4,
+      "url": "https://hanazononiseko.com/en/winter/ski-school/group",
+      "title": "Hanazono Niseko | NISS Group Lesson",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 5,
+      "url": "https://www.gosnowniseko.com/lessons/yama-riders",
+      "title": "Yama Riders | GoSnow Niseko",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 6,
+      "url": "https://www.hko.gov.hk/en/Observatorys-Blog/109092/No-Lunar-New-Year%E2%80%99s-Eve-on-the-30th-Day-for-Five-Consecutive-Years",
+      "title": "No Lunar New Year’s Eve on the 30th Day for Five Consecutive Years｜Hong Kong Observatory(HKO)｜Observatory's Blog",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 7,
+      "url": "https://www.snowfes.com/news/948.html",
+      "title": "2027さっぽろ雪まつり（第77回）の開催概要について - News - さっぽろ雪まつり",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 8,
+      "url": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=14&block_no=47412&year=&month=&day=&view=",
+      "title": "気象庁｜過去の気象データ検索",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 9,
+      "url": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "title": "気象庁｜過去の気象データ検索",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 10,
+      "url": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=16&block_no=47433&year=&month=&day=&view=",
+      "title": "気象庁｜過去の気象データ検索",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 11,
+      "url": "https://fiss.jp/faqs.html",
+      "title": "FAQs",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 12,
+      "url": "https://www.gosnowniseko.com/faq",
+      "title": "FAQ | GoSnow Niseko",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 13,
+      "url": "https://www.spfurano.com/en/furanosnowschool.html",
+      "title": "Furano Snow School,Ski and Snowboard School//Sportpia Furano",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 14,
+      "url": "https://rhythmjapan.com/winter-lessons-programs/niseko-futures-camp",
+      "title": "Ski & Snowboard kids Lessons in Niseko | Rhythm Japan",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 15,
+      "url": "https://www.edventureniseko.com/winter-camp/overview",
+      "title": "Kids Winter Club | EdVenture Niseko",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 16,
+      "url": "https://www.edventureniseko.com/winter-camp/faq",
+      "title": "Winter Camp FAQ | EdVenture Niseko",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 17,
+      "url": "https://chaseforsnow.com/lessons-niseko",
+      "title": "二世谷滑雪教練推薦｜北海道私人課程價格-追雪滑雪學校",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 18,
+      "url": "https://rusutsu.com/en/ski-rentals",
+      "title": "Ski Rental - Rusutsu Resort Hokkaido Japan",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 19,
+      "url": "https://www.spfurano.com/en/rentalski.html",
+      "title": "Rental Ski and Snowboard,Furano Ski Resort//Sportpia Furano",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 20,
+      "url": "https://hanazononiseko.com/en/winter/rental-and-retail/rental-niseko-sports",
+      "title": "Hanazono Niseko | Niseko Sports - Rental",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 21,
+      "url": "https://rusutsu.com/en/onsen-wellness/kotobukinoyu",
+      "title": "Rusutsu Onsen Kotobuki - Rusutsu Resort Hokkaido Japan",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 22,
+      "url": "https://rusutsu.com/en/winter-activities/nature-tour-w",
+      "title": "Nature Tours - Rusutsu Resort Hokkaido Japan",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 23,
+      "url": "https://rusutsu.com/en/onsen-wellness/indoor-pool=",
+      "title": "Indoor Wave Pool - Rusutsu Resort Hokkaido Japan",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 24,
+      "url": "https://www.princehotels.com/shinfurano/restaurants/mori-no-tokei-forest-clock-cafe",
+      "title": "Mori no Tokei Café , Restaurant - Shin Furano Prince Hotel",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 25,
+      "url": "https://www.princehotels.com/shinfurano/facilities/ningle-terrace-shop",
+      "title": "Ningle Terrace (Shop) - Shin Furano Prince Hotel",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 26,
+      "url": "https://www.princehotels.com/shinfurano/facilities/furano-hot-spring",
+      "title": "Furano Hot Spring \"Shisai no Yu\" - Shin Furano Prince Hotel",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 27,
+      "url": "https://www.biei-hokkaido.jp/ja/27188",
+      "title": "✨ 夜の美瑛で、光めぐり｜青い池・白ひげの滝・ビルケの森ライトアップ :: 一般社団法人 美瑛町観光協会",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 28,
+      "url": "https://www.biei-hokkaido.jp/ja/27178",
+      "title": "通行止めのお知らせ :: 一般社団法人 美瑛町観光協会",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 29,
+      "url": "https://www.biei-hokkaido.jp/ja/27142",
+      "title": "冬期閉鎖のお知らせ :: 一般社団法人 美瑛町観光協会",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 30,
+      "url": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/event.html",
+      "title": "旭川市 旭山動物園 イベント",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 31,
+      "url": "https://asahikawa-kagu.or.jp",
+      "title": "旭川家具ブランドサイト - 旭川家具工業協同組合",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 32,
+      "url": "https://hanazononiseko.com/en/winter/activities/snowshoe-tour",
+      "title": "Hanazono Niseko | Snowshoe Tour",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 33,
+      "url": "https://hanazononiseko.com/en/winter/activities/snowshoe-tour-dx",
+      "title": "Hanazono Niseko | DIAMOND X Private Snowshoe Tour",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 34,
+      "url": "http://hirafutei.info/hotspring",
+      "title": "温泉 | 【公式サイト】湯元ニセコプリンスホテルひらふ亭",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 35,
+      "url": "http://www.toyako-vc.jp",
+      "title": "支笏洞爺国立公園　洞爺湖ビジターセンター",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 36,
+      "url": "https://noboribetsu-spa.jp/spot/spot0055",
+      "title": "大湯沼 – 一般社団法人 登別国際観光コンベンション協会",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 37,
+      "url": "https://rusutsu.com/en/access-shuttle-bus-new-chitose-airport",
+      "title": "Access - New Chitose Airport ⇔ Rusutsu (BIGRUNS BUS)",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 38,
+      "url": "https://www.access-n.jp/winter2026/en/skibus/detail/101chitose_rusutsu_niseko.html",
+      "title": "New Chitose Airport⇔Rusutsu/Niseko｜SKI BUS｜Hokkaido Access Network Co.,Ltd",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 39,
+      "url": "https://www.access-n.jp/winter2026/en/skibus/detail/furano_rusutsu_niseko.html",
+      "title": "Furano⇔Rusutsu/Niseko｜SKI BUS｜Hokkaido Access Network Co.,Ltd",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 40,
+      "url": "https://furanobus.jp/lavender/index.html",
+      "title": "路線バス – ふらのバス株式会社",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 41,
+      "url": "https://www.police.pref.hokkaido.lg.jp/guide/menkyo/gai_menkyo-kirikae.html",
+      "title": "外国の運転免許を日本の運転免許に切り替えたい方",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": 42,
+      "url": "https://hokkaido-safe-travel.mlit.go.jp/images/pdf/winter_drive_eng.pdf",
+      "title": "winterdrive",
+      "accessed": "2026-10-26"
+    }
+  ]
+}

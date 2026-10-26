@@ -1,0 +1,24 @@
+[
+  {
+    "file": "assets/hokkaido-2027/winter.webp",
+    "source_page": "https://rusutsu.com/en/rusutsu-in-winter/",
+    "image_url": "https://rusutsu.com/wp-content/uploads/rusutsu-in-winter-img02.jpg",
+    "alt": "RUSUTSU POWDER",
+    "size": [
+      748,
+      451
+    ],
+    "status": "official promotional photo, not target-date operating proof"
+  },
+  {
+    "file": "assets/hokkaido-2027/onsen.webp",
+    "source_page": "https://rusutsu.com/en/onsen-wellness/",
+    "image_url": "https://rusutsu.com/wp-content/uploads/onsen-winter-main.jpg",
+    "alt": "ONSEN & WELLNESS",
+    "size": [
+      1440,
+      620
+    ],
+    "status": "official promotional photo, not target-date operating proof"
+  }
+]
