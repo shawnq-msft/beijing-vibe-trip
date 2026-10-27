@@ -1,0 +1,227 @@
+{
+  "as_of": "2026-10-27",
+  "party": {
+    "adults": 2,
+    "children": 1,
+    "child_age": 10,
+    "rooms": 1,
+    "status": "预算比较假设；未确认是否有老人同行"
+  },
+  "currency": "CNY",
+  "status": "实时搜索列表快照，未预订；机票未到选定返程/最终确认页",
+  "quotes": {
+    "flight8": {
+      "amount_cny": 12585,
+      "kind": "flight",
+      "title": "Trip.com 北京—新千岁 1/30—2/6 往返列表",
+      "start": "2027-01-30",
+      "end": "2027-02-06",
+      "room_or_route": "国泰；去程 PEK 07:30—CTS 17:50，香港转机，总时长9h20",
+      "notes": "3位旅客查询的往返列表合计；不是成人单价×3。返程航班、托运和最终税费尚未进入选定返程/确认页核实。",
+      "eligible": true,
+      "source_id": 55,
+      "snapshot": "flight-jan30-feb06-final",
+      "evidence_needle": "Round-trip price: CNY 12,585"
+    },
+    "flight9": {
+      "amount_cny": 11089,
+      "kind": "flight",
+      "title": "Trip.com 北京—新千岁 1/29—2/6 往返列表",
+      "start": "2027-01-29",
+      "end": "2027-02-06",
+      "room_or_route": "国泰；去程 PEK 03:25—CTS 16:00，香港转机，总时长11h35",
+      "notes": "红眼出发；3人往返列表合计，返程航班与行李未锁定。不能与8天早班样本视为同等舒适度。",
+      "eligible": true,
+      "source_id": 56,
+      "snapshot": "flight-jan29-feb06-complete",
+      "evidence_needle": "Round-trip price: CNY 11,089"
+    },
+    "flight9_low": {
+      "amount_cny": 9882,
+      "kind": "flight",
+      "title": "Trip.com 北京—新千岁 1/29—2/6 往返列表",
+      "start": "2027-01-29",
+      "end": "2027-02-06",
+      "room_or_route": "国泰；去程 PEK 03:25—CTS 17:50，总时长13h25",
+      "notes": "低价代价是凌晨出发＋长中转；不作为主预算。",
+      "eligible": false,
+      "source_id": 56,
+      "snapshot": "flight-jan29-feb06-complete",
+      "evidence_needle": "Round-trip price: CNY 9,882"
+    },
+    "flight12": {
+      "amount_cny": 14371,
+      "kind": "flight",
+      "title": "Trip.com 北京—新千岁 1/31—2/11 往返列表",
+      "start": "2027-01-31",
+      "end": "2027-02-11",
+      "room_or_route": "国泰；去程 PEK 03:25—CTS 14:50，香港转机，总时长10h25",
+      "notes": "红眼出发；原12天方案的机票样本，未凑齐相同住宿组合，不能给出精确机酒节省额。",
+      "eligible": true,
+      "source_id": 57,
+      "snapshot": "flight-jan31-feb11-loaded",
+      "evidence_needle": "Round-trip price: CNY 14,371"
+    },
+    "flight_early": {
+      "amount_cny": 14622,
+      "kind": "flight",
+      "title": "Trip.com 北京—新千岁 1/23—1/30 往返列表",
+      "start": "2027-01-23",
+      "end": "2027-01-30",
+      "room_or_route": "ANA；去程 PEK 08:25—CTS 16:35，东京转机，总时长7h10",
+      "notes": "提前一周的日间、非大陆航司样本；不证明全市场最低价。更低的4,267元/人样本含国航＋Jin Air联运，不按用户偏好作为首选。",
+      "eligible": true,
+      "source_id": 58,
+      "snapshot": "flight-jan23-30-retry",
+      "evidence_needle": "Round-trip price: CNY 14,622"
+    },
+    "ski4": {
+      "amount_cny": 16222,
+      "kind": "hotel",
+      "title": "Trip.com 新富良野王子 1/31—2/4",
+      "start": "2027-01-31",
+      "end": "2027-02-04",
+      "room_or_route": "Standard Twin Room with Mt.Tokachi View and Sofabed Non smoking；2单人床＋1沙发床，4晚",
+      "notes": "2成人＋1名10岁儿童；不含早；12/31前可取消、线上预付。含税列表合计，第三张沙发床铺设和地方附加费须最终确认。含3早餐版本为17,640元，不混用。",
+      "eligible": true,
+      "source_id": 59,
+      "snapshot": "hotel-furano-jan31-feb04",
+      "evidence_needle": "CNY 16,222"
+    },
+    "city1": {
+      "amount_cny": 1718,
+      "kind": "hotel",
+      "title": "Trip.com 札幌格兰 1/30—1/31",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "room_or_route": "[Grand Classic]Superior Twin Room/3 People Use；2小双人床＋1单人床，禁烟，1晚",
+      "notes": "不含早、不退款、线上预付，Silver Tier Deal；含税列表合计。可取消版本1,826元。",
+      "eligible": true,
+      "source_id": 60,
+      "snapshot": "hotel-grand-jan30-31",
+      "evidence_needle": "CNY 1,718"
+    },
+    "city2start": {
+      "amount_cny": 3158,
+      "kind": "hotel",
+      "title": "Trip.com 札幌格兰 1/29—1/31",
+      "start": "2027-01-29",
+      "end": "2027-01-31",
+      "room_or_route": "[Grand Classic]Superior Twin Room/3 People Use；2小双人床＋1单人床，禁烟，2晚",
+      "notes": "与city1同房型、不含早、线上预付；该卡未清晰列出取消截止，需确认；不是单晚乘2。",
+      "eligible": true,
+      "source_id": 61,
+      "snapshot": "hotel-grand-jan29-31",
+      "evidence_needle": "CNY 3,158"
+    },
+    "city2end": {
+      "amount_cny": 7392,
+      "kind": "hotel",
+      "title": "Trip.com 札幌京王广场 2/4—2/6",
+      "start": "2027-02-04",
+      "end": "2027-02-06",
+      "room_or_route": "Standard Triple Room；3张单人床，禁烟，2晚",
+      "notes": "不含早；2/2前可取消、线上预付、33% Special Discount；含税列表合计。含3早餐版本8,158元。排除下方Select multiple rooms区不满足全组的单房价。",
+      "eligible": true,
+      "source_id": 62,
+      "snapshot": "hotel-keio-feb04-06",
+      "evidence_needle": "CNY 7,392"
+    },
+    "westin4": {
+      "amount_cny": 32856,
+      "kind": "hotel",
+      "title": "Trip.com 留寿都威斯汀 1/31—2/4",
+      "start": "2027-01-31",
+      "end": "2027-02-04",
+      "room_or_route": "Standard 3 Single beds 1 bedroom two-story；3张小双人床，4晚",
+      "notes": "不含早；1/1前可取消，可到店付；页面标Children stay for free，但本房3张床，不拿双床免费同睡价当三床价。非富良野同地替换，课程接驳须重报。",
+      "eligible": true,
+      "source_id": 63,
+      "snapshot": "hotel-westin-jan31-feb04",
+      "evidence_needle": "CNY 32,856"
+    },
+    "rusutsu_unresolved": {
+      "amount_cny": 57648,
+      "kind": "hotel",
+      "title": "Trip.com 留寿都 Resort Hotel 1/31—2/4",
+      "start": "2027-01-31",
+      "end": "2027-02-04",
+      "room_or_route": "Standard Twin Room 2 Occupanacy；2张单人床，4晚",
+      "notes": "虽然搜索为2大1小且套餐列3早餐，房名明确2 Occupancy、未证第三床。排除出合法三人机酒预算；不是酒店正常价或不可订结论。",
+      "eligible": false,
+      "source_id": 64,
+      "snapshot": "hotel-rusutsu-jan31-feb04",
+      "evidence_needle": "CNY 57,648"
+    },
+    "early_ski_unmatched": {
+      "amount_cny": 41292,
+      "kind": "hotel",
+      "title": "Trip.com 新富良野王子 1/24—1/28",
+      "start": "2027-01-24",
+      "end": "2027-01-28",
+      "room_or_route": "Corner Suite Non Smoking；2单人床，4晚",
+      "notes": "仅见套房样本，未证第三床，不计总预算；不能与后周双床加沙发床作同房型涨跌比较。",
+      "eligible": false,
+      "source_id": 65,
+      "snapshot": "hotel-furano-jan24-28",
+      "evidence_needle": "CNY 41,292"
+    },
+    "early_city": {
+      "amount_cny": 4086,
+      "kind": "hotel",
+      "title": "Trip.com 札幌京王广场 1/28—1/30",
+      "start": "2027-01-28",
+      "end": "2027-01-30",
+      "room_or_route": "Standard Triple Room；3张单人床，禁烟，2晚",
+      "notes": "不含早；1/26前可取消、线上预付、33% Special Discount。与雪祭周同房型，可比较两段列表总价，但非保证未来价差。",
+      "eligible": true,
+      "source_id": 66,
+      "snapshot": "hotel-keio-jan28-30",
+      "evidence_needle": "CNY 4,086"
+    }
+  },
+  "calendar_source_ids": [
+    67,
+    68
+  ],
+  "scenarios": [
+    {
+      "id": "short8",
+      "title": "8天7晚：缩短主比较",
+      "start": "2027-01-30",
+      "end": "2027-02-06",
+      "components": [
+        "flight8",
+        "city1",
+        "ski4",
+        "city2end"
+      ],
+      "nights": 7,
+      "days": 8,
+      "weekdays": 5,
+      "estimated_leave_before_adjustment": 4,
+      "hotel_cny": 25332,
+      "flight_cny": 12585,
+      "subtotal_cny": 37917
+    },
+    {
+      "id": "early9",
+      "title": "9天8晚：多请一天不一定省",
+      "start": "2027-01-29",
+      "end": "2027-02-06",
+      "components": [
+        "flight9",
+        "city2start",
+        "ski4",
+        "city2end"
+      ],
+      "nights": 8,
+      "days": 9,
+      "weekdays": 6,
+      "estimated_leave_before_adjustment": 5,
+      "hotel_cny": 26772,
+      "flight_cny": 11089,
+      "subtotal_cny": 37861
+    }
+  ]
+}
