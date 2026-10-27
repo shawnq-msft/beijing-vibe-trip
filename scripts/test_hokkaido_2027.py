@@ -25,7 +25,8 @@ assert 37000*5+22500+8000*3 == 231500
 assert 43680*5+34800 == 253200
 assert 43680*5/2 == 109200 and 54600*5 == 273000
 assert len(s.select('#schools tbody tr'))==8
-assert len(s.select('#sources li'))==42
+source_count=len(json.loads((ROOT/'data/hokkaido-2027-citations.json').read_text())['sources'])
+assert len(s.select('#sources li'))==source_count
 assert all(s.find(id=a['href'][1:]) for a in s.select('a[href^="#"]'))
 expected_revision=s.select_one('meta[name="plan-revision"]')['content']
 with urllib.request.urlopen(BASE+'/'+REL+'?verify='+expected_revision,timeout=25) as r:
@@ -69,4 +70,4 @@ with sync_playwright() as p:
         checks.append({'width':width,'new_page_images':len(imgs),'overflow':False,'hero_plan_links':0,'js_errors':errors})
         page.close()
     browser.close()
-print(json.dumps({'base':BASE,'revision':expected_revision,'exact_html_sha256':hashlib.sha256(actual).hexdigest(),'local_http_links':len(local_links),'source_citations':42,'schools':8,'itinerary_days':12,'price_arithmetic':'passed','existing_cards_preserved':len(oldlinks),'new_card':REL,'responsive':checks},ensure_ascii=False))
+print(json.dumps({'base':BASE,'revision':expected_revision,'exact_html_sha256':hashlib.sha256(actual).hexdigest(),'local_http_links':len(local_links),'source_citations':source_count,'schools':8,'itinerary_days':12,'price_arithmetic':'passed','existing_cards_preserved':len(oldlinks),'new_card':REL,'responsive':checks},ensure_ascii=False))

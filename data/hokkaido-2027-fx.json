@@ -1,0 +1,10 @@
+{
+  "base": "JPY",
+  "quote": "CNY",
+  "rate": "0.0423",
+  "source": "https://wise.com/in/currency-converter/jpy-to-cny-rate/history",
+  "source_date": "2026-10-27",
+  "retrieved_date": "2026-10-27",
+  "rounding": "nearest CNY, half up",
+  "scope": "Approximate budget reference only; not 2027 settlement rate or card fees"
+}
